@@ -2,8 +2,9 @@
 <img src="https://delivery.contenthub.allstate.com/api/public/content/f0e5db4104d04bf386f97f6dc098bfc5?v=353a1ed1" alt="drawing" width="400"/>
 
 # car axle client
+![Static Badge](https://img.shields.io/badge/certified-trash-734422)
 
-#### a school bookmarklet with a good ui and some features
+#### a bookmarklet with a good ui and some features
 ## Features
 
 - Many themes
