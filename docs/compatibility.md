@@ -1,4 +1,4 @@
-#Compatibility Table
+# Compatibility Table
 Check back for updates! (August 11, 2023)
 |  Tests  | Chrome | Firefox | Safari/Webkit |
 |---------|--------|---------|---------------|
