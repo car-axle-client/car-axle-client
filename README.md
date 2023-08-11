@@ -7,6 +7,8 @@
 
 
 #### a bookmarklet with a good ui and some features
+WARNING
+This bookmarklet is only fully supported on chrome. Check out our [compatibility graph]() to see if your browser is supported.
 ## Features
 
 - Many themes
