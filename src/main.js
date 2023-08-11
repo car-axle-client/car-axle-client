@@ -1,4 +1,4 @@
-// @collapse
+
 run()
 
 function run() {
@@ -61,6 +61,20 @@ function run() {
         100% {
             opacity: 1;
         }
+    }
+
+
+    .buttons-1234-1234::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .buttons-1234-1234::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .buttons-1234-1234::-webkit-scrollbar-thumb {
+        background-color: ${theme};
+        border-radius: 0px;
     }
 
     * {
@@ -247,12 +261,14 @@ function run() {
         display: none;
         flex-direction: column;
         align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .button-c-1234-1234 {
-        margin: 1% 0;
+        margin: 0.75em 0;
         width: 90%;
-        height: 10%;
+        height: 3em;
     }
     .button-c-1234-1234:first-child {
         margin-top: 4%;
@@ -260,7 +276,7 @@ function run() {
 
     .button-1234-1234 {
         width: 100%;
-        height: 100%;
+        height: 2.5em;
         background-color: rgba(0, 0, 0, 0.7);
         color: #fff;
         font-size: 1.5em;
@@ -281,31 +297,28 @@ function run() {
         margin-top: 2% !important;
     }
 
-    .button-1234-1234 svg {
+    .button-1234-1234 p {
         position: absolute;
         right: 7%;
         transition: 0.2s;
     }
 
-    .button-1234-1234:hover {
-        transition: 0.2s;
-        background-color: rgba(0, 0, 0, 0.83);
+    .button-1234-1234 p:hover {
+        transform: scale(1.1);
     }
 
     .menu-1234-1234 {
-        border-radius: 5px;
-        padding: 5% !important;
-        width: 75%;
-        background-color: rgba(0, 0, 0, 0.7);
-        font-size: 0.6em;
+        border-radius: 0 0 5px 5px;
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.9);
+        font-size: 0.8em;
         transition: 0.2s;
-        transform: scaleX(0);
+        transform: scaleY(0);
         display: none;
+        padding: 3%;
         flex-direction: column;
-        position: absolute;
-        left:105%;
-        top: 0;
-        transform-origin: left;
+        position: relative;
+        transform-origin: top;
     }
 
     .option-1234-1234 {
@@ -317,7 +330,7 @@ function run() {
         margin-left: 5% !important;
     }
     .input-text-1234-1234 {
-        width: 95%;
+        width: 100%;
         border-radius: 3px;
     }
 
@@ -326,6 +339,7 @@ function run() {
         height: 3px;
         background: ${theme};
         opacity: 0.7;
+        margin-top: 0.75em;
         border-radius: 5px;
     }
 
@@ -393,7 +407,7 @@ function run() {
     #notification-group-1234-1234 {
         position: absolute;
         width: 20%;
-        height: 100%;
+        height: 20%;
         right: 30px;
         bottom: 0;
         display: flex;
@@ -404,7 +418,7 @@ function run() {
         width: 100%;
         padding: 10px !important;
         margin-bottom: 10px !important;
-        height: 10%;
+        height: 60%;
         background: ${theme};
         color: #fff;
         display:none;
@@ -499,13 +513,13 @@ function run() {
             this.buttonsDiv.animate([{
                 transform: 'translateY(-100%)'
             }], {
-                duration: 520,
+                duration: 500,
                 easing: 'ease'
             });
 
             setTimeout(() => {
                 this.buttonsDiv.style.display = 'none';
-            }, 500);
+            }, 490);
         }
 
 
@@ -523,7 +537,7 @@ function run() {
                 this._createOptionsMenu(buttonContainer, options);
             }
 
-            button.onmousedown = (e) => this._handleMouseDown(e, button, func, always, reset);
+            button.onmousedown = (e) => this._handleMouseDown(e, button);
             this.buttons.push(button);
         };
 
@@ -543,7 +557,7 @@ function run() {
         }
 
         _addOptionsIcon(button) {
-            button.innerHTML += '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>'
+            button.innerHTML += '<p>☰</p>'
             button.addEventListener('contextmenu', e => e.preventDefault());
         }
 
@@ -618,15 +632,18 @@ function run() {
             input.value = optionData.placeholder;
         }
 
-        _handleMouseDown(e, button) {
+        _handleMouseDown(e, button, menu) {
             if (button.menu) {
                 let menu = button.parentElement.querySelector('.menu-1234-1234');
-                if (e.button == 2) {
+                console.log(e.target)
+                if (e.target != button) {
                     this._toggleMenu(menu);
-                    return;
+                    return
                 }
+
                 button.values = this._getMenuValues(menu);
             }
+            
             if (button.reset) {
                 this._setButtonStateWithButton(button, true);
                 button.style.backgroundColor = theme;
@@ -661,7 +678,9 @@ function run() {
 
         _toggleMenu(menu) {
             menu.style.display = 'flex';
-            menu.style.transform = menu.style.transform == 'scaleX(1)' ? 'scaleX(0)' : 'scaleX(1)';
+            menu.style.transform = menu.style.transform == 'scaleY(1)' ? 'scaleY(0)' : 'scaleY(1)';
+            menu.parentElement.firstChild.style.borderRadius = menu.style.transform == 'scaleY(1)' ? '5px 5px 5px 0' : '5px';
+            console.log(menu.style.transform)
         }
 
         _getMenuValues(menu) {
@@ -758,7 +777,7 @@ function run() {
         }
 
         show(time) {
-            this.notification.style.display = 'flex';
+            this.notification.style.display = 'block';
             this.notification.style.opacity = 1;
             setTimeout(() => {
                 this.notification.style.opacity = 0;
@@ -1131,6 +1150,10 @@ function run() {
     Test.addButton('Normal Test', none, false, false)
     Test.addButton('reset test', none, false, true)
     Test.addButton('reset + always', none, true, true)
+    Test.addSeparator()
+    Test.addButton('Test Scroll', none, false, false)
+    Test.addButton('Test Scroll', none, false, false)
+    Test.addButton('Test Scroll', none, false, false)
 
     const Feedback = new UISection('client', '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M329.2 268.6c-3.8 35.2-35.4 60.6-70.6 56.8-35.2-3.8-60.6-35.4-56.8-70.6 3.8-35.2 35.4-60.6 70.6-56.8 35.1 3.8 60.6 35.4 56.8 70.6zm-85.8 235.1C96.7 496-8.2 365.5 10.1 224.3c11.2-86.6 65.8-156.9 139.1-192 161-77.1 349.7 37.4 354.7 216.6 4.1 147-118.4 262.2-260.5 254.8zm179.9-180c27.9-118-160.5-205.9-237.2-234.2-57.5 56.3-69.1 188.6-33.8 344.4 68.8 15.8 169.1-26.4 271-110.2z"/></svg> &nbsp;Client')
     Feedback.addButton('Version: 0.5.0', none, false, true)
