@@ -1,7 +1,7 @@
 <img src="https://delivery.contenthub.allstate.com/api/public/content/f0e5db4104d04bf386f97f6dc098bfc5?v=353a1ed1" alt="drawing" width="400"/>
 
 # car axle client
-![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/1157-lines%20of%20uncoherent%20garbage-blue?style=for-the-badge) ![Dynamic Badge](https://tokei.rs/b1/github/car-axle-client/car-axle-client)
+![Static Badge](https://img.shields.io/badge/certified-trash-734422)![Dynamic Badge](https://tokei.rs/b1/github/car-axle-client/car-axle-client)
 
 
 
