@@ -3,6 +3,7 @@ import "./button.ts.less"
 
 export default class Button implements Component {
     public ENABLED: boolean = false;
+    public BUTTON!: HTMLElement;
     public parent: HTMLElement
     private title: string;
     private always: boolean = false;
@@ -17,11 +18,13 @@ export default class Button implements Component {
     _handleMouseDown(e: MouseEvent) {
         if (e.button !== 0) return;
         this.ENABLED = !this.ENABLED;
+        this.BUTTON.classList.toggle("cac__button--enabled", this.ENABLED)
+
     }
 
     render() {
-        let button = createElement("button", this.parent, { className: "cac__button", innerHTML: this.title })
-        
+        this.BUTTON = createElement("button", this.parent, { className: "cac__button", innerHTML: this.title })
+        this.BUTTON.addEventListener("mousedown", this._handleMouseDown.bind(this))
     }
 
     get values() {
