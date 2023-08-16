@@ -1,0 +1,56 @@
+@import "../global/variables.less";
+
+.cac__section {
+    width: 86%;
+    height: 6%;
+    background-color: transparent;
+    text-align: left;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateX(5px);
+    }
+
+    svg {
+        margin-left: 1%;
+        margin-right: 5%;
+    }
+}
+
+.cac__section__content {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width:5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: @theme;
+        border-radius: 5px;
+    }
+}
+
+.cac__section__title {
+    font-weight: 600;
+    font-size: 2.25vw;
+    line-height: 1vw;
+    margin-left: 1%;
+    width:90%;
+}

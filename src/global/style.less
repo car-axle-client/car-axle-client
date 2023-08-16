@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import "variables.less";
+
+* {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+#cac__CONTAINER {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cac__GUI {
+    width:71%;
+    height: 71%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+#cac__SIDEBAR {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cac__MAINCONTENT {
+    width:80%;
+    height: 100%;
+    background-color: transparent;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cac__LOGO {
+    width: 100%;
+    height: 8%;
+    background-color: @theme;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+    position: relative;
+    font-size: 1.75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cac__section__BACKGROUND {
+    width: 95%;
+    height: 6%;
+    background-color: @theme;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+}
