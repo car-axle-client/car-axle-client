@@ -3,11 +3,14 @@
 
 * {
     font-family: 'Nunito', sans-serif;
-    color: white;
+    color: @text
+}
+svg {
+    fill: @text;
 }
 
 #cac__CONTAINER {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: @secondary6;
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -18,12 +21,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 #cac__GUI {
     width:71%;
     height: 71%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: @secondary6;
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -33,7 +37,7 @@
 #cac__SIDEBAR {
     width: 20%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: @secondary2;
     text-align: left;
     border-radius: 20px;
     position: relative;

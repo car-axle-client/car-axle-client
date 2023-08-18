@@ -1,0 +1,46 @@
+[
+    {
+        "section": "exploit",
+        "display": "NoForceReload",
+        "function": "NoForceReload",
+        "always": false,
+        "reset": false
+    },
+
+    {
+        "section": "fun",
+        "display": "Mouse Trail",
+        "always": true,
+        "reset": false
+    },
+
+    {
+        "section": "client",
+        "display": "v0.2.0 (UI 2.0)",
+        "always": false,
+        "reset": true
+    },
+
+    {
+        "section": "credit",
+        "display": "TypeScript - Superset of JavaScript by Microsoft",
+        "reset": true
+    },
+    {
+        "section": "credit",
+        "display": "Less - CSS Preprocessor by Alexis Sellier",
+        "reset": true
+    },
+
+    {
+        "section": "credit",
+        "display": "webpack - open-source JavaScript module bundlers",
+        "reset": true
+    },
+
+    {
+        "section": "credit",
+        "display": "npm for being the package manager for JavaScript",
+        "reset": true
+    }
+]

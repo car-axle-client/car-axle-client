@@ -22,7 +22,7 @@ This bookmarklet is only fully supported on chrome. Check out our [compatibility
 Install on the [website](https://car-axle-client.github.io)
 
 ### Manual Building
-1. Clone Repository
+1. Clone Repository 
 2. Run build/build.py
 ```python3 build/build.py [--debug -d]```
     

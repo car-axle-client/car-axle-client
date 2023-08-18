@@ -54,16 +54,24 @@ export class UIManager {
         if (section.ENABLED) return
         if (this.ENABLED_SECTION) this._disableSection(this.ENABLED_SECTION)
         this._enableSection(section)
-        section.SECTIONTITLE.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'})
     }
 
-    newSection(id: string, displayName: string, icon: string, enabled: boolean = false, customStyle: string = ''): Section {
-        let section: Section = new Section(id, displayName, icon, this.SIDEBAR, this.MAINCONTENT, enabled)
+    newSection(id: string, displayName: string, description: string, icon: string, enabled: boolean = false, customStyle: string = ''): Section {
+        let section: Section = new Section(id, displayName, description, icon, this.SIDEBAR, this.MAINCONTENT, enabled)
         section.SECTION.onmousedown = () => this._handleSectionMouseDown(section)
         enabled && this._enableSection(section)
 
         this.SECTIONS.push(section)
         return section
+    }
+
+    toggleUI(): void {
+        this.CONTAINER.style.display = this.CONTAINER.style.display === 'none' ? 'flex' : 'none'
+    }
+
+
+    getSection(id: string): Section | undefined {
+        return this.SECTIONS.find(section => section.id === id)
     }
 
 }
