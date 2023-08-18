@@ -22,7 +22,7 @@ function addModules(UI: UIManager): void {
             continue
         }
 
-        const onClickFunction: (active: boolean) => void = functions[_module['function']]
+        const onClickFunction: (active: boolean) => void = functions[_module['function']] || functions['none']
         _module['always'] = _module['always'] || false
         _module['reset'] = _module['reset'] || false
         

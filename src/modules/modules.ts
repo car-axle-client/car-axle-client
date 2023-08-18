@@ -14,10 +14,15 @@ function NoForceReload(active: boolean) {
     }
 }
 
+function none(active: boolean) {
+    return
+}
+
 type functionsObject = {
     [key: string]: (active: boolean) => void
 }
 
 export const functions: functionsObject = {
-    'NoForceReload': NoForceReload
+    'NoForceReload': NoForceReload,
+    'none': none
 };

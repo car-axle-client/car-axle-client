@@ -66,7 +66,19 @@ export class UIManager {
     }
 
     toggleUI(): void {
-        this.CONTAINER.style.display = this.CONTAINER.style.display === 'none' ? 'flex' : 'none'
+        if (this.CONTAINER.style.display === 'none') {
+            this.CONTAINER.style.display = 'flex'
+            this.GUI.animate([
+                {transform: 'scale(0)'},
+                {transform: 'scale(1)'}
+            ],
+                {duration: 500, 
+                fill: 'forwards', 
+                easing: 'ease'}
+            )
+        } else {
+            this.CONTAINER.style.display = 'none'
+        }
     }
 
 
