@@ -21,10 +21,12 @@ This bookmarklet is only fully supported on chrome. Check out our [compatibility
 ### Website Installation
 Install on the [website](https://car-axle-client.github.io)
 
-### Manual Building
-1. Clone Repository 
-2. Run build/build.py
-```python3 build/build.py [--debug -d]```
+### Manual Build/Editing
+1. Clone this repo (i forgot the command so just look it up)
+2. Install the required dependencies (package.json)
+3. Make your edits
+4. build with npx webpack
+5. use a website to turn the output from `./build/index.js` into a bookmarklet
     
 ## Demo
 
@@ -32,7 +34,10 @@ Demo is avaiable on the [website](https://car-axle-client.github.io)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Light Mode
+![App Screenshot](docs/light.png)
+Dark Mode
+![App Screenshot](docs/dark.png)
 
 
 ## Contributing
@@ -57,7 +62,7 @@ See `contributing.md` for ways to get started, or just look at the roadmap
 - Optimizations
 ## Support
 
-For support, contact me on discord @penguinify
+For support, contact me on discord @penguinify or through github issues
 
 
 ## Feedback
