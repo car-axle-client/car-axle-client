@@ -8,8 +8,38 @@
     },
 
     {
+        "section": "exploit",
+        "display": "ForceSelect",
+        "function": "ForceSelect",
+        "always": false,
+        "reset": false
+    },
+
+    {
         "section": "fun",
         "display": "Mouse Trail",
+        "options": [{"title":"Trail?", "type": "checkbox", "default": true}],
+        "always": true,
+        "reset": false
+    },
+    {
+        "section": "fun",
+        "display": "Mouse Trail",
+        "options": [{"title":"Trail?", "type": "checkbox", "default": true}],
+        "always": true,
+        "reset": false
+    },
+    {
+        "section": "fun",
+        "display": "Mouse Trail",
+        "options": [{"title":"Trail?", "type": "checkbox", "default": true}],
+        "always": true,
+        "reset": false
+    },
+    {
+        "section": "fun",
+        "display": "Mouse Trail",
+        "options": [{"title":"Trail?", "type": "checkbox", "default": true}],
         "always": true,
         "reset": false
     },

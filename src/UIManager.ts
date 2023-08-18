@@ -29,7 +29,7 @@ export class UIManager {
     private _enableSection(section: Section): void {
         this.ENABLED_SECTION = section
         section.ENABLED = true
-        section.SECTIONCONTENT.style.display = 'flex'
+        section.SECTIONCONTENT.style.display = 'block'
         this._sectionBackground.animate([
             {top: `${section.SECTION.offsetTop}px`}],
             {duration: 1000, fill: 'forwards', easing: 'ease'})

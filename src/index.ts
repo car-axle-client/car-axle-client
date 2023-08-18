@@ -8,6 +8,7 @@ type moduleJSON = {
     function: string,
     always?: boolean,
     reset?: boolean,
+    options?: any
 } 
 
 
@@ -25,8 +26,9 @@ function addModules(UI: UIManager): void {
         const onClickFunction: (active: boolean) => void = functions[_module['function']] || functions['none']
         _module['always'] = _module['always'] || false
         _module['reset'] = _module['reset'] || false
+        _module['options'] = _module['options'] || {}
         
-        section.addButton(_module['display'], _module['always'], _module['reset'], onClickFunction, true)
+        section.addButton(_module['display'], _module['always'], _module['reset'], onClickFunction, true, _module['options'])
 
         DEBUG && console.log(`[UI] Added module ${_module['display']} to section ${_module['section']}`)
     }

@@ -44,9 +44,8 @@ export class Section {
     }
 
     // fat lazy code
-    addButton(title: string, always: boolean, reset: boolean, onClickFunction: (active: boolean) => void ,render: boolean = false): void {
-        new Button(this.SECTIONCONTENT, title, always, reset, onClickFunction, render)
+    addButton(title: string, always: boolean, reset: boolean, onClickFunction: (active: boolean) => void, render: boolean = false, options: any /* should nnot be any but here we are.*/): void {
+        new Button(this.SECTIONCONTENT, title, always, reset, onClickFunction, render, options)
     }
-
     // Mouse down is handled by UIManager cause it's a global event
 }
