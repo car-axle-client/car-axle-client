@@ -32,7 +32,7 @@
     {
         "section": "fun",
         "display": "Mouse Trail",
-        "options": [{"title":"Trail?", "type": "checkbox", "default": true}],
+        "options": [{"title":"Trail?", "type": "checkbox", "default": true}, {"title": "Size", "type": "text", "default": "10"}],
         "always": true,
         "reset": false
     },

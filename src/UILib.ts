@@ -7,6 +7,9 @@ interface ElementAttributes {
     id?: string
     className?: string
     innerHTML?: string;
+    type?: string;
+    name?: string;
+    value?: string;
 }
 
 export function createElement(tagName: string, parent: Element, options?: ElementAttributes ): HTMLElement {
@@ -21,6 +24,15 @@ export function createElement(tagName: string, parent: Element, options?: Elemen
         }
         if (options.innerHTML) {
             element.innerHTML = options.innerHTML
+        }
+        if (options.type) {
+            element.setAttribute('type', options.type)
+        }
+        if (options.name) {
+            element.setAttribute('name', options.name)
+        }
+        if (options.value) {
+            element.setAttribute('value', options.value)
         }
     }
 
