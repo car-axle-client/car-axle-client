@@ -7,10 +7,8 @@
 
 
 #### a bookmarklet with a good ui and some features
-Feel free to use this as a base for your own client.   
-Built with typescript and less.   
- 
-WARNING  
+Built with typescript and less.
+WARNING
 This bookmarklet is only fully supported on chrome. Check out our [compatibility graph](https://github.com/car-axle-client/car-axle-client/blob/main/docs/compatibility.md) to see if your browser is supported.
 ## Features
 
@@ -29,7 +27,7 @@ Install on the [website](https://car-axle-client.github.io)
 2. Install the required dependencies (package.json)
 3. Make your edits
 4. build with npx webpack
-5. use a website to turn the output from `./build/index.js` into a bookmarklet
+5. use a website such as Mrcoles bookmarklet generator to turn the output from `./build/index.js` into a bookmarklet
     
 ## Demo
 
