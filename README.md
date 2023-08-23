@@ -9,7 +9,7 @@ pls star ⭐️
 
 #### a bookmarklet with a good ui and some features
 Built with typescript and less.
-WARNING
+WARNING          
 This bookmarklet is only fully supported on chrome. Check out our [compatibility graph](https://github.com/car-axle-client/car-axle-client/blob/main/docs/compatibility.md) to see if your browser is supported.
 ## Features
 
