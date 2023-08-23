@@ -19,18 +19,18 @@ export default class Button implements Component {
     public MENUCONTAINER!: HTMLElement;
     public parent: HTMLElement
     private title: string;
-    private onClickFunction: (active: boolean, options:Array<boolean | string>) => void;
+    private onClickFunction: (active: boolean) => void;
     private always: boolean
     private reset: boolean
     private menuOptions: menuOption[]
     // why any? because i'm lazy
-    private menuValues: Array<boolean | string> = []
+    private menuValues: any = []
     
     constructor(parent: HTMLElement,
                 title: string, 
                 always: boolean, 
                 reset:boolean, 
-                onClickFunction: (active: boolean, options: Array<boolean | string>) => void, 
+                onClickFunction: (active: boolean) => void, 
                 render: boolean = false,
                 menuOptions: menuOption[]) {
 
@@ -49,26 +49,15 @@ export default class Button implements Component {
     _toggle() {
         this.ENABLED = !this.ENABLED
         this.BUTTON.classList.toggle("cac__button--enabled", this.ENABLED)
-        this.ENABLED ? this.onClickFunction(true, this.menuValues) : this.onClickFunction(false, this.menuValues)
+        this.ENABLED ? this.onClickFunction(true) : this.onClickFunction(false)
     }
 
     _getMenuValues() {
-        this.menuValues = []
-        for (let option of this.MENUCONTAINER.querySelectorAll(".cac__button__menu-container__option-container")) {
-            const checkbox = option.querySelector(".cac__button__menu-container__option-container__checkbox") as HTMLInputElement
-            const text = option.querySelector(".cac__button__menu-container__option-container__text") as HTMLInputElement
-
-            if (checkbox) {
-                this.menuValues.push(checkbox.checked)
-            } else if (text) {
-                this.menuValues.push(text.value)
-            }
-        }
-
     }
 
     _updateFunctionOptions(): void {
         this._getMenuValues()
+
         this._toggle()
         this._toggle()
     }

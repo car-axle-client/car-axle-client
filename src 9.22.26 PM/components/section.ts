@@ -14,14 +14,7 @@ export class Section {
     private _icon: string;
     
 
-    constructor(id: string, 
-                displayName: string, 
-                description: string, 
-                icon: string, 
-                container: HTMLElement, 
-                maincontent: HTMLElement, 
-                enabled: boolean = false) {
-
+    constructor(id: string, displayName: string, description: string, icon: string, container: HTMLElement, maincontent: HTMLElement, enabled: boolean = false) {
         this.id = id
         this._displayName = displayName;
         this._container = container;
@@ -51,7 +44,7 @@ export class Section {
     }
 
     // fat lazy code
-    addButton(title: string, always: boolean, reset: boolean, onClickFunction: (active: boolean, options: Array<boolean | string>) => void, render: boolean = false, options: any /* should nnot be any but here we are.*/): void {
+    addButton(title: string, always: boolean, reset: boolean, onClickFunction: (active: boolean) => void, render: boolean = false, options: any /* should nnot be any but here we are.*/): void {
         new Button(this.SECTIONCONTENT, title, always, reset, onClickFunction, render, options)
     }
     // Mouse down is handled by UIManager cause it's a global event
