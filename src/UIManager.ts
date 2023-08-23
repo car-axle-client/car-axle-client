@@ -8,7 +8,7 @@ export class UIManager {
     public CONTAINER: HTMLElement
     public GUI: HTMLElement
     public SIDEBAR: HTMLElement
-    public SECTIONS: Section[] = []
+    public SECTIONS: Array<Section> = []
     public ENABLED_SECTION!: Section
     public MAINCONTENT: HTMLElement
     private _sectionBackground: HTMLElement
@@ -64,7 +64,6 @@ export class UIManager {
         this.SECTIONS.push(section)
         return section
     }
-
     toggleUI(): void {
         if (this.CONTAINER.style.display === 'none') {
             this.CONTAINER.style.display = 'flex'
@@ -74,7 +73,7 @@ export class UIManager {
             ],
                 {duration: 500, 
                 fill: 'forwards', 
-                easing: 'ease'}
+                easing: 'ease-out'}
             )
         } else {
             this.CONTAINER.style.display = 'none'
