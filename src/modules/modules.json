@@ -15,6 +15,13 @@
     },
 
     {
+        "section": "exploit",
+        "display": "Better Force Select",
+        "function": "betterforceselect",
+        "always": true
+    },
+
+    {
         "section": "game",
         "display": "2048",
         "reset": true,
