@@ -32,7 +32,7 @@ Install on the [website](https://car-axle-client.github.io)
     
 ## Demo
 
-Demo is avaiable on the [website](https://car-axle-client.github.io)
+Demo on website is currently outdated.
 
 ## Screenshots
 
