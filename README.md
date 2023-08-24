@@ -5,7 +5,7 @@ pls star ⭐️
 ![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![StaticBadge](https://img.shields.io/badge/lines_of_code-1079-blue?style=plastic) ![StaticBadge](https://img.shields.io/badge/comments-14-gray?style=plastic)
 
 
-
+## Release on AUGUST 31st!
 
 #### a bookmarklet with a good ui and some features
 Built with typescript and less.
