@@ -123,13 +123,22 @@ function adremover(active: boolean, options: Array<Boolean | String>) {
 function betterforceselect(active: boolean, options: Array<Boolean | String>) {
     // This one isn't skidded :/
     let allElements: NodeListOf<HTMLElement> = document.body.querySelectorAll("*");
-    allElements.forEach(function(element: HTMLElement) {
+    allElements.forEach(element => {
         element.style.userSelect = "auto !important";
         element.style.webkitUserSelect = "auto !important";
     })
     
 
 }
+
+function savecurrentsettings(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        let enabledOptions = []
+
+    }
+}
+
+
 
 type functionsObject = {
     [key: string]: (active: boolean, options: Array<Boolean | String>) => void

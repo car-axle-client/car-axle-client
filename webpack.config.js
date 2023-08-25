@@ -1,5 +1,4 @@
 const path = require('path');
-
 module.exports = {
   entry: './src/index.ts', // Entry point of your application
   mode: 'development', // Or 'development' for non-minified output
@@ -18,7 +17,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
-  },
+    alias: {
+        '@': path.resolve('src')
+        // doesn't work for some reason??
+    }
+},
   output: {
     filename: 'index.js', // Output bundle filename
     //path: path.resolve(__dirname, 'build'), // Output directory

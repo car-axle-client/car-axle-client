@@ -14,16 +14,15 @@ type menuOption = {
 }
 
 export default class Button implements Component {
-    public ENABLED: boolean = false;
-    public BUTTON!: HTMLElement;
-    public MENUCONTAINER!: HTMLElement;
+    public enabled: boolean = false;
+    public button!: HTMLElement;
+    public menuContainer!: HTMLElement;
     public parent: HTMLElement
     private title: string;
     private onClickFunction: (active: boolean, options:Array<boolean | string>) => void;
     private always: boolean
     private reset: boolean
     private menuOptions: menuOption[]
-    // why any? because i'm lazy
     private menuValues: Array<boolean | string> = []
     
     constructor(parent: HTMLElement,
@@ -47,14 +46,14 @@ export default class Button implements Component {
     }
 
     _toggle() {
-        this.ENABLED = !this.ENABLED
-        this.BUTTON.classList.toggle("cac__button--enabled", this.ENABLED)
-        this.ENABLED ? this.onClickFunction(true, this.menuValues) : this.onClickFunction(false, this.menuValues)
+        this.enabled = !this.enabled
+        this.button.classList.toggle("cac__button--enabled", this.enabled)
+        this.enabled ? this.onClickFunction(true, this.menuValues) : this.onClickFunction(false, this.menuValues)
     }
 
     _getMenuValues() {
         this.menuValues = []
-        for (let option of this.MENUCONTAINER.querySelectorAll(".cac__button__menu-container__option-container")) {
+        for (let option of this.menuContainer.querySelectorAll(".cac__button__menu-container__option-container")) {
             const checkbox = option.querySelector(".cac__button__menu-container__option-container__checkbox") as HTMLInputElement
             const text = option.querySelector(".cac__button__menu-container__option-container__text") as HTMLInputElement
 
@@ -74,7 +73,7 @@ export default class Button implements Component {
     }
 
     _addMenuOption(option: menuOption) {
-        const optionContainer = createElement("div", this.MENUCONTAINER, { className: "cac__button__menu-container__option-container" })
+        const optionContainer = createElement("div", this.menuContainer, { className: "cac__button__menu-container__option-container" })
         createElement("p", optionContainer, { className: "cac__button__menu-container__option-container__title", innerHTML: option.title })
 
         switch (option.type) { 
@@ -93,13 +92,13 @@ export default class Button implements Component {
 
     _toggleMenu(e: MouseEvent) {
         e.preventDefault()
-        this.MENUCONTAINER.classList.toggle("cac__button__menu-container--enabled")
-        this.BUTTON.querySelector('svg')?.classList.toggle("cac__button__menuicon--enabled")
+        this.menuContainer.classList.toggle("cac__button__menu-container--enabled")
+        this.button.querySelector('svg')?.classList.toggle("cac__button__menuicon--enabled")
     }
 
     _handleMouseDown(e: MouseEvent) {
         if (e.button === 2 && this.menuOptions?.length > 0) this._toggleMenu(e)
-        if (e.button !== 0 || this.ENABLED && this.always) return;
+        if (e.button !== 0 || this.enabled && this.always) return;
         this._toggle()
 
         if (this.reset) setTimeout(() => {
@@ -108,12 +107,12 @@ export default class Button implements Component {
     }
 
     render() {
-        this.BUTTON = createElement("button", this.parent, { className: "cac__button", innerHTML: this.title })
-        this.BUTTON.addEventListener("mousedown", this._handleMouseDown.bind(this))
-        this.BUTTON.addEventListener("contextmenu", (e) => e.preventDefault())
+        this.button = createElement("button", this.parent, { className: "cac__button", innerHTML: this.title })
+        this.button.addEventListener("mousedown", this._handleMouseDown.bind(this))
+        this.button.addEventListener("contextmenu", (e) => e.preventDefault())
 
         if (this.menuOptions.length > 0) {
-            this.MENUCONTAINER = createElement("div", this.parent, { className: "cac__button__menu-container" })
+            this.menuContainer = createElement("div", this.parent, { className: "cac__button__menu-container" })
             for (let option of this.menuOptions) {
                 this._addMenuOption(option)
             }
@@ -123,7 +122,7 @@ export default class Button implements Component {
     get values() {
         return {
             title: this.title,
-            enabled: this.ENABLED,
+            enabled: this.enabled,
             always: this.always,
             reset: this.reset
         }

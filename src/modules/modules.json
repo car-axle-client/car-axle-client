@@ -101,7 +101,7 @@
 
     {
         "section": "client",
-        "display": "v0.6.0 (UI 2.0)",
+        "display": "v0.7.0 (UI 2.0)",
         "always": false,
         "reset": true
     },
@@ -111,6 +111,7 @@
         "display": "TypeScript - Superset of JavaScript by Microsoft",
         "reset": true
     },
+ 
     {
         "section": "credit",
         "display": "Less - CSS Preprocessor by Alexis Sellier",
