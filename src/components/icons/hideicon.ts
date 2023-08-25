@@ -12,7 +12,7 @@ export default class Hide implements Icon {
     public hoverName!: HTMLElement; 
     private iconElement!: HTMLElement; 
 
-    constructor(parent: HTMLElement, name: string, icon: string, toggleUI: () => void) {
+    constructor(parent: HTMLElement, name: string, icon: string) {
         this.parent = parent;
         this.icon = icon;
         this.name = name;

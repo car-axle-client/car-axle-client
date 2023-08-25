@@ -123,9 +123,9 @@ function adremover(active: boolean, options: Array<Boolean | String>) {
 function betterforceselect(active: boolean, options: Array<Boolean | String>) {
     // This one isn't skidded :/
     let allElements: NodeListOf<HTMLElement> = document.body.querySelectorAll("*");
-    allElements.forEach(element => {
-        element.style.userSelect = "auto !important";
-        element.style.webkitUserSelect = "auto !important";
+    console.log(allElements)
+    allElements.forEach(function(element: HTMLElement) {
+        element.style.setProperty('user-select', 'auto', 'important')
     })
     
 

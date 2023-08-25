@@ -1,4 +1,5 @@
 import { Icon, createElement } from "../../UILib"
+import { UIManager } from "../../UIManager";
 import "./icon.ts.less"
 
 
@@ -8,16 +9,21 @@ export default class AddSave implements Icon{
     public name: string;
     public hoverName!: HTMLElement; 
     private iconElement!: HTMLElement;
+    private UIManager: UIManager;
 
-    constructor(parent: HTMLElement, name: string, icon: string) {
+    constructor(parent: HTMLElement, name: string, icon: string, UIManager: UIManager) {
         this.parent = parent;
         this.icon = icon;
-        this.name = name; 
-
+        this.name = name;
+        console.log(UIManager)
+        this.UIManager = UIManager
+        console.log(this.UIManager)
         this.render()
     }
 
     action(): void {
+        let values = [];
+            
         
     }
 

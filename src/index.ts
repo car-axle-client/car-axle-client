@@ -16,7 +16,7 @@ const modules: moduleJSON[] = require('./modules/modules.json')
 
 function addModules(UI: UIManager): void {
     for (let _module of modules) {
-        const section = UI.getSection(_module['section'])
+        const section = UI.getSectionFromID(_module['section'])
 
         if (section == null) {
             DEBUG && console.log(`[UI] Section ${_module['section']} not found!`)
