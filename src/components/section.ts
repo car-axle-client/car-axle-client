@@ -8,6 +8,7 @@ export class Section {
     public enabled: boolean;
     public sectionTitle!: HTMLElement;
     public sectionContent!: HTMLElement;
+    public buttons: Array<Button> = [];
     private _displayName: string;
     private _container: Element;
     private _description: string;
@@ -52,7 +53,11 @@ export class Section {
 
     // fat lazy code
     addButton(title: string, always: boolean, reset: boolean, onClickFunction: (active: boolean, options: Array<boolean | string>) => void, render: boolean = false, options: any /* should nnot be any but here we are.*/): void {
-        new Button(this.sectionContent, title, always, reset, onClickFunction, render, options)
+        this.buttons.push(new Button(this.sectionContent, title, always, reset, onClickFunction, render, options))
+    }
+
+    getAllButtonValues() {
+       return this.buttons.map((button) => [button.enabled, button.values])
     }
     // Mouse down is handled by UIManager cause it's a global event
 }   

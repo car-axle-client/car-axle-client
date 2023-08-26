@@ -13,12 +13,14 @@ export default class RemoveSave implements Icon {
         this.parent = parent;
         this.icon = icon;
         this.name = name; 
-
+        
         this.render()
+
+        this.iconElement.onclick = this.action
     }
 
     action(): void {
-        
+        localStorage.removeItem('car-axle-client')
     }
 
     render(): void {

@@ -6,7 +6,7 @@ export interface Component {
 
 export interface Icon extends Component {
     icon: string; //SVG Element
-    action(): void;
+    action(...args:Array<any>): void;
 }
 
 interface ElementAttributes {
