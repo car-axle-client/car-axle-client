@@ -2,7 +2,8 @@ pls star ⭐️
 <img src="https://delivery.contenthub.allstate.com/api/public/content/f0e5db4104d04bf386f97f6dc098bfc5?v=353a1ed1" alt="drawing" width="400"/>
 
 # car axle client
-![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![StaticBadge](https://img.shields.io/badge/lines_of_code-1079-blue?style=plastic) ![StaticBadge](https://img.shields.io/badge/comments-14-gray?style=plastic)
+![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![StaticBadge](https://img.shields.io/badge/lines_of_code-1079-blue?style=plastic) ![StaticBadge](https://img.shields.io/badge/comments-14-gray?style=plastic) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic
+)
 
 
 ## Release on AUGUST 31st!
