@@ -57,7 +57,15 @@ export class Section {
     }
 
     getAllButtonValues() {
-       return this.buttons.map((button) => [button.enabled, button.values])
+       return this.buttons.map((button) => [button.enabled])
     }
+
+    setAllButtonValuesFromArray(buttonValues: boolean[][]) {
+        for (const [index, value] of buttonValues.entries()) {
+            this.buttons[index].values = {enabled:value[0]}
+        }
+    }
+
+
     // Mouse down is handled by UIManager cause it's a global event
 }   

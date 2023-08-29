@@ -25,57 +25,17 @@ function changeGame(game: string) {
 
 function game2048(active: boolean, options: Array<Boolean | String>) {
     if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/2048/')
+        changeGame('https://penguinify-web-dev.github.io/2048/')
     }
 }
 
 function gameretrobowl(active: boolean, options: Array<Boolean | String>) {
     if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/retro-bowl/retro.html')
+        changeGame('https://penguinify-web-dev.github.io/retro-bowl/retro.html')
     }
 }
 
-function gamebtd(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/bloons1.html')
-    }
-}
 
-function gamebtd2(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/bloons.html')
-    }
-}
-
-function gameducklife1(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/ducklife/ducklife1/index.html')
-    }
-}
-
-function gameducklife2(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/ducklife/ducklife2/index.html')
-    }
-}
-
-function gameducklife3(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/ducklife/ducklife3/index.html')
-    }
-}
-
-function gameducklife4(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/ducklife/ducklife4/index.html')
-    }
-}
-
-function gamecookieclicker(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/cookie/index.html')
-    }
-}
 
 function mouseTrail(active: boolean, options: Array<Boolean | String>) {
     if (active) {
@@ -148,13 +108,6 @@ export const functions: functionsObject = {
     'NoForceReload': NoForceReload,
     'game2048': game2048,
     'gameretrobowl': gameretrobowl,
-    'gamebtd': gamebtd,
-    'gamebtd2': gamebtd2,
-    'gameducklife1': gameducklife1,
-    'gameducklife2': gameducklife2,
-    'gameducklife3': gameducklife3,
-    'gameducklife4': gameducklife4,
-    'gamecookieclicker': gamecookieclicker,
     'mouseTrail': mouseTrail,
     'adremover': adremover,
     'editPageText': editPageText,

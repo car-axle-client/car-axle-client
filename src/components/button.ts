@@ -119,12 +119,16 @@ export default class Button implements Component {
         }
     }
 
+    // idk if this is every used lmaoooooooo
     get values() {
+        if (this.reset) return {enabled: false}
+        // adding options l8r
         return {
-            title: this.title,
-            enabled: this.enabled,
-            always: this.always,
-            reset: this.reset
+            enabled: this.enabled
         }
+    }
+
+    set values (values: {"enabled": boolean}) {
+        values['enabled'] && this._toggle()
     }
 }
