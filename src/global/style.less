@@ -87,3 +87,23 @@ svg {
     margin-right: 2%;
     border: 4px solid @theme;
 }
+
+#cac__TABBAR {
+    width:auto;
+    z-index: 100000000000000;
+    height: 3vw;
+    background-color: @theme;
+    border-radius: 0px 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding-left: 0.25vw;
+
+    &:hover .cac__tabbar__button {
+        opacity: 0.5;
+    }
+
+    .cac__tabbar__button:hover {
+        opacity: 1;
+    }
+}

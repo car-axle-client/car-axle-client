@@ -14,11 +14,17 @@ WARNING
 This bookmarklet is only fully supported on chrome. Check out our [compatibility graph](https://github.com/car-axle-client/car-axle-client/blob/main/docs/compatibility.md) to see if your browser is supported.
 ## Features
 
-- Many themes
-- Save settings to a specific site
-- Easily hide and show ui by pressing backslash
-- Cross platform (as long as you are on chrome)
-- Very clean ui
+- Light, Dark, and color theme options
+- Hacks like:
+    - Better Force Select
+        - Actually gets all elements and forces selection from them
+    - AntiReload
+        - Prevent admins from forcing a reload on your computer
+    - Save Settings to site
+        - Will automatically apply settings to a specific site on run
+- Games from yexex loader
+
+
 ## Installation
 
 ### Website Installation
@@ -27,8 +33,10 @@ Install on the [website](https://car-axle-client.github.io)
 ### Manual Build/Editing
 1. Clone this repo (i forgot the command so just look it up)
 2. Install the required dependencies (package.json)
+`npm install`
 3. Make your edits
-4. build with npx webpack
+4. build with 
+`npx webpack`
 5. use a website such as Mrcoles bookmarklet generator to turn the output from `./build/index.js` into a bookmarklet
     
 ## Demo
@@ -52,9 +60,7 @@ Contributions are always welcome!
 See `contributing.md` for ways to get started, or just look at the roadmap
 ## Roadmap
 
-- the loaders. yes.
-
-- Multi-browser support? if?
+- Bug Fixing
 
 - Cleaning up the codebase
 

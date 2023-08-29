@@ -25,57 +25,17 @@ function changeGame(game: string) {
 
 function game2048(active: boolean, options: Array<Boolean | String>) {
     if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/2048/')
+        changeGame('https://penguinify-web-dev.github.io/2048/')
     }
 }
 
 function gameretrobowl(active: boolean, options: Array<Boolean | String>) {
     if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/retro-bowl/retro.html')
+        changeGame('https://penguinify-web-dev.github.io/retro-bowl/retro.html')
     }
 }
 
-function gamebtd(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/bloons1.html')
-    }
-}
 
-function gamebtd2(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/bloons.html')
-    }
-}
-
-function gameducklife1(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/ducklife/ducklife1/index.html')
-    }
-}
-
-function gameducklife2(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/ducklife/ducklife2/index.html')
-    }
-}
-
-function gameducklife3(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/ducklife/ducklife3/index.html')
-    }
-}
-
-function gameducklife4(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/ducklife/ducklife4/index.html')
-    }
-}
-
-function gamecookieclicker(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        changeGame('https://cgvuz3vpbmlmeq.github.io/cookie/index.html')
-    }
-}
 
 function mouseTrail(active: boolean, options: Array<Boolean | String>) {
     if (active) {
@@ -120,6 +80,25 @@ function adremover(active: boolean, options: Array<Boolean | String>) {
         !function(e){var t={elem(t){!function t(l){for(let o of e.ignore?.selector??[])if(l.matches(o))return!0;for(let r of e.ignore?.func??[])if(r(l))return!0;return!1}(t)&&t.remove()},list(e){Array.from(e).forEach(e=>t.elem(e))},cls(e){t.list(document.getElementsByClassName(e))},selector(e){t.list(document.querySelectorAll(e))},func({func:e,selector:l=null}){let o=null==l?document.getElementsByClassName("*"):document.querySelectorAll(l);for(let r of o)e(r)&&t.elem(r)}};for(let[l,o]of Object.entries(e))if("ignore"!=l)for(let r of o)t[l](r)}({cls:["adsbygoogle","mod_ad_container","brn-ads-box","gpt-ad","ad-box","top-ads-container","adthrive-ad"],selector:['[aria-label="advertisement"]','[class*="-ad "], [class*="-ad-"], [class$="-ad"], [class^="ad-"]',':is(div,iframe)[id^="google_ads_iframe_"]'],func:[{selector:'[class*="ad"],[id*="ad"]',func(e){for(let t of[e.id,...e.classList])if(/(?<!lo)ad(vertisement)?(content)?(engine|ngin)?(container)?($|[-_,\s])/.test(t))return!0}}],ignore:{selector:["body",".ad-layout"],func:[e=>{let t=document.getElementsByTagName("article");for(let l of t)if(e.contains(l))return!0}]}});
     }
 }
+function betterforceselect(active: boolean, options: Array<Boolean | String>) {
+    // This one isn't skidded :/
+    let allElements: NodeListOf<HTMLElement> = document.body.querySelectorAll("*");
+    console.log(allElements)
+    allElements.forEach(function(element: HTMLElement) {
+        element.style.setProperty('user-select', 'auto', 'important')
+    })
+    
+
+}
+
+function savecurrentsettings(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        let enabledOptions = []
+
+    }
+}
+
+
 
 type functionsObject = {
     [key: string]: (active: boolean, options: Array<Boolean | String>) => void
@@ -129,14 +108,9 @@ export const functions: functionsObject = {
     'NoForceReload': NoForceReload,
     'game2048': game2048,
     'gameretrobowl': gameretrobowl,
-    'gamebtd': gamebtd,
-    'gamebtd2': gamebtd2,
-    'gameducklife1': gameducklife1,
-    'gameducklife2': gameducklife2,
-    'gameducklife3': gameducklife3,
-    'gameducklife4': gameducklife4,
-    'gamecookieclicker': gamecookieclicker,
     'mouseTrail': mouseTrail,
+    'adremover': adremover,
     'editPageText': editPageText,
-    'none': none
-};
+    'none': none,
+    'betterforceselect': betterforceselect
+    };
