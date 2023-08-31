@@ -35,7 +35,17 @@ function gameretrobowl(active: boolean, options: Array<Boolean | String>) {
     }
 }
 
+function bloons1(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/bloons')
+    }
+}
 
+function bloons2(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/bloons1')
+    }
+}
 
 function mouseTrail(active: boolean, options: Array<Boolean | String>) {
     if (active) {
@@ -112,5 +122,7 @@ export const functions: functionsObject = {
     'adremover': adremover,
     'editPageText': editPageText,
     'none': none,
-    'betterforceselect': betterforceselect
+    'betterforceselect': betterforceselect,
+    'bloons1': bloons1,
+    'bloons2': bloons2
     };
