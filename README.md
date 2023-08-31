@@ -2,28 +2,12 @@ pls star ⭐️
 <img src="https://delivery.contenthub.allstate.com/api/public/content/f0e5db4104d04bf386f97f6dc098bfc5?v=353a1ed1" alt="drawing" width="400"/>
 
 # car axle client
-![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![StaticBadge](https://img.shields.io/badge/lines_of_code-1079-blue?style=plastic) ![StaticBadge](https://img.shields.io/badge/comments-14-gray?style=plastic) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/nightly?style=plastic)
-
-
-
-## Release on AUGUST 31st!
+![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![StaticBadge](https://img.shields.io/badge/lines_of_code-1079-blue?style=plastic) ![StaticBadge](https://img.shields.io/badge/comments-14-gray?style=plastic) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/main?style=plastic)
 
 #### a bookmarklet with a good ui and some features
 Built with typescript and less.            
 WARNING            
 This bookmarklet is only fully supported on chrome. Check out our [compatibility graph](https://github.com/car-axle-client/car-axle-client/blob/main/docs/compatibility.md) to see if your browser is supported.
-## Features
-
-- Light, Dark, and color theme options
-- Hacks like:
-    - Better Force Select
-        - Actually gets all elements and forces selection from them
-    - AntiReload
-        - Prevent admins from forcing a reload on your computer
-    - Save Settings to site
-        - Will automatically apply settings to a specific site on run
-- Games from yexex loader
-
 
 ## Installation
 
@@ -39,9 +23,18 @@ Install on the [website](https://car-axle-client.github.io)
 `npx webpack`
 5. use a website such as Mrcoles bookmarklet generator to turn the output from `./build/index.js` into a bookmarklet
     
-## Demo
 
-Demo on website is currently outdated.
+## Features
+
+- Light, Dark, and color theme options
+- Hacks like:
+    - Better Force Select
+        - Actually gets all elements and forces selection from them
+    - AntiReload
+        - Prevent admins from forcing a reload on your computer
+    - Save Settings to site
+        - Will automatically apply settings to a specific site on run
+- Games from yexex loader
 
 ## Screenshots
 
