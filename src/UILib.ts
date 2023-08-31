@@ -24,7 +24,7 @@ export function createElement(
   options?: ElementAttributes,
 ): HTMLElement {
   const element: HTMLElement = document.createElement(tagName);
-
+    // TODO:: Make this better
   if (options) {
     if (options.id) {
       element.id = options.id;
@@ -45,6 +45,8 @@ export function createElement(
       element.setAttribute("value", options.value);
     }
   }
+
+  element.classList.add("cac__ALL")
 
   if (parent) {
     parent.appendChild(element);
