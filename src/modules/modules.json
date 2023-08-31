@@ -10,8 +10,7 @@
     {
         "section": "exploit",
         "display": "<i style='font-family:\"Comic Sans MS\"'>ad remover -</i>",
-        "function": "adremover",
-        "always": true
+        "function": "adremover"
     },
 
     {
@@ -35,6 +34,19 @@
         "function": "gameretrobowl"
     },
 
+    {
+        "section": "game",
+        "display": "Bloons TD 1",
+        "reset": true,
+        "function": "bloons1"
+    },
+    
+    {
+        "section": "game",
+        "display": "Bloons TD 2",
+        "reset": true,
+        "function": "bloons2"
+    },
     {
         "section": "fun",
         "display": "Mouse Trail",
