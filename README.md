@@ -9,6 +9,10 @@ a bookmarklet with a good ui and some features
 ## »»»» IF THERE IS A UI RELATED BUG ««««    
 DM ME ON DISCORD (@penguinify) WITH THE WEBSITE NAME AND I WILL FIX IT
 
+## Announcements
+announcements channel
+https://discord.gg/nac46r6Qn7
+
 ## Installation
 
 ### Website Installation
