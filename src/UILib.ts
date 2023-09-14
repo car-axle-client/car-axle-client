@@ -12,7 +12,7 @@ export interface Icon extends Component {
 interface ElementAttributes {
   id?: string;
   className?: string;
-  innerHTML?: string;
+  innerHTML?: string
   type?: string;
   name?: string;
   value?: string;

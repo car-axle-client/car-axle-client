@@ -47,6 +47,37 @@
         "reset": true,
         "function": "bloons2"
     },
+    
+    {
+        "section": "game",
+        "display": "Agar IO (i think)",
+        "reset": true,
+        "function": "agario"
+    },
+  
+    {
+        "section": "game",
+        "display": "Moto XM3 Winter",
+        "reset": true,
+        "function":"motoxm3winter"
+    },
+
+    {
+      "section": "game",
+      "display": "slope",
+      "reset": true,
+      "function": "slope"
+    },
+
+    {
+      "section": "game",
+      "display": "rom loader",
+      "reset": true,
+      "function": "rom"
+    },
+
+
+
     {
         "section": "fun",
         "display": "Mouse Trail",
@@ -64,7 +95,7 @@
 
     {
         "section": "client",
-        "display": "v0.8.0 (UI 2.0)",
+        "display": "v2 (i:0)",
         "always": false,
         "reset": true
     },

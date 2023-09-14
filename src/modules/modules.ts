@@ -29,6 +29,26 @@ function game2048(active: boolean, options: Array<Boolean | String>) {
     }
 }
 
+function slope(active:boolean, options: Array<Boolean | String>) {
+  
+  if (active) {
+    changeGame("https://penguinify-web-dev.github.io/slope/index.html")
+  }
+}
+
+function motoxm3winter(active:boolean, options: Array<Boolean | String>) {
+  if (active) {
+    changeGame("https://penguinify-web-dev.github.io/wintermotox3m/index.html")
+  }
+  
+}
+
+function agario(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame("https://penguinify-web-dev.github.io/agario-minigame/dots.html")
+  }
+}
+
 function gameretrobowl(active: boolean, options: Array<Boolean | String>) {
     if (active) {
         changeGame('https://penguinify-web-dev.github.io/retro-bowl/retro.html')
@@ -124,5 +144,8 @@ export const functions: functionsObject = {
     'none': none,
     'betterforceselect': betterforceselect,
     'bloons1': bloons1,
-    'bloons2': bloons2
+    'bloons2': bloons2,
+    'agario': agario,
+    'motoxm3winter': motoxm3winter,
+    'slope': slope
     };

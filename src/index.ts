@@ -2,6 +2,7 @@ import { UIManager } from "./UIManager"
 import { functions } from "./modules/modules"
 import { DEBUG } from "./global/constant"
 import { createElement } from "./UILib"
+import { getUpdate } from "./updater"
 
 type moduleJSON = {
     display: string,
@@ -83,7 +84,10 @@ function main(): void {
             // toggles fullscreen for the iframe
             gamesIframe.requestFullscreen()
         }
-    })
+   })
+  
+  getUpdate(UI.container)
+
 }
 
 // i hope this works
