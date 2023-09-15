@@ -29,6 +29,12 @@ function game2048(active: boolean, options: Array<Boolean | String>) {
     }
 }
 
+function rom(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/temptations/index.html')
+    }
+}
+
 function slope(active:boolean, options: Array<Boolean | String>) {
   
   if (active) {
@@ -54,10 +60,19 @@ function gameretrobowl(active: boolean, options: Array<Boolean | String>) {
         changeGame('https://penguinify-web-dev.github.io/retro-bowl/retro.html')
     }
 }
-
+function bbs(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/basketball-stars/index.html')
+    }
+}
 function bloons1(active: boolean, options: Array<Boolean | String>) {
     if (active) {
         changeGame('https://penguinify-web-dev.github.io/bloons')
+    }
+}
+function yohoho(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/yohoho/index.html')
     }
 }
 
@@ -121,14 +136,25 @@ function betterforceselect(active: boolean, options: Array<Boolean | String>) {
 
 }
 
-function savecurrentsettings(active: boolean, options: Array<Boolean | String>) {
-    if (active) {
-        let enabledOptions = []
+function uhoh(active: boolean, options: Array<Boolean | String>) {
+  function a(e: any){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(https://i.chzbgr.com/full/5759452672/h934FBF16/my-eyes-my-eyessssssssss)";}} a(document);
 
-    }
 }
 
+function suggestfeature(active: boolean, options: Array<Boolean | String>) {
+  if (active) {
+    window.open("https://github.com/car-axle-client/car-axle-client/issues/new?assignees=&labels=enhancement&projects=&template=new_feature.md&title=Feature")
+  }
+}
 
+function checkupdate(active: boolean, options: Array<Boolean | String>) {
+  if (active) {
+    import("../updater")
+      .then((updater) => {
+        updater.getUpdate(document.getElementById("cac__CONATAINER") as HTMLElement)
+      })
+  }
+}
 
 type functionsObject = {
     [key: string]: (active: boolean, options: Array<Boolean | String>) => void
@@ -147,5 +173,10 @@ export const functions: functionsObject = {
     'bloons2': bloons2,
     'agario': agario,
     'motoxm3winter': motoxm3winter,
-    'slope': slope
+    'slope': slope,
+    'rom': rom,
+    'yohoho': yohoho,
+    'uhoh': uhoh,
+    'bbs': bbs,
+    'suggest': suggestfeature
     };

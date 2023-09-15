@@ -21,6 +21,19 @@
     },
 
     {
+      "section": "game",
+      "display": "rom loader",
+      "reset": true,
+      "function": "rom"
+    },
+     {
+        "section": "game",
+        "display": "yohoho",
+        "reset": true,
+        "function": "yohoho"
+    },
+
+   {
         "section": "game",
         "display": "2048",
         "reset": true,
@@ -71,13 +84,17 @@
 
     {
       "section": "game",
-      "display": "rom loader",
+      "display": "Basketball Stars",
       "reset": true,
-      "function": "rom"
+      "function": "bbs"
     },
 
-
-
+    {
+      "section": "client",
+      "display": "Suggest A Feature",
+      "reset": true,
+      "function": "suggest"
+    },
     {
         "section": "fun",
         "display": "Mouse Trail",
@@ -91,13 +108,32 @@
         "function": "editPageText"
     },
 
-
+    {
+        "section": "fun",
+        "display": "dont use this",
+        "function": "uhoh",
+        "always": true
+    },
 
     {
         "section": "client",
         "display": "v2 (i:0)",
         "always": false,
         "reset": true
+    },
+    {
+        "section": "client",
+        "display": "Backslash to hide and unhide!",
+        "always": false,
+        "reset": true
+    },
+
+
+    {
+      "section": "client",
+      "display": "Check for updates",
+      "reset": true,
+      "function": "checkupdate"
     },
 
 
@@ -106,10 +142,14 @@
         "display": "yexex for the games (every game is skidded from him)",
         "reset": true
     },
-
     {
         "section": "credit",
-        "display": "car axle client by @penguinify",
+        "display": "EmulatorJS Community",
+        "reset": true
+    },
+    {
+        "section": "credit",
+        "display": "@penguinify on discord",
         "reset": true
     }
 ]
