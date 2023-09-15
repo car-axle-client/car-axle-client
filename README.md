@@ -29,7 +29,8 @@ Install on the [website](https://car-axle-client.github.io)
 
 
 ## Features
-
+- Games list:
+  - []
 - Light, Dark, and color theme options
 - Hacks like:
     - Better Force Select
