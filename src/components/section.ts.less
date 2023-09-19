@@ -1,5 +1,16 @@
 @import "../global/variables.less";
 
+@keyframes introanim {
+ 0% {
+   transform: translateX(-50%);
+   opacity: 0
+ }
+ 100% {
+   transform: translateX(0px);
+   opacity: 1;
+ }
+}
+
 .cac__section {
     width: 86% !important;
     height: 6% !important;
@@ -13,6 +24,7 @@
     margin-top: 5% !important;
     transition: 0.5s !important;
     cursor: pointer !important;
+    animation: 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) introanim forwards;
 
     &:hover {
         transform: translateX(5px) !important;
