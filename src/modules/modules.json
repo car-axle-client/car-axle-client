@@ -33,13 +33,20 @@
         "function": "yohoho"
     },
 
-   {
+    {
         "section": "game",
         "display": "2048",
         "reset": true,
         "function": "game2048"
     },
-
+    
+    {
+        "section": "game",
+        "display": "Minecraft",
+        "reset": true,
+        "function": "minecraft"
+    },
+    
     {
         "section": "game",
         "display": "Retro Bowl",

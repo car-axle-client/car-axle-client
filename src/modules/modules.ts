@@ -75,7 +75,11 @@ function yohoho(active: boolean, options: Array<Boolean | String>) {
         changeGame('https://penguinify-web-dev.github.io/yohoho/index.html')
     }
 }
-
+function minecraft(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/Offline_Download_Version.html')
+    }
+}
 function bloons2(active: boolean, options: Array<Boolean | String>) {
     if (active) {
         changeGame('https://penguinify-web-dev.github.io/bloons1')
@@ -178,5 +182,6 @@ export const functions: functionsObject = {
     'yohoho': yohoho,
     'uhoh': uhoh,
     'bbs': bbs,
-    'suggest': suggestfeature
+    'suggest': suggestfeature,
+    'minecraft': minecraft
     };
