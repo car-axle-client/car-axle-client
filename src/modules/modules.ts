@@ -215,13 +215,10 @@ export const functions: functionsObject = {
     'uhoh': uhoh,
     'bbs': bbs,
     'suggest': suggestfeature,
-<<<<<<< Updated upstream
-    'minecraft': minecraft
-=======
+    'minecraft': minecraft,
     'motoxm3': motoxm3,
     'ducklife4': ducklife4,
     'checkupdate': checkupdate,
     'bb': bb,
-    'bloons4': bloons4,
->>>>>>> Stashed changes
+    'bloons4': bloons4
     };

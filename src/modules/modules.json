@@ -32,9 +32,7 @@
         "reset": true,
         "function": "yohoho"
     },
-<<<<<<< Updated upstream
 
-=======
     {
         "section": "game",
         "display": "Burrito Bison",
@@ -60,7 +58,6 @@
         "function": "motoxm3"
     },
     
->>>>>>> Stashed changes
     {
         "section": "game",
         "display": "2048",
