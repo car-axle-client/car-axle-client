@@ -1,5 +1,6 @@
 @import "../global/variables.less";
 
+<<<<<<< Updated upstream
 @keyframes introanim {
  0% {
    transform: translateX(-50%);
@@ -9,6 +10,15 @@
    transform: translateX(0px);
    opacity: 1;
  }
+=======
+@keyframes slidein {
+  0% {
+      transform: translateX(-20%);
+  }
+  100% {
+      transform: translateX(0px);
+  }
+>>>>>>> Stashed changes
 }
 
 .cac__section {
@@ -24,7 +34,11 @@
     margin-top: 5% !important;
     transition: 0.5s !important;
     cursor: pointer !important;
+<<<<<<< Updated upstream
     animation: 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) introanim forwards;
+=======
+    animation: slidein 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+>>>>>>> Stashed changes
 
     &:hover {
         transform: translateX(5px) !important;

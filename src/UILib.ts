@@ -10,47 +10,47 @@ export interface Icon extends Component {
 }
 
 interface ElementAttributes {
-  id?: string;
-  className?: string;
-  innerHTML?: string
-  type?: string;
-  name?: string;
-  value?: string;
+    id?: string;
+    className?: string;
+    innerHTML?: string
+    type?: string;
+    name?: string;
+    value?: string;
 }
 
 export function createElement(
-  tagName: string,
-  parent: Element,
-  options?: ElementAttributes,
-): HTMLElement {
-  const element: HTMLElement = document.createElement(tagName);
-    // TODO:: Make this better
-  if (options) {
-    if (options.id) {
-      element.id = options.id;
+    tagName: string,
+    parent: Element,
+    options?: ElementAttributes,
+    ): HTMLElement {
+    const element: HTMLElement = document.createElement(tagName);
+    // TODO:: Make this better or use a switch or smth
+    if (options) {
+        if (options.id) {
+            element.id = options.id;
+        }
+        if (options.className) {
+            element.className = options.className;
+        }
+        if (options.innerHTML) {
+            element.innerHTML = options.innerHTML;
+        }
+        if (options.type) {
+            element.setAttribute("type", options.type);
+        }
+        if (options.name) {
+             element.setAttribute("name", options.name);
+        }
+        if (options.value) {
+            element.setAttribute("value", options.value);
+        }
     }
-    if (options.className) {
-      element.className = options.className;
-    }
-    if (options.innerHTML) {
-      element.innerHTML = options.innerHTML;
-    }
-    if (options.type) {
-      element.setAttribute("type", options.type);
-    }
-    if (options.name) {
-      element.setAttribute("name", options.name);
-    }
-    if (options.value) {
-      element.setAttribute("value", options.value);
-    }
-  }
 
-  element.classList.add("cac__ALL")
+    element.classList.add("cac__ALL")
 
-  if (parent) {
-    parent.appendChild(element);
-  }
+    if (parent) {
+        parent.appendChild(element);
+    }
 
-  return element;
+    return element;
 }

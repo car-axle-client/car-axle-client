@@ -7,16 +7,21 @@ import { createElement } from "./UILib";
 import "./global/style.less";
 
 export class UIManager {
-    public container: HTMLElement;
-    public gui: HTMLElement;
-    public sidebar: HTMLElement;
+    public container!: HTMLElement;
+    public gui!: HTMLElement;
+    public sidebar!: HTMLElement;
     public sections: Array < Section > = [];
     public enabledSection!: Section;
-    public mainContent: HTMLElement;
-    public tabbar: HTMLElement;
-    private _sectionBackground: HTMLElement;
+    public mainContent!: HTMLElement;
+    public tabbar!: HTMLElement;
+    private _sectionBackground!: HTMLElement;
 
     constructor() {
+        this._createGUI()
+        this._createIcons()
+    }
+
+    private _createGUI(): void {
         this.container = createElement("div", document.body, {
             id: "cac__CONTAINER"
         });
@@ -34,15 +39,13 @@ export class UIManager {
         });
         this.tabbar = createElement("div", this.mainContent, {
             id: "cac__TABBAR"
-        })
-
+        })   
+        
         // Aesthetic
         createElement("div", this.sidebar, {
             id: "cac__LOGO",
             innerHTML: "car axle client",
         });
-
-        this._createIcons()
     }
 
     private _createIcons(): void {

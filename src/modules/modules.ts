@@ -1,6 +1,18 @@
 // i was going to make each module a file but you end up having 1000 files and it's a pain to manage
 // so yh you get this fat file
 // good luck reading it
+//
+//
+//
+//
+//
+// GOOD LUCK
+// YOU ARE A BRAVE SOLDIER
+//
+//
+//
+//
+//
 
 // Exploits
 
@@ -29,6 +41,26 @@ function game2048(active: boolean, options: Array<Boolean | String>) {
     }
 }
 
+function bb(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/bb/index.html')
+    }
+}
+function ducklife4(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/ducklife4/index.html')
+    }
+}
+function bloons4(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/btd4.html')
+    }
+}
+function motoxm3(active: boolean, options: Array<Boolean | String>) {
+    if (active) {
+        changeGame('https://penguinify-web-dev.github.io/motox3m/index.html')
+    }
+}
 function rom(active: boolean, options: Array<Boolean | String>) {
     if (active) {
         changeGame('https://penguinify-web-dev.github.io/temptations/index.html')
@@ -183,5 +215,13 @@ export const functions: functionsObject = {
     'uhoh': uhoh,
     'bbs': bbs,
     'suggest': suggestfeature,
+<<<<<<< Updated upstream
     'minecraft': minecraft
+=======
+    'motoxm3': motoxm3,
+    'ducklife4': ducklife4,
+    'checkupdate': checkupdate,
+    'bb': bb,
+    'bloons4': bloons4,
+>>>>>>> Stashed changes
     };

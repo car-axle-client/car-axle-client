@@ -29,19 +29,14 @@ function addModules(UI: UIManager): void {
     for (let _module of modules) {
         const section = UI.getSectionFromID(_module['section'])
 
-        if (section == null) {
-            DEBUG && console.log(`[UI] Section ${_module['section']} not found!`)
-            continue
-        }
+        if (section == null) continue
 
         const onClickFunction: (active: boolean, options: Array<boolean | string>) => void = functions[_module['function']] || functions['none']
         _module['always'] = _module['always'] || false
         _module['reset'] = _module['reset'] || false
         _module['options'] = _module['options'] || {}
-        
+              
         section.addButton(_module['display'], _module['always'], _module['reset'], onClickFunction, true, _module['options'])
-
-        DEBUG && console.log(`[UI] Added module ${_module['display']} to section ${_module['section']}`)
     }
      
     if (localStorage.getItem('car-axle-client')) {
@@ -53,9 +48,9 @@ function addModules(UI: UIManager): void {
 
 function main(): void {
     const UI: UIManager = new UIManager()
-    
+     
 
-
+    // i just put the icons here cause im lazy af
     const games = UI.newSection("game", "games", "actual games that work (maybe)", '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg>', true)
 
     // this section is special
