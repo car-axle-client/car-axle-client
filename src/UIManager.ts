@@ -4,6 +4,7 @@ import AddSave from "./components/icons/saveicon"
 import Destroy from "./components/icons/xicon"
 import Hide from "./components/icons/hideicon" 
 import { createElement } from "./UILib";
+import { moduleDefinition } from "./modules/moduleapi";
 import "./global/style.less";
 
 export class UIManager {
@@ -143,6 +144,47 @@ export class UIManager {
         }
 
         this.container.style.display = "none";
+    }
+    
+    addModulesfromList(list: moduleDefinition[]) {
+        for (let _module of list) {
+            
+            let section = this.getSectionFromID(_module['section'])
+            if (!section) continue
+            
+            section.addButton(
+                _module["displayName"],
+                _module["always"] || false,
+                _module["reset"] || false,
+                _module["onactive"],
+                _module["ondisable"]
+            )
+            
+        }
+    }
+
+    addModulesFromImport(modules: any) {
+        for (let _moduleKey of Object.keys(modules)) {
+            
+            if (Array.isArray(modules[_moduleKey]["default"])) {
+                this.addModulesfromList(modules[_moduleKey]["default"])
+                
+                continue
+            }
+
+            let _module: moduleDefinition = modules[_moduleKey]["default"]
+            let section = this.getSectionFromID(_module['section'])
+
+            if (!section) continue
+
+            section.addButton(
+                _module["displayName"],
+                _module["always"] || false,
+                _module["reset"] || false,
+                _module["onactive"],
+                _module["ondisable"]
+            )        
+        }
     }
 
     getSectionFromID(id: string): Section | undefined {

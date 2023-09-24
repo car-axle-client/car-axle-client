@@ -1,7 +1,7 @@
 // Custom UPDATER for car-axle-client
 import Notification from "./components/notification"
 
-const current_version = 1
+const current_version = 3
 const i = 0
 
 function showUpdate(parent: HTMLElement, new_ver: string) {

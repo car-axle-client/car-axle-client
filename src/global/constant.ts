@@ -1,2 +1,1 @@
-export const DEBUG = true;
-export const LITE = false
+export const GAMESLINK = "https://penguinify-web-dev.github.io/"

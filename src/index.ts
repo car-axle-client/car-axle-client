@@ -1,18 +1,15 @@
 import { UIManager } from "./UIManager"
-import { functions } from "./modules/modules"
-import { DEBUG } from "./global/constant"
 import { createElement } from "./UILib"
 import { getUpdate } from "./updater"
+import { moduleDefinition } from "./modules/moduleapi"
 
-type moduleJSON = {
-    display: string,
-    section: string,
-    function: string,
-    always?: boolean,
-    reset?: boolean,
-    options?: any
-}
+// import modules
+const modules: any = {};
+let context = require.context("./modules/modules", true, /\.ts$/)
+context.keys().forEach((key: any) => (modules[key] = context(key)));
 
+// load
+// jk f this
 function loadModuleValues(UI: UIManager) {
     // i let ts infer here and I force as string since we already have null check
     const cacStorage = JSON.parse(localStorage.getItem('car-axle-client') as string)
@@ -23,32 +20,9 @@ function loadModuleValues(UI: UIManager) {
 }
 
 
-function addModules(UI: UIManager): void {
-    const modules: moduleJSON[] = require('./modules/modules.json')
-
-    for (let _module of modules) {
-        const section = UI.getSectionFromID(_module['section'])
-
-        if (section == null) continue
-
-        const onClickFunction: (active: boolean, options: Array<boolean | string>) => void = functions[_module['function']] || functions['none']
-        _module['always'] = _module['always'] || false
-        _module['reset'] = _module['reset'] || false
-        _module['options'] = _module['options'] || {}
-              
-        section.addButton(_module['display'], _module['always'], _module['reset'], onClickFunction, true, _module['options'])
-    }
-     
-    if (localStorage.getItem('car-axle-client')) {
-        loadModuleValues(UI)
-    }
-}
-
-
 
 function main(): void {
-    const UI: UIManager = new UIManager()
-     
+    const UI: UIManager = new UIManager() 
 
     // i just put the icons here cause im lazy af
     const games = UI.newSection("game", "games", "actual games that work (maybe)", '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg>', true)
@@ -63,8 +37,8 @@ function main(): void {
     UI.newSection("client", "Client", 'client settings and misc stuff', '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>')
     UI.newSection("credit", "Credits", 'i am a professional skidder', '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg>')
 
-    addModules(UI)
 
+    modules && UI.addModulesFromImport(modules)
     // Checks if backslash is pressed
     document.addEventListener('keydown', (e) => {
         if (e.key === '\\') {
@@ -75,9 +49,10 @@ function main(): void {
             // toggles fullscreen for the iframe
             gamesIframe.requestFullscreen()
         }
-   })
-  
-  getUpdate(UI.container)
+    })
+ 
+    // i get the update last cause why not?
+    getUpdate(UI.container)
 
 }
 

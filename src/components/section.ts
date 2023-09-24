@@ -52,8 +52,8 @@ export class Section {
     }
 
     // fat lazy code
-    addButton(title: string, always: boolean, reset: boolean, onClickFunction: (active: boolean, options: Array<boolean | string>) => void, render: boolean = false, options: any /* should nnot be any but here we are.*/): void {
-        this.buttons.push(new Button(this.sectionContent, title, always, reset, onClickFunction, render, options))
+    addButton(title: string, always: boolean, reset: boolean, onEnable: () => void, onDisable: () => void, render: boolean = false, options: any /* should nnot be any but here we are.*/ = []): void {
+        this.buttons.push(new Button(this.sectionContent, title, always, reset, onEnable, onDisable, options))
     }
 
     getAllButtonValues() {
