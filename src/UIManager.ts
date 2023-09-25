@@ -5,6 +5,7 @@ import Destroy from './components/icons/xicon'
 import Hide from './components/icons/hideicon'
 import { createElement } from './UILib'
 import { moduleDefinition } from './modules/moduleapi'
+import { VERSION } from './global/constant'
 import './global/style.less'
 
 export class UIManager {
@@ -45,7 +46,7 @@ export class UIManager {
         // Aesthetic
         createElement('div', this.sidebar, {
             id: 'cac__LOGO',
-            innerHTML: 'car axle client v3',
+            innerHTML: `car axle client v${VERSION}`,
         })
     }
 

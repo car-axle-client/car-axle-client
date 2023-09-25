@@ -1,7 +1,6 @@
 import { UIManager } from './UIManager'
 import { createElement } from './UILib'
 import { getUpdate } from './updater'
-import { moduleDefinition } from './modules/moduleapi'
 
 // import modules
 const modules: any = {}
