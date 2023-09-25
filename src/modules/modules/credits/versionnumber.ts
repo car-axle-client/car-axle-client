@@ -1,4 +1,4 @@
-import { moduleDefinition, none } from "../moduleapi"
+import { moduleDefinition, none } from "../../moduleapi"
 
 const plugin: moduleDefinition = {
     displayName: "v3 i:0",
