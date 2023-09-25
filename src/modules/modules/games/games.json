@@ -42,5 +42,33 @@
     {
         "name": "slope",
         "url": "slope/index.html"
+    },
+    {
+        "name": "2048",
+        "url": "2048/index.html"
+    },
+    {
+        "name": "Geometry Dash",
+        "url": "geo.html"
+    },
+    {
+        "name": "Bloons TD 1",
+        "url": "bloons.html"
+    },
+    {
+        "name": "Bloons TD 2",
+        "url": "bloons1.html"
+    },
+    {
+        "name": "Super Mario 64",
+        "url": "sm64/index.html"
+    },
+    {
+        "name": "Quake",
+        "url": "quake/index.html"
+    },
+    {
+        "name": "Binding of Isaac",
+        "url": "boi.html"
     }
 ]
