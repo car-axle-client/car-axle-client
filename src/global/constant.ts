@@ -1,1 +1,1 @@
-export const GAMESLINK = "https://penguinify-web-dev.github.io/";
+export const GAMESLINK = 'https://penguinify-web-dev.github.io/'

@@ -1,12 +1,12 @@
 # What you can do:
 
-- Refractoring
+-   Refractoring
 
-- Issue Fixing
+-   Issue Fixing
 
-- Feature Improvement/Additions
+-   Feature Improvement/Additions
 
-- Optimizations
+-   Optimizations
 
 Just make a PR
 

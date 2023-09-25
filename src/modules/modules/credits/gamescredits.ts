@@ -1,12 +1,12 @@
-import { moduleDefinition, none } from "../../moduleapi";
+import { moduleDefinition, none } from '../../moduleapi'
 
 const plugin: moduleDefinition = {
-  displayName: "yexex for the games",
-  id: "cred",
-  section: "credit",
-  onactive: none,
-  ondisable: none,
-  reset: true,
-};
+    displayName: 'yexex for the games',
+    id: 'cred',
+    section: 'credit',
+    onactive: none,
+    ondisable: none,
+    reset: true,
+}
 
-export default plugin;
+export default plugin

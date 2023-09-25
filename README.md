@@ -34,17 +34,17 @@ Install on the [website](https://car-axle-client.github.io)
 
 ## Features
 
-- Games list:
-  - [Games](https://github.com/car-axle-client/car-axle-client/blob/main/docs/games.md)
-- Light, Dark, and color theme options
-- Hacks like:
-  - Better Force Select
-    - Actually gets all elements and forces selection from them
-  - AntiReload
-    - Prevent admins from forcing a reload on your computer
-  - Save Settings to site
-    - Will automatically apply settings to a specific site on run
-- Games from yexex loader
+-   Games list:
+    -   [Games](https://github.com/car-axle-client/car-axle-client/blob/main/docs/games.md)
+-   Light, Dark, and color theme options
+-   Hacks like:
+    -   Better Force Select
+        -   Actually gets all elements and forces selection from them
+    -   AntiReload
+        -   Prevent admins from forcing a reload on your computer
+    -   Save Settings to site
+        -   Will automatically apply settings to a specific site on run
+-   Games from yexex loader
 
 ## Screenshots
 

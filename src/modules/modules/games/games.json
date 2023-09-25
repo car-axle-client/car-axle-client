@@ -1,74 +1,74 @@
 [
-  {
-    "name": "Moto X3M",
-    "url": "motox3m/index.html"
-  },
-  {
-    "name": "Rom Loader",
-    "url": "temptations/index.html"
-  },
-  {
-    "name": "yohoho",
-    "url": "yohoho/index.html"
-  },
-  {
-    "name": "Burrito Bison",
-    "url": "bb/index.html"
-  },
-  {
-    "name": "Bloons TD 4",
-    "url": "btd4.html"
-  },
-  {
-    "name": "Minecraft",
-    "url": "offline_download_version.html"
-  },
-  {
-    "name": "Retrobowl",
-    "url": "retrobowl/retro.html"
-  },
-  {
-    "name": "Agayio",
-    "url": "agario-minigame/dots.html"
-  },
-  {
-    "name": "Moto X3M Winter",
-    "url": "wintermotox3m/index.html"
-  },
-  {
-    "name": "Basketball Stars",
-    "url": "basketball-stars/index.html"
-  },
-  {
-    "name": "slope",
-    "url": "slope/index.html"
-  },
-  {
-    "name": "2048",
-    "url": "2048/index.html"
-  },
-  {
-    "name": "Geometry Dash",
-    "url": "geo.html"
-  },
-  {
-    "name": "Bloons TD 1",
-    "url": "bloons.html"
-  },
-  {
-    "name": "Bloons TD 2",
-    "url": "bloons1.html"
-  },
-  {
-    "name": "Super Mario 64",
-    "url": "sm64/index.html"
-  },
-  {
-    "name": "Quake",
-    "url": "quake/index.html"
-  },
-  {
-    "name": "Binding of Isaac",
-    "url": "boi.html"
-  }
+    {
+        "name": "Moto X3M",
+        "url": "motox3m/index.html"
+    },
+    {
+        "name": "Rom Loader",
+        "url": "temptations/index.html"
+    },
+    {
+        "name": "yohoho",
+        "url": "yohoho/index.html"
+    },
+    {
+        "name": "Burrito Bison",
+        "url": "bb/index.html"
+    },
+    {
+        "name": "Bloons TD 4",
+        "url": "btd4.html"
+    },
+    {
+        "name": "Minecraft",
+        "url": "offline_download_version.html"
+    },
+    {
+        "name": "Retrobowl",
+        "url": "retrobowl/retro.html"
+    },
+    {
+        "name": "Agayio",
+        "url": "agario-minigame/dots.html"
+    },
+    {
+        "name": "Moto X3M Winter",
+        "url": "wintermotox3m/index.html"
+    },
+    {
+        "name": "Basketball Stars",
+        "url": "basketball-stars/index.html"
+    },
+    {
+        "name": "slope",
+        "url": "slope/index.html"
+    },
+    {
+        "name": "2048",
+        "url": "2048/index.html"
+    },
+    {
+        "name": "Geometry Dash",
+        "url": "geo.html"
+    },
+    {
+        "name": "Bloons TD 1",
+        "url": "bloons.html"
+    },
+    {
+        "name": "Bloons TD 2",
+        "url": "bloons1.html"
+    },
+    {
+        "name": "Super Mario 64",
+        "url": "sm64/index.html"
+    },
+    {
+        "name": "Quake",
+        "url": "quake/index.html"
+    },
+    {
+        "name": "Binding of Isaac",
+        "url": "boi.html"
+    }
 ]
