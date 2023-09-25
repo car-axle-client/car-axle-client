@@ -1,31 +1,30 @@
-const path = require('path');
+const path = require("path");
 module.exports = {
-  entry: './src/index.ts', // Entry point of your application
-  mode: 'production', // Or 'development' for non-minified output
+  entry: "./src/index.ts", // Entry point of your application
+  mode: "production", // Or 'development' for non-minified output
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
       },
       {
         test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader'],
+        use: ["style-loader", "css-loader", "less-loader"],
       },
-
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: [".ts", ".js"],
     alias: {
-        '@': path.resolve('src')
-        // doesn't work for some reason??
-    }
-},
+      "@": path.resolve("src"),
+      // doesn't work for some reason??
+    },
+  },
   output: {
-    filename: 'index.js', // Output bundle filename
+    filename: "index.js", // Output bundle filename
     // path: path.resolve(__dirname, 'build'), // Output directory
-    path: path.resolve(__dirname, 'testing/webpage'), // testing directory
+    path: path.resolve(__dirname, "testing/webpage"), // testing directory
   },
 };

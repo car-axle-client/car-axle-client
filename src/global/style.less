@@ -1,116 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import "variables.less";
 
-
 .cac__ALL {
-    font-family: 'Nunito', sans-serif !important;
-    color:@text !important;
-    border: none;
-    margin: none;
-    font-weight: auto;
+  font-family: "Nunito", sans-serif !important;
+  color: @text !important;
+  border: none;
+  margin: none;
+  font-weight: auto;
 }
 
 svg {
-    fill: @text;
+  fill: @text;
 }
 
 #cac__CONTAINER {
-    background-color: @secondary6;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
+  background-color: @secondary6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
 }
 
 #cac__GUI {
-    width:79%;
-    height: 71%;
-    background-color: @secondary6;
-    backdrop-filter: blur(10px);
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
+  width: 79%;
+  height: 71%;
+  background-color: @secondary6;
+  backdrop-filter: blur(10px);
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
 }
 
 #cac__SIDEBAR {
-    width: 20%;
-    height: 100%;
-    background-color: @secondary6;
-    text-align: left;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    overflow: none;
-    flex-direction: column;
-    align-items: center;
+  width: 20%;
+  height: 100%;
+  background-color: @secondary6;
+  text-align: left;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  overflow: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 #cac__MAINCONTENT {
-    width:80%;
-    height: 100%;
-    background-color: transparent;
-    text-align: left;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #cac__LOGO {
-    width: 100%;
-    height: 8%;
-    background-color: @theme;
-    text-align: center;
-    border-radius: 20px 0 20px 0;
-    position: relative;
-    font-size: 1.75vw;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 8%;
+  background-color: @theme;
+  text-align: center;
+  border-radius: 20px 0 20px 0;
+  position: relative;
+  font-size: 1.75vw;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cac__section__BACKGROUND {
-    width: 95%;
-    height: 6%;
-    background-color: @theme;
-    text-align: center;
-    border-radius: 10px;
-    position: absolute;
+  width: 95%;
+  height: 6%;
+  background-color: @theme;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
 }
 
 #cac__games__iframe {
-    width: 87%;
-    height: 80%;
-    background-color: transparent;
-    border-radius: 20px;
-    margin-right: 2%;
-    border: 4px solid @theme;
+  width: 87%;
+  height: 80%;
+  background-color: transparent;
+  border-radius: 20px;
+  margin-right: 2%;
+  border: 4px solid @theme;
 }
 
 #cac__TABBAR {
-    width:auto;
-    z-index: 100000000000000;
-    height: 3vw;
-    background-color: @theme;
-    border-radius: 0px 20px 0 20px;
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    padding-left: 0.25vw;
+  width: auto;
+  z-index: 100000000000000;
+  height: 3vw;
+  background-color: @theme;
+  border-radius: 0px 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  padding-left: 0.25vw;
 
-    &:hover .cac__tabbar__button {
-        opacity: 0.5;
-    }
+  &:hover .cac__tabbar__button {
+    opacity: 0.5;
+  }
 
-    .cac__tabbar__button:hover {
-        opacity: 1;
-    }
+  .cac__tabbar__button:hover {
+    opacity: 1;
+  }
 }

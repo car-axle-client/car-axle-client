@@ -1,10 +1,14 @@
 # Games list
+
 ## Currently Added
+
 2048
 Retro Bowl
 Bloons 1
 Bloons 2
+
 ## Planned Additions
+
 Moto XM3 + Winter
 Slope
 Cookie Clicker
