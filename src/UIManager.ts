@@ -45,7 +45,7 @@ export class UIManager {
         // Aesthetic
         createElement("div", this.sidebar, {
             id: "cac__LOGO",
-            innerHTML: "car axle client",
+            innerHTML: "car axle client v3",
         });
     }
 
