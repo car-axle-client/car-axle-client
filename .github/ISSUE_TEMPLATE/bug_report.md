@@ -33,5 +33,9 @@ If applicable, add screenshots to help explain your problem.
 
 If any...
 
+** Version **
+
+tell me
+
 **Additional context**
 Add any other context about the problem here.
