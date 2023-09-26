@@ -30,7 +30,7 @@ Install on the [website](https://car-axle-client.github.io)
 3. Make your edits
 4. build with
    `npx webpack`
-5. use a website such as Mrcoles bookmarklet generator to turn the output from `./build/index.js` into a bookmarklet
+5. use a website such as Mrcoles bookmarklet generator to turn the output from `./build/index.js or ./testing/webpage/index.js` into a bookmarklet
 
 ## Features
 
