@@ -1,12 +1,10 @@
-import { moduleDefinition, none } from '../../moduleapi'
+import { moduleDefinition } from '../../moduleapi'
 
 const plugin: moduleDefinition = {
     displayName: 'yexex for the games',
     id: 'cred',
     section: 'credit',
-    onactive: none,
-    ondisable: none,
-    reset: true,
+    disabled: true,
 }
 
 export default plugin

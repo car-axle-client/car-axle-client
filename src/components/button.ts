@@ -24,6 +24,7 @@ export default class Button implements Component {
     private onDisable: () => void
     private always: boolean
     private reset: boolean
+    private disabled
     private menuOptions: menuOption[]
     private menuValues: Array<boolean | string> = []
 
@@ -34,6 +35,7 @@ export default class Button implements Component {
         reset: boolean,
         onEnable: () => void,
         onDisable: () => void,
+        disabled: boolean,
         menuOptions: menuOption[] = []
     ) {
         this.parent = parent
@@ -43,6 +45,7 @@ export default class Button implements Component {
         this.always = always
         this.reset = reset
         this.menuOptions = menuOptions
+        this.disabled = disabled
 
         if (menuOptions.length > 0)
             this.title +=
@@ -146,10 +149,14 @@ export default class Button implements Component {
             className: 'cac__button',
             innerHTML: this.title,
         })
-        this.button.addEventListener(
-            'mousedown',
-            this._handleMouseDown.bind(this)
-        )
+
+        if (!this.disabled) {
+            this.button.addEventListener(
+                'mousedown',
+                this._handleMouseDown.bind(this)
+            )
+        }
+        console.log(this.disabled)
         this.button.addEventListener('contextmenu', (e) => e.preventDefault())
 
         if (this.menuOptions.length > 0) {

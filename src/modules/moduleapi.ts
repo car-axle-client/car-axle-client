@@ -6,9 +6,10 @@ export type moduleDefinition = {
     section: string
     reset?: boolean
     always?: boolean
+    disabled?: boolean
     // Options are wip
-    onactive: () => void
-    ondisable: () => void
+    onactive?: () => void
+    ondisable?: () => void
 }
 
 // Function to change link of the iframe

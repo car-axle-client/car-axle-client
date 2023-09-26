@@ -4,7 +4,7 @@ import AddSave from './components/icons/saveicon'
 import Destroy from './components/icons/xicon'
 import Hide from './components/icons/hideicon'
 import { createElement } from './UILib'
-import { moduleDefinition } from './modules/moduleapi'
+import { moduleDefinition, none } from './modules/moduleapi'
 import { VERSION, CLIENTNAME } from './global/constant'
 import './global/style.less'
 
@@ -195,19 +195,23 @@ export class UIManager {
         for (let _module of list) {
             let section = this.getSectionFromID(_module['section'])
             if (!section) continue
-
+            console.log(_module)
             section.addButton(
                 _module['displayName'],
                 _module['always'] || false,
                 _module['reset'] || false,
-                _module['onactive'],
-                _module['ondisable']
+                _module['onactive'] || none,
+                _module['ondisable'] || none,
+                _module['disabled'] || false
             )
         }
     }
 
     addModulesFromImport(modules: any) {
         for (let _moduleKey of Object.keys(modules)) {
+            if (!modules[_moduleKey]['default']) continue
+
+
             if (Array.isArray(modules[_moduleKey]['default'])) {
                 this.addModulesfromList(modules[_moduleKey]['default'])
 
@@ -223,8 +227,9 @@ export class UIManager {
                 _module['displayName'],
                 _module['always'] || false,
                 _module['reset'] || false,
-                _module['onactive'],
-                _module['ondisable']
+                _module['onactive'] || none,
+                _module['ondisable'] || none,
+                _module['disabled'] || false
             )
         }
     }

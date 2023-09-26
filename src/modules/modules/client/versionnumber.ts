@@ -1,13 +1,11 @@
-import { moduleDefinition, none } from '../../moduleapi'
+import { moduleDefinition } from '../../moduleapi'
 import { VERSION } from '../../../global/constant'
 
 const plugin: moduleDefinition = {
     displayName: `v${VERSION} i:0`,
     id: 'version',
     section: 'client',
-    onactive: none,
-    ondisable: none,
-    reset: true,
+    disabled: true
 }
 
 export default plugin
