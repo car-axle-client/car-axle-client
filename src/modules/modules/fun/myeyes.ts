@@ -15,12 +15,13 @@ function why() {
 }
 
 const plugin: moduleDefinition = {
-    displayName: "don't click this...",
+    display_name: "don't click this...",
     id: 'eyes',
     section: 'fun',
     onactive: why,
     ondisable: why,
     always: true,
+    custom_render: false,
 }
 
 export default plugin

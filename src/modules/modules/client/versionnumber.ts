@@ -2,10 +2,11 @@ import { moduleDefinition } from '../../moduleapi'
 import { VERSION } from '../../../static/constant'
 
 const plugin: moduleDefinition = {
-    displayName: `v${VERSION} i:0`,
+    display_name: `v${VERSION} i:0`,
     id: 'version',
     section: 'client',
-    disabled: true
+    disabled: true,
+    custom_render: false,
 }
 
 export default plugin

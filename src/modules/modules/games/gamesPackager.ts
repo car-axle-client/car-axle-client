@@ -11,12 +11,13 @@ const mapped_games: moduleDefinition[] = []
 
 gamesJSON.forEach((game: game) => {
     let mapped_game: moduleDefinition = {
-        displayName: game['name'],
+        display_name: game['name'],
         id: game['name'],
         onactive: () => changeGame(game['url']),
         ondisable: none,
         section: 'game',
         reset: true,
+        custom_render: false,
     }
 
     mapped_games.push(mapped_game)

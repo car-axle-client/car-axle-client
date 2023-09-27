@@ -1,10 +1,11 @@
 import { moduleDefinition } from '../../moduleapi'
 
 const plugin: moduleDefinition = {
-    displayName: 'Backslash to hide and unhide',
+    display_name: 'Backslash to hide and unhide',
     id: 'hideinfo',
     section: 'client',
-    disabled: true
+    disabled: true,
+    custom_render: false
 }
 
 export default plugin

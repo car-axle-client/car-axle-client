@@ -193,11 +193,17 @@ export class UIManager {
 
     addModulesfromList(list: moduleDefinition[]) {
         for (let _module of list) {
+            // Override
+            if (_module["custom_render"]) {
+                _module["render"](this)
+                continue
+            }
+            
             let section = this.getSectionFromID(_module['section'])
             if (!section) continue
-            console.log(_module)
+
             section.addButton(
-                _module['displayName'],
+                _module['display_name'],
                 _module['always'] || false,
                 _module['reset'] || false,
                 _module['onactive'] || none,
@@ -214,17 +220,23 @@ export class UIManager {
 
             if (Array.isArray(modules[_moduleKey]['default'])) {
                 this.addModulesfromList(modules[_moduleKey]['default'])
-
                 continue
             }
 
             let _module: moduleDefinition = modules[_moduleKey]['default']
+            
+            // Override
+            if (_module["custom_render"]) {
+                _module["render"](this)
+                continue
+            }
+
             let section = this.getSectionFromID(_module['section'])
 
             if (!section) continue
 
             section.addButton(
-                _module['displayName'],
+                _module['display_name'],
                 _module['always'] || false,
                 _module['reset'] || false,
                 _module['onactive'] || none,
