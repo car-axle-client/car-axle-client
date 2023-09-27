@@ -19,7 +19,7 @@ https://discord.gg/nac46r6Qn7
 Install on the [website](https://car-axle-client.github.io)
 
 ### Manual Build/Editing
-
+(Check out the github wiki to learn how to use the renderer)
 1. Clone this repo (i forgot the command so just look it up)
 2. Install the required dependencies (package.json)
    `npm install`
