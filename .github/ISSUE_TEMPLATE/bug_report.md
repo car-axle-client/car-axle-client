@@ -29,5 +29,13 @@ If applicable, add screenshots to help explain your problem.
 -   Browser [e.g. chrome, safari]
 -   Version [e.g. 22]
 
+** Console Errors **
+
+If any...
+
+** Version **
+
+tell me
+
 **Additional context**
 Add any other context about the problem here.
