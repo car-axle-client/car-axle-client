@@ -1,5 +1,5 @@
 import { moduleDefinition } from '../../moduleapi'
-import { VERSION } from '../../../global/constant'
+import { VERSION } from '../../../static/constant'
 
 const plugin: moduleDefinition = {
     displayName: `v${VERSION} i:0`,

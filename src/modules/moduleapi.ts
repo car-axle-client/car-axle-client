@@ -1,4 +1,4 @@
-import { GAMESLINK } from '../global/constant'
+import { GAMESLINK } from '../static/constant'
 
 export type moduleDefinition = {
     displayName: string

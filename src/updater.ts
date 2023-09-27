@@ -1,6 +1,6 @@
 // Custom UPDATER for car-axle-client
 import Notification from './components/notification'
-import { VERSION } from './global/constant'
+import { VERSION } from './static/constant'
 
 const i = 0
 

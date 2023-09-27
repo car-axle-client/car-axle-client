@@ -5,8 +5,8 @@ import Destroy from './components/icons/xicon'
 import Hide from './components/icons/hideicon'
 import { createElement } from './UILib'
 import { moduleDefinition, none } from './modules/moduleapi'
-import { VERSION, CLIENTNAME } from './global/constant'
-import './global/style.less'
+import { VERSION, CLIENTNAME } from './static/constant'
+import './static/style.less'
 
 export class UIManager {
     public container!: HTMLElement
