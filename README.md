@@ -5,11 +5,7 @@ pls star ⭐️
 
 ![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![StaticBadge](https://img.shields.io/badge/lines_of_code-1502-blue?style=plastic) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/main?style=plastic)
 
-a bookmarklet with a good ui and some features
-
-## »»»» IF THERE IS A UI RELATED BUG ««««
-
-DM ME ON DISCORD (@penguinify) WITH THE WEBSITE NAME AND I WILL FIX IT
+Nice, decent quality, bookmarklet to satisfy your needs during school.
 
 ## Announcements
 
