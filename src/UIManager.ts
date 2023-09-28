@@ -45,7 +45,6 @@ export class UIManager {
         })
     }
 
-
     private _enable_section(section: Section): void {
         this.enabled_section = section
         section.enabled = true
@@ -166,15 +165,15 @@ export class UIManager {
     addModulesfromList(list: moduleDefinition[]) {
         for (let _module of list) {
             // Override
-            if (_module["custom_render"]) {
+            if (_module['custom_render']) {
                 try {
-                    _module["render"](this)
+                    _module['render'](this)
                 } catch (error) {
                     console.error(error)
                 }
                 continue
             }
-            
+
             let section = this.getSectionFromID(_module['section'])
             if (!section) continue
 
@@ -193,17 +192,16 @@ export class UIManager {
         for (let _moduleKey of Object.keys(modules)) {
             if (!modules[_moduleKey]['default']) continue
 
-
             if (Array.isArray(modules[_moduleKey]['default'])) {
                 this.addModulesfromList(modules[_moduleKey]['default'])
                 continue
             }
 
             let _module: moduleDefinition = modules[_moduleKey]['default']
-            
+
             // Override
-            if (_module["custom_render"]) {
-                _module["render"](this)
+            if (_module['custom_render']) {
+                _module['render'](this)
                 continue
             }
 
