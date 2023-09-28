@@ -1,5 +1,5 @@
 import { UIManager } from "./UIManager";
-import { createElement } from "./UILib";
+import { create_element } from "./UILib";
 import { getUpdate } from "./updater";
 import { moduleDefinition } from "./modules/moduleapi";
 
@@ -20,7 +20,7 @@ function loadModuleValues(UI: UIManager) {
   cacStorage.forEach(function (sectionValues: any) {
     UI.getSectionFromID(
       sectionValues["sectionID"],
-    )?.setAllButtonValuesFromArray(sectionValues["buttonValues"]);
+    )?.set_all_button_values_from_array(sectionValues["buttonValues"]);
   });
 }
 
@@ -37,7 +37,7 @@ function main(): void {
   );
 
   // this section is special
-  const gamesIframe = createElement("iframe", games.sectionContent, {
+  const gamesIframe = create_element("iframe", games.section_content, {
     id: "cac__games__iframe",
   });
   // please no leak love you <3

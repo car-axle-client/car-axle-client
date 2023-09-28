@@ -21,7 +21,7 @@ export type moduleDefinition =
     }
 
 // Function to change link of the iframe
-export function changeGame(link: string): void {
+export function change_game(link: string): void {
     let iframe = document.getElementById(
         'cac__games__iframe'
     ) as HTMLIFrameElement

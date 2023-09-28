@@ -1,4 +1,4 @@
-import { moduleDefinition, changeGame, none } from '../../moduleapi'
+import { moduleDefinition, change_game, none } from '../../moduleapi'
 import gamesJSON from './games.json'
 
 type game = {
@@ -13,7 +13,7 @@ gamesJSON.forEach((game: game) => {
     let mapped_game: moduleDefinition = {
         display_name: game['name'],
         id: game['name'],
-        onactive: () => changeGame(game['url']),
+        onactive: () => change_game(game['url']),
         ondisable: none,
         section: 'game',
         reset: true,

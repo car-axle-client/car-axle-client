@@ -1,9 +1,5 @@
 import { Section } from './components/section'
-import RemoveSave from './components/icons/removesave'
-import AddSave from './components/icons/saveicon'
-import Destroy from './components/icons/xicon'
-import Hide from './components/icons/hideicon'
-import { createElement } from './UILib'
+import { create_element } from './UILib'
 import { moduleDefinition, none } from './modules/moduleapi'
 import { VERSION, CLIENTNAME } from './static/constant'
 import './static/style.less'
@@ -13,77 +9,53 @@ export class UIManager {
     public gui!: HTMLElement
     public sidebar!: HTMLElement
     public sections: Array<Section> = []
-    public enabledSection!: Section
-    public mainContent!: HTMLElement
+    public enabled_section!: Section
+    public main_content!: HTMLElement
     public tabbar!: HTMLElement
-    private _sectionBackground!: HTMLElement
+    private _section_background!: HTMLElement
 
     constructor() {
         this._createGUI()
-        this._createIcons()
     }
 
     private _createGUI(): void {
-        this.container = createElement('div', document.body, {
+        this.container = create_element('div', document.body, {
             id: 'cac__CONTAINER',
         })
-        this.gui = createElement('div', this.container, {
+        this.gui = create_element('div', this.container, {
             id: 'cac__GUI',
         })
-        this.sidebar = createElement('div', this.gui, {
+        this.sidebar = create_element('div', this.gui, {
             id: 'cac__SIDEBAR',
         })
-        this.mainContent = createElement('div', this.gui, {
+        this.main_content = create_element('div', this.gui, {
             id: 'cac__MAINCONTENT',
         })
-        this._sectionBackground = createElement('div', this.sidebar, {
+        this._section_background = create_element('div', this.sidebar, {
             id: 'cac__section__BACKGROUND',
         })
-        this.tabbar = createElement('div', this.mainContent, {
+        this.tabbar = create_element('div', this.main_content, {
             id: 'cac__TABBAR',
         })
 
         // Aesthetic
-        createElement('div', this.sidebar, {
+        create_element('div', this.sidebar, {
             id: 'cac__LOGO',
             innerHTML: `${CLIENTNAME} v${VERSION}`,
         })
     }
 
-    private _createIcons(): void {
-        new AddSave(
-            this.tabbar,
-            'New Save',
-            '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H192c20.1 0 39.1 9.5 51.2 25.6l19.2 25.6c6 8.1 15.5 12.8 25.6 12.8H448c35.3 0 64 28.7 64 64V416zM232 376c0 13.3 10.7 24 24 24s24-10.7 24-24V312h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H280V200c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H168c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>',
-            this
-        )
-        new RemoveSave(
-            this.tabbar,
-            'Remove Save',
-            '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 480H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H192c20.1 0 39.1 9.5 51.2 25.6l19.2 25.6c6 8.1 15.5 12.8 25.6 12.8H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64zM184 272c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"/></svg>'
-        )
-        new Hide(
-            this.tabbar,
-            'Hide',
-            '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>'
-        )
-        new Destroy(
-            this.tabbar,
-            'Self Destruct',
-            '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>'
-        )
-    }
 
-    private _enableSection(section: Section): void {
-        this.enabledSection = section
+    private _enable_section(section: Section): void {
+        this.enabled_section = section
         section.enabled = true
-        section.sectionContent.style.display = 'block'
-        section.sectionContent.style.pointerEvents = 'auto'
+        section.section_content.style.display = 'block'
+        section.section_content.style.pointerEvents = 'auto'
 
-        this._sectionBackground.animate(
+        this._section_background.animate(
             [
                 {
-                    top: `${section.navButton.offsetTop}px`,
+                    top: `${section.nav_button.offsetTop}px`,
                 },
             ],
             {
@@ -92,7 +64,7 @@ export class UIManager {
                 easing: 'ease',
             }
         )
-        section.sectionContent.animate(
+        section.section_content.animate(
             [
                 {
                     opacity: 0,
@@ -111,9 +83,9 @@ export class UIManager {
         )
     }
 
-    private _disableSection(section: Section): void {
+    private _disable_section(section: Section): void {
         section.enabled = false
-        section.sectionContent.animate(
+        section.section_content.animate(
             [
                 {
                     opacity: 1,
@@ -131,15 +103,15 @@ export class UIManager {
             }
         )
         setTimeout(() => {
-            section.sectionContent.style.display = 'none'
-            section.sectionContent.style.pointerEvents = 'none;'
+            section.section_content.style.display = 'none'
+            section.section_content.style.pointerEvents = 'none;'
         }, 490)
     }
 
     private _handleSectionMouseDown(section: Section): void {
         if (section.enabled) return
-        if (this.enabledSection) this._disableSection(this.enabledSection)
-        this._enableSection(section)
+        if (this.enabled_section) this._disable_section(this.enabled_section)
+        this._enable_section(section)
     }
 
     newSection(
@@ -155,13 +127,13 @@ export class UIManager {
             description,
             icon,
             this.sidebar,
-            this.mainContent,
+            this.main_content,
             enabled
         )
 
-        section.navButton.onmousedown = () =>
+        section.nav_button.onmousedown = () =>
             this._handleSectionMouseDown(section)
-        enabled && this._enableSection(section)
+        enabled && this._enable_section(section)
 
         this.sections.push(section)
         return section
@@ -195,14 +167,18 @@ export class UIManager {
         for (let _module of list) {
             // Override
             if (_module["custom_render"]) {
-                _module["render"](this)
+                try {
+                    _module["render"](this)
+                } catch (error) {
+                    console.error(error)
+                }
                 continue
             }
             
             let section = this.getSectionFromID(_module['section'])
             if (!section) continue
 
-            section.addButton(
+            section.add_button(
                 _module['display_name'],
                 _module['always'] || false,
                 _module['reset'] || false,
@@ -235,7 +211,7 @@ export class UIManager {
 
             if (!section) continue
 
-            section.addButton(
+            section.add_button(
                 _module['display_name'],
                 _module['always'] || false,
                 _module['reset'] || false,

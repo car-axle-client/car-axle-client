@@ -1,5 +1,5 @@
 import './notification.ts.less'
-import { Component, createElement } from '../UILib'
+import { Component, create_element } from '../UILib'
 
 // yahhhh
 //
@@ -25,28 +25,28 @@ export default class Notification implements Component {
         this.render()
         // custom stuff
         if (button) {
-            createElement('button', this.notification, {
-                className: 'cac__notification__button',
+            create_element('button', this.notification, {
+                class_name: 'cac__notification__button',
                 innerHTML: button.text,
             }).onclick = (e) => button.fn()
         }
     }
 
     render() {
-        this.notification = createElement('div', this.parent, {
-            className: 'cac__notification',
+        this.notification = create_element('div', this.parent, {
+            class_name: 'cac__notification',
         })
 
-        createElement('h1', this.notification, {
-            className: 'cac__notification__header',
+        create_element('h1', this.notification, {
+            class_name: 'cac__notification__header',
             innerHTML: this.title,
         })
-        createElement('p', this.notification, {
-            className: 'cac__notification__body',
+        create_element('p', this.notification, {
+            class_name: 'cac__notification__body',
             innerHTML: this.body,
         })
-        createElement('button', this.notification, {
-            className: 'cac__notification__button',
+        create_element('button', this.notification, {
+            class_name: 'cac__notification__button',
             innerHTML: 'Dismiss',
         }).onclick = (e) => this.notification.remove()
     }

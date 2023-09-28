@@ -1,4 +1,4 @@
-import { Component, createElement } from '../UILib'
+import { Component, create_element } from '../UILib'
 import './button.ts.less'
 
 enum optionType {
@@ -10,7 +10,7 @@ type menuOption = {
     title: string
     type: optionType
     default: boolean | string
-    optionParams: string[]
+    option_params: string[]
 }
 
 // menuoptions are not finished yet
@@ -25,8 +25,8 @@ export default class Button implements Component {
     private always: boolean
     private reset: boolean
     private disabled
-    private menuOptions: menuOption[]
-    private menuValues: Array<boolean | string> = []
+    private menu_options: menuOption[]
+    private menu_values: Array<boolean | string> = []
 
     constructor(
         parent: HTMLElement,
@@ -36,7 +36,7 @@ export default class Button implements Component {
         onEnable: () => void,
         onDisable: () => void,
         disabled: boolean,
-        menuOptions: menuOption[] = []
+        menu_options: menuOption[] = []
     ) {
         this.parent = parent
         this.title = title
@@ -44,10 +44,10 @@ export default class Button implements Component {
         this.onDisable = onDisable
         this.always = always
         this.reset = reset
-        this.menuOptions = menuOptions
+        this.menu_options = menu_options
         this.disabled = disabled
 
-        if (menuOptions.length > 0)
+        if (menu_options.length > 0)
             this.title +=
                 '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="cac__button__menuicon" ><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>'
 
@@ -61,7 +61,7 @@ export default class Button implements Component {
     }
 
     _getMenuValues() {
-        this.menuValues = []
+        this.menu_values = []
         for (let option of this.menuContainer.querySelectorAll(
             '.cac__button__menu-container__option-container'
         )) {
@@ -73,9 +73,9 @@ export default class Button implements Component {
             ) as HTMLInputElement
 
             if (checkbox) {
-                this.menuValues.push(checkbox.checked)
+                this.menu_values.push(checkbox.checked)
             } else if (text) {
-                this.menuValues.push(text.value)
+                this.menu_values.push(text.value)
             }
         }
     }
@@ -87,19 +87,19 @@ export default class Button implements Component {
     }
 
     _addMenuOption(option: menuOption) {
-        const optionContainer = createElement('div', this.menuContainer, {
-            className: 'cac__button__menu-container__option-container',
+        const optionContainer = create_element('div', this.menuContainer, {
+            class_name: 'cac__button__menu-container__option-container',
         })
-        createElement('p', optionContainer, {
-            className: 'cac__button__menu-container__option-container__title',
+        create_element('p', optionContainer, {
+            class_name: 'cac__button__menu-container__option-container__title',
             innerHTML: option.title,
         })
 
         switch (option.type) {
             case optionType.checkbox:
-                const checkbox = createElement('input', optionContainer, {
+                const checkbox = create_element('input', optionContainer, {
                     type: 'checkbox',
-                    className:
+                    class_name:
                         'cac__button__menu-container__option-container__checkbox',
                 }) as HTMLInputElement
                 checkbox.checked = option.default as boolean
@@ -109,9 +109,9 @@ export default class Button implements Component {
                 )
                 break
             case optionType.text:
-                const textInput = createElement('input', optionContainer, {
+                const textInput = create_element('input', optionContainer, {
                     type: 'text',
-                    className:
+                    class_name:
                         'cac__button__menu-container__option-container__text',
                 }) as HTMLInputElement
                 textInput.value = option.default as string
@@ -134,7 +134,7 @@ export default class Button implements Component {
     }
 
     _handleMouseDown(e: MouseEvent) {
-        if (e.button === 2 && this.menuOptions?.length > 0) this._toggleMenu(e)
+        if (e.button === 2 && this.menu_options?.length > 0) this._toggleMenu(e)
         if (e.button !== 0 || (this.enabled && this.always)) return
         this._toggle()
 
@@ -145,8 +145,8 @@ export default class Button implements Component {
     }
 
     render() {
-        this.button = createElement('button', this.parent, {
-            className: 'cac__button',
+        this.button = create_element('button', this.parent, {
+            class_name: 'cac__button',
             innerHTML: this.title,
         })
 
@@ -159,11 +159,11 @@ export default class Button implements Component {
         console.log(this.disabled)
         this.button.addEventListener('contextmenu', (e) => e.preventDefault())
 
-        if (this.menuOptions.length > 0) {
-            this.menuContainer = createElement('div', this.parent, {
-                className: 'cac__button__menu-container',
+        if (this.menu_options.length > 0) {
+            this.menuContainer = create_element('div', this.parent, {
+                class_name: 'cac__button__menu-container',
             })
-            for (let option of this.menuOptions) {
+            for (let option of this.menu_options) {
                 this._addMenuOption(option)
             }
         }
