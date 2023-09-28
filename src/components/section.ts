@@ -1,13 +1,13 @@
-import { createElement } from '../UILib'
+import { create_element } from '../UILib'
 import Button from './button'
 import './section.ts.less'
 
 export class Section {
     public id: string
-    public navButton!: HTMLElement
+    public nav_button!: HTMLElement
     public enabled: boolean
-    public sectionTitle!: HTMLElement
-    public sectionContent!: HTMLElement
+    public section_title!: HTMLElement
+    public section_content!: HTMLElement
     public buttons: Array<Button> = []
     private _displayName: string
     private _container: Element
@@ -16,52 +16,52 @@ export class Section {
 
     constructor(
         id: string,
-        displayName: string,
+        display_name: string,
         description: string,
         icon: string,
         container: HTMLElement,
-        maincontent: HTMLElement,
+        main_content: HTMLElement,
         enabled: boolean = false
     ) {
         this.id = id
-        this._displayName = displayName
+        this._displayName = display_name
         this._container = container
         this._description = description
         this._icon = icon
         this.enabled = enabled
-        this._createSectionElements(maincontent)
+        this._create_section_elements(main_content)
 
         // anti code reuseability
         if (this.id === 'client') {
-            this.navButton.style.position = 'absolute'
-            this.navButton.style.bottom = '7.5vh'
+            this.nav_button.style.position = 'absolute'
+            this.nav_button.style.bottom = '7.5vh'
         } else if (this.id === 'credit') {
-            this.navButton.style.position = 'absolute'
-            this.navButton.style.bottom = '20px'
+            this.nav_button.style.position = 'absolute'
+            this.nav_button.style.bottom = '20px'
         }
     }
 
-    _createSectionElements(parent: HTMLElement): void {
-        this.navButton = createElement('div', this._container, {
-            className: 'cac__section',
+    _create_section_elements(parent: HTMLElement): void {
+        this.nav_button = create_element('div', this._container, {
+            class_name: 'cac__section',
             innerHTML: this._icon + this._displayName,
         })
-        this.sectionContent = createElement('div', parent, {
-            className: 'cac__section__content',
+        this.section_content = create_element('div', parent, {
+            class_name: 'cac__section__content',
             id: `cac__content__${this.id}`,
         })
-        createElement('h1', this.sectionContent, {
+        create_element('h1', this.section_content, {
             innerHTML: this._displayName,
-            className: 'cac__section__title',
+            class_name: 'cac__section__title',
         })
-        createElement('p', this.sectionContent, {
+        create_element('p', this.section_content, {
             innerHTML: this._description,
-            className: 'cac__section__description',
+            class_name: 'cac__section__description',
         })
     }
 
     // fat lazy code
-    addButton(
+    add_button(
         title: string,
         always: boolean,
         reset: boolean,
@@ -72,7 +72,7 @@ export class Section {
     ): void {
         this.buttons.push(
             new Button(
-                this.sectionContent,
+                this.section_content,
                 title,
                 always,
                 reset,
@@ -84,11 +84,11 @@ export class Section {
         )
     }
 
-    getAllButtonValues() {
+    get_all_button_values() {
         return this.buttons.map((button) => [button.enabled])
     }
 
-    setAllButtonValuesFromArray(buttonValues: boolean[][]) {
+    set_all_button_values_from_array(buttonValues: boolean[][]) {
         for (const [index, value] of buttonValues.entries()) {
             this.buttons[index].values = { enabled: value[0] }
         }

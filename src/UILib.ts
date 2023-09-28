@@ -3,21 +3,16 @@ export interface Component {
     render(): void
 }
 
-export interface Icon extends Component {
-    icon: string //SVG Element
-    action(...args: Array<any>): void
-}
-
 interface ElementAttributes {
     id?: string
-    className?: string
+    class_name?: string
     innerHTML?: string
     type?: string
     name?: string
     value?: string
 }
 
-export function createElement(
+export function create_element(
     tagName: string,
     parent: Element,
     options?: ElementAttributes
@@ -28,8 +23,8 @@ export function createElement(
         if (options.id) {
             element.id = options.id
         }
-        if (options.className) {
-            element.className = options.className
+        if (options.class_name) {
+            element.className = options.class_name
         }
         if (options.innerHTML) {
             element.innerHTML = options.innerHTML
