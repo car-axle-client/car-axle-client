@@ -5,7 +5,7 @@ const plugin: moduleDefinition = {
     id: 'cred',
     section: 'credit',
     disabled: true,
-    custom_render: false
+    custom_render: false,
 }
 
 export default plugin

@@ -5,7 +5,7 @@ const plugin: moduleDefinition = {
     id: 'hideinfo',
     section: 'client',
     disabled: true,
-    custom_render: false
+    custom_render: false,
 }
 
 export default plugin
