@@ -41,7 +41,7 @@ Install on the [website](https://car-axle-client.github.io)
     -   AntiReload
         -   Prevent admins from forcing a reload on your computer
     -   Autohide
-       - Automatically hides the bookmarklet when you switch tabs or windows
+        - Automatically hides the bookmarklet when you switch tabs or windows
     -   Save Settings to site
         -   Will automatically apply settings to a specific site on run
 -   Games from yexex loader
