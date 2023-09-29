@@ -36,7 +36,7 @@ function render(UI: UIManager) {
 
         iframe.setAttribute(
             "src",
-            link.value 
+            `${link.value}` 
         )
     })
 }
