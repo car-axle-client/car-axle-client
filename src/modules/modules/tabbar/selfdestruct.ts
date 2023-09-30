@@ -3,7 +3,7 @@ import { moduleDefinition } from '../../moduleapi'
 import { render_icon } from './iconlib'
 
 function self_destruct() {
-    document.getElementById('cac__container')?.remove()
+    document.getElementById('cac__CONTAINER')?.remove()
 }
 
 function render(UI: UIManager) {
