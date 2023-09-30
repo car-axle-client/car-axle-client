@@ -4,7 +4,7 @@ import { VERSION } from './static/constant'
 
 const i = 0
 
-function showUpdate(parent: HTMLElement, new_ver: string) {
+function show_update(parent: HTMLElement, new_ver: string) {
     let notifcation = new Notification(
         parent,
         'A New Update is Available!',
@@ -16,7 +16,7 @@ function showUpdate(parent: HTMLElement, new_ver: string) {
     )
 }
 
-export function getUpdate(main: HTMLElement) {
+export function get_update(main: HTMLElement) {
     fetch(
         'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/version.json'
     )
@@ -25,7 +25,23 @@ export function getUpdate(main: HTMLElement) {
             if (parseInt(VERSION) >= Number(json['version'])) {
                 console.log('Version is UP TO DATE')
             } else {
-                showUpdate(main, `${json['version']} (i: ${json['i']})`)
+                show_update(main, `${json['version']} (i: ${json['i']})`)
             }
+        })
+}
+
+export function get_main_notification(main: HTMLElement) {
+    fetch(
+        'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/notification.json'
+    )
+        .then((result) => result.json())
+        .then((json) => {
+            new Notification(
+                main, json['title'], json['body'],
+                {
+                    text: "Vote!",
+                    fn: () => window.open(json['link'])
+                }
+            )
         })
 }

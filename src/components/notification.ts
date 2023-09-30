@@ -46,7 +46,7 @@ export default class Notification implements Component {
             innerHTML: this.body,
         })
         create_element('button', this.notification, {
-            class_name: 'cac__notification__button',
+            class_name: 'cac__notification__button cac__notification__dismiss',
             innerHTML: 'Dismiss',
         }).onclick = (e) => this.notification.remove()
     }

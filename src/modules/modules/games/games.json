@@ -70,5 +70,13 @@
     {
         "name": "Binding of Isaac",
         "url": "boi.html"
+    },
+    {
+        "name": "(NEW) Bitlife",
+        "url": "nolife/index.html"
+    },
+    {
+        "name": "(NEW) Stickman Hook",
+        "url": "hookin/index.html"
     }
 ]
