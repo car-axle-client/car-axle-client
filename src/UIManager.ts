@@ -179,6 +179,7 @@ export class UIManager {
 
             section.add_button(
                 _module['display_name'],
+                _module['description'] || _module['display_name'],
                 _module['always'] || false,
                 _module['reset'] || false,
                 _module['onactive'] || none,
@@ -211,6 +212,7 @@ export class UIManager {
 
             section.add_button(
                 _module['display_name'],
+                _module['description'] || _module['display_name'],
                 _module['always'] || false,
                 _module['reset'] || false,
                 _module['onactive'] || none,

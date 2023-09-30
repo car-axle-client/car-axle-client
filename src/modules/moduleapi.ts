@@ -4,7 +4,8 @@ import { GAMESLINK } from '../static/constant'
 export type moduleDefinition =
     | {
           custom_render: false
-          display_name: string
+          display_name: string,
+          description?: string,
           id: string
           section: string
           reset?: boolean

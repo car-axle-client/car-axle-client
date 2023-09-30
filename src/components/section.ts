@@ -63,6 +63,7 @@ export class Section {
     // fat lazy code
     add_button(
         title: string,
+        description: string,
         always: boolean,
         reset: boolean,
         onEnable: () => void,
@@ -74,6 +75,7 @@ export class Section {
             new Button(
                 this.section_content,
                 title,
+                description,
                 always,
                 reset,
                 onEnable,

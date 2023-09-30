@@ -12,6 +12,7 @@ function removeabilitytoeditpagetext() {
 
 const plugin: moduleDefinition = {
     display_name: 'Edit Page Text',
+    description: 'Allows you to edit the page text',
     id: 'editpage',
     section: 'fun',
     onactive: editpagetext,
