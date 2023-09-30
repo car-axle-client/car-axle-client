@@ -3,6 +3,13 @@ import { moduleDefinition } from "../../moduleapi";
 import "./mousetrail.ts.less"
 
 function create_trail() {
+
+    let allElements = document.querySelectorAll('*')
+    allElements.forEach((element) => {
+        let htmlelement = element as HTMLElement
+        htmlelement.style.cursor = "none"
+    })
+
     let trail_large = create_element(
         "div",
         document.body,
@@ -30,7 +37,7 @@ function create_trail() {
             ],
             {
                 "easing": "ease",
-                "duration": 200,
+                "duration": 10,
                 "fill": "forwards"
             }
         )
