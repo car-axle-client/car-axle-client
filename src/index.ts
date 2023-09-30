@@ -1,6 +1,6 @@
 import { UIManager } from './UIManager'
 import { create_element } from './UILib'
-import { getUpdate } from './updater'
+import { get_main_notification, get_update } from './getNotifications'
 import { moduleDefinition } from './modules/moduleapi'
 
 // import modules
@@ -80,7 +80,8 @@ function main(): void {
     })
 
     // i get the update last cause why not?
-    getUpdate(UI.container)
+    get_update(UI.container)
+    get_main_notification(UI.container)
 }
 
 // i hope this works
