@@ -13,6 +13,7 @@ function metalpipe() {
 
 const plugin: moduleDefinition = {
     display_name: "METAL PIPE",
+    description: "idk why i added this",
     id: "metalpipe",
     section: "fun",
     onactive: metalpipe,

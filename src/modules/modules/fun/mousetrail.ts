@@ -54,6 +54,7 @@ function create_trail() {
 const plugin: moduleDefinition = {
     custom_render: false,
     display_name: "Mouse Trail",
+    description: "decent looking mouse trail",
     id: "mousetrail",
     section: "fun",
     always: true,
