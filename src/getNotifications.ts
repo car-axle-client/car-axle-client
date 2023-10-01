@@ -1,8 +1,6 @@
 // Custom UPDATER for car-axle-client
 import Notification from './components/notification'
-import { VERSION } from './static/constant'
-
-const i = 0
+import { VERSION, ITERATION } from './static/constant'
 
 function show_update(parent: HTMLElement, new_ver: string) {
     let notifcation = new Notification(
@@ -22,7 +20,7 @@ export function get_update(main: HTMLElement) {
     )
         .then((result) => result.json())
         .then((json) => {
-            if (parseInt(VERSION) >= Number(json['version'])) {
+            if (parseInt(VERSION) >= Number(json['version'] || parseInt(ITERATION) >= Number(json['i']))) {
                 console.log('Version is UP TO DATE')
             } else {
                 show_update(main, `${json['version']} (i: ${json['i']})`)

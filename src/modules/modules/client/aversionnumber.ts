@@ -1,6 +1,7 @@
 import { moduleDefinition } from '../../moduleapi'
 import {
     VERSION,
+    ITERATION,
     CLIENTNAME,
     AUTHOR,
     SOCIAL,
@@ -19,7 +20,7 @@ function render(UI: UIManager) {
     let element = create_element('button', client_section.section_content, {
         class_name: 'cac__version__display',
         innerHTML: `
-                <h2>${CLIENTNAME} v${VERSION}</h2>
+                <h2>${CLIENTNAME} v${VERSION}.${ITERATION}</h2>
                 <h3>by @${AUTHOR}</h3>
                 <a href="${SOCIAL['github']}">Github</a>
                 <a href="${SOCIAL['discord']}">Discord</a>
