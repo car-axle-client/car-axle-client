@@ -8,9 +8,7 @@ pls star ⭐️
 Nice, decent quality, bookmarklet to satisfy your needs during school.
 
 ## Announcements
-
-announcements channel
-https://discord.gg/nac46r6Qn7
+![nice](http://invidget.switchblade.xyz/nac46r6Qn7)
 
 ## Installation
 
