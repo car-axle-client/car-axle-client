@@ -6,7 +6,7 @@ function show_update(parent: HTMLElement, new_ver: string) {
     let notifcation = new Notification(
         parent,
         'A New Update is Available!',
-        `You can update from <strong>v${VERSION} (i: ${i}) -> v${new_ver}</strong><br> Updating can fix issues you may currently be having and will add new features. They can also cause issues. Be careful!`,
+        `You can update from <strong>v${VERSION} (i: ${ITERATION}) -> v${new_ver}</strong><br> Updating can fix issues you may currently be having and will add new features. They can also cause issues. Be careful!`,
         {
             text: 'Install',
             fn: () => window.open('https://car-axle-client.github.io/install'),
