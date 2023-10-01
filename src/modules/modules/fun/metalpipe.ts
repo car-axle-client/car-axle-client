@@ -4,9 +4,11 @@ function metalpipe() {
     let images = document.getElementsByTagName("img")
     if (!images) return
 
-    var audio= new Audio('https://www.myinstants.com/media/sounds/jixaw-metal-pipe-falling-sound.mp3');
-    audio.play()
+
+    
     for (let image of images) {
+        var audio= new Audio('https://www.myinstants.com/media/sounds/jixaw-metal-pipe-falling-sound.mp3');
+        audio.play()
         image.src = "https://i.ytimg.com/vi/qDvMkxtLV74/maxresdefault.jpg"
     }
 }
