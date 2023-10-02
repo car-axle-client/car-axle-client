@@ -6,8 +6,7 @@ pls star ⭐️
 ![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![Dynamic Badge](https://tokei.rs/b1/github/car-axle-client/car-axle-client) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/main?style=plastic)
 
 Nice, decent quality, bookmarklet to satisfy your needs during school.    
-Vote for new features!    
-https://forms.gle/rXDDgcVMnZzjHLCB7
+
 ## Announcements
 [Join the discord!](https://discord.gg/nac46r6Qn7)     
 ![nice](http://invidget.switchblade.xyz/nac46r6Qn7)
