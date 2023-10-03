@@ -14,7 +14,7 @@ function render(UI: UIManager) {
         {
             class_name: "cac__pocketbrowser__input",
             type: "text",
-            value: "https://bing.com"            
+            value: "https://startpage.com"            
         }
     )
     
@@ -28,7 +28,7 @@ function render(UI: UIManager) {
 
     iframe.setAttribute(
         "src",
-        "https://bing.com"
+        "https://startpage.com"
     )
 
     iframe_input.addEventListener('change', (e) => {
