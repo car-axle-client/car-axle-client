@@ -1,7 +1,5 @@
 import { UIManager } from './UIManager'
-import { create_element } from './UILib'
-import { get_main_notification, get_update } from './getNotifications'
-import { moduleDefinition } from './modules/moduleapi'
+import { get_main_notification, get_update } from './get_notifications'
 
 // import modules
 const modules: any = {}
