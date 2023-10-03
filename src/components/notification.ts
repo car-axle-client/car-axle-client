@@ -1,11 +1,6 @@
 import './notification.ts.less'
 import { Component, create_element } from '../UILib'
 
-// yahhhh
-//
-//
-//
-
 export default class Notification implements Component {
     parent: HTMLElement
     notification!: HTMLElement

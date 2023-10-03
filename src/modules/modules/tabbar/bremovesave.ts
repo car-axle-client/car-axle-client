@@ -1,10 +1,7 @@
 import { UIManager } from '../../../UIManager'
 import { moduleDefinition } from '../../moduleapi'
 import { render_icon } from './iconlib'
-
-function remove_save() {
-    localStorage.removeItem('car-axle-client')
-}
+import { remove_save } from "../../../storage_manager"
 
 function render(UI: UIManager) {
     render_icon(
