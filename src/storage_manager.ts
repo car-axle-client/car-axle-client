@@ -1,6 +1,6 @@
 import { UIManager } from "./UIManager"
 
-function loadModuleValues(UI: UIManager) {
+export function load_module_values(UI: UIManager) {
     // i let ts infer here and I force as string since we already have null check
     const cacStorage = JSON.parse(
         localStorage.getItem('car-axle-client') as string
