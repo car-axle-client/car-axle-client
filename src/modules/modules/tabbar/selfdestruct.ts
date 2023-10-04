@@ -3,7 +3,9 @@ import { moduleDefinition } from '../../moduleapi'
 import { render_icon } from './iconlib'
 
 function self_destruct() {
-    document.getElementById('cac__CONTAINER')?.remove()
+    document.querySelectorAll(".cac__ALL")?.forEach((element) => {
+        element.remove()
+    })
 }
 
 function render(UI: UIManager) {
