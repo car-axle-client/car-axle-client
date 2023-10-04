@@ -16,14 +16,14 @@ function render(UI: UIManager, title: string, url: string, imgurl: string) {
     if (!games_section) return
 
     let games_container = create_element(
-        "div",
+        "button",
         games_section.section_content,
         {
             "class_name": "cac__game__button"
         }
     )
 
-    games_container.addEventListener("onclick", (e) => {
+    games_container.addEventListener("mousedown", function(e) {
         change_game(url)
     })
 

@@ -12,8 +12,13 @@
     margin-top: 2% !important;
     border: none !important;
     border-radius: 20px !important;
+    padding: 0;
     transition: 1s !important;
     height: 10vh !important;
+
+    &:active {
+        transform: scale(0.99)
+    }
 }
 
 .cac__game__image {
@@ -23,7 +28,7 @@
 
 .cac__game__title {
     position: absolute;
-    left:30%;
+    left:25%;
     color: @text;
     margin-left: 2%;
     font-size: 1.6vw;
