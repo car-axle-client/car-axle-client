@@ -1,6 +1,6 @@
 import { create_element } from "../../../UILib";
 import { UIManager } from "../../../UIManager";
-import { moduleDefinition } from "../../moduleapi";
+import { moduleDefinition, new_iframe } from "../../moduleapi";
 import "./pocketbrowser.ts.less"
 
 function render(UI: UIManager) {
@@ -18,18 +18,7 @@ function render(UI: UIManager) {
         }
     )
     
-    const iframe = create_element(
-        "iframe",
-        section.section_content,
-        {
-            id: "cac__pocketbrowser__iframe"
-        }
-    )
-
-    iframe.setAttribute(
-        "src",
-        "https://startpage.com"
-    )
+    let iframe = new_iframe(UI, section.section_content, "https://startpage.com")
 
     iframe_input.addEventListener('change', (e) => {
         let link = iframe_input as HTMLInputElement

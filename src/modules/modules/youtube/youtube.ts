@@ -1,6 +1,6 @@
 import { create_element } from "../../../UILib";
 import { UIManager } from "../../../UIManager";
-import { moduleDefinition } from "../../moduleapi";
+import { moduleDefinition, new_iframe } from "../../moduleapi";
 import "./youtubebrowser.ts.less"
 
 function render(UI: UIManager) {
@@ -18,18 +18,7 @@ function render(UI: UIManager) {
         }
     )
 
-    const iframe = create_element(
-        "iframe",
-        section.section_content,
-        {
-            id: "cac__youtubebrowser__iframe"
-        }
-    )
-
-    iframe.setAttribute(
-        "src",
-        "https://placehold.co/600x400?text=^+paste+video+id+^"
-    )
+    const iframe = new_iframe(UI, section.section_content, "https://placehold.co/600x400?text=^+paste+video+id+^")
 
     iframe_input.addEventListener("change", (e) => {
         //@ts-ignore
