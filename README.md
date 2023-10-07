@@ -14,7 +14,7 @@ Nice, decent quality, bookmarklet to satisfy your needs during school.
 ## Installation
 
 ### Website Installation
-WEBSITE IS CURRENTLY DOWN
+
 Install on the [website](https://car-axle-client.github.io)
 
 ### Manual Build/Editing
