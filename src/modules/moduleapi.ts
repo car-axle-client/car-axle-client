@@ -79,8 +79,8 @@ export function new_iframe(UI:UIManager, section: HTMLElement, link: string, id:
         if (maximized) {
             iframe.classList.add("cac__iframe__maximized")
             iframe_controls_container.classList.add("cac__iframe__controls__maximized")
-            document.body.appendChild(iframe)
-            document.body.appendChild(iframe_controls_container)
+            UI.container.appendChild(iframe)
+            UI.container.appendChild(iframe_controls_container)
         } else {
             iframe.classList.remove("cac__iframe__maximized")
             iframe_controls_container.classList.remove("cac__iframe__controls__maximized")
