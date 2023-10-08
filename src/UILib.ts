@@ -19,13 +19,13 @@ export function create_element(
 ): HTMLElement {
     const element: HTMLElement = document.createElement(tagName)
     // TODO:: Make this better or use a switch or smth
-    element.classList.add('cac__ALL')
+    element.classList.add('cac__ALL') 
     if (options) {
         if (options.id) {
             element.id = options.id
         }
         if (options.class_name) {
-            element.className = options.class_name
+            element.classList.add(options.class_name)
         }
         if (options.innerHTML) {
             element.innerHTML = options.innerHTML
