@@ -1,5 +1,5 @@
 export const GAMESLINK = 'https://penguinify-web-dev.github.io/'
-export const VERSION = '4'
+export const VERSION = '5'
 export const ITERATION = '0'
 export const CLIENTNAME = 'car axle client'
 export const AUTHOR = 'penguinify (early christmas)'

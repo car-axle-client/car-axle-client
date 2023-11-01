@@ -20,12 +20,7 @@ export function get_update(main: HTMLElement) {
     )
         .then((result) => result.json())
         .then((json) => {
-            if (
-                parseInt(VERSION) >=
-                Number(
-                    json['version'] || parseInt(ITERATION) >= Number(json['i'])
-                )
-            ) {
+            if (parseInt(VERSION) >= Number(json['version']) && parseInt(ITERATION) >= Number(json['i'])) {
                 console.log('Version is UP TO DATE')
             } else {
                 show_update(main, `${json['version']} (i: ${json['i']})`)
