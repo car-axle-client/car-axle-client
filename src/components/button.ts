@@ -55,32 +55,11 @@ export default class Button implements Component {
 
     _toggle() {
         this.enabled = !this.enabled
-        this.button.classList.toggle('cac__button--enabled', this.enabled)
         this.enabled ? this.onEnable() : this.onDisable()
+        this.button.classList.toggle('cac__button--enabled', this.enabled)
     }
-
-    _getMenuValues() {
-        this.menu_values = []
-        for (let option of this.menuContainer.querySelectorAll(
-            '.cac__button__menu-container__option-container'
-        )) {
-            const checkbox = option.querySelector(
-                '.cac__button__menu-container__option-container__checkbox'
-            ) as HTMLInputElement
-            const text = option.querySelector(
-                '.cac__button__menu-container__option-container__text'
-            ) as HTMLInputElement
-
-            if (checkbox) {
-                this.menu_values.push(checkbox.checked)
-            } else if (text) {
-                this.menu_values.push(text.value)
-            }
-        }
-    }
-
     _handleMouseDown(e: MouseEvent) {
-        if (e.button !== 0 || (this.enabled && this.always)) return
+        if (e.button !== 0 || this.enabled && this.always || this.enabled && this.reset) return
         this._toggle()
 
         if (this.reset)
@@ -102,13 +81,6 @@ export default class Button implements Component {
             )
         }
 
-        this.button.addEventListener('contextmenu', (e) => e.preventDefault())
-
-        if (this.menu_options.length > 0) {
-            this.menuContainer = create_element('div', this.parent, {
-                class_name: 'cac__button__menu-container',
-            })
-        }
     }
 
     // idk if this is every used lmaoooooooo
