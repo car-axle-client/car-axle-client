@@ -3,7 +3,7 @@ import { moduleDefinition } from '../../moduleapi'
 import { render_icon } from './iconlib'
 
 function self_destruct() {
-    document.querySelectorAll(".cac__ALL")?.forEach((element) => {
+    document.querySelectorAll('.cac__ALL')?.forEach((element) => {
         element.remove()
     })
 }

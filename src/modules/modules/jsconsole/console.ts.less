@@ -1,0 +1,67 @@
+@import '../../../static/variables.less';
+
+.cac__console__container {
+    display: inline-flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: @secondary6;
+    border-radius: 15px;
+    height: 70%;
+    align-items: end;
+    text-align: left;
+}
+
+.cac__console__output {
+    width: 100%;
+    height: 92%;
+    border: none;
+    outline: none;
+    color: @text;
+    text-align: left;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    font-family: 'Roboto Mono', monospace !important;
+    margin-bottom: 1%;
+}
+
+.cac__console__log {
+    margin-left: 2%;
+    user-select: text;
+    font-family: 'Roboto Mono', monospace !important;
+    overflow-x: auto;
+    overflow-wrap: anywhere;
+}
+
+.cac__console__error {
+    color: red !important;
+    background-color: lightpink;
+    border-radius: 8px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 95%;
+    padding: 0 0.5%;
+    margin-top: 1%;
+    font-family: 'Roboto Mono', monospace !important;
+    user-select: text;
+    overflow-wrap: anywhere;
+}
+
+.cac__console__input {
+    width: 100%;
+    height: 7%;
+    background-color: @theme;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: @text;
+    font-size: 1vw;
+    padding: 1rem;
+    align-self: flex-end;
+    font-family: 'Roboto Mono', monospace !important;
+    resize: none;
+    overflow: auto;
+}

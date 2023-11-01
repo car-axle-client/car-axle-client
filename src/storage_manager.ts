@@ -1,4 +1,4 @@
-import { UIManager } from "./UIManager"
+import { UIManager } from './UIManager'
 
 export function load_module_values(UI: UIManager) {
     // i let ts infer here and I force as string since we already have null check

@@ -1,4 +1,4 @@
-pls star ⭐️   
+pls star ⭐️  
 <img src="https://delivery.contenthub.allstate.com/api/public/content/f0e5db4104d04bf386f97f6dc098bfc5?v=353a1ed1" alt="drawing" width="200"/>
 
 # car axle client
@@ -8,7 +8,8 @@ pls star ⭐️
 The first good multi-purpose bookmarklet with a gui. Play games, watch youtube, or go onto a proxy from almost any website. Frequent updates every 2-3 weeks.
 
 ## Announcements
-[Join the discord!](https://discord.gg/nac46r6Qn7)     
+
+[Join the discord!](https://discord.gg/nac46r6Qn7)  
 ![nice](http://invidget.switchblade.xyz/nac46r6Qn7)
 
 ## Installation

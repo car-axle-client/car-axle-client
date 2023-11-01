@@ -16,7 +16,7 @@ function why() {
 
 const plugin: moduleDefinition = {
     display_name: "don't click this...",
-    description: "your eyes yearn for peace...",
+    description: 'your eyes yearn for peace...',
     id: 'eyes',
     section: 'fun',
     onactive: why,
