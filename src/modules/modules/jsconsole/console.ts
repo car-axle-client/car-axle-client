@@ -18,6 +18,7 @@ function render(UI: UIManager) {
         class_name: 'cac__console__input',
     }) as HTMLInputElement
 
+    console_input.placeholder = '> evaluate expression'
 
     //@ts-ignore
     console.stdlog = console.log.bind(console)

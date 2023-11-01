@@ -68,4 +68,15 @@
     font-family: 'Roboto Mono', monospace !important;
     resize: none;
     overflow: auto;
+    
+    &::placeholder {
+        color: @text;
+        opacity: 0.5;
+    }
+    ::before {
+        content: '>';
+        color: @text;
+        font-size: 1.5vw;
+        margin-right: 1%;
+    }
 }
