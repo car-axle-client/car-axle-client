@@ -1,5 +1,6 @@
 import { UIManager } from './UIManager'
 import { get_main_notification, get_update } from './get_notifications'
+import { ITERATION, VERSION } from './static/constant'
 import { load_module_values } from './storage_manager'
 // import modules
 const modules: any = {}
@@ -77,7 +78,7 @@ function main(): void {
     // i get the update last cause why not?
     get_update(UI.container)
     get_main_notification(UI.container)
-    console.log(`car axle client - v{VERSION}.{ITERATION}`)
+    console.log(`car axle client - v${VERSION}.${ITERATION}`)
 }
 
 // i hope this works
