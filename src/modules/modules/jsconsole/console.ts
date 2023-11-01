@@ -18,6 +18,7 @@ function render(UI: UIManager) {
         class_name: 'cac__console__input',
     }) as HTMLInputElement
 
+
     //@ts-ignore
     console.stdlog = console.log.bind(console)
     //@ts-ignore
@@ -27,9 +28,11 @@ function render(UI: UIManager) {
 
         create_element('div', output, {
             class_name: 'cac__console__log',
-            innerHTML: Array.from(arguments).join(' '),
+            innerHTML: `${new Date().toLocaleTimeString()} : ${Array.from(arguments).join(' ')}`,
         })
     }
+    
+
 
     console_input.addEventListener('keypress', (e) => {
         if (e.key != 'Enter') return
@@ -40,7 +43,7 @@ function render(UI: UIManager) {
         } catch (err) {
             create_element('div', output, {
                 class_name: 'cac__console__error',
-                innerHTML: err as string,
+                innerHTML: `${new Date().toLocaleTimeString()} : ${err}`,
             })
         }
     })

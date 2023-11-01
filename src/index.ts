@@ -77,7 +77,7 @@ function main(): void {
     // i get the update last cause why not?
     get_update(UI.container)
     get_main_notification(UI.container)
-    console.log("car axle client - v5")
+    console.log(`car axle client - v{VERSION}.{ITERATION}`)
 }
 
 // i hope this works
