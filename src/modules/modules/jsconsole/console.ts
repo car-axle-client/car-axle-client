@@ -31,7 +31,8 @@ function render(UI: UIManager) {
         })
     }
 
-    console_input.addEventListener('change', (e) => {
+    console_input.addEventListener('keypress', (e) => {
+        if (e.key != 'Enter') return
         let input = console_input.value
         console_input.value = ''
         try {

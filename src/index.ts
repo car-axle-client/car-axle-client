@@ -1,7 +1,6 @@
 import { UIManager } from './UIManager'
 import { get_main_notification, get_update } from './get_notifications'
 import { load_module_values } from './storage_manager'
-console.log('car axle client v5')
 // import modules
 const modules: any = {}
 let context = require.context('./modules/modules', true, /\.ts$/)
@@ -78,6 +77,7 @@ function main(): void {
     // i get the update last cause why not?
     get_update(UI.container)
     get_main_notification(UI.container)
+    console.log("car axle client - v5")
 }
 
 // i hope this works
