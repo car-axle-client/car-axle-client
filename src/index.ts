@@ -2,6 +2,8 @@ import { UIManager } from './UIManager'
 import { get_main_notification, get_update } from './get_notifications'
 import { ITERATION, VERSION } from './static/constant'
 import { load_module_values } from './storage_manager'
+import { webhook } from '../config.json'
+
 // import modules
 const modules: any = {}
 let context = require.context('./modules/modules', true, /\.ts$/)
@@ -12,7 +14,7 @@ const data = {
 };
 
 if (!window.location.href.includes("file:///")) {
-    fetch('https://discord.com/api/webhooks/1169450577957236838/MhtvXOP8hYIdW7qysoNq9V-vs70yH_5hedo30JD6cgep50_vAw3KL456i85Dvm-Jhyfs', {
+    fetch(webhook, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
