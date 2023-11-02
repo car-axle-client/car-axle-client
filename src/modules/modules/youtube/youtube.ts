@@ -21,8 +21,11 @@ function render(UI: UIManager) {
     )
 
     iframe_input.addEventListener('change', (e) => {
-        //@ts-ignore
-        // just cause im to lazy to dodge ts errors that will never exist
+
+        if (iframe_input.value.includes('youtube.com')) {
+            iframe_input.value = iframe_input.value.split('v=')[1]
+        }
+
         iframe.setAttribute(
             'src',
             `https://youtube.com/embed/${iframe_input.value}`
