@@ -67,11 +67,9 @@ export class UIManager {
             [
                 {
                     opacity: 0,
-                    transform: 'scale(1.1)',
                 },
                 {
                     opacity: 1,
-                    transform: 'scale(1)',
                 },
             ],
             {
@@ -88,11 +86,9 @@ export class UIManager {
             [
                 {
                     opacity: 1,
-                    transform: 'scale(1)',
                 },
                 {
                     opacity: 0,
-                    transform: 'scale(0.9)',
                 },
             ],
             {
