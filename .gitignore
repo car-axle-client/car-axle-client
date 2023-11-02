@@ -145,3 +145,4 @@ dist
 .DS_Store
 testing/webpage/index.js
 testing/webpage/index.js
+config.json
