@@ -25,6 +25,6 @@ module.exports = {
     output: {
         filename: 'index.js', // Output bundle filename
         // path: path.resolve(__dirname, 'build'), // Output directory
-        path: path.resolve(__dirname, 'testing/webpage'), // testing directory
+        path: path.resolve(__dirname, 'docs/testing'), // testing directory
     },
 }
