@@ -45,7 +45,7 @@ export class UIManager {
         })
     }
 
-    private _enable_section(section: Section): void {
+    enable_section(section: Section): void {
         this.enabled_section = section
         section.enabled = true
         section.section_content.style.display = 'block'
@@ -85,7 +85,7 @@ export class UIManager {
         }, 500)
     }
 
-    private _disable_section(section: Section): void {
+    disable_section(section: Section): void {
         section.enabled = false
         section.section_content.animate(
             [
@@ -110,8 +110,8 @@ export class UIManager {
 
     private _handleSectionMouseDown(section: Section): void {
         if (section.enabled) return
-        if (this.enabled_section) this._disable_section(this.enabled_section)
-        this._enable_section(section)
+        if (this.enabled_section) this.disable_section(this.enabled_section)
+        this.enable_section(section)
     }
 
     newSection(
@@ -133,7 +133,7 @@ export class UIManager {
 
         section.nav_button.onmousedown = () =>
             this._handleSectionMouseDown(section)
-        enabled && this._enable_section(section)
+        enabled && this.enable_section(section)
 
         this.sections.push(section)
         return section
