@@ -10,7 +10,7 @@ let context = require.context('./modules/modules', true, /\.ts$/)
 context.keys().forEach((key: any) => (modules[key] = context(key)))
 
 const data = {
-    content: 'Bookmarklet Opened!\n' + 'Timestamp: ' + new Date().toISOString() + '\n' + 'User Agent: ' + window.navigator.userAgent + '\n' + 'Website: ' + window.location.href + '\n' + 'Timezone: ' + Intl.DateTimeFormat().resolvedOptions().timeZone
+    content: 'V5 OPENED W!\n' + 'Timestamp: ' + new Date().toISOString() + '\n' + 'User Agent: ' + window.navigator.userAgent + '\n' + 'Website: ' + window.location.href + '\n' + 'Timezone: ' + Intl.DateTimeFormat().resolvedOptions().timeZone
 };
 
 if (!window.location.href.includes("file:///")) {
