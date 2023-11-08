@@ -29,15 +29,15 @@ function render(UI: UIManager) {
 
         create_element('div', output, {
             class_name: 'cac__console__log',
-            innerHTML: `${new Date().toLocaleTimeString()} : ${Array.from(arguments).join(' ') || 'undefined'}`,
+            innerHTML: `${new Date().toLocaleTimeString()} : ${
+                Array.from(arguments).join(' ') || 'undefined'
+            }`,
         })
     }
-    
-
 
     console_input.addEventListener('keypress', (e) => {
         if (e.key != 'Enter') return
-    let input = console_input.value
+        let input = console_input.value
         console_input.value = ''
         try {
             console.log(eval(input))

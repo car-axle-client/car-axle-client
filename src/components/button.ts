@@ -59,7 +59,12 @@ export default class Button implements Component {
         this.button.classList.toggle('cac__button--enabled', this.enabled)
     }
     _handleMouseDown(e: MouseEvent) {
-        if (e.button !== 0 || this.enabled && this.always || this.enabled && this.reset) return
+        if (
+            e.button !== 0 ||
+            (this.enabled && this.always) ||
+            (this.enabled && this.reset)
+        )
+            return
         this._toggle()
 
         if (this.reset)
@@ -80,7 +85,6 @@ export default class Button implements Component {
                 this._handleMouseDown.bind(this)
             )
         }
-
     }
 
     // idk if this is every used lmaoooooooo

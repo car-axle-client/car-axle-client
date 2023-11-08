@@ -78,7 +78,7 @@ export class UIManager {
                 easing: 'ease',
             }
         )
-        
+
         setTimeout(() => {
             section.section_content.style.display = 'block'
             section.section_content.style.pointerEvents = 'auto'

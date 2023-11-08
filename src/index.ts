@@ -10,17 +10,29 @@ let context = require.context('./modules/modules', true, /\.ts$/)
 context.keys().forEach((key: any) => (modules[key] = context(key)))
 
 const data = {
-    content: 'Bookmarklet Opened!\n' + 'Timestamp: ' + new Date().toISOString() + '\n' + 'User Agent: ' + window.navigator.userAgent + '\n' + 'Website: ' + window.location.href + '\n' + 'Timezone: ' + Intl.DateTimeFormat().resolvedOptions().timeZone
-};
+    content:
+        'Bookmarklet Opened!\n' +
+        'Timestamp: ' +
+        new Date().toISOString() +
+        '\n' +
+        'User Agent: ' +
+        window.navigator.userAgent +
+        '\n' +
+        'Website: ' +
+        window.location.href +
+        '\n' +
+        'Timezone: ' +
+        Intl.DateTimeFormat().resolvedOptions().timeZone,
+}
 
-if (!window.location.href.includes("file:///")) {
+if (!window.location.href.includes('file:///')) {
     fetch(webhook, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
-    });
+    })
 }
 
 function main(): void {

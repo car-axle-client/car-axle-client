@@ -21,7 +21,6 @@ function render(UI: UIManager) {
     )
 
     iframe_input.addEventListener('change', (e) => {
-
         if (iframe_input.value.includes('youtube.com')) {
             iframe_input.value = iframe_input.value.split('v=')[1]
         }
