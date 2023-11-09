@@ -9,7 +9,7 @@ send_to_discord(
     `car axle client - v${VERSION}.${ITERATION}` +
         '\n' +
         'Current URL: ' +
-        'window.location.href'
+        window.location.href
 )
 
 // import modules
