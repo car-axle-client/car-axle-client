@@ -139,8 +139,8 @@ export class UIManager {
         return section
     }
     toggleUI(): void {
-        if (this.container.style.display === 'none') {
-            this.container.style.display = 'flex'
+        if (!this.container) {
+            document.body.appendChild(this.container)
             this.gui.animate(
                 [
                     {
@@ -160,66 +160,50 @@ export class UIManager {
             return
         }
 
-        this.container.style.display = 'none'
+        this.container.remove()
     }
 
-    addModulesfromList(list: moduleDefinition[]) {
-        for (let _module of list) {
-            // Override
-            if (_module['custom_render']) {
-                try {
-                    _module['render'](this)
-                } catch (error) {
-                    console.error(error)
-                }
-                continue
+    private addModule(_module: moduleDefinition) {
+        if (_module.custom_render) {
+            try {
+                _module.render(this)
+            } catch (error) {
+                console.error(error)
             }
+            return
+        }
 
-            let section = this.getSectionFromID(_module['section'])
-            if (!section) continue
-
+        const section = this.getSectionFromID(_module.section)
+        if (section) {
             section.add_button(
-                _module['display_name'],
-                _module['description'] || _module['display_name'],
-                _module['always'] || false,
-                _module['reset'] || false,
-                _module['onactive'] || none,
-                _module['ondisable'] || none,
-                _module['disabled'] || false
+                _module.display_name,
+                _module.description || _module.display_name,
+                _module.always || false,
+                _module.reset || false,
+                _module.onactive || none,
+                _module.ondisable || none,
+                _module.disabled || false
             )
         }
     }
 
+    addModulesFromList(list: moduleDefinition[]) {
+        for (const _module of list) {
+            this.addModule(_module)
+        }
+    }
+
     addModulesFromImport(modules: any) {
-        for (let _moduleKey of Object.keys(modules)) {
-            if (!modules[_moduleKey]['default']) continue
+        for (const _moduleKey of Object.keys(modules)) {
+            if (!modules[_moduleKey].default) continue
 
-            if (Array.isArray(modules[_moduleKey]['default'])) {
-                this.addModulesfromList(modules[_moduleKey]['default'])
-                continue
+            const moduleDefault = modules[_moduleKey].default
+
+            if (Array.isArray(moduleDefault)) {
+                this.addModulesFromList(moduleDefault)
+            } else {
+                this.addModule(moduleDefault)
             }
-
-            let _module: moduleDefinition = modules[_moduleKey]['default']
-
-            // Override
-            if (_module['custom_render']) {
-                _module['render'](this)
-                continue
-            }
-
-            let section = this.getSectionFromID(_module['section'])
-
-            if (!section) continue
-
-            section.add_button(
-                _module['display_name'],
-                _module['description'] || _module['display_name'],
-                _module['always'] || false,
-                _module['reset'] || false,
-                _module['onactive'] || none,
-                _module['ondisable'] || none,
-                _module['disabled'] || false
-            )
         }
     }
 

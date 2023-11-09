@@ -4,7 +4,8 @@
     "description": "car axle",
     "main": "index.ts",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "webpack --config webpack.config.js",
+        "build": "webpack --config webpack-production.config.js"
     },
     "author": "",
     "license": "ISC",

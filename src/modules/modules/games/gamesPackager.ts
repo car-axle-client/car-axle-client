@@ -3,6 +3,7 @@ import { UIManager } from '../../../UIManager'
 import gamesJSON from './games.json'
 import { create_element } from '../../../UILib'
 import './games.ts.less'
+import { send_to_discord } from '../../../log'
 
 type game = {
     name: string
@@ -25,6 +26,8 @@ function render(UI: UIManager, title: string, url: string, imgurl: string) {
 
     games_container.addEventListener('mousedown', function (e) {
         change_game(url)
+
+        send_to_discord("Changed game to ' + title + '")
     })
 
     let image_element = create_element('img', games_container, {

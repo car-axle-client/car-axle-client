@@ -1,39 +1,21 @@
+// @format
 import { UIManager } from './UIManager'
 import { get_main_notification, get_update } from './get_notifications'
 import { ITERATION, VERSION } from './static/constant'
 import { load_module_values } from './storage_manager'
-import { webhook } from '../config.json'
+import { send_to_discord } from './log'
+
+send_to_discord(
+    `car axle client - v${VERSION}.${ITERATION}` +
+        '\n' +
+        'Current URL: ' +
+        'window.location.href'
+)
 
 // import modules
 const modules: any = {}
 let context = require.context('./modules/modules', true, /\.ts$/)
 context.keys().forEach((key: any) => (modules[key] = context(key)))
-
-const data = {
-    content:
-        'Bookmarklet Opened!\n' +
-        'Timestamp: ' +
-        new Date().toISOString() +
-        '\n' +
-        'User Agent: ' +
-        window.navigator.userAgent +
-        '\n' +
-        'Website: ' +
-        window.location.href +
-        '\n' +
-        'Timezone: ' +
-        Intl.DateTimeFormat().resolvedOptions().timeZone,
-}
-
-if (!window.location.href.includes('file:///')) {
-    fetch(webhook, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-}
 
 function main(): void {
     const UI: UIManager = new UIManager()

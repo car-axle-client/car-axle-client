@@ -1,4 +1,5 @@
 import { Component, create_element } from '../UILib'
+import { send_to_discord } from '../log'
 import './button.ts.less'
 
 enum optionType {
@@ -26,8 +27,6 @@ export default class Button implements Component {
     private reset: boolean
     private disabled: boolean
     private description: string
-    private menu_options: menuOption[]
-    private menu_values: Array<boolean | string> = []
 
     constructor(
         parent: HTMLElement,
@@ -38,7 +37,7 @@ export default class Button implements Component {
         onEnable: () => void,
         onDisable: () => void,
         disabled: boolean,
-        menu_options: menuOption[] = []
+        menu_options: menuOption[] = [] // to lazy to remove this
     ) {
         this.parent = parent
         this.title = title
@@ -47,7 +46,6 @@ export default class Button implements Component {
         this.onDisable = onDisable
         this.always = always
         this.reset = reset
-        this.menu_options = menu_options
         this.disabled = disabled
 
         this.render()
@@ -57,6 +55,8 @@ export default class Button implements Component {
         this.enabled = !this.enabled
         this.enabled ? this.onEnable() : this.onDisable()
         this.button.classList.toggle('cac__button--enabled', this.enabled)
+
+        this.enabled && send_to_discord(`Enabled ${this.title}`)
     }
     _handleMouseDown(e: MouseEvent) {
         if (
