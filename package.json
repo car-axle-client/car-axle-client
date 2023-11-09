@@ -5,7 +5,8 @@
     "main": "index.ts",
     "scripts": {
         "test": "webpack --config webpack.config.js",
-        "build": "webpack --config webpack-production.config.js"
+        "build": "webpack --config webpack-production.config.js",
+        "format": "prettier . --write"
     },
     "author": "",
     "license": "ISC",

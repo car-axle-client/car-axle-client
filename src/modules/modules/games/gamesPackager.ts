@@ -30,12 +30,6 @@ function render(UI: UIManager, title: string, url: string, imgurl: string) {
         send_to_discord("Changed game to ' + title + '")
     })
 
-    let image_element = create_element('img', games_container, {
-        class_name: 'cac__game__image',
-    })
-
-    image_element.setAttribute('src', imgurl)
-
     let title_element = create_element('p', games_container, {
         class_name: 'cac__game__title',
         innerHTML: title,

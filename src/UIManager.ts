@@ -43,6 +43,22 @@ export class UIManager {
             id: 'cac__LOGO',
             innerHTML: `${CLIENTNAME} v${VERSION}`,
         })
+
+        // opacity animation
+        this.container.animate(
+            [
+                {
+                    opacity: 0,
+                },
+                {
+                    opacity: 1,
+                }
+            ],
+            {
+                duration: 500,
+            }
+        )
+
     }
 
     enable_section(section: Section): void {
@@ -139,15 +155,15 @@ export class UIManager {
         return section
     }
     toggleUI(): void {
-        if (!this.container) {
+        if (!this.container.parentElement) {
             document.body.appendChild(this.container)
             this.gui.animate(
                 [
                     {
-                        transform: 'scale(0)',
+                        transform: 'translateX(-100%)',
                     },
                     {
-                        transform: 'scale(1)',
+                        transform: 'translateX(0%)',
                     },
                 ],
                 {
@@ -158,9 +174,9 @@ export class UIManager {
             )
 
             return
+        } else {
+            this.container.remove()
         }
-
-        this.container.remove()
     }
 
     private addModule(_module: moduleDefinition) {

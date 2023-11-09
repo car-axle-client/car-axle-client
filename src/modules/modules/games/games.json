@@ -1,92 +1,74 @@
 [
     {
         "name": "Moto X3M",
-        "url": "motox3m/index.html",
-        "imgurl": "https://cdn.kiz10.com/upload/thumbnails/1441370015_moto-x3m.jpg"
+        "url": "motox3m/index.html"
     },
     {
         "name": "Rom Loader",
-        "url": "temptations/index.html",
-        "imgurl": "https://i2-prod.mirror.co.uk/incoming/article6498450.ece/ALTERNATES/s1200/broken-controller.jpg"
+        "url": "temptations/index.html"
     },
     {
         "name": "yohoho",
-        "url": "yohoho/index.html",
-        "imgurl": "https://th.bing.com/th/id/R.5398be185cc684491e6f4941a86e9f6e?rik=qdjeBqYcT2m3qw&pid=ImgRaw&r=0"
+        "url": "yohoho/index.html"
     },
     {
         "name": "Burrito Bison",
-        "url": "bb/index.html",
-        "imgurl": "https://th.bing.com/th/id/R.18635333fe733fbea67a9bd886561dd7?rik=%2fSHInV9Y4tVvJA&pid=ImgRaw&r=0"
+        "url": "bb/index.html"
     },
     {
         "name": "Bloons TD 4",
-        "url": "btd4.html",
-        "imgurl": "https://s-media-cache-ak0.pinimg.com/600x315/db/6e/7a/db6e7a33925ab8398b7fb8faebb90ce9.jpg"
+        "url": "btd4.html"
     },
     {
         "name": "Minecraft",
-        "url": "Offline_Download_Version.html",
-        "imgurl": "https://image.winudf.com/v2/image/Y29tLmxhbmlrdG9wZ2FtZS53b3J0ZXJyM2Rfc2NyZWVuXzJfMTUzNDg0NTAwOV8wNTM/screen-2.jpg?fakeurl=1&type=.jpg"
+        "url": "Offline_Download_Version.html"
     },
     {
         "name": "Retrobowl",
-        "url": "retro-bowl/retro.html",
-        "imgurl": "https://www.diningandcooking.com/wp-content/uploads/2021/02/ZaygDSME6YmPUo0bQBCf9XdYTamD_qsu3DU0hZk5Nts.jpg"
+        "url": "retro-bowl/retro.html"
     },
     {
         "name": "Moto X3M Winter",
-        "url": "wintermotox3m/index.html",
-        "imgurl": "https://s1.cdn.autoevolution.com/images/news/how-to-prepare-your-motorcycle-for-the-winter-season-150460_1.jpg"
+        "url": "wintermotox3m/index.html"
     },
     {
         "name": "Basketball Stars",
-        "url": "basketball-stars/index.html",
-        "imgurl": "https://thumbs.dreamstime.com/b/swirly-star-basketball-illustration-8223769.jpg"
+        "url": "basketball-stars/index.html"
     },
     {
         "name": "slope",
-        "url": "slope/index.html",
-        "imgurl": "https://www.inchcalculator.com/wp-content/uploads/2019/09/solve-slope.png"
+        "url": "slope/index.html"
     },
     {
         "name": "Geometry Dash",
-        "url": "geo.html",
-        "imgurl": "https://i.ytimg.com/vi/e4GP8uyWxTA/maxresdefault.jpg"
+        "url": "geo.html"
     },
     {
         "name": "Bloons TD 1",
-        "url": "bloons1.html",
-        "imgurl": "https://i.ytimg.com/vi/deRpg3IsZu4/hqdefault.jpg"
+        "url": "bloons1.html"
     },
     {
         "name": "Bloons TD 2",
-        "url": "bloons.html",
-        "imgurl": "https://i.ytimg.com/vi/deRpg3IsZu4/hqdefault.jpg"
+        "url": "bloons.html"
     },
     {
         "name": "Quake",
-        "url": "quake/index.html",
-        "imgurl": "https://images.igdb.com/igdb/image/upload/t_original/dwwi5gel6ezufxjexxtj.jpg"
+        "url": "quake/index.html"
     },
     {
         "name": "Binding of Isaac",
-        "url": "boi.html",
-        "imgurl": "https://www.dualshockers.com/static/uploads/2016/05/Binding-of-Isaac.jpg"
+        "url": "boi.html"
     },
     {
         "name": "Bitlife",
-        "url": "nolife/index.html",
-        "imgurl": "https://i.redd.it/viq8heapi1t51.jpg"
+        "url": "nolife/index.html"
     },
     {
         "name": "truck game thing",
-        "url": "goofyahhdrivesim/index.html",
-        "imgurl": "https://th.bing.com/th/id/R.17a69f2ee78a4c9acb0d4718d5b770e1?rik=wkvJzmFS%2bRVw5g&pid=ImgRaw&r=0"
+        "url": "goofyahhdrivesim/index.html"
     },
     {
         "name": "rocket game thing",
-        "url": "rocketgame/index.html",
-        "imgurl": "https://wallpaperaccess.com/full/851838.jpg"
+        "url": "rocketgame/index.html"
     }
 ]
