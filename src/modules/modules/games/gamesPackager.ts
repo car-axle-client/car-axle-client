@@ -26,7 +26,7 @@ function render(UI: UIManager, title: string, url: string) {
   games_container.addEventListener("mousedown", function (e) {
     change_game(url);
 
-    send_to_discord("Changed game to ' + title + '");
+    send_to_discord("Changed game to '" + title + "'");
   });
 
   let title_element = create_element("p", games_container, {
