@@ -65,7 +65,7 @@
     },
     {
         "name": "Basket Random",
-        "url": "btd5/index.html"
+        "url": "basket-random/index.html"
     },
     {
         "name": "truck game thing",
@@ -74,5 +74,23 @@
     {
         "name": "rocket game thing",
         "url": "rocketgame/index.html"
+    },
+    {
+        "name": "osu!",
+        "url": "osu/index.html"
+    },
+    {
+        "name": "Slither.io",
+        "url": "slitherio/index.html"
+    },
+    {
+        "name": "Run 3",
+        "url": "run3/index.html"
+    },
+    {
+        "name": "Monkey Mart",
+        "url": "monkeymart/index.html"
     }
+
+
 ]

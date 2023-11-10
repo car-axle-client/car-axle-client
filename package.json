@@ -1,7 +1,7 @@
 {
     "name": "car-axle-client",
-    "version": "3.0.0",
-    "description": "car axle",
+    "version": "v5",
+    "description": "car axle client",
     "main": "index.ts",
     "scripts": {
         "test": "webpack --config webpack.config.js",
