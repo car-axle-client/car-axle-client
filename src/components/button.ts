@@ -37,7 +37,6 @@ export default class Button implements Component {
         onEnable: () => void,
         onDisable: () => void,
         disabled: boolean,
-        menu_options: menuOption[] = [] // to lazy to remove this
     ) {
         this.parent = parent
         this.title = title

@@ -69,7 +69,6 @@ export class Section {
         onEnable: () => void,
         onDisable: () => void,
         disabled: boolean,
-        options: any /* should nnot be any but here we are.*/ = []
     ): void {
         this.buttons.push(
             new Button(
@@ -81,7 +80,6 @@ export class Section {
                 onEnable,
                 onDisable,
                 disabled,
-                options
             )
         )
     }
