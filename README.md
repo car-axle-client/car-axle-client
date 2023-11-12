@@ -10,7 +10,7 @@ The first good multi-purpose bookmarklet with a gui. Play games, watch youtube, 
 ## Announcements
 
 [Join the discord!](https://discord.gg/nac46r6Qn7)  
-  [![support][http://invidget.switchblade.xyz/nac46r6Qn7][https://discord.gg/b8ACDyb2Bu]
+  [![support][support-image]][support-invite]
 
 ## Installation
 
@@ -24,3 +24,6 @@ Dark Mode
 ## Support
 
 For support, contact me on discord @penguinify or through github issues
+
+[support-invite]: https://discord.gg/QnxQUdEAUM
+[support-image]: https://invidget.switchblade.xyz/QnxQUdEAUM
