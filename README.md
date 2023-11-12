@@ -10,18 +10,14 @@ The first good multi-purpose bookmarklet with a gui. Play games, watch youtube, 
 ## Announcements
 
 [Join the discord!](https://discord.gg/nac46r6Qn7)  
-![nice](http://invidget.switchblade.xyz/nac46r6Qn7)
+  [![support][http://invidget.switchblade.xyz/nac46r6Qn7][https://discord.gg/b8ACDyb2Bu]
 
 ## Installation
-
-### Website Installation
 
 Install on the [website](https://car-axle-client.github.io)
 
 ## Screenshots
 
-Light Mode
-![App Screenshot](docs/light.png)
 Dark Mode
 ![App Screenshot](docs/dark.png)
 
