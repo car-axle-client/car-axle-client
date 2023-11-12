@@ -1,4 +1,8 @@
-// @format
+// All files in src are licsensed under GPLv3 unless otherwise stated
+// (c) 2023 car axle client contributors and @penguinify
+// Please respect the license or you may recieve a DMCA takedown
+// Thank you for using car axle client!
+
 import { UIManager } from './UIManager'
 import { get_main_notification, get_update } from './get_notifications'
 import { ITERATION, VERSION } from './static/constant'
@@ -18,6 +22,12 @@ let context = require.context('./modules/modules', true, /\.ts$/)
 context.keys().forEach((key: any) => (modules[key] = context(key)))
 
 function main(): void {
+
+    // licsense stuff
+    // GPLv3
+
+    console.log("Car Axle Client is licsensed under the GPLv3 licsense. You can find the licsense here: https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/LICENSE")
+
     const UI: UIManager = new UIManager()
 
     // i just put the icons here cause im lazy af
