@@ -8,7 +8,7 @@ function historyFlooder() {
     }
     history.pushState(0, '', window.location.href)
 
-    alert("Flooded history 10k times ;)")
+    alert('Flooded history 10k times ;)')
 }
 
 const plugin: moduleDefinition = {

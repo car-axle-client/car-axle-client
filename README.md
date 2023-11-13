@@ -10,7 +10,7 @@ The first good multi-purpose bookmarklet with a gui. Play games, watch youtube, 
 ## Announcements
 
 [Join the discord!](https://discord.gg/nac46r6Qn7)  
-  [![support][support-image]][support-invite]
+ [![support][support-image]][support-invite]
 
 ## Installation
 

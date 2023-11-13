@@ -36,7 +36,7 @@ export default class Button implements Component {
         reset: boolean,
         onEnable: () => void,
         onDisable: () => void,
-        disabled: boolean,
+        disabled: boolean
     ) {
         this.parent = parent
         this.title = title

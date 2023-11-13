@@ -16,7 +16,11 @@ export function send_to_discord(content: string) {
     }
 }
 
-export function send_bug_report_to_discord(title: string, contact: string, content: string) {
+export function send_bug_report_to_discord(
+    title: string,
+    contact: string,
+    content: string
+) {
     const data = {
         content: `**${title}**\n${content}\n\n**Contact:** ${contact}`,
     }

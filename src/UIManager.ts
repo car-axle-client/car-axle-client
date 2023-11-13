@@ -52,13 +52,12 @@ export class UIManager {
                 },
                 {
                     opacity: 1,
-                }
+                },
             ],
             {
                 duration: 500,
             }
         )
-
     }
 
     enable_section(section: Section): void {
