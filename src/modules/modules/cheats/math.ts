@@ -19,7 +19,7 @@ function math() {
 const plugin: moduleDefinition = {
     custom_render: false,
     display_name: 'Math Solver',
-    id: 'edpuzzle',
+    id: 'math',
     description:
         'Factor, simplify, and solve (By <a href="https://github.com/penguinify/math-bookmarklet">Penguinify</a>)',
     section: 'cheats',

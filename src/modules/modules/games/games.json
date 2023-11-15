@@ -92,7 +92,11 @@
         "url": "monkeymart/index.html"
     },
     {
-        "name": "OvO",
-        "url": "ovo/index.html"
+        "name": "Stickman Hook",
+        "url": "stickman/index.html"
+    },
+    {
+        "name": "Cookie Clicker",
+        "url": "cookieclicker/index.html"
     }
 ]
