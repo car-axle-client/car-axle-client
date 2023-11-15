@@ -22,7 +22,7 @@ The **BEST** bookmarklet menu with a gui. Play games, watch youtube, or go onto 
 
 ## Installation
 
-Install on the [website](https://car-axle-client.github.io)
+[![website][install-img]][install-web]
 
 ## Screenshots
 
@@ -35,3 +35,5 @@ For support, contact me on discord @penguinify or through github issues
 
 [support-invite]: https://discord.gg/QnxQUdEAUM
 [support-image]: https://invidget.switchblade.xyz/QnxQUdEAUM
+[install-img]: docs/installbutton.png
+[install-web]: https://car-axle-client.github.io
