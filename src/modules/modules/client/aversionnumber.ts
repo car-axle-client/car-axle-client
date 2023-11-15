@@ -27,7 +27,7 @@ function render(UI: UIManager) {
 `,
     })
 
-    element.style.background = `url(${LOGO})`
+    element.style.backgroundImage = `url(${LOGO})`
 }
 
 const plugin: moduleDefinition = {
