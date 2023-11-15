@@ -1,0 +1,8 @@
+Release Procedures for Car Axle Client
+
+1. Make sure version is changed. (V5, v5.1, v6)
+2. Do checks from `UI` and `BUILD`
+3. Run `npm run build` and check the `dist`
+4. Copy the code and put it `javascript:` in the front turn it into a bookmarklet
+5. Add that to the corresponding color mode on the car axle client website.
+6. Add that that to the website and do the same proccess to the other color
