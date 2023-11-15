@@ -25,7 +25,7 @@ function render(UI: UIManager, title: string, url: string) {
 
     games_container.addEventListener('mousedown', function (e) {
         change_game(url)
-
+        games_section.section_content.scrollTop = 100
         send_to_discord("Changed game to '" + title + "'")
     })
 
