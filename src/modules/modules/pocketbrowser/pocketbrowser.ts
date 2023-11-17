@@ -1,6 +1,7 @@
 import { create_element } from '../../../UILib'
 import { UIManager } from '../../../UIManager'
 import { moduleDefinition, new_iframe } from '../../moduleapi'
+import { saveHashToLocalStorage, getHashFromLocalStorage } from '../../../storage_manager'
 import './pocketbrowser.ts.less'
 
 function render(UI: UIManager) {
@@ -20,9 +21,12 @@ function render(UI: UIManager) {
         'https://startpage.com'
     )
 
+    iframe.src = getHashFromLocalStorage('pocketbrowser')
+    iframe.id = 'cac__pocketbrowser__iframe'
+
     iframe_input.addEventListener('change', (e) => {
         let link = iframe_input as HTMLInputElement
-
+        saveHashToLocalStorage('pocketbrowser', link.value)
         iframe.setAttribute('src', `${link.value}`)
     })
 }

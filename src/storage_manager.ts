@@ -1,5 +1,21 @@
 import { UIManager } from './UIManager'
 
+export function saveHashToLocalStorage(index: string, hash: string): void {
+    localStorage.setItem('cac__' + index, btoa(hash.toString()))
+}
+
+export function getHashFromLocalStorage(index: string): string {
+    let storage_value = localStorage.getItem('cac__' + index)
+
+    if (!storage_value) {
+        return ''
+    }
+
+    return atob(storage_value)
+
+}
+
+
 export function load_module_values(UI: UIManager) {
     // i let ts infer here and I force as string since we already have null check
     const cacStorage = JSON.parse(

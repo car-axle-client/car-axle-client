@@ -1,6 +1,6 @@
 // Custom UPDATER for car-axle-client
 import Notification from './components/notification'
-import { VERSION, ITERATION } from './static/constant'
+import { VERSION, ITERATION, DATABASE } from './static/constant'
 
 function show_update(parent: HTMLElement, new_ver: string) {
     let notifcation = new Notification(
@@ -16,7 +16,7 @@ function show_update(parent: HTMLElement, new_ver: string) {
 
 export function get_update(main: HTMLElement) {
     fetch(
-        'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/version.json'
+        `${DATABASE}version.json`
     )
         .then((result) => result.json())
         .then((json) => {
@@ -32,7 +32,7 @@ export function get_update(main: HTMLElement) {
 
 export function get_main_notification(main: HTMLElement) {
     fetch(
-        'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/notification.json'
+        `${DATABASE}notification.json`
     )
         .then((result) => result.json())
         .then((json) => {

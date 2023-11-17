@@ -60,6 +60,7 @@ export class UIManager {
         )
     }
 
+
     enable_section(section: Section): void {
         this.enabled_section = section
         section.enabled = true
