@@ -29,6 +29,13 @@ The **BEST** bookmarklet menu with a gui. Play games, watch youtube, or go onto 
 v5 example
 ![App Screenshot](docs/dark.png)
 
+# Contributing
+
+Contributing is made to be as easy as possible.     
+Check out the wiki for a guide on how the code works!            
+
+Just fork and submit a pr and I will likely add it with some minor changes.
+
 ## Support
 
 For support, contact me on discord @penguinify or through github issues
