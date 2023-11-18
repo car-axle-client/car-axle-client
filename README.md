@@ -7,13 +7,13 @@ pls star ⭐️
 
 The **BEST** bookmarklet menu with a gui. Play games, watch youtube, or go onto a proxy from almost any website. Frequent updates every 2-3 weeks.
 
-- Exploits and history flooder
-- Small, fun things bookmarklets
-- Large 20+ game library
-- JS Console
-- Mini Browser
-- Youtube Embeder
-- (Coming V6) Scripts that improve your quality of life
+-   Exploits and history flooder
+-   Small, fun things bookmarklets
+-   Large 20+ game library
+-   JS Console
+-   Mini Browser
+-   Youtube Embeder
+-   (Coming V6) Scripts that improve your quality of life
 
 ## Announcements
 

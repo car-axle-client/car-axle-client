@@ -9,7 +9,9 @@
 import { moduleDefinition } from '../../moduleapi'
 
 function gimkit() {
-    console.log("LICENSE AGREEMENT: I have been given explicit permission to use this code by the author of this code.")
+    console.log(
+        'LICENSE AGREEMENT: I have been given explicit permission to use this code by the author of this code.'
+    )
     fetch(
         'https://raw.githubusercontent.com/Penguinify/gimkit-hacks/main/dist/bundle.js'
     )

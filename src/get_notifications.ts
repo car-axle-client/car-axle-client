@@ -15,9 +15,7 @@ function show_update(parent: HTMLElement, new_ver: string) {
 }
 
 export function get_update(main: HTMLElement) {
-    fetch(
-        `${DATABASE}version.json`
-    )
+    fetch(`${DATABASE}version.json`)
         .then((result) => result.json())
         .then((json) => {
             let current = parseFloat(`${VERSION}.${ITERATION}`)
@@ -31,9 +29,7 @@ export function get_update(main: HTMLElement) {
 }
 
 export function get_main_notification(main: HTMLElement) {
-    fetch(
-        `${DATABASE}notification.json`
-    )
+    fetch(`${DATABASE}notification.json`)
         .then((result) => result.json())
         .then((json) => {
             new Notification(main, json['title'], json['body'], {

@@ -112,7 +112,6 @@ export function new_iframe(
         window_blank.document.body.appendChild(iframe_blank)
     }
 
-
     return iframe
 }
 

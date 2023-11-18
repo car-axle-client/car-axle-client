@@ -12,9 +12,7 @@ export function getHashFromLocalStorage(index: string): string {
     }
 
     return atob(storage_value)
-
 }
-
 
 export function load_module_values(UI: UIManager) {
     // i let ts infer here and I force as string since we already have null check
