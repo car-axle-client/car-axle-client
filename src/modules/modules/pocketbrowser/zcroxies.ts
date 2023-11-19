@@ -75,4 +75,4 @@ const normal: moduleDefinition = {
 
 const plugin: moduleDefinition[] = [wildcard, normal]
 
-export default plugin
+// export default plugin

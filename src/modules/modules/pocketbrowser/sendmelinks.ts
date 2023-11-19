@@ -52,4 +52,4 @@ const plugin: moduleDefinition = {
     render: render,
 }
 
-export default plugin
+// export default plugin
