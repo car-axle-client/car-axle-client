@@ -98,5 +98,17 @@
     {
         "name": "Cookie Clicker",
         "url": "cookieclicker/index.html"
+    },
+    {
+        "name": "Age of Conflict",
+        "url": "aoc/index.html"
+    },
+    {
+        "name": "Sand Boxels",
+        "url": "sand/index.html"
+    },
+    {
+        "name": "Exo",
+        "url": "exo/index.html"
     }
 ]

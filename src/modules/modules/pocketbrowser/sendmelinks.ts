@@ -15,7 +15,7 @@ function render(UI: UIManager) {
     if (!section) return
 
     const title = create_element('h1', section_content, {
-        innerHTML: 'proxy links possibly?',
+        innerHTML: 'Send me links to add to car axle client',
         class_name: 'cac__suggestions__title',
     })
 
@@ -23,6 +23,8 @@ function render(UI: UIManager) {
         value: 'ill add them to the client...',
         class_name: 'cac__suggestions__input',
     }) as HTMLTextAreaElement
+
+    input_content.placeholder = 'example.com'
 
     const submit = create_element('button', section_content, {
         innerHTML: 'Send',
