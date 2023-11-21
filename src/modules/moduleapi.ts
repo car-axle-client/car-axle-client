@@ -112,6 +112,16 @@ export function new_iframe(
         window_blank.document.body.appendChild(iframe_blank)
     }
 
+    // check if iframe is blocked by CSP
+    
+    try {
+        // @ts-ignore
+        iframe.contentDocument || iframe.contentWindow.document;
+    }  catch (e) {
+        alert('This website blocks car axle client from loading in an iframe. Please contact the website owner and ask them to allow car axle client to load in an iframe.');
+    }
+
+
     return iframe
 }
 
