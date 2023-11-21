@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
     entry: './src/index.ts', // Entry point of your application
-    mode: 'production', // Or 'development' for non-minified output
+    mode: 'development', // Or 'development' for non-minified output
     module: {
         rules: [
             {

@@ -24,7 +24,7 @@ const plugin: moduleDefinition = {
     display_name: 'Gimkit-Hacks',
     id: 'gimkit',
     description:
-        'Gimkit answer saver (Only works on classic mode) (By <a href="https://github.com/Penguinify/gimkit-hacks">Penguinify</a>',
+        'Gimkit answer saver (Only works on classic mode) (By <a href="https://github.com/Penguinify/gimkit-hacks">Penguinify</a>)',
     section: 'cheats',
     reset: true,
     onactive: gimkit,
