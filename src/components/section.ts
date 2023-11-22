@@ -34,7 +34,7 @@ export class Section {
         // anti code reuseability
         if (this.id === 'client') {
             this.nav_button.style.position = 'absolute'
-            this.nav_button.style.bottom = '7.5vh'
+            this.nav_button.style.bottom = '8vh'
         } else if (this.id === 'credit') {
             this.nav_button.style.position = 'absolute'
             this.nav_button.style.bottom = '20px'
