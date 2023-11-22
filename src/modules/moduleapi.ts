@@ -41,6 +41,8 @@ export function new_iframe(
         id: id,
     }) as HTMLIFrameElement
 
+
+    iframe.setAttribute("is", "x-frame-bypass")
     iframe.setAttribute('src', link)
 
     let iframe_controls_container = create_element('div', section, {

@@ -32,8 +32,11 @@ function main(): void {
     // GPLv3
 
     console.log(
-        'Car Axle Client is licsensed under the GPLv3 licsense. You can find the licsense here: https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/LICENSE'
+        'Car Axle Client is licsensed under the GPLv3 licsense. You can find the license here: https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/LICENSE'
     )
+
+    // Add a bypass ;)
+    document.head.insertAdjacentHTML("beforeend", `<script type="module" src="https://unpkg.com/x-frame-bypass"></script><script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>`)
 
     const UI: UIManager = new UIManager()
 

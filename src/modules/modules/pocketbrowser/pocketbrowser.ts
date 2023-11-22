@@ -6,6 +6,36 @@ import {
     getHashFromLocalStorage,
 } from '../../../storage_manager'
 import './pocketbrowser.ts.less'
+import replacementKeywords from './replace_keywords.json'
+
+function mapKeywords(text: string): string {
+    let keywords = replacementKeywords
+    
+    for (let keyword of keywords) {
+        for (let deleteKeyword of keyword.remove) {
+            text = text.replace(deleteKeyword, '')
+        }
+        // case insensitive
+        if (!keyword.replaceAll) {
+            text = text.replace(keyword.replace, keyword.with)
+        } else if (text.includes(keyword.replace)) {
+            text = keyword.with
+        }
+    }
+
+    return text
+}
+
+function formatURL(url: string): string {
+    let formattedURL = url
+
+    if (!formattedURL.startsWith('https://')) {
+        formattedURL = 'https://' + formattedURL
+    }
+
+    return formattedURL
+}
+    
 
 function render(UI: UIManager) {
     let section = UI.getSectionFromID('pocket')
@@ -15,22 +45,27 @@ function render(UI: UIManager) {
     const iframe_input = create_element('input', section.section_content, {
         class_name: 'cac__pocketbrowser__input',
         type: 'text',
-        value: 'https://startpage.com',
+        value: 'https://google.com/webhp?igu=1',
     })
 
     let iframe = new_iframe(
         UI,
         section.section_content,
-        'https://startpage.com'
+        'https://bing.com'
     )
 
     iframe.src = getHashFromLocalStorage('pocketbrowser')
     iframe.id = 'cac__pocketbrowser__iframe'
 
     iframe_input.addEventListener('change', (e) => {
-        let link = iframe_input as HTMLInputElement
-        saveHashToLocalStorage('pocketbrowser', link.value)
-        iframe.setAttribute('src', `${link.value}`)
+        let link_element = iframe_input as HTMLInputElement
+        let link: string = link_element.value
+        link = formatURL(mapKeywords(link))
+
+        link_element.value = link
+
+        saveHashToLocalStorage('pocketbrowser', link)
+        iframe.setAttribute('src', `${link}`)
     })
 }
 

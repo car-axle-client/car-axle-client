@@ -1,0 +1,14 @@
+[
+    {
+        "remove": [""],
+        "replace": "youtube.com/watch?v=",
+        "with": "youtube.com/embed/",
+        "replaceAll": false
+    },
+    {
+        "remove": [""],
+        "replace": "google.com",
+        "with": "google.com/webhp?igu=1",
+        "replaceAll": true
+    }
+]
