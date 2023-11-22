@@ -36,6 +36,11 @@ Check out the wiki for a guide on how the code works!
 
 Just fork and submit a pr and I will likely add it with some minor changes.
 
+Things you can contribute:
+- Fixing UI bugs (you can ask me for help if needed)
+- adding small features
+- refractoring
+
 ## Support
 
 For support, contact me on discord @penguinify or through github issues
