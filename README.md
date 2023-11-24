@@ -39,7 +39,9 @@ Just fork and submit a pr and I will likely add it with some minor changes.
 Things you can contribute:
 - Fixing UI bugs (you can ask me for help if needed)
 - adding small features
-- refractoring
+- refractoring         
+
+You could also look at github issues
 
 ## Support
 
