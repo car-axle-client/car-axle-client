@@ -13,7 +13,7 @@ The **BEST** bookmarklet menu with a gui. Play games, watch youtube, or go onto 
 -   JS Console
 -   Mini Browser
 -   Youtube Embeder
--   (Coming V6) Scripts that improve your quality of life
+-   Scripts that improve your quality of life
 
 ## Announcements
 
