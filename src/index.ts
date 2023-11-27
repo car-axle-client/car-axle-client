@@ -10,7 +10,7 @@ import { load_module_values } from './storage_manager'
 import { send_to_discord } from './log'
 
 // check if client is already running
-if (document.getElementById('car-axle-client')) {
+if (document.getElementById('cac__CONTAINER')) {
     alert('Car Axle Client is already running!')
     throw new Error('Car Axle Client is already running!')
 }
