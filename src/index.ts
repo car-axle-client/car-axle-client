@@ -36,7 +36,10 @@ function main(): void {
     )
 
     // Add a bypass ;)
-    document.head.insertAdjacentHTML("beforeend", `<script type="module" src="https://unpkg.com/x-frame-bypass"></script>`)
+    document.head.insertAdjacentHTML(
+        'beforeend',
+        `<script type="module" src="https://unpkg.com/x-frame-bypass"></script>`
+    )
 
     const UI: UIManager = new UIManager()
 
