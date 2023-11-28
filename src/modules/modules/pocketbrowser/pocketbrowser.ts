@@ -34,8 +34,8 @@ function formatURL(url: string): string {
     }
 
     if (formattedURL.endsWith('/')) {
-        formattedURL = formattedURL.slice(0, -1);
-    };
+        formattedURL = formattedURL.slice(0, -1)
+    }
 
     return formattedURL
 }

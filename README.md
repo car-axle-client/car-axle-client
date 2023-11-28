@@ -31,15 +31,16 @@ v5 example
 
 # Contributing
 
-Contributing is made to be as easy as possible.     
-Check out the wiki for a guide on how the code works!            
+Contributing is made to be as easy as possible.  
+Check out the wiki for a guide on how the code works!
 
 Just fork and submit a pr and I will likely add it with some minor changes.
 
 Things you can contribute:
-- Fixing UI bugs (you can ask me for help if needed)
-- adding small features
-- refractoring         
+
+-   Fixing UI bugs (you can ask me for help if needed)
+-   adding small features
+-   refractoring
 
 You could also look at github issues
 
