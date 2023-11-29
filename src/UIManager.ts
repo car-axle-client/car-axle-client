@@ -129,25 +129,10 @@ export class UIManager {
         this.enable_section(section)
     }
 
-    newSection(
-        id: string,
-        displayName: string,
-        description: string,
-        icon: string,
-        enabled: boolean = false
-    ): Section {
-        let section: Section = new Section(
-            id,
-            displayName,
-            description,
-            icon,
-            this.sidebar,
-            this.main_content,
-            enabled
-        )
+    newSection(id: string, displayName: string, description: string, icon: string, enabled: boolean = false): Section {
+        let section: Section = new Section(id, displayName, description, icon, this.sidebar, this.main_content, enabled)
 
-        section.nav_button.onmousedown = () =>
-            this._handleSectionMouseDown(section)
+        section.nav_button.onmousedown = () => this._handleSectionMouseDown(section)
         enabled && this.enable_section(section)
 
         this.sections.push(section)

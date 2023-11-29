@@ -1,10 +1,7 @@
 import { create_element } from '../../../UILib'
 import { UIManager } from '../../../UIManager'
 import { moduleDefinition, new_iframe } from '../../moduleapi'
-import {
-    saveHashToLocalStorage,
-    getHashFromLocalStorage,
-} from '../../../storage_manager'
+import { saveHashToLocalStorage, getHashFromLocalStorage } from '../../../storage_manager'
 import './pocketbrowser.ts.less'
 import replacementKeywords from './replace_keywords.json'
 

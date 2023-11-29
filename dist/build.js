@@ -206,19 +206,9 @@
                                 var n = '',
                                     o = void 0 !== t[5]
                                 return (
-                                    t[4] &&
-                                        (n += '@supports ('.concat(
-                                            t[4],
-                                            ') {'
-                                        )),
+                                    t[4] && (n += '@supports ('.concat(t[4], ') {')),
                                     t[2] && (n += '@media '.concat(t[2], ' {')),
-                                    o &&
-                                        (n += '@layer'.concat(
-                                            t[5].length > 0
-                                                ? ' '.concat(t[5])
-                                                : '',
-                                            ' {'
-                                        )),
+                                    o && (n += '@layer'.concat(t[5].length > 0 ? ' '.concat(t[5]) : '', ' {')),
                                     (n += e(t)),
                                     o && (n += '}'),
                                     t[2] && (n += '}'),
@@ -238,31 +228,9 @@
                             for (var l = 0; l < e.length; l++) {
                                 var d = [].concat(e[l])
                                 ;(o && s[d[0]]) ||
-                                    (void 0 !== a &&
-                                        (void 0 === d[5] ||
-                                            (d[1] = '@layer'
-                                                .concat(
-                                                    d[5].length > 0
-                                                        ? ' '.concat(d[5])
-                                                        : '',
-                                                    ' {'
-                                                )
-                                                .concat(d[1], '}')),
-                                        (d[5] = a)),
-                                    n &&
-                                        (d[2]
-                                            ? ((d[1] = '@media '
-                                                  .concat(d[2], ' {')
-                                                  .concat(d[1], '}')),
-                                              (d[2] = n))
-                                            : (d[2] = n)),
-                                    i &&
-                                        (d[4]
-                                            ? ((d[1] = '@supports ('
-                                                  .concat(d[4], ') {')
-                                                  .concat(d[1], '}')),
-                                              (d[4] = i))
-                                            : (d[4] = ''.concat(i))),
+                                    (void 0 !== a && (void 0 === d[5] || (d[1] = '@layer'.concat(d[5].length > 0 ? ' '.concat(d[5]) : '', ' {').concat(d[1], '}')), (d[5] = a)),
+                                    n && (d[2] ? ((d[1] = '@media '.concat(d[2], ' {').concat(d[1], '}')), (d[2] = n)) : (d[2] = n)),
+                                    i && (d[4] ? ((d[1] = '@supports ('.concat(d[4], ') {').concat(d[1], '}')), (d[4] = i)) : (d[4] = ''.concat(i))),
                                     t.push(d))
                             }
                         }),
@@ -293,12 +261,7 @@
                     p = n.n(_),
                     h = n(9537),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             7832: (e, t, n) => {
@@ -318,12 +281,7 @@
                     p = n.n(_),
                     h = n(5889),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             5789: (e, t, n) => {
@@ -343,12 +301,7 @@
                     p = n.n(_),
                     h = n(7622),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             1539: (e, t, n) => {
@@ -368,12 +321,7 @@
                     p = n.n(_),
                     h = n(5156),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             4430: (e, t, n) => {
@@ -393,12 +341,7 @@
                     p = n.n(_),
                     h = n(1451),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             7947: (e, t, n) => {
@@ -418,12 +361,7 @@
                     p = n.n(_),
                     h = n(5089),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             6919: (e, t, n) => {
@@ -443,12 +381,7 @@
                     p = n.n(_),
                     h = n(7356),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             2177: (e, t, n) => {
@@ -468,12 +401,7 @@
                     p = n.n(_),
                     h = n(9996),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             3282: (e, t, n) => {
@@ -493,12 +421,7 @@
                     p = n.n(_),
                     h = n(1589),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             1003: (e, t, n) => {
@@ -518,12 +441,7 @@
                     p = n.n(_),
                     h = n(8952),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             6689: (e, t, n) => {
@@ -543,12 +461,7 @@
                     p = n.n(_),
                     h = n(3796),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             9705: (e, t, n) => {
@@ -568,12 +481,7 @@
                     p = n.n(_),
                     h = n(3675),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             9367: (e, t, n) => {
@@ -593,12 +501,7 @@
                     p = n.n(_),
                     h = n(3344),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             7100: (e, t, n) => {
@@ -618,12 +521,7 @@
                     p = n.n(_),
                     h = n(7624),
                     f = {}
-                ;(f.styleTagTransform = p()),
-                    (f.setAttributes = d()),
-                    (f.insert = c().bind(null, 'head')),
-                    (f.domAPI = s()),
-                    (f.insertStyleElement = m()),
-                    i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             3379: (e) => {
@@ -672,14 +570,7 @@
                         n.update(e),
                         function (t) {
                             if (t) {
-                                if (
-                                    t.css === e.css &&
-                                    t.media === e.media &&
-                                    t.sourceMap === e.sourceMap &&
-                                    t.supports === e.supports &&
-                                    t.layer === e.layer
-                                )
-                                    return
+                                if (t.css === e.css && t.media === e.media && t.sourceMap === e.sourceMap && t.supports === e.supports && t.layer === e.layer) return
                                 n.update((e = t))
                             } else n.remove()
                         }
@@ -695,8 +586,7 @@
                         }
                         for (var c = o(e, i), l = 0; l < a.length; l++) {
                             var d = n(a[l])
-                            0 === t[d].references &&
-                                (t[d].updater(), t.splice(d, 1))
+                            0 === t[d].references && (t[d].updater(), t.splice(d, 1))
                         }
                         a = c
                     }
@@ -709,10 +599,7 @@
                     var o = (function (e) {
                         if (void 0 === t[e]) {
                             var n = document.querySelector(e)
-                            if (
-                                window.HTMLIFrameElement &&
-                                n instanceof window.HTMLIFrameElement
-                            )
+                            if (window.HTMLIFrameElement && n instanceof window.HTMLIFrameElement)
                                 try {
                                     n = n.contentDocument.head
                                 } catch (e) {
@@ -722,10 +609,7 @@
                         }
                         return t[e]
                     })(e)
-                    if (!o)
-                        throw new Error(
-                            "Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid."
-                        )
+                    if (!o) throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.")
                     o.appendChild(n)
                 }
             },
@@ -733,11 +617,7 @@
                 'use strict'
                 e.exports = function (e) {
                     var t = document.createElement('style')
-                    return (
-                        e.setAttributes(t, e.attributes),
-                        e.insert(t, e.options),
-                        t
-                    )
+                    return e.setAttributes(t, e.attributes), e.insert(t, e.options), t
                 }
             },
             3565: (e, t, n) => {
@@ -760,39 +640,11 @@
                         update: function (n) {
                             !(function (e, t, n) {
                                 var o = ''
-                                n.supports &&
-                                    (o += '@supports ('.concat(
-                                        n.supports,
-                                        ') {'
-                                    )),
-                                    n.media &&
-                                        (o += '@media '.concat(n.media, ' {'))
+                                n.supports && (o += '@supports ('.concat(n.supports, ') {')), n.media && (o += '@media '.concat(n.media, ' {'))
                                 var i = void 0 !== n.layer
-                                i &&
-                                    (o += '@layer'.concat(
-                                        n.layer.length > 0
-                                            ? ' '.concat(n.layer)
-                                            : '',
-                                        ' {'
-                                    )),
-                                    (o += n.css),
-                                    i && (o += '}'),
-                                    n.media && (o += '}'),
-                                    n.supports && (o += '}')
+                                i && (o += '@layer'.concat(n.layer.length > 0 ? ' '.concat(n.layer) : '', ' {')), (o += n.css), i && (o += '}'), n.media && (o += '}'), n.supports && (o += '}')
                                 var a = n.sourceMap
-                                a &&
-                                    'undefined' != typeof btoa &&
-                                    (o +=
-                                        '\n/*# sourceMappingURL=data:application/json;base64,'.concat(
-                                            btoa(
-                                                unescape(
-                                                    encodeURIComponent(
-                                                        JSON.stringify(a)
-                                                    )
-                                                )
-                                            ),
-                                            ' */'
-                                        )),
+                                a && 'undefined' != typeof btoa && (o += '\n/*# sourceMappingURL=data:application/json;base64,'.concat(btoa(unescape(encodeURIComponent(JSON.stringify(a)))), ' */')),
                                     t.styleTagTransform(o, e, t.options)
                             })(t, e, n)
                         },
@@ -837,8 +689,7 @@
             },
             6228: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.UIManager = void 0)
+                Object.defineProperty(t, '__esModule', { value: !0 }), (t.UIManager = void 0)
                 const o = n(1162),
                     i = n(3539),
                     a = n(4203),
@@ -857,128 +708,66 @@
                             this._createGUI()
                         }
                         _createGUI() {
-                            ;(this.container = (0, i.create_element)(
-                                'div',
-                                document.body,
-                                { id: 'cac__CONTAINER' }
-                            )),
-                                (this.gui = (0, i.create_element)(
-                                    'div',
-                                    this.container,
-                                    { id: 'cac__GUI' }
-                                )),
-                                (this.sidebar = (0, i.create_element)(
-                                    'div',
-                                    this.gui,
-                                    { id: 'cac__SIDEBAR' }
-                                )),
-                                (this.main_content = (0, i.create_element)(
-                                    'div',
-                                    this.gui,
-                                    { id: 'cac__MAINCONTENT' }
-                                )),
-                                (this._section_background = (0,
-                                i.create_element)('div', this.sidebar, {
+                            ;(this.container = (0, i.create_element)('div', document.body, { id: 'cac__CONTAINER' })),
+                                (this.gui = (0, i.create_element)('div', this.container, { id: 'cac__GUI' })),
+                                (this.sidebar = (0, i.create_element)('div', this.gui, { id: 'cac__SIDEBAR' })),
+                                (this.main_content = (0, i.create_element)('div', this.gui, { id: 'cac__MAINCONTENT' })),
+                                (this._section_background = (0, i.create_element)('div', this.sidebar, {
                                     id: 'cac__section__BACKGROUND',
                                 })),
-                                (this.tabbar = (0, i.create_element)(
-                                    'div',
-                                    this.main_content,
-                                    { id: 'cac__TABBAR' }
-                                )),
+                                (this.tabbar = (0, i.create_element)('div', this.main_content, { id: 'cac__TABBAR' })),
                                 (0, i.create_element)('div', this.sidebar, {
                                     id: 'cac__LOGO',
                                     innerHTML: `${s.CLIENTNAME} v${s.VERSION}`,
                                 }),
-                                this.container.animate(
-                                    [{ opacity: 0 }, { opacity: 1 }],
-                                    { duration: 500 }
-                                )
+                                this.container.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 500 })
                         }
                         enable_section(e) {
                             ;(this.enabled_section = e),
                                 (e.enabled = !0),
                                 (e.section_content.style.display = 'block'),
-                                (e.section_content.style.pointerEvents =
-                                    'auto'),
-                                this._section_background.animate(
-                                    [{ top: `${e.nav_button.offsetTop}px` }],
-                                    {
-                                        duration: 1e3,
-                                        fill: 'forwards',
-                                        easing: 'ease',
-                                    }
-                                ),
-                                e.section_content.animate(
-                                    [{ opacity: 0 }, { opacity: 1 }],
-                                    {
-                                        duration: 500,
-                                        fill: 'forwards',
-                                        easing: 'ease',
-                                    }
-                                ),
+                                (e.section_content.style.pointerEvents = 'auto'),
+                                this._section_background.animate([{ top: `${e.nav_button.offsetTop}px` }], {
+                                    duration: 1e3,
+                                    fill: 'forwards',
+                                    easing: 'ease',
+                                }),
+                                e.section_content.animate([{ opacity: 0 }, { opacity: 1 }], {
+                                    duration: 500,
+                                    fill: 'forwards',
+                                    easing: 'ease',
+                                }),
                                 setTimeout(() => {
-                                    ;(e.section_content.style.display =
-                                        'block'),
-                                        (e.section_content.style.pointerEvents =
-                                            'auto')
+                                    ;(e.section_content.style.display = 'block'), (e.section_content.style.pointerEvents = 'auto')
                                 }, 500)
                         }
                         disable_section(e) {
                             ;(e.enabled = !1),
-                                e.section_content.animate(
-                                    [{ opacity: 1 }, { opacity: 0 }],
-                                    {
-                                        duration: 500,
-                                        fill: 'forwards',
-                                        easing: 'ease',
-                                    }
-                                ),
+                                e.section_content.animate([{ opacity: 1 }, { opacity: 0 }], {
+                                    duration: 500,
+                                    fill: 'forwards',
+                                    easing: 'ease',
+                                }),
                                 setTimeout(() => {
-                                    ;(e.section_content.style.display = 'none'),
-                                        (e.section_content.style.pointerEvents =
-                                            'none;')
+                                    ;(e.section_content.style.display = 'none'), (e.section_content.style.pointerEvents = 'none;')
                                 }, 490)
                         }
                         _handleSectionMouseDown(e) {
-                            e.enabled ||
-                                (this.enabled_section &&
-                                    this.disable_section(this.enabled_section),
-                                this.enable_section(e))
+                            e.enabled || (this.enabled_section && this.disable_section(this.enabled_section), this.enable_section(e))
                         }
                         newSection(e, t, n, i, a = !1) {
-                            let s = new o.Section(
-                                e,
-                                t,
-                                n,
-                                i,
-                                this.sidebar,
-                                this.main_content,
-                                a
-                            )
-                            return (
-                                (s.nav_button.onmousedown = () =>
-                                    this._handleSectionMouseDown(s)),
-                                a && this.enable_section(s),
-                                this.sections.push(s),
-                                s
-                            )
+                            let s = new o.Section(e, t, n, i, this.sidebar, this.main_content, a)
+                            return (s.nav_button.onmousedown = () => this._handleSectionMouseDown(s)), a && this.enable_section(s), this.sections.push(s), s
                         }
                         toggleUI() {
                             if (!this.container.parentElement)
                                 return (
                                     document.body.appendChild(this.container),
-                                    void this.gui.animate(
-                                        [
-                                            { transform: 'translateX(-100%)' },
-                                            { transform: 'translateX(0%)' },
-                                        ],
-                                        {
-                                            duration: 500,
-                                            fill: 'forwards',
-                                            easing: 'ease-out',
-                                        }
-                                    )
+                                    void this.gui.animate([{ transform: 'translateX(-100%)' }, { transform: 'translateX(0%)' }], {
+                                        duration: 500,
+                                        fill: 'forwards',
+                                        easing: 'ease-out',
+                                    })
                                 )
                             this.container.remove()
                         }
@@ -992,16 +781,7 @@
                                 return
                             }
                             const t = this.getSectionFromID(e.section)
-                            t &&
-                                t.add_button(
-                                    e.display_name,
-                                    e.description || e.display_name,
-                                    e.always || !1,
-                                    e.reset || !1,
-                                    e.onactive || a.none,
-                                    e.ondisable || a.none,
-                                    e.disabled || !1
-                                )
+                            t && t.add_button(e.display_name, e.description || e.display_name, e.always || !1, e.reset || !1, e.onactive || a.none, e.ondisable || a.none, e.disabled || !1)
                         }
                         addModulesFromList(e) {
                             for (const t of e) this.addModule(t)
@@ -1010,9 +790,7 @@
                             for (const t of Object.keys(e)) {
                                 if (!e[t].default) continue
                                 const n = e[t].default
-                                Array.isArray(n)
-                                    ? this.addModulesFromList(n)
-                                    : this.addModule(n)
+                                Array.isArray(n) ? this.addModulesFromList(n) : this.addModule(n)
                             }
                         }
                         getSectionFromID(e) {
@@ -1055,17 +833,9 @@
                         }
                         _toggle() {
                             ;(this.enabled = !this.enabled),
-                                this.enabled
-                                    ? this.onEnable()
-                                    : this.onDisable(),
-                                this.button.classList.toggle(
-                                    'cac__button--enabled',
-                                    this.enabled
-                                ),
-                                this.enabled &&
-                                    (0, i.send_to_discord)(
-                                        `Enabled ${this.title}`
-                                    )
+                                this.enabled ? this.onEnable() : this.onDisable(),
+                                this.button.classList.toggle('cac__button--enabled', this.enabled),
+                                this.enabled && (0, i.send_to_discord)(`Enabled ${this.title}`)
                         }
                         _handleMouseDown(e) {
                             0 !== e.button ||
@@ -1078,24 +848,14 @@
                                     }, 1e3))
                         }
                         render() {
-                            ;(this.button = (0, o.create_element)(
-                                'button',
-                                this.parent,
-                                {
-                                    class_name: 'cac__button',
-                                    innerHTML: `<div>${this.title}<p>${this.description}</p></div>`,
-                                }
-                            )),
-                                this.disabled ||
-                                    this.button.addEventListener(
-                                        'mousedown',
-                                        this._handleMouseDown.bind(this)
-                                    )
+                            ;(this.button = (0, o.create_element)('button', this.parent, {
+                                class_name: 'cac__button',
+                                innerHTML: `<div>${this.title}<p>${this.description}</p></div>`,
+                            })),
+                                this.disabled || this.button.addEventListener('mousedown', this._handleMouseDown.bind(this))
                         }
                         get values() {
-                            return this.reset
-                                ? { enabled: !1 }
-                                : { enabled: this.enabled }
+                            return this.reset ? { enabled: !1 } : { enabled: this.enabled }
                         }
                         set values(e) {
                             e.enabled && this._toggle()
@@ -1117,21 +877,13 @@
                             (this.body = n),
                             this.render(),
                             i &&
-                                ((0, o.create_element)(
-                                    'button',
-                                    this.notification,
-                                    {
-                                        class_name: 'cac__notification__button',
-                                        innerHTML: i.text,
-                                    }
-                                ).onclick = (e) => i.fn())
+                                ((0, o.create_element)('button', this.notification, {
+                                    class_name: 'cac__notification__button',
+                                    innerHTML: i.text,
+                                }).onclick = (e) => i.fn())
                     }
                     render() {
-                        ;(this.notification = (0, o.create_element)(
-                            'div',
-                            this.parent,
-                            { class_name: 'cac__notification' }
-                        )),
+                        ;(this.notification = (0, o.create_element)('div', this.parent, { class_name: 'cac__notification' })),
                             (0, o.create_element)('h1', this.notification, {
                                 class_name: 'cac__notification__header',
                                 innerHTML: this.title,
@@ -1140,16 +892,11 @@
                                 class_name: 'cac__notification__body',
                                 innerHTML: this.body,
                             })
-                        let e = (0, o.create_element)(
-                            'button',
-                            this.notification,
-                            {
-                                class_name: 'cac__notification__button',
-                                innerHTML: 'Dismiss',
-                            }
-                        )
-                        e.classList.add('cac__notification__dismiss'),
-                            (e.onclick = (e) => this.notification.remove())
+                        let e = (0, o.create_element)('button', this.notification, {
+                            class_name: 'cac__notification__button',
+                            innerHTML: 'Dismiss',
+                        })
+                        e.classList.add('cac__notification__dismiss'), (e.onclick = (e) => this.notification.remove())
                     }
                     display(e = 500) {}
                 }
@@ -1161,8 +908,7 @@
                     function (e) {
                         return e && e.__esModule ? e : { default: e }
                     }
-                Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.Section = void 0)
+                Object.defineProperty(t, '__esModule', { value: !0 }), (t.Section = void 0)
                 const i = n(3539),
                     a = o(n(1407))
                 n(5789),
@@ -1186,68 +932,35 @@
                                 (this.enabled = s),
                                 this._create_section_elements(a),
                                 'client' === this.id
-                                    ? ((this.nav_button.style.position =
-                                          'absolute'),
-                                      (this.nav_button.style.bottom = '7.5vh'))
-                                    : 'credit' === this.id &&
-                                      ((this.nav_button.style.position =
-                                          'absolute'),
-                                      (this.nav_button.style.bottom = '20px'))
+                                    ? ((this.nav_button.style.position = 'absolute'), (this.nav_button.style.bottom = '7.5vh'))
+                                    : 'credit' === this.id && ((this.nav_button.style.position = 'absolute'), (this.nav_button.style.bottom = '20px'))
                         }
                         _create_section_elements(e) {
-                            ;(this.nav_button = (0, i.create_element)(
-                                'div',
-                                this._container,
-                                {
-                                    class_name: 'cac__section',
-                                    innerHTML: this._icon + this._displayName,
-                                }
-                            )),
-                                (this.section_content = (0, i.create_element)(
-                                    'div',
-                                    e,
-                                    {
-                                        class_name: 'cac__section__content',
-                                        id: `cac__content__${this.id}`,
-                                    }
-                                )),
-                                (0, i.create_element)(
-                                    'h1',
-                                    this.section_content,
-                                    {
-                                        innerHTML: this._displayName,
-                                        class_name: 'cac__section__title',
-                                    }
-                                ),
-                                (0, i.create_element)(
-                                    'p',
-                                    this.section_content,
-                                    {
-                                        innerHTML: this._description,
-                                        class_name: 'cac__section__description',
-                                    }
-                                )
+                            ;(this.nav_button = (0, i.create_element)('div', this._container, {
+                                class_name: 'cac__section',
+                                innerHTML: this._icon + this._displayName,
+                            })),
+                                (this.section_content = (0, i.create_element)('div', e, {
+                                    class_name: 'cac__section__content',
+                                    id: `cac__content__${this.id}`,
+                                })),
+                                (0, i.create_element)('h1', this.section_content, {
+                                    innerHTML: this._displayName,
+                                    class_name: 'cac__section__title',
+                                }),
+                                (0, i.create_element)('p', this.section_content, {
+                                    innerHTML: this._description,
+                                    class_name: 'cac__section__description',
+                                })
                         }
                         add_button(e, t, n, o, i, s, r) {
-                            this.buttons.push(
-                                new a.default(
-                                    this.section_content,
-                                    e,
-                                    t,
-                                    n,
-                                    o,
-                                    i,
-                                    s,
-                                    r
-                                )
-                            )
+                            this.buttons.push(new a.default(this.section_content, e, t, n, o, i, s, r))
                         }
                         get_all_button_values() {
                             return this.buttons.map((e) => [e.enabled])
                         }
                         set_all_button_values_from_array(e) {
-                            for (const [t, n] of e.entries())
-                                this.buttons[t].values = { enabled: n[0] }
+                            for (const [t, n] of e.entries()) this.buttons[t].values = { enabled: n[0] }
                         }
                     })
             },
@@ -1258,8 +971,7 @@
                     function (e) {
                         return e && e.__esModule ? e : { default: e }
                     }
-                Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.get_main_notification = t.get_update = void 0)
+                Object.defineProperty(t, '__esModule', { value: !0 }), (t.get_main_notification = t.get_update = void 0)
                 const i = o(n(7067)),
                     a = n(6996)
                 ;(t.get_update = function (e) {
@@ -1267,8 +979,7 @@
                         .then((e) => e.json())
                         .then((t) => {
                             var n, o
-                            parseFloat(`${a.VERSION}.${a.ITERATION}`) >=
-                            parseFloat(`${t.version}.${t.i}`)
+                            parseFloat(`${a.VERSION}.${a.ITERATION}`) >= parseFloat(`${t.version}.${t.i}`)
                                 ? console.log('Version is UP TO DATE')
                                 : ((n = e),
                                   (o = `${t.version} (i: ${t.i})`),
@@ -1278,10 +989,7 @@
                                       `You can update from <strong>v${a.VERSION} (i: ${a.ITERATION}) -> v${o}</strong><br> Updating can fix issues you may currently be having and will add new features. They can also cause issues. Be careful!`,
                                       {
                                           text: 'Install',
-                                          fn: () =>
-                                              window.open(
-                                                  'https://car-axle-client.github.io/install'
-                                              ),
+                                          fn: () => window.open('https://car-axle-client.github.io/install'),
                                       }
                                   ))
                         })
@@ -1299,11 +1007,7 @@
             },
             110: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.send_bug_report_to_discord =
-                        t.send_proxy_to_discord =
-                        t.send_to_discord =
-                            void 0)
+                Object.defineProperty(t, '__esModule', { value: !0 }), (t.send_bug_report_to_discord = t.send_proxy_to_discord = t.send_to_discord = void 0)
                 const o = n(1181)
                 ;(t.send_to_discord = function (e) {
                     const t = { content: e }
@@ -1335,15 +1039,12 @@
             },
             4203: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.none = t.new_iframe = t.change_game = void 0)
+                Object.defineProperty(t, '__esModule', { value: !0 }), (t.none = t.new_iframe = t.change_game = void 0)
                 const o = n(3539),
                     i = n(6996)
                 n(9367),
                     (t.change_game = function (e) {
-                        document
-                            .getElementById('cac__games__iframe')
-                            .setAttribute('src', i.GAMESLINK + e)
+                        document.getElementById('cac__games__iframe').setAttribute('src', i.GAMESLINK + e)
                     }),
                     (t.new_iframe = function (e, t, n, i = '') {
                         let a = (0, o.create_element)('iframe', t, {
@@ -1368,20 +1069,9 @@
                         return (
                             (c.onmousedown = (n) => {
                                 ;(l = !l)
-                                    ? (a.classList.add(
-                                          'cac__iframe__maximized'
-                                      ),
-                                      s.classList.add(
-                                          'cac__iframe__controls__maximized'
-                                      ),
-                                      e.container.appendChild(a),
-                                      e.container.appendChild(s))
-                                    : (a.classList.remove(
-                                          'cac__iframe__maximized'
-                                      ),
-                                      s.classList.remove(
-                                          'cac__iframe__controls__maximized'
-                                      ),
+                                    ? (a.classList.add('cac__iframe__maximized'), s.classList.add('cac__iframe__controls__maximized'), e.container.appendChild(a), e.container.appendChild(s))
+                                    : (a.classList.remove('cac__iframe__maximized'),
+                                      s.classList.remove('cac__iframe__controls__maximized'),
                                       t.insertBefore(a, t.children[2]),
                                       t.insertBefore(s, t.children[3]))
                             }),
@@ -1395,8 +1085,7 @@
                             }).onmousedown = (e) => {
                                 let t = window.open(),
                                     n = t.document.createElement('iframe')
-                                ;(n.style =
-                                    'position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;'),
+                                ;(n.style = 'position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;'),
                                     (n.src = a.src),
                                     t.document.body.appendChild(n)
                             }),
@@ -1411,9 +1100,7 @@
                     console.log(
                         'Edpuzzle Answers is licensed under the GPL 3.0 license. I have made no changes to the code, and I am not the author of the code. Ading2210 is the author of the code. The code is sourced from cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js. View the license here: https://github.com/ading2210/edpuzzle-answers/blob/main/LICENSE'
                     ),
-                        fetch(
-                            'https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js'
-                        )
+                        fetch('https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js')
                             .then((e) => e.text())
                             .then((r) => eval(r))
                 }
@@ -1422,8 +1109,7 @@
                     custom_render: !1,
                     display_name: 'Edpuzzle Answers',
                     id: 'edpuzzle',
-                    description:
-                        'Gives you the answers to edpuzzle (By <a href="https://github.com/ading2210/edpuzzle-answers">ading2210</a>)',
+                    description: 'Gives you the answers to edpuzzle (By <a href="https://github.com/ading2210/edpuzzle-answers">ading2210</a>)',
                     section: 'cheats',
                     reset: !0,
                     onactive: edpuzzle,
@@ -1433,12 +1119,8 @@
             9022: (__unused_webpack_module, exports) => {
                 'use strict'
                 function gimkit() {
-                    console.log(
-                        'LICENSE AGREEMENT: I have been given explicit permission to use this code by the author of this code.'
-                    ),
-                        fetch(
-                            'https://raw.githubusercontent.com/Penguinify/gimkit-hacks/main/dist/bundle.js'
-                        )
+                    console.log('LICENSE AGREEMENT: I have been given explicit permission to use this code by the author of this code.'),
+                        fetch('https://raw.githubusercontent.com/Penguinify/gimkit-hacks/main/dist/bundle.js')
                             .then((e) => e.text())
                             .then((r) => eval(r))
                 }
@@ -1447,8 +1129,7 @@
                     custom_render: !1,
                     display_name: 'Gimkit-Hacks',
                     id: 'gimkit',
-                    description:
-                        'Gimkit answer saver (Only works on classic mode) (By <a href="https://github.com/Penguinify/gimkit-hacks">Penguinify</a>',
+                    description: 'Gimkit answer saver (Only works on classic mode) (By <a href="https://github.com/Penguinify/gimkit-hacks">Penguinify</a>',
                     section: 'cheats',
                     reset: !0,
                     onactive: gimkit,
@@ -1458,9 +1139,7 @@
             6638: (__unused_webpack_module, exports) => {
                 'use strict'
                 function math() {
-                    fetch(
-                        'https://raw.githubusercontent.com/Penguinify/math-bookmarklet/main/dist/bundle.js'
-                    )
+                    fetch('https://raw.githubusercontent.com/Penguinify/math-bookmarklet/main/dist/bundle.js')
                         .then((e) => e.text())
                         .then((r) => eval(r))
                 }
@@ -1469,8 +1148,7 @@
                     custom_render: !1,
                     display_name: 'Math Solver',
                     id: 'math',
-                    description:
-                        'Factor, simplify, and solve (By <a href="https://github.com/penguinify/math-bookmarklet">Penguinify</a>)',
+                    description: 'Factor, simplify, and solve (By <a href="https://github.com/penguinify/math-bookmarklet">Penguinify</a>)',
                     section: 'cheats',
                     reset: !0,
                     onactive: math,
@@ -1487,16 +1165,11 @@
                         custom_render: !0,
                         render: function (e) {
                             let t = e.getSectionFromID('client')
-                            if (!t)
-                                throw 'Error Rendering: Section Does Not Exist'
-                            ;(0, i.create_element)(
-                                'button',
-                                t.section_content,
-                                {
-                                    class_name: 'cac__version__display',
-                                    innerHTML: `\n                <h2>${o.CLIENTNAME} v${o.VERSION}</h2>\n                <h3>by @${o.AUTHOR}</h3>\n                <a href="${o.SOCIAL.github}">Github</a>\n                <a href="${o.SOCIAL.discord}">Discord</a>\n\n`,
-                                }
-                            ).style.backgroundImage = `url(${o.LOGO})`
+                            if (!t) throw 'Error Rendering: Section Does Not Exist'
+                            ;(0, i.create_element)('button', t.section_content, {
+                                class_name: 'cac__version__display',
+                                innerHTML: `\n                <h2>${o.CLIENTNAME} v${o.VERSION}</h2>\n                <h3>by @${o.AUTHOR}</h3>\n                <a href="${o.SOCIAL.github}">Github</a>\n                <a href="${o.SOCIAL.discord}">Discord</a>\n\n`,
+                            }).style.backgroundImage = `url(${o.LOGO})`
                         },
                     }
                 t.default = a
@@ -1505,10 +1178,8 @@
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
-                        display_name:
-                            'I collect usage data such as which modules you have enabled',
-                        description:
-                            'This data is collected for for the purpose of improving the client. The data cannot be traced back to you.',
+                        display_name: 'I collect usage data such as which modules you have enabled',
+                        description: 'This data is collected for for the purpose of improving the client. The data cannot be traced back to you.',
                         id: 'datainfo',
                         section: 'client',
                         disabled: !0,
@@ -1560,14 +1231,9 @@
                                 class_name: 'cac__suggestions__submit',
                             })
                         c.addEventListener('click', () => {
-                            ;(0, i.send_bug_report_to_discord)(
-                                a.value,
-                                s.value,
-                                r.value
-                            ),
+                            ;(0, i.send_bug_report_to_discord)(a.value, s.value, r.value),
                                 (c.disabled = !0),
-                                (c.innerHTML =
-                                    'Submitted! Wait 60 seconds before submitting again.'),
+                                (c.innerHTML = 'Submitted! Wait 60 seconds before submitting again.'),
                                 setTimeout(() => {
                                     ;(c.disabled = !1), (c.innerHTML = 'Submit')
                                 }, 6e4)
@@ -1581,8 +1247,7 @@
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
                         display_name: '3kh0 for most of the assets',
-                        description:
-                            'most game websites use their rips anyways',
+                        description: 'most game websites use their rips anyways',
                         id: 'cred',
                         section: 'credit',
                         disabled: !0,
@@ -1593,8 +1258,7 @@
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
-                        display_name:
-                            'Everyone who has suggested something or reported a bug',
+                        display_name: 'Everyone who has suggested something or reported a bug',
                         description: 'thank you!',
                         id: 'cred',
                         section: 'credit',
@@ -1619,8 +1283,7 @@
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
                         display_name: 'yexex and PurePro4561 for the games',
-                        description:
-                            'also 3kh0 cause purepro skidded some of their games from his website',
+                        description: 'also 3kh0 cause purepro skidded some of their games from his website',
                         id: 'cred',
                         section: 'credit',
                         disabled: !0,
@@ -1631,8 +1294,7 @@
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
-                        display_name:
-                            'penguinify for UI, exploits, fun section, and pocketbrowser',
+                        display_name: 'penguinify for UI, exploits, fun section, and pocketbrowser',
                         description: 'also made car axle client',
                         id: 'cred2',
                         section: 'credit',
@@ -1646,23 +1308,15 @@
                 const n = new KeyboardEvent('keydown', { key: '\\' })
                 const o = {
                     display_name: 'Auto Hide',
-                    description:
-                        'Automatically hides UI when the tab/window changes (press "\\" to unhide once hidden)',
+                    description: 'Automatically hides UI when the tab/window changes (press "\\" to unhide once hidden)',
                     id: 'autohide',
                     section: 'exploit',
                     onactive: function () {
                         document.addEventListener('visibilitychange', (e) => {
                             ;(function (e) {
-                                return !(
-                                    (e.target instanceof HTMLElement &&
-                                        'iframe' ===
-                                            e.target.tagName.toLowerCase()) ||
-                                    !document.hidden
-                                )
+                                return !((e.target instanceof HTMLElement && 'iframe' === e.target.tagName.toLowerCase()) || !document.hidden)
                             })(e) ||
-                                'none' ===
-                                    document.getElementById('cac__CONTAINER')
-                                        ?.style.display ||
+                                'none' === document.getElementById('cac__CONTAINER')?.style.display ||
                                 document.dispatchEvent(n)
                         })
                     },
@@ -1676,23 +1330,14 @@
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = {
                     display_name: 'Auto Self Destruct',
-                    description:
-                        'Automatically destroys the client when the window/tab changes',
+                    description: 'Automatically destroys the client when the window/tab changes',
                     id: 'selfdestructalttab',
                     section: 'exploit',
                     onactive: function () {
                         window.addEventListener('visibilitychange', (e) => {
                             ;(function (e) {
-                                return !(
-                                    (e.target instanceof HTMLElement &&
-                                        'iframe' ===
-                                            e.target.tagName.toLowerCase()) ||
-                                    !document.hidden
-                                )
-                            })(e) &&
-                                document
-                                    .getElementById('cac__CONTAINER')
-                                    ?.remove()
+                                return !((e.target instanceof HTMLElement && 'iframe' === e.target.tagName.toLowerCase()) || !document.hidden)
+                            })(e) && document.getElementById('cac__CONTAINER')?.remove()
                         })
                     },
                     always: !0,
@@ -1726,24 +1371,16 @@
                 const n = {
                     custom_render: !1,
                     onactive: function () {
-                        let e =
-                            document.querySelector('title') ||
-                            document.createElement('title')
+                        let e = document.querySelector('title') || document.createElement('title')
                         e.innerHTML = 'Google'
-                        let t =
-                            document.querySelector('link[rel="icon"]') ||
-                            document.createElement('link')
+                        let t = document.querySelector('link[rel="icon"]') || document.createElement('link')
                         t.setAttribute('rel', 'icon'),
-                            t.setAttribute(
-                                'href',
-                                'https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://google.com&size=16'
-                            ),
+                            t.setAttribute('href', 'https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://google.com&size=16'),
                             document.head.appendChild(e),
                             document.head.appendChild(t)
                     },
                     display_name: 'Disguise Tab (google)',
-                    description:
-                        'idc if this is the most common bookmarklet, as long as it works',
+                    description: 'idc if this is the most common bookmarklet, as long as it works',
                     section: 'exploit',
                     id: 'disguise',
                     always: !0,
@@ -1755,8 +1392,7 @@
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = {
                     display_name: 'NoForceReload',
-                    description:
-                        'Prevents the tab from being autoreloaded by showing a popup',
+                    description: 'Prevents the tab from being autoreloaded by showing a popup',
                     id: 'noforcereload',
                     section: 'exploit',
                     onactive: function () {
@@ -1778,12 +1414,10 @@
                     id: 'editpage',
                     section: 'fun',
                     onactive: function () {
-                        ;(document.body.contentEditable = 'true'),
-                            (document.designMode = 'on')
+                        ;(document.body.contentEditable = 'true'), (document.designMode = 'on')
                     },
                     ondisable: function () {
-                        ;(document.body.contentEditable = 'false'),
-                            (document.designMode = 'off')
+                        ;(document.body.contentEditable = 'false'), (document.designMode = 'off')
                     },
                     custom_render: !1,
                 }
@@ -1801,10 +1435,8 @@
                     reset: !0,
                     onactive: function () {
                         let e = 0
-                        for (; e < 1e4; )
-                            history.pushState(0, '', e.toString()), e++
-                        history.pushState(0, '', window.location.href),
-                            alert('Flooded history 10k times ;)')
+                        for (; e < 1e4; ) history.pushState(0, '', e.toString()), e++
+                        history.pushState(0, '', window.location.href), alert('Flooded history 10k times ;)')
                     },
                 }
                 t.default = n
@@ -1821,11 +1453,7 @@
                         let e = document.getElementsByTagName('img')
                         if (e)
                             for (let t of e)
-                                new Audio(
-                                    'https://www.myinstants.com/media/sounds/jixaw-metal-pipe-falling-sound.mp3'
-                                ).play(),
-                                    (t.src =
-                                        'https://i.ytimg.com/vi/qDvMkxtLV74/maxresdefault.jpg')
+                                new Audio('https://www.myinstants.com/media/sounds/jixaw-metal-pipe-falling-sound.mp3').play(), (t.src = 'https://i.ytimg.com/vi/qDvMkxtLV74/maxresdefault.jpg')
                     },
                     always: !0,
                     custom_render: !1,
@@ -1892,11 +1520,7 @@
                 function n() {
                     !(function e(t) {
                         var n = t.childNodes
-                        for (var o in n)
-                            e(n[o]),
-                                n[o].style &&
-                                    (n[o].style.backgroundImage =
-                                        'url(https://i.chzbgr.com/full/5759452672/h934FBF16/my-eyes-my-eyessssssssss)')
+                        for (var o in n) e(n[o]), n[o].style && (n[o].style.backgroundImage = 'url(https://i.chzbgr.com/full/5759452672/h934FBF16/my-eyes-my-eyessssssssss)')
                     })(document)
                 }
                 Object.defineProperty(t, '__esModule', { value: !0 })
@@ -1921,13 +1545,7 @@
                     custom_render: !0,
                     render: function (e) {
                         let t = e.getSectionFromID('game')
-                        t &&
-                            (0, o.new_iframe)(
-                                e,
-                                t.section_content,
-                                'https://penguinify-web-dev.github.io/yourgay.html',
-                                'cac__games__iframe'
-                            )
+                        t && (0, o.new_iframe)(e, t.section_content, 'https://penguinify-web-dev.github.io/yourgay.html', 'cac__games__iframe')
                     },
                 }
                 t.default = i
@@ -1953,17 +1571,9 @@
                             (function (e, t, n) {
                                 const o = e.getSectionFromID('game')
                                 if (!o) return
-                                let a = (0, s.create_element)(
-                                    'button',
-                                    o.section_content,
-                                    { class_name: 'cac__game__button' }
-                                )
+                                let a = (0, s.create_element)('button', o.section_content, { class_name: 'cac__game__button' })
                                 a.addEventListener('mousedown', function (e) {
-                                    ;(0, i.change_game)(n),
-                                        (o.section_content.scrollTop = 100),
-                                        (0, r.send_to_discord)(
-                                            "Changed game to '" + t + "'"
-                                        )
+                                    ;(0, i.change_game)(n), (o.section_content.scrollTop = 100), (0, r.send_to_discord)("Changed game to '" + t + "'")
                                 }),
                                     (0, s.create_element)('p', a, {
                                         class_name: 'cac__game__title',
@@ -1984,31 +1594,16 @@
                     let section = UI.getSectionFromID('js'),
                         section_content = section?.section_content
                     if ((console.log(section_content), !section_content)) return
-                    let console_container = (0, UILib_1.create_element)(
-                            'div',
-                            section_content,
-                            { class_name: 'cac__console__container' }
-                        ),
-                        output = (0, UILib_1.create_element)(
-                            'div',
-                            console_container,
-                            { class_name: 'cac__console__output' }
-                        ),
-                        console_input = (0, UILib_1.create_element)(
-                            'input',
-                            console_container,
-                            { class_name: 'cac__console__input' }
-                        )
+                    let console_container = (0, UILib_1.create_element)('div', section_content, { class_name: 'cac__console__container' }),
+                        output = (0, UILib_1.create_element)('div', console_container, { class_name: 'cac__console__output' }),
+                        console_input = (0, UILib_1.create_element)('input', console_container, { class_name: 'cac__console__input' })
                     ;(console_input.placeholder = '> evaluate expression'),
                         (console.stdlog = console.log.bind(console)),
                         (console.log = function () {
                             console.stdlog.apply(console, arguments),
                                 (0, UILib_1.create_element)('div', output, {
                                     class_name: 'cac__console__log',
-                                    innerHTML: `${new Date().toLocaleTimeString()} : ${
-                                        Array.from(arguments).join(' ') ||
-                                        'undefined'
-                                    }`,
+                                    innerHTML: `${new Date().toLocaleTimeString()} : ${Array.from(arguments).join(' ') || 'undefined'}`,
                                 })
                         }),
                         console_input.addEventListener('keypress', (e) => {
@@ -2041,31 +1636,17 @@
                     render: function (e) {
                         let t = e.getSectionFromID('pocket')
                         if (!t) return
-                        const n = (0, o.create_element)(
-                            'input',
-                            t.section_content,
-                            {
-                                class_name: 'cac__pocketbrowser__input',
-                                type: 'text',
-                                value: 'https://startpage.com',
-                            }
-                        )
-                        let s = (0, i.new_iframe)(
-                            e,
-                            t.section_content,
-                            'https://startpage.com'
-                        )
-                        ;(s.src = (0, a.getHashFromLocalStorage)(
-                            'pocketbrowser'
-                        )),
+                        const n = (0, o.create_element)('input', t.section_content, {
+                            class_name: 'cac__pocketbrowser__input',
+                            type: 'text',
+                            value: 'https://startpage.com',
+                        })
+                        let s = (0, i.new_iframe)(e, t.section_content, 'https://startpage.com')
+                        ;(s.src = (0, a.getHashFromLocalStorage)('pocketbrowser')),
                             (s.id = 'cac__pocketbrowser__iframe'),
                             n.addEventListener('change', (e) => {
                                 let t = n
-                                ;(0, a.saveHashToLocalStorage)(
-                                    'pocketbrowser',
-                                    t.value
-                                ),
-                                    s.setAttribute('src', `${t.value}`)
+                                ;(0, a.saveHashToLocalStorage)('pocketbrowser', t.value), s.setAttribute('src', `${t.value}`)
                             })
                     },
                 }
@@ -2073,10 +1654,7 @@
             },
             3892: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }),
-                    n(3539),
-                    n(110),
-                    n(1003)
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(3539), n(110), n(1003)
             },
             4104: (e, t, n) => {
                 'use strict'
@@ -2124,8 +1702,7 @@
             },
             3449: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.render_icon = void 0)
+                Object.defineProperty(t, '__esModule', { value: !0 }), (t.render_icon = void 0)
                 const o = n(3539)
                 n(6689),
                     (t.render_icon = function (e, t, n, i) {
@@ -2145,9 +1722,7 @@
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const o = n(3449)
                 function i() {
-                    document.dispatchEvent(
-                        new KeyboardEvent('keydown', { key: '\\' })
-                    )
+                    document.dispatchEvent(new KeyboardEvent('keydown', { key: '\\' }))
                 }
                 const a = {
                     custom_render: !0,
@@ -2195,27 +1770,14 @@
                     render: function (e) {
                         let t = e.getSectionFromID('youtube')
                         if (!t) return
-                        const n = (0, o.create_element)(
-                                'input',
-                                t.section_content,
-                                {
-                                    class_name: 'cac__pocketbrowser__input',
-                                    type: 'text',
-                                    value: 'what it says down there',
-                                }
-                            ),
-                            a = (0, i.new_iframe)(
-                                e,
-                                t.section_content,
-                                'https://placehold.co/600x400?text=^+paste+video+id+^'
-                            )
+                        const n = (0, o.create_element)('input', t.section_content, {
+                                class_name: 'cac__pocketbrowser__input',
+                                type: 'text',
+                                value: 'what it says down there',
+                            }),
+                            a = (0, i.new_iframe)(e, t.section_content, 'https://placehold.co/600x400?text=^+paste+video+id+^')
                         n.addEventListener('change', (e) => {
-                            n.value.includes('youtube.com') &&
-                                (n.value = n.value.split('v=')[1]),
-                                a.setAttribute(
-                                    'src',
-                                    `https://youtube.com/embed/${n.value}`
-                                )
+                            n.value.includes('youtube.com') && (n.value = n.value.split('v=')[1]), a.setAttribute('src', `https://youtube.com/embed/${n.value}`)
                         })
                     },
                 }
@@ -2224,24 +1786,14 @@
             6996: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.SOCIAL =
-                        t.LOGO =
-                        t.DATABASE =
-                        t.AUTHOR =
-                        t.CLIENTNAME =
-                        t.ITERATION =
-                        t.VERSION =
-                        t.GAMESLINK =
-                            void 0),
+                    (t.SOCIAL = t.LOGO = t.DATABASE = t.AUTHOR = t.CLIENTNAME = t.ITERATION = t.VERSION = t.GAMESLINK = void 0),
                     (t.GAMESLINK = 'https://penguinify-web-dev.github.io/'),
                     (t.VERSION = '6'),
                     (t.ITERATION = '0'),
                     (t.CLIENTNAME = 'car axle [beta]'),
                     (t.AUTHOR = 'penguinify (cherry)'),
-                    (t.DATABASE =
-                        'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'),
-                    (t.LOGO =
-                        'https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/logo.png'),
+                    (t.DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'),
+                    (t.LOGO = 'https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/logo.png'),
                     (t.SOCIAL = {
                         github: 'https://github.com/car-axle-client/car-axle-client',
                         discord: 'https://discord.gg/akDMdW7Zgd',
@@ -2250,12 +1802,7 @@
             5780: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.remove_save =
-                        t.new_save =
-                        t.load_module_values =
-                        t.getHashFromLocalStorage =
-                        t.saveHashToLocalStorage =
-                            void 0),
+                    (t.remove_save = t.new_save = t.load_module_values = t.getHashFromLocalStorage = t.saveHashToLocalStorage = void 0),
                     (t.saveHashToLocalStorage = function (e, t) {
                         localStorage.setItem('cac__' + e, btoa(t.toString()))
                     }),
@@ -2264,34 +1811,20 @@
                         return t ? atob(t) : ''
                     }),
                     (t.load_module_values = function (e) {
-                        const t = JSON.parse(
-                            localStorage.getItem('car-axle-client')
-                        )
+                        const t = JSON.parse(localStorage.getItem('car-axle-client'))
                         t &&
                             t.forEach(function (t) {
-                                e.getSectionFromID(
-                                    t.sectionID
-                                )?.set_all_button_values_from_array(
-                                    t.buttonValues
-                                )
+                                e.getSectionFromID(t.sectionID)?.set_all_button_values_from_array(t.buttonValues)
                             })
                     }),
                     (t.new_save = function (e) {
-                        console.log(
-                            '%cAttempting Save',
-                            'color:blue; font-size: 3vw;'
-                        )
+                        console.log('%cAttempting Save', 'color:blue; font-size: 3vw;')
                         let t = []
                         for (let n of e.sections) {
                             let e = n.get_all_button_values()
-                            console.log('%c' + n.id, 'font-size:1.25vw;'),
-                                console.table(e),
-                                t.push({ sectionID: n.id, buttonValues: e })
+                            console.log('%c' + n.id, 'font-size:1.25vw;'), console.table(e), t.push({ sectionID: n.id, buttonValues: e })
                         }
-                        localStorage.setItem(
-                            'car-axle-client',
-                            JSON.stringify(t)
-                        )
+                        localStorage.setItem('car-axle-client', JSON.stringify(t))
                     }),
                     (t.remove_save = function () {
                         localStorage.removeItem('car-axle-client')
@@ -2370,28 +1903,16 @@
         var t = __webpack_module_cache__[e]
         if (void 0 !== t) return t.exports
         var n = (__webpack_module_cache__[e] = { id: e, exports: {} })
-        return (
-            __webpack_modules__[e].call(
-                n.exports,
-                n,
-                n.exports,
-                __webpack_require__
-            ),
-            n.exports
-        )
+        return __webpack_modules__[e].call(n.exports, n, n.exports, __webpack_require__), n.exports
     }
     ;(__webpack_require__.n = (e) => {
         var t = e && e.__esModule ? () => e.default : () => e
         return __webpack_require__.d(t, { a: t }), t
     }),
         (__webpack_require__.d = (e, t) => {
-            for (var n in t)
-                __webpack_require__.o(t, n) &&
-                    !__webpack_require__.o(e, n) &&
-                    Object.defineProperty(e, n, { enumerable: !0, get: t[n] })
+            for (var n in t) __webpack_require__.o(t, n) && !__webpack_require__.o(e, n) && Object.defineProperty(e, n, { enumerable: !0, get: t[n] })
         }),
-        (__webpack_require__.o = (e, t) =>
-            Object.prototype.hasOwnProperty.call(e, t)),
+        (__webpack_require__.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t)),
         (__webpack_require__.r = (e) => {
             'undefined' != typeof Symbol &&
                 Symbol.toStringTag &&
@@ -2409,22 +1930,13 @@
             n = __webpack_require__(6996),
             o = __webpack_require__(5780),
             i = __webpack_require__(110)
-        if (document.getElementById('car-axle-client'))
-            throw (
-                (alert('Car Axle Client is already running!'),
-                new Error('Car Axle Client is already running!'))
-            )
-        ;(0, i.send_to_discord)(
-            `car axle client - v${n.VERSION}.${n.ITERATION}\nCurrent URL: ` +
-                window.location.href
-        )
+        if (document.getElementById('car-axle-client')) throw (alert('Car Axle Client is already running!'), new Error('Car Axle Client is already running!'))
+        ;(0, i.send_to_discord)(`car axle client - v${n.VERSION}.${n.ITERATION}\nCurrent URL: ` + window.location.href)
         const a = {}
         let s = __webpack_require__(3045)
         s.keys().forEach((e) => (a[e] = s(e))),
             (function () {
-                console.log(
-                    'Car Axle Client is licsensed under the GPLv3 licsense. You can find the licsense here: https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/LICENSE'
-                )
+                console.log('Car Axle Client is licsensed under the GPLv3 licsense. You can find the licsense here: https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/LICENSE')
                 const i = new e.UIManager()
                 i.newSection(
                     'game',
@@ -2488,9 +2000,7 @@
                     }),
                     (0, t.get_update)(i.container),
                     (0, t.get_main_notification)(i.container),
-                    console.log(
-                        `car axle client - v${n.VERSION}.${n.ITERATION}`
-                    )
+                    console.log(`car axle client - v${n.VERSION}.${n.ITERATION}`)
             })()
     })()
 })()

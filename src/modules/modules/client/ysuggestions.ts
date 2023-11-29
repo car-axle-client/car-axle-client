@@ -10,37 +10,37 @@ function render(UI: UIManager) {
     if (!section_content) return
     if (!section) return
 
-    const title = create_element('h1', section_content, {
+    const container = create_element('div', section_content, {
+        class_name: 'cac__suggestions__container',
+    })
+
+    const title = create_element('h1', container, {
         innerHTML: 'Suggestions/Bug Reports',
         class_name: 'cac__suggestions__title',
     })
 
-    const input_title = create_element('input', section_content, {
+    const input_title = create_element('input', container, {
         value: 'Title',
         class_name: 'cac__suggestions__input',
     }) as HTMLInputElement
 
-    const input_contact = create_element('input', section_content, {
+    const input_contact = create_element('input', container, {
         value: 'Your Discord/Email',
         class_name: 'cac__suggestions__input',
     }) as HTMLInputElement
 
-    const input_content = create_element('textarea', section_content, {
+    const input_content = create_element('textarea', container, {
         value: 'Body, describe your suggestion/bug report here',
         class_name: 'cac__suggestions__input',
     }) as HTMLTextAreaElement
 
-    const submit = create_element('button', section_content, {
+    const submit = create_element('button', container, {
         innerHTML: 'Submit',
         class_name: 'cac__suggestions__submit',
     }) as HTMLButtonElement
 
     submit.addEventListener('click', () => {
-        send_bug_report_to_discord(
-            input_title.value,
-            input_contact.value,
-            input_content.value
-        )
+        send_bug_report_to_discord(input_title.value, input_contact.value, input_content.value)
         submit.disabled = true
         submit.innerHTML = 'Submitted! Wait 60 seconds before submitting again.'
         setTimeout(() => {

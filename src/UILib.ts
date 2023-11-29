@@ -12,11 +12,7 @@ interface ElementAttributes {
     value?: string
 }
 
-export function create_element(
-    tagName: string,
-    parent: Element,
-    options?: ElementAttributes
-): HTMLElement {
+export function create_element(tagName: string, parent: Element, options?: ElementAttributes): HTMLElement {
     const element: HTMLElement = document.createElement(tagName)
     // TODO:: Make this better or use a switch or smth
     element.classList.add('cac__ALL')

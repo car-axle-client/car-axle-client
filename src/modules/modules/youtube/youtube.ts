@@ -14,21 +14,14 @@ function render(UI: UIManager) {
         value: 'what it says down there',
     }) as HTMLInputElement
 
-    const iframe = new_iframe(
-        UI,
-        section.section_content,
-        'https://placehold.co/600x400?text=^+paste+video+id+^'
-    )
+    const iframe = new_iframe(UI, section.section_content, 'https://placehold.co/600x400?text=^+paste+video+id+^')
 
     iframe_input.addEventListener('change', (e) => {
         if (iframe_input.value.includes('youtube.com')) {
             iframe_input.value = iframe_input.value.split('v=')[1]
         }
 
-        iframe.setAttribute(
-            'src',
-            `https://youtube.com/embed/${iframe_input.value}`
-        )
+        iframe.setAttribute('src', `https://youtube.com/embed/${iframe_input.value}`)
     })
 }
 

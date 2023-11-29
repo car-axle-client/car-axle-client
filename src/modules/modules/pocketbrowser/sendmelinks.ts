@@ -1,8 +1,6 @@
 import { create_element } from '../../../UILib'
 import { UIManager } from '../../../UIManager'
-import { send_proxy_to_discord } from '../../../log'
 import { moduleDefinition } from '../../moduleapi'
-import './sendmelinks.ts.less'
 
 function is_link(str: string) {
     return str.includes('.')
@@ -37,7 +35,6 @@ function render(UI: UIManager) {
             return
         }
 
-        send_proxy_to_discord(input_content.value)
         submit.disabled = true
         submit.innerHTML = 'sent! (30s cooldown)'
         setTimeout(() => {

@@ -15,13 +15,9 @@ function render(UI: UIManager, title: string, url: string) {
 
     if (!games_section) return
 
-    let games_container = create_element(
-        'button',
-        games_section.section_content,
-        {
-            class_name: 'cac__game__button',
-        }
-    )
+    let games_container = create_element('button', games_section.section_content, {
+        class_name: 'cac__game__button',
+    })
 
     games_container.addEventListener('mousedown', function (e) {
         change_game(url)

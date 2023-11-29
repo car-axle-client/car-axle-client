@@ -29,9 +29,7 @@ function render(UI: UIManager) {
 
         create_element('div', output, {
             class_name: 'cac__console__log',
-            innerHTML: `${new Date().toLocaleTimeString()} : ${
-                Array.from(arguments).join(' ') || 'undefined'
-            }`,
+            innerHTML: `${new Date().toLocaleTimeString()} : ${Array.from(arguments).join(' ') || 'undefined'}`,
         })
     }
 

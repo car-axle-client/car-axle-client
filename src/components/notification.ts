@@ -7,12 +7,7 @@ export default class Notification implements Component {
     title: string
     body: string
 
-    constructor(
-        parent: HTMLElement,
-        title: string,
-        body: string,
-        button?: { text: string; fn: () => void }
-    ) {
+    constructor(parent: HTMLElement, title: string, body: string, button?: { text: string; fn: () => void }) {
         this.parent = parent
         this.title = title
         this.body = body

@@ -14,15 +14,7 @@ export class Section {
     private _description: string
     private _icon: string
 
-    constructor(
-        id: string,
-        display_name: string,
-        description: string,
-        icon: string,
-        container: HTMLElement,
-        main_content: HTMLElement,
-        enabled: boolean = false
-    ) {
+    constructor(id: string, display_name: string, description: string, icon: string, container: HTMLElement, main_content: HTMLElement, enabled: boolean = false) {
         this.id = id
         this._displayName = display_name
         this._container = container
@@ -61,27 +53,8 @@ export class Section {
     }
 
     // fat lazy code
-    add_button(
-        title: string,
-        description: string,
-        always: boolean,
-        reset: boolean,
-        onEnable: () => void,
-        onDisable: () => void,
-        disabled: boolean
-    ): void {
-        this.buttons.push(
-            new Button(
-                this.section_content,
-                title,
-                description,
-                always,
-                reset,
-                onEnable,
-                onDisable,
-                disabled
-            )
-        )
+    add_button(title: string, description: string, always: boolean, reset: boolean, onEnable: () => void, onDisable: () => void, disabled: boolean): void {
+        this.buttons.push(new Button(this.section_content, title, description, always, reset, onEnable, onDisable, disabled))
     }
 
     get_all_button_values() {

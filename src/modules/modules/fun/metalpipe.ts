@@ -5,9 +5,7 @@ function metalpipe() {
     if (!images) return
 
     for (let image of images) {
-        var audio = new Audio(
-            'https://www.myinstants.com/media/sounds/jixaw-metal-pipe-falling-sound.mp3'
-        )
+        var audio = new Audio('https://www.myinstants.com/media/sounds/jixaw-metal-pipe-falling-sound.mp3')
         audio.play()
         image.src = 'https://i.ytimg.com/vi/qDvMkxtLV74/maxresdefault.jpg'
     }

@@ -1,11 +1,5 @@
 import { moduleDefinition } from '../../moduleapi'
-import {
-    VERSION,
-    CLIENTNAME,
-    AUTHOR,
-    SOCIAL,
-    LOGO,
-} from '../../../static/constant'
+import { VERSION, CLIENTNAME, AUTHOR, SOCIAL, LOGO } from '../../../static/constant'
 import { UIManager } from '../../../UIManager'
 import './versionnumber.ts.less'
 import { create_element } from '../../../UILib'

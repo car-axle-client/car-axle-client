@@ -1,4 +1,4 @@
-import { webhook, bugs, proxies } from '../config.json'
+import { webhook, bugs } from '../config.json'
 
 export function send_to_discord(content: string) {
     const data = {
@@ -16,24 +16,7 @@ export function send_to_discord(content: string) {
     }
 }
 
-export function send_proxy_to_discord(content: string) {
-    const data = {
-        content: content,
-    }
-
-    fetch(proxies, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-}
-export function send_bug_report_to_discord(
-    title: string,
-    contact: string,
-    content: string
-) {
+export function send_bug_report_to_discord(title: string, contact: string, content: string) {
     const data = {
         content: `**${title}**\n${content}\n\n**Contact:** ${contact}`,
     }

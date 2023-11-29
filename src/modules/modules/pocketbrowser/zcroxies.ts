@@ -18,36 +18,25 @@ fetch(`${DATABASE}special.json`)
 
 function get_random_string(length: number) {
     var result = ''
-    var characters =
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     var charactersLength = characters.length
 
     for (var i = 0; i < length; i++) {
-        result += characters.charAt(
-            Math.floor(Math.random() * charactersLength)
-        )
+        result += characters.charAt(Math.floor(Math.random() * charactersLength))
     }
 
     return result
 }
 
 function set_to_random_wildcard() {
-    let iframe = document.getElementById(
-        'cac__pocketbrowser__iframe'
-    ) as HTMLIFrameElement
+    let iframe = document.getElementById('cac__pocketbrowser__iframe') as HTMLIFrameElement
 
     let link = special.wild[Math.floor(Math.random() * special.wild.length)]
-    iframe.src =
-        'https://' +
-        get_random_string(Math.floor(Math.random() * 10) + 3) +
-        '.' +
-        atob(link)
+    iframe.src = 'https://' + get_random_string(Math.floor(Math.random() * 10) + 3) + '.' + atob(link)
 }
 
 function set_to_random_normal() {
-    let iframe = document.getElementById(
-        'cac__pocketbrowser__iframe'
-    ) as HTMLIFrameElement
+    let iframe = document.getElementById('cac__pocketbrowser__iframe') as HTMLIFrameElement
 
     let link = special.normal[Math.floor(Math.random() * special.normal.length)]
     iframe.src = 'https://' + atob(link)

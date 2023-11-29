@@ -28,16 +28,7 @@ export default class Button implements Component {
     private disabled: boolean
     private description: string
 
-    constructor(
-        parent: HTMLElement,
-        title: string,
-        description: string,
-        always: boolean,
-        reset: boolean,
-        onEnable: () => void,
-        onDisable: () => void,
-        disabled: boolean
-    ) {
+    constructor(parent: HTMLElement, title: string, description: string, always: boolean, reset: boolean, onEnable: () => void, onDisable: () => void, disabled: boolean) {
         this.parent = parent
         this.title = title
         this.description = description
@@ -58,12 +49,7 @@ export default class Button implements Component {
         this.enabled && send_to_discord(`Enabled ${this.title}`)
     }
     _handleMouseDown(e: MouseEvent) {
-        if (
-            e.button !== 0 ||
-            (this.enabled && this.always) ||
-            (this.enabled && this.reset)
-        )
-            return
+        if (e.button !== 0 || (this.enabled && this.always) || (this.enabled && this.reset)) return
         this._toggle()
 
         if (this.reset)
@@ -79,10 +65,7 @@ export default class Button implements Component {
         })
 
         if (!this.disabled) {
-            this.button.addEventListener(
-                'mousedown',
-                this._handleMouseDown.bind(this)
-            )
+            this.button.addEventListener('mousedown', this._handleMouseDown.bind(this))
         }
     }
 

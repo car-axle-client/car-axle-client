@@ -9,9 +9,7 @@
 import { moduleDefinition } from '../../moduleapi'
 
 function math() {
-    fetch(
-        'https://raw.githubusercontent.com/Penguinify/math-bookmarklet/main/dist/bundle.js'
-    )
+    fetch('https://raw.githubusercontent.com/Penguinify/math-bookmarklet/main/dist/bundle.js')
         .then((r) => r.text())
         .then((r) => eval(r))
 }
@@ -20,8 +18,7 @@ const plugin: moduleDefinition = {
     custom_render: false,
     display_name: 'Math Solver',
     id: 'math',
-    description:
-        'Factor, simplify, and solve (By <a href="https://github.com/penguinify/math-bookmarklet">Penguinify</a>)',
+    description: 'Factor, simplify, and solve (By <a href="https://github.com/penguinify/math-bookmarklet">Penguinify</a>)',
     section: 'cheats',
     reset: true,
     onactive: math,
