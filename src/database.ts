@@ -2,6 +2,17 @@
 import Notification from './components/notification'
 import { VERSION, ITERATION, DATABASE } from './static/constant'
 
+export function checkStatus(): boolean {
+    // checks if you can use fetch on this website
+    fetch(`${DATABASE}version.json`).then((res) => {
+        if (res.status === 200) {
+            return true
+        }
+    })
+
+    return false
+}
+
 function show_update(parent: HTMLElement, new_ver: string) {
     let notifcation = new Notification(
         parent,

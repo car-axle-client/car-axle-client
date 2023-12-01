@@ -1,7 +1,7 @@
 import { create_element } from '../UILib'
 import { UIManager } from '../UIManager'
 import { GAMESLINK } from '../static/constant'
-import '../static/iframe.less'
+import '@/iframe.less'
 
 export type moduleDefinition =
     | {
@@ -91,15 +91,6 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         iframe_blank.src = iframe.src
         //@ts-ignore
         window_blank.document.body.appendChild(iframe_blank)
-    }
-
-    // check if iframe is blocked by CSP
-
-    try {
-        // @ts-ignore
-        iframe.contentDocument || iframe.contentWindow.document
-    } catch (e) {
-        alert('This website blocks car axle client from loading in an iframe. Please contact the website owner and ask them to allow car axle client to load in an iframe.')
     }
 
     return iframe

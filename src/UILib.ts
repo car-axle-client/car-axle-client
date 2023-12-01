@@ -1,3 +1,12 @@
+// types and everything
+
+export type sectionInfo = {
+    id: string
+    display_name: string
+    description: string
+    icon: string
+}
+
 export interface Component {
     parent: HTMLElement
     render(): void

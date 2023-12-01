@@ -1,4 +1,4 @@
-import { change_game, moduleDefinition, none } from '../../moduleapi'
+import { change_game, moduleDefinition } from '../../moduleapi'
 import { UIManager } from '../../../UIManager'
 import gamesJSON from './games.json'
 import { create_element } from '../../../UILib'

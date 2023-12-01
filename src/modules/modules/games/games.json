@@ -118,5 +118,37 @@
     {
         "name": "The Final Earth 2",
         "url": "finalearth/index.html"
+    },
+    {
+        "name": "Tactical Assasin 2",
+        "url": "ta2/index.html"
+    },
+    {
+        "name": "Synesthesia",
+        "url": "synesthesia/index.html"
+    },
+    {
+        "name": "HexGL",
+        "url": "HexGL/index.html"
+    },
+    {
+        "name": "Veloce",
+        "url": "veloce/index.html"
+    },
+    {
+        "name": "Vex6",
+        "url": "vex6/index.html"
+    },
+    {
+        "name": "Tactical Weapon Pack 2",
+        "url": "twp2/index.html"
+    },
+    {
+        "name": "Cubefield",
+        "url": "cubefield/index.html"
+    },
+    {
+        "name": "Edge not Found ",
+        "url": "edgenotfound/index.html"
     }
 ]

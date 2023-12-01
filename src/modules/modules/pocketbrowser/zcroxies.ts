@@ -1,3 +1,4 @@
+import { checkStatus } from '../../../database'
 import { DATABASE } from '../../../static/constant'
 import { moduleDefinition } from '../../moduleapi'
 
@@ -42,6 +43,14 @@ function set_to_random_normal() {
     iframe.src = 'https://' + atob(link)
 }
 
+const status: moduleDefinition = {
+    custom_render: false,
+    display_name: checkStatus() ? 'Proxies Status: Offline (Try another website)' : 'Script Status: Online',
+    id: 'proxystatus',
+    description: 'Checks if you can use Proxies',
+    section: 'pocket',
+}
+
 const wildcard: moduleDefinition = {
     custom_render: false,
     display_name: 'Set to Random *.example.com Link',
@@ -62,6 +71,6 @@ const normal: moduleDefinition = {
     onactive: () => set_to_random_normal(),
 }
 
-const plugin: moduleDefinition[] = [wildcard, normal]
+const plugin: moduleDefinition[] = [status, wildcard, normal]
 
-// export default plugin
+export default plugin

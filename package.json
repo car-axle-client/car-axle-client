@@ -1,11 +1,11 @@
 {
     "name": "car-axle-client",
-    "version": "v5",
+    "version": "v7",
     "description": "car axle client",
     "main": "index.ts",
     "scripts": {
-        "test": "webpack --config webpack.config.js",
-        "build": "webpack --config webpack-production.config.js",
+        "test": "prettier . --write && webpack --config webpack.config.js",
+        "build": "prettier . --write && webpack --config webpack-production.config.js",
         "format": "prettier . --write"
     },
     "author": "",

@@ -18,8 +18,7 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js'],
         alias: {
-            '@': path.resolve('src'),
-            // doesn't work for some reason??
+            '@': path.resolve('src/static'),
         },
     },
     output: {
