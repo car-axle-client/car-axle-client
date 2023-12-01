@@ -45,6 +45,7 @@ function set_to_random_normal() {
 
 const status: moduleDefinition = {
     custom_render: false,
+    disabled: true,
     display_name: checkStatus() ? 'Proxies Status: Offline (Try another website)' : 'Script Status: Online',
     id: 'proxystatus',
     description: 'Checks if you can use Proxies',

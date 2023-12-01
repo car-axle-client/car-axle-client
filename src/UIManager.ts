@@ -55,7 +55,7 @@ export class UIManager {
                 },
             ],
             {
-                duration: 500,
+                duration: 800,
             }
         )
     }
