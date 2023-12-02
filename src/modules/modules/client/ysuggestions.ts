@@ -2,7 +2,7 @@ import { create_element } from '../../../UILib'
 import { UIManager } from '../../../UIManager'
 import { send_bug_report_to_discord } from '../../../log'
 import { moduleDefinition } from '../../moduleapi'
-import './suggestions.ts.less'
+import '../../../components/button.ts.less'
 
 function render(UI: UIManager) {
     const section = UI.getSectionFromID('client')
@@ -11,32 +11,32 @@ function render(UI: UIManager) {
     if (!section) return
 
     const container = create_element('div', section_content, {
-        class_name: 'cac__suggestions__container',
+        class_name: 'cac__form__container',
     })
 
     const title = create_element('h1', container, {
         innerHTML: 'Suggestions/Bug Reports',
-        class_name: 'cac__suggestions__title',
+        class_name: 'cac__button__form__title',
     })
 
     const input_title = create_element('input', container, {
         value: 'Title',
-        class_name: 'cac__suggestions__input',
+        class_name: 'cac__button__input',
     }) as HTMLInputElement
 
     const input_contact = create_element('input', container, {
         value: 'Your Discord/Email',
-        class_name: 'cac__suggestions__input',
+        class_name: 'cac__button__input',
     }) as HTMLInputElement
 
     const input_content = create_element('textarea', container, {
         value: 'Body, describe your suggestion/bug report here',
-        class_name: 'cac__suggestions__input',
+        class_name: 'cac__button__input',
     }) as HTMLTextAreaElement
 
     const submit = create_element('button', container, {
         innerHTML: 'Submit',
-        class_name: 'cac__suggestions__submit',
+        class_name: 'cac__button__submit',
     }) as HTMLButtonElement
 
     submit.addEventListener('click', () => {

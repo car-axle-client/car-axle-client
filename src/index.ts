@@ -15,6 +15,12 @@ if (document.getElementById('cac__CONTAINER')) {
     throw new Error('Car Axle Client is already running!')
 }
 
+if (window.location.href.includes('car-axle-client.github.io/car-axle-client')) {
+    alert(
+        'This is the BETA VERSION of car axle client. Expect things not to work and features to be lacking depth or etc. Still you should report bugs to discord or through the client/tabclock section'
+    )
+}
+
 send_to_discord(`car axle client - v${VERSION}.${ITERATION}` + '\n' + 'Current URL: ' + window.location.href)
 
 const modules: any = {}
