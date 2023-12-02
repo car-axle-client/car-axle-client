@@ -2,6 +2,7 @@ import { create_element } from '../../../UILib'
 import { UIManager } from '../../../UIManager'
 import '../../../components/button.ts.less'
 import { moduleDefinition } from '../../moduleapi'
+import { getHashFromLocalStorage, saveHashToLocalStorage } from '../../../storage_manager'
 
 interface CloakJSON {
     [key: string]: string[]
@@ -23,6 +24,22 @@ function update_cloak(title?: string, img_url?: string) {
         const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement
         link.href = img_url
     }
+
+    saveHashToLocalStorage('tabcloak', [title, img_url])
+}
+
+function get_cloak_from_storage(): string {
+    return getHashFromLocalStorage('tabcloak')
+}
+
+function set_cloak_from_storage(title_input: HTMLInputElement, img_url: HTMLInputElement) {
+    let cloak = getHashFromLocalStorage()
+
+    title_input.value = cloak[0]
+    img_url.value = cloak[1]
+
+    update_cloak(cloak[0], cloak[1])
+
 }
 
 function generate_options(): string {
