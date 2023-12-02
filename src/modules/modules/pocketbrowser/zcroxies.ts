@@ -40,7 +40,7 @@ function set_to_random_normal() {
     let iframe = document.getElementById('cac__pocketbrowser__iframe') as HTMLIFrameElement
 
     let link = special.normal[Math.floor(Math.random() * special.normal.length)]
-    iframe.src = 'https://' + atob(link)
+    iframe.src = atob(link)
 }
 
 const status: moduleDefinition = {
