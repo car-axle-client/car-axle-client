@@ -41,6 +41,16 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         class_name: 'cac__iframe__controls',
     })
 
+    let iframe_back = create_element('button', iframe_controls_container, {
+        class_name: 'cac__iframe__svg',
+        innerHTML: `<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>`,
+    })
+
+    let iframe_forward = create_element('button', iframe_controls_container, {
+        class_name: 'cac__iframe__svg',
+        innerHTML: `<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>`,
+    })
+
     let iframe_fullscreen = create_element('button', iframe_controls_container, {
         class_name: 'cac__iframe__svg',
         innerHTML: `<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/></svg>
@@ -57,6 +67,39 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         class_name: 'cac__iframe__svg',
         innerHTML: `<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM96 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
                 about:blank`,
+    })
+
+    var iframe_history: string[] = []
+    var iframe_history_index: number = 0
+    var dont_push = false
+
+    iframe.addEventListener('load', (e) => {
+        if (dont_push) {
+            dont_push = false
+            return
+        }
+
+        console.log(iframe_history_index)
+        if (iframe_history_index !== 0) {
+            iframe_history.slice(iframe_history.length - iframe_history_index - 1, iframe_history.length)
+            iframe_history_index = 0
+        }
+        iframe_history.push(iframe.src)
+        console.log(iframe_history)
+    })
+
+    iframe_back.addEventListener('mousedown', (e) => {
+        iframe.src = iframe_history[iframe_history.length - iframe_history_index - 2]
+        iframe_history_index--
+        dont_push = true
+    })
+
+    iframe_forward.addEventListener('mousedown', (e) => {
+        if (iframe_history_index !== 0) {
+            iframe.src = iframe_history[iframe_history.length - iframe_history_index - 2]
+            iframe_history_index++
+            dont_push = true
+        }
     })
 
     var maximized = false
