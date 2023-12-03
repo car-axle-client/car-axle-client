@@ -5,7 +5,7 @@ pls star ⭐️
 
 ![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![Dynamic Badge](https://tokei.rs/b1/github/car-axle-client/car-axle-client) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/main?style=plastic)
 
-The **BEST** bookmarklet menu with a gui. Play games, watch youtube, or go onto a proxy from almost any website. Frequent updates every 2-3 weeks.
+The **MOST POPULAR** bookmarklet menu with a gui. Play games, watch youtube, or go onto a proxy from almost any website. Frequent updates every 2-3 weeks.
 
 -   Exploits and history flooder
 -   Small, fun things bookmarklets
