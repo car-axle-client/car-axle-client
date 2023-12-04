@@ -79,13 +79,11 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
             return
         }
 
-        console.log(iframe_history_index)
         if (iframe_history_index !== 0) {
             iframe_history.slice(iframe_history.length - iframe_history_index - 1, iframe_history.length)
             iframe_history_index = 0
         }
         iframe_history.push(iframe.src)
-        console.log(iframe_history)
     })
 
     iframe_back.addEventListener('mousedown', (e) => {
