@@ -48,7 +48,7 @@ function main(): void {
 
     get_update(UI.container)
     get_main_notification(UI.container)
-    console.log(`car axle client - v${VERSION}.${ITERATION}`)
+    console.info(`car axle client - v${VERSION}.${ITERATION}`)
 }
 
 main()

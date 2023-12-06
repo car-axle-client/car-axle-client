@@ -32,9 +32,10 @@ export function get_update(main: HTMLElement) {
             let current = parseFloat(`${VERSION}.${ITERATION}`)
             let new_ver = parseFloat(`${json['version']}.${json['i']}`)
             if (current >= new_ver) {
-                console.log('Version is UP TO DATE')
+                console.info(`Version is UP TO DATE (v${VERSION}.${ITERATION})`)
             } else {
                 show_update(main, `${json['version']} (i: ${json['i']})`)
+                console.warn(`Version is OUT OF DATE (v${VERSION}.${ITERATION}) -> v${json['version']} (i: ${json['i']})`)
             }
         })
 }

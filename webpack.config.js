@@ -21,6 +21,15 @@ module.exports = {
             '@': path.resolve('src/static'),
         },
     },
+    devServer: {
+        host: 'localhost',
+        static: {
+            directory: path.join(__dirname, 'docs/testing'),
+        },
+        port: 8080,
+        open: true,
+        hot: true,
+    },
     output: {
         filename: 'index.js', // Output bundle filename
         // path: path.resolve(__dirname, 'build'), // Output directory

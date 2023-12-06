@@ -31,6 +31,26 @@ v5 example
 
 # Contributing
 
+Development Setup
+
+1. Install Packages
+
+```
+npm install
+```
+
+2. Star hot reload Development Server
+
+```
+npm run dev
+```
+
+3. Output a release file
+
+```
+npm run build
+```
+
 Contributing is made to be as easy as possible.  
 Check out the wiki for a guide on how the code works!
 

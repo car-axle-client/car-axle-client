@@ -25,15 +25,12 @@ export function load_module_values(UI: UIManager) {
 }
 
 export function new_save(UI: UIManager) {
-    console.log('%cAttempting Save', 'color:blue; font-size: 3vw;')
 
     // too lazy to rigidly define values
     let cacStorage: Array<any> = []
 
     for (let section of UI.sections) {
         let buttonValues = section.get_all_button_values()
-        console.log('%c' + section.id, 'font-size:1.25vw;')
-        console.table(buttonValues)
         cacStorage.push({ sectionID: section.id, buttonValues })
     }
 
