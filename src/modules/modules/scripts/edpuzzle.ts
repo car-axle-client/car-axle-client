@@ -16,6 +16,8 @@ function edpuzzle() {
     console.log(
         'Edpuzzle Answers is licensed under the GPL 3.0 license. I have made no changes to the code, and I am not the author of the code. Ading2210 is the author of the code. The code is sourced from cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js. View the license here: https://github.com/ading2210/edpuzzle-answers/blob/main/LICENSE'
     )
+    // Fixes edpuzzle bug
+    var thumbnail
     fetch('https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js')
         .then((r) => r.text())
         .then((r) => eval(r))

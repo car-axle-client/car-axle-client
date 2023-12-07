@@ -26,14 +26,13 @@ function handleCardClick(element: HTMLElement, plugin_code: string) {
     if (element.classList.contains('cac__plugin__card--enabled')) return
 
     element.classList.toggle('cac__plugin__card--enabled')
-    
+
     // I manually check every plugin for malicious code
     eval(plugin_code)
 
     setTimeout(() => {
         element.classList.toggle('cac__plugin__card--enabled')
     }, 400)
-
 }
 
 function create_plugin_card(plugin: Plugin, card_container: HTMLElement) {
@@ -56,8 +55,10 @@ function create_plugin_card(plugin: Plugin, card_container: HTMLElement) {
 
     fetch(`${COMMUNITY}plugins/${plugin.path}`)
         .then((response) => response.text())
-        .then((code) => plugin_code = code)
-    card.addEventListener("mousedown", () => {handleCardClick(card, plugin_code)})
+        .then((code) => (plugin_code = code))
+    card.addEventListener('mousedown', () => {
+        handleCardClick(card, plugin_code)
+    })
 }
 
 function render(UI: UIManager) {
