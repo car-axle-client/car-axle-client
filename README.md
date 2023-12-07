@@ -9,7 +9,7 @@ The **MOST POPULAR** bookmarklet menu with a gui. Play games, watch youtube, or 
 
 -   Exploits and history flooder
 -   Small, fun things bookmarklets
--   Large 20+ game library
+-   Large 25+ game library
 -   JS Console
 -   Mini Browser
 -   Youtube Embeder
@@ -39,7 +39,7 @@ Development Setup
 npm install
 ```
 
-2. Star hot reload Development Server
+2. Start hot reload Development Server
 
 ```
 npm run dev

@@ -1,6 +1,10 @@
 // Custom UPDATER for car-axle-client
 import Notification from './components/notification'
-import { VERSION, ITERATION, DATABASE } from './static/constant'
+import { VERSION, ITERATION, COMMUNITY, DATABASE } from './static/constant'
+
+export async function get_plugins(): Promise<any> {
+    return fetch(`${COMMUNITY}meta.json`).then((result) => result.json())
+}
 
 export function checkStatus(): boolean {
     // checks if you can use fetch on this website

@@ -25,7 +25,6 @@ export function load_module_values(UI: UIManager) {
 }
 
 export function new_save(UI: UIManager) {
-
     // too lazy to rigidly define values
     let cacStorage: Array<any> = []
 

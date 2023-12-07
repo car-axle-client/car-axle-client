@@ -1,5 +1,4 @@
 import { moduleDefinition } from '../../moduleapi'
-import { DATABASE } from '../../../static/constant'
 import { checkStatus } from '../../../database'
 
 let status: boolean = checkStatus()
