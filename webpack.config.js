@@ -26,7 +26,7 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'docs/testing'),
         },
-        port: 8080,
+        port: 6969,
         open: true,
         hot: true,
     },
