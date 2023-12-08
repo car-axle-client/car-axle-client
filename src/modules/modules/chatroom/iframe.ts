@@ -8,20 +8,19 @@ function render(UI: UIManager) {
     if (!section_content) return
 
     // Assuming section_content is a DOM element
-    const widgetbotElement = document.createElement('widgetbot');
-    widgetbotElement.setAttribute('server', '1143730031533768726');
-    widgetbotElement.setAttribute('channel', '1182483663905103882');
-    widgetbotElement.setAttribute('width', '800');
-    widgetbotElement.setAttribute('height', '600');
+    const widgetbotElement = document.createElement('widgetbot')
+    widgetbotElement.setAttribute('server', '1143730031533768726')
+    widgetbotElement.setAttribute('channel', '1172763447256166420')
+    widgetbotElement.setAttribute('width', '800')
+    widgetbotElement.setAttribute('height', '600')
 
     // Create script element
-    const scriptElement = document.createElement('script');
-    scriptElement.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed';
+    const scriptElement = document.createElement('script')
+    scriptElement.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'
 
     // Append both elements to section_content
-    section_content.appendChild(widgetbotElement);
-    section_content.appendChild(scriptElement);
-    
+    section_content.appendChild(widgetbotElement)
+    section_content.appendChild(scriptElement)
 }
 
 const plugin: moduleDefinition = {
