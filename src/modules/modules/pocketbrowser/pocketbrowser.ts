@@ -42,7 +42,7 @@ function render_bookmarks(bookmark_container: HTMLElement, iframe: HTMLIFrameEle
     for (let bookmark of bookmarks) {
         let bookmark_element = create_element('button', bookmark_container, {
             class_name: 'cac__pocketbrowser__bookmark',
-            innerHTML: bookmark.shorthand
+            innerHTML: bookmark.shorthand,
         })
 
         bookmark_element.addEventListener('click', () => {
@@ -65,7 +65,6 @@ function render(UI: UIManager) {
     const bookmarks_container = create_element('div', section.section_content, {
         class_name: 'cac__pocketbrowser__bookmarks__container',
     })
-
 
     let iframe = new_iframe(UI, section.section_content, 'https://bing.com', '', 3)
 
