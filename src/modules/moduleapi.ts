@@ -28,7 +28,7 @@ export function change_game(link: string): void {
     iframe.setAttribute('src', GAMESLINK + link)
 }
 
-export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id: string = ''): HTMLIFrameElement {
+export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id: string = '', top: number = 2): HTMLIFrameElement {
     let iframe = create_element('iframe', section, {
         class_name: 'cac__iframe',
         id: id,
@@ -113,7 +113,7 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         } else {
             iframe.classList.remove('cac__iframe__maximized')
             iframe_controls_container.classList.remove('cac__iframe__controls__maximized')
-            section.insertBefore(iframe, section.children[2])
+            section.insertBefore(iframe, section.children[top])
             section.insertBefore(iframe_controls_container, section.children[3])
         }
     }
