@@ -2,7 +2,7 @@ import { moduleDefinition } from '../../moduleapi'
 
 const plugin: moduleDefinition = {
     display_name: '3kh0 for most of the assets',
-    description: 'most game websites use their rips anyways',
+    description: 'thank you',
     id: 'cred',
     section: 'credit',
     disabled: true,
