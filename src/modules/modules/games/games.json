@@ -162,5 +162,21 @@
     {
         "name": "Krunker",
         "url": "krunker/index.html"
+    },
+    {
+        "name": "Learn to Fly 2",
+        "url": "learntofly2/index.html"
+    },
+    {
+        "name": "Rooftop Snipers",
+        "url": "rooftopsnipers/index.html"
+    },
+    {
+        "name": "Idle Breakout",
+        "url": "idle-breakout/index.html"
+    },
+    {
+        "name": "A Dance of Fire and Ice",
+        "url": "adanceoffireandice/index.html"
     }
 ]
