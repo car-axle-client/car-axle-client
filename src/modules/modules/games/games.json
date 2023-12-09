@@ -181,6 +181,22 @@
     },
     {
         "name": "Pokemon Emerald",
-        "url": "pokemonemerald/index.html"
+        "url": "temptations/cplayer.html?type=gba&game=pokemon-emerald"
+    },
+    {
+        "name": "Pokemon Ruby",
+        "url": "temptations/cplayer.html?type=gba&game=pokemon-ruby"
+    },
+    {
+        "name": "Pokemon Sapphire",
+        "url": "temptations/cplayer.html?type=gba&game=pokemon-sapphire"
+    },
+    {
+        "name": "Pokemon Leaf Green",
+        "url": "temptations/cplayer.html?type=gba&game=pokemon-leaf-green"
+    },
+    {
+        "name": "Pokemon Fire Red",
+        "url": "temptations/cplayer.html?type=gba&game=pokemon-fire-red"
     }
 ]
