@@ -107,7 +107,7 @@
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
-                    '.cac__pocketbrowser__input {\n  width: 90% !important;\n  line-height: 6vh !important;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  align-items: center !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  transition: 1s !important;\n  height: auto !important;\n}\n',
+                    '.cac__pocketbrowser__input {\n  width: 90% !important;\n  line-height: 6vh !important;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  align-items: center !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  transition: 1s !important;\n  height: auto !important;\n}\n.cac__pocketbrowser__bookmarks__container {\n  width: 90% !important;\n  padding: 1% 0 !important;\n  display: inline-flex !important;\n  flex-direction: column !important;\n  justify-content: center !important;\n  align-items: center !important;\n  background-color: rgba(0, 0, 0, 0.6) !important;\n  border-radius: 15px !important;\n  margin-top: 2% !important;\n  flex-wrap: wrap !important;\n  justify-content: flex-start !important;\n  flex-direction: row !important;\n}\n.cac__pocketbrowser__bookmark {\n  width: 20% !important;\n  height: 20% !important;\n  background-color: rgba(0, 0, 0, 0.6) !important;\n  padding: 1% 0 !important;\n  color: #fff !important;\n  border-radius: 15px !important;\n  display: inline-flex !important;\n  margin-left: 2% !important;\n  justify-content: center !important;\n  align-items: center !important;\n  transition: 1s !important;\n  cursor: pointer !important;\n  font-size: 1vw !important;\n}\n',
                     '',
                 ])
                 const r = s
@@ -975,85 +975,87 @@
                     (t.change_game = function (e) {
                         document.getElementById('cac__games__iframe').setAttribute('src', i.GAMESLINK + e)
                     }),
-                    (t.new_iframe = function (e, t, n, i = '') {
-                        let a = (0, o.create_element)('iframe', t, { class_name: 'cac__iframe', id: i })
-                        a.setAttribute('is', 'x-frame-bypass'), a.setAttribute('src', n)
-                        let s = (0, o.create_element)('div', t, { class_name: 'cac__iframe__controls' }),
-                            r = (0, o.create_element)('button', s, {
+                    (t.new_iframe = function (e, t, n, i = '', a = 2) {
+                        let s = (0, o.create_element)('iframe', t, { class_name: 'cac__iframe', id: i })
+                        s.setAttribute('is', 'x-frame-bypass'), s.setAttribute('src', n)
+                        let r = (0, o.create_element)('div', t, { class_name: 'cac__iframe__controls' }),
+                            c = (0, o.create_element)('button', r, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">\x3c!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--\x3e<path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>',
                             }),
-                            c = (0, o.create_element)('button', s, {
+                            l = (0, o.create_element)('button', r, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">\x3c!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--\x3e<path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>',
                             }),
-                            l = (0, o.create_element)('button', s, {
+                            d = (0, o.create_element)('button', r, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/></svg>\n                Fullscreen',
                             }),
-                            d = (0, o.create_element)('button', s, {
+                            u = (0, o.create_element)('button', r, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M384 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>\n            Maximize',
                             }),
-                            u = (0, o.create_element)('button', s, {
+                            m = (0, o.create_element)('button', r, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM96 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>\n                about:blank',
                             })
-                        var m = [],
-                            _ = 0,
-                            p = !1
-                        a.addEventListener('load', (e) => {
-                            p ? (p = !1) : (0 !== _ && (m.slice(m.length - _ - 1, m.length), (_ = 0)), m.push(a.src))
+                        var _ = [],
+                            p = 0,
+                            h = !1
+                        s.addEventListener('load', (e) => {
+                            h ? (h = !1) : (0 !== p && (_.slice(_.length - p - 1, _.length), (p = 0)), _.push(s.src))
                         }),
-                            r.addEventListener('mousedown', (e) => {
-                                ;(a.src = m[m.length - _ - 2]), _--, (p = !0)
-                            }),
                             c.addEventListener('mousedown', (e) => {
-                                0 !== _ && ((a.src = m[m.length - _ - 2]), _++, (p = !0))
+                                ;(s.src = _[_.length - p - 2]), p--, (h = !0)
+                            }),
+                            l.addEventListener('mousedown', (e) => {
+                                0 !== p && ((s.src = _[_.length - p - 2]), p++, (h = !0))
                             })
-                        var h = !1
+                        var f = !1
                         return (
-                            (d.onmousedown = (n) => {
-                                ;(h = !h)
-                                    ? (a.classList.add('cac__iframe__maximized'), s.classList.add('cac__iframe__controls__maximized'), e.container.appendChild(a), e.container.appendChild(s))
-                                    : (a.classList.remove('cac__iframe__maximized'),
-                                      s.classList.remove('cac__iframe__controls__maximized'),
-                                      t.insertBefore(a, t.children[2]),
-                                      t.insertBefore(s, t.children[3]))
+                            (u.onmousedown = (n) => {
+                                ;(f = !f)
+                                    ? (s.classList.add('cac__iframe__maximized'), r.classList.add('cac__iframe__controls__maximized'), e.container.appendChild(s), e.container.appendChild(r))
+                                    : (s.classList.remove('cac__iframe__maximized'),
+                                      r.classList.remove('cac__iframe__controls__maximized'),
+                                      t.insertBefore(s, t.children[a]),
+                                      t.insertBefore(r, t.children[3]))
                             }),
-                            (l.onmousedown = (e) => {
-                                a.requestFullscreen()
+                            (d.onmousedown = (e) => {
+                                s.requestFullscreen()
                             }),
-                            (u.onmousedown = (e) => {
+                            (m.onmousedown = (e) => {
                                 let t = window.open(),
                                     n = t.document.createElement('iframe')
                                 ;(n.style = 'position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;'),
-                                    (n.src = a.src),
+                                    (n.src = s.src),
                                     t.document.body.appendChild(n)
                             }),
-                            a
+                            s
                         )
                     }),
                     (t.none = function () {})
             },
             3990: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(4203)
-                n(9367)
-                const i = {
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(9367)
+                const o = {
                     custom_render: !0,
                     render: function (e) {
                         let t = e.getSectionFromID('chat')?.section_content
-                        t && (0, o.new_iframe)(e, t, atob('aHR0cHM6Ly9vcmdhbml6YXRpb25zLm1pbm5pdC5jaGF0LzcxMzIyNjQ1MTIxMTIzNy9jL2dlbmVyYWw/ZW1iZWQmbmlja25hbWU9'))
+                        if (!t) return
+                        const n = document.createElement('widgetbot')
+                        n.setAttribute('server', '1143730031533768726'), n.setAttribute('channel', '1172763447256166420'), n.setAttribute('width', '800'), n.setAttribute('height', '600')
+                        const o = document.createElement('script')
+                        ;(o.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'), t.appendChild(n), t.appendChild(o)
                     },
                 }
-                t.default = i
+                t.default = o
             },
             4462: (e, t, n) => {
                 'use strict'
@@ -1175,14 +1177,7 @@
             9402: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.default = {
-                        display_name: '3kh0 for most of the assets',
-                        description: 'most game websites use their rips anyways',
-                        id: 'cred',
-                        section: 'credit',
-                        disabled: !0,
-                        custom_render: !1,
-                    })
+                    (t.default = { display_name: '3kh0 for most of the assets', description: 'thank you', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
             },
             1214: (e, t) => {
                 'use strict'
@@ -1206,24 +1201,12 @@
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = { display_name: 'selenite', description: 'for their cloaks list that I blatantly stole', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
             },
-            7740: (e, t) => {
-                'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.default = {
-                        display_name: 'yexex and PurePro4561 for the games',
-                        description: 'also 3kh0 cause purepro skidded some of their games from his website',
-                        id: 'cred',
-                        section: 'credit',
-                        disabled: !0,
-                        custom_render: !1,
-                    })
-            },
             9738: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
-                        display_name: 'penguinify for UI, exploits, fun section, and pocketbrowser',
-                        description: 'also made car axle client',
+                        display_name: 'penguinify for everything not listed here',
+                        description: 'thank you for supporting car axle client for over 4 months!',
                         id: 'cred2',
                         section: 'credit',
                         disabled: !0,
@@ -1286,6 +1269,29 @@
                     custom_render: !1,
                 }
                 t.default = o
+            },
+            1631: (e, t) => {
+                'use strict'
+                Object.defineProperty(t, '__esModule', { value: !0 })
+                const n = {
+                    custom_render: !1,
+                    display_name: 'Kahoot Game Finder',
+                    description: 'Automatically find Kahoot games (Can take a 5 minutes max and MUST BE ON https://kahoot.it)',
+                    section: 'exploit',
+                    id: 'kahoot-game-finder',
+                    onactive: function () {
+                        if ('https://kahoot.it/' != location.href) return void alert('You must be on https://kahoot.it')
+                        let e = !1,
+                            t = setInterval(() => {
+                                ;(e = (function () {
+                                    let e = Math.floor(9e6 * Math.random()) + 1e6
+                                    return fetch(`https://kahoot.it/reserve/session/${e}/`).then((t) => 200 == t.status && (alert(`Game found! Pin: ${e}`), !0)), !1
+                                })()),
+                                    e && clearInterval(t)
+                            }, 100)
+                    },
+                }
+                t.default = n
             },
             7852: (e, t) => {
                 'use strict'
@@ -1498,19 +1504,27 @@
                     s = n(5780)
                 n(3282)
                 const r = o(n(816)),
-                    c = {
+                    c = o(n(5891)),
+                    l = {
                         custom_render: !0,
                         render: function (e) {
                             let t = e.getSectionFromID('pocket')
                             if (!t) return
-                            const n = (0, i.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'https://google.com/webhp?igu=1' })
-                            let o = (0, a.new_iframe)(e, t.section_content, 'https://bing.com')
-                            ;(o.src = (0, s.getHashFromLocalStorage)('pocketbrowser')),
-                                (o.id = 'cac__pocketbrowser__iframe'),
+                            const n = (0, i.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'https://google.com/webhp?igu=1' }),
+                                o = (0, i.create_element)('div', t.section_content, { class_name: 'cac__pocketbrowser__bookmarks__container' })
+                            let l = (0, a.new_iframe)(e, t.section_content, 'https://bing.com', '', 3)
+                            !(function (e, t) {
+                                for (let n of c.default)
+                                    (0, i.create_element)('button', e, { class_name: 'cac__pocketbrowser__bookmark', innerHTML: n.shorthand }).addEventListener('click', () => {
+                                        t.setAttribute('src', n.link)
+                                    })
+                            })(o, l),
+                                (l.src = (0, s.getHashFromLocalStorage)('pocketbrowser')),
+                                (n.value = l.src),
+                                (l.id = 'cac__pocketbrowser__iframe'),
                                 n.addEventListener('change', (e) => {
-                                    let t = n,
-                                        i = t.value
-                                    ;(i = (function (e) {
+                                    let t = n.value
+                                    ;(t = (function (e) {
                                         let t = e
                                         return t.startsWith('https://') || (t = 'https://' + t), t.endsWith('/') && (t = t.slice(0, -1)), t
                                     })(
@@ -1521,28 +1535,39 @@
                                                 n.replaceAll ? e.includes(n.replace) && (e = n.with) : (e = e.replace(n.replace, n.with))
                                             }
                                             return e
-                                        })(i)
+                                        })(t)
                                     )),
-                                        (t.value = i),
-                                        'https://youtube.com' === i && alert('Paste a link to a video instead!'),
-                                        (0, s.saveHashToLocalStorage)('pocketbrowser', i),
-                                        o.setAttribute('src', `${i}`)
+                                        (n.value = t),
+                                        'https://youtube.com' === t && alert('Paste a link to a video instead!'),
+                                        (0, s.saveHashToLocalStorage)('pocketbrowser', t),
+                                        l.setAttribute('src', `${t}`)
                                 })
                         },
                     }
-                t.default = c
+                t.default = l
             },
             8141: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
-                    (t.default = {
-                        custom_render: !1,
-                        disabled: !0,
-                        id: 'infoyt',
-                        display_name: 'How to use youtube',
-                        description: 'Paste in any youtube link into pocket browser and it will work. (Unless your school blocks youtube)',
-                        section: 'pocket',
-                    })
+                    (t.default = [
+                        {
+                            custom_render: !1,
+                            disabled: !0,
+                            id: 'infoyt',
+                            display_name: 'How to use youtube',
+                            description: 'Paste in any youtube link into pocket browser and it will work. (Unless your school blocks youtube)',
+                            section: 'pocket',
+                        },
+                        {
+                            custom_render: !1,
+                            disabled: !0,
+                            id: 'infocookies',
+                            display_name: 'Fix some websites and games',
+                            description:
+                                'Go to <a href="https://github.com/car-axle-client/car-axle-client/blob/main/docs/disablingcookies.md" target="_blank">this link</a> and follow the instructions',
+                            section: 'pocket',
+                        },
+                    ])
             },
             3892: (e, t, n) => {
                 'use strict'
@@ -1561,7 +1586,7 @@
                     {
                         custom_render: !1,
                         disabled: !0,
-                        display_name: (0, o.checkStatus)() ? 'Proxies Status: Offline (Try another website)' : 'Script Status: Online',
+                        display_name: (0, o.checkStatus)() ? 'Proxies Status: Offline (Try another website)' : 'Proxy Status: Online',
                         id: 'proxystatus',
                         description: 'Checks if you can use Proxies',
                         section: 'pocket',
@@ -1901,11 +1926,11 @@
                     './credits/Thanks.ts': 1214,
                     './credits/adder.ts': 9714,
                     './credits/cloaks.ts': 2425,
-                    './credits/gamescredits.ts': 7740,
                     './credits/info.ts': 9738,
                     './exploits/autohide.ts': 6976,
                     './exploits/autoselfdestruct.ts': 9723,
                     './exploits/betterforceselect.ts': 9331,
+                    './exploits/kahoot-game-finder.ts': 1631,
                     './exploits/noforcereload.ts': 7852,
                     './fun/editpagetext.ts': 5995,
                     './fun/historyflooder.ts': 6095,
@@ -1965,8 +1990,12 @@
             6321: (e) => {
                 'use strict'
                 e.exports = JSON.parse(
-                    '[{"name":"Moto X3M","url":"motox3m/index.html"},{"name":"Rom Loader","url":"temptations/index.html"},{"name":"yohoho","url":"yohoho/index.html"},{"name":"Burrito Bison","url":"bb/index.html"},{"name":"Bloons TD 4","url":"btd4.html"},{"name":"Minecraft","url":"Offline_Download_Version.html"},{"name":"Retrobowl","url":"retro-bowl/retro.html"},{"name":"Moto X3M Winter","url":"wintermotox3m/index.html"},{"name":"Basketball Stars","url":"basketball-stars/index.html"},{"name":"slope","url":"slope/index.html"},{"name":"Geometry Dash","url":"geo.html"},{"name":"Bloons TD 1","url":"bloons1.html"},{"name":"Bloons TD 2","url":"bloons.html"},{"name":"Quake","url":"quake/index.html"},{"name":"Binding of Isaac","url":"boi.html"},{"name":"Bitlife","url":"nolife/index.html"},{"name":"Basket Random","url":"basket-random/index.html"},{"name":"truck game thing","url":"goofyahhdrivesim/index.html"},{"name":"rocket game thing","url":"rocketgame/index.html"},{"name":"osu!","url":"osu/index.html"},{"name":"Slither.io","url":"slitherio/slitherio.html"},{"name":"Run 3","url":"run3/Run 3.html"},{"name":"Monkey Mart","url":"monkeymart/index.html"},{"name":"Stickman Hook","url":"stickman/index.html"},{"name":"Cookie Clicker","url":"cookieclicker/index.html"},{"name":"Age of Conflict","url":"aoc/index.html"},{"name":"Sand Boxels","url":"sand/index.html"},{"name":"Exo","url":"exo/index.html"},{"name":"Station 141","url":"station141/index.html"},{"name":"The Final Earth 2","url":"finalearth/index.html"},{"name":"Tactical Assasin 2","url":"ta2/index.html"},{"name":"Synesthesia","url":"synesthesia/index.html"},{"name":"HexGL","url":"HexGL/index.html"},{"name":"Veloce","url":"veloce/index.html"},{"name":"Vex6","url":"vex6/index.html"},{"name":"Tactical Weapon Pack 2","url":"twp2/index.html"},{"name":"Cubefield","url":"cubefield/index.html"},{"name":"Edge not Found ","url":"edgenotfound/index.html"}]'
+                    '[{"name":"Moto X3M","url":"motox3m/index.html"},{"name":"Rom Loader","url":"temptations/index.html"},{"name":"yohoho","url":"yohoho/index.html"},{"name":"Burrito Bison","url":"bb/index.html"},{"name":"Bloons TD 4","url":"btd4.html"},{"name":"Minecraft","url":"Offline_Download_Version.html"},{"name":"Retrobowl","url":"retro-bowl/retro.html"},{"name":"Moto X3M Winter","url":"wintermotox3m/index.html"},{"name":"Basketball Stars","url":"basketball-stars/index.html"},{"name":"slope","url":"slope/index.html"},{"name":"Geometry Dash","url":"geo.html"},{"name":"Bloons TD 1","url":"bloons1.html"},{"name":"Bloons TD 2","url":"bloons.html"},{"name":"Quake","url":"quake/index.html"},{"name":"Binding of Isaac","url":"boi.html"},{"name":"Bitlife","url":"nolife/index.html"},{"name":"Basket Random","url":"basket-random/index.html"},{"name":"truck game thing","url":"goofyahhdrivesim/index.html"},{"name":"rocket game thing","url":"rocketgame/index.html"},{"name":"osu!","url":"osu/index.html"},{"name":"Slither.io","url":"slitherio/slitherio.html"},{"name":"Run 3","url":"run3/Run 3.html"},{"name":"Monkey Mart","url":"monkeymart/index.html"},{"name":"Stickman Hook","url":"stickman/index.html"},{"name":"Cookie Clicker","url":"cookieclicker/index.html"},{"name":"Age of Conflict","url":"aoc/index.html"},{"name":"Sand Boxels","url":"sand/index.html"},{"name":"Exo","url":"exo/index.html"},{"name":"Station 141","url":"station141/index.html"},{"name":"The Final Earth 2","url":"finalearth/index.html"},{"name":"Tactical Assasin 2","url":"ta2/index.html"},{"name":"Synesthesia","url":"synesthesia/index.html"},{"name":"HexGL","url":"HexGL/index.html"},{"name":"Veloce","url":"veloce/index.html"},{"name":"Vex6","url":"vex6/index.html"},{"name":"Tactical Weapon Pack 2","url":"twp2/index.html"},{"name":"Cubefield","url":"cubefield/index.html"},{"name":"Edge not Found ","url":"edgenotfound/index.html"},{"name":"OvO","url":"ovo/index.html"},{"name":"A Dark Room","url":"adarkroom/index.html"},{"name":"Krunker","url":"krunker/index.html"},{"name":"Learn to Fly 2","url":"learntofly2/index.html"},{"name":"Rooftop Snipers","url":"rooftopsnipers/index.html"},{"name":"Idle Breakout","url":"idle-breakout/index.html"},{"name":"A Dance of Fire and Ice","url":"adanceoffireandice/index.html"},{"name":"Pokemon Emerald","url":"temptations/cplayer.html?type=gba&game=pokemon-emerald"},{"name":"Pokemon Ruby","url":"temptations/cplayer.html?type=gba&game=pokemon-ruby"},{"name":"Pokemon Sapphire","url":"temptations/cplayer.html?type=gba&game=pokemon-sapphire"},{"name":"Pokemon Leaf Green","url":"temptations/cplayer.html?type=gba&game=pokemon-leaf-green"},{"name":"Pokemon Fire Red","url":"temptations/cplayer.html?type=gba&game=pokemon-fire-red"}]'
                 )
+            },
+            5891: (e) => {
+                'use strict'
+                e.exports = JSON.parse('[{"shorthand":"ChatGPT","link":"https://gptchatly.com/"},{"shorthand":"Car Axle Client Website","link":"https://car-axle-client.github.io/"}]')
             },
             816: (e) => {
                 'use strict'
