@@ -1,7 +1,7 @@
 import { Section } from './components/section'
 import { create_element } from './UILib'
 import { moduleDefinition, none } from './modules/moduleapi'
-import { VERSION, CLIENTNAME } from './static/constant'
+import { VERSION, CLIENTNAME, ITERATION } from './static/constant'
 import './static/style.less'
 
 export class UIManager {
@@ -13,6 +13,11 @@ export class UIManager {
     public main_content!: HTMLElement
     public tabbar!: HTMLElement
     private _section_background!: HTMLElement
+    private _animation_options: KeyframeAnimationOptions = {
+        duration: 1000,
+        fill: 'forwards',
+        easing: 'ease',
+    }
 
     constructor() {
         this._createGUI()
@@ -41,7 +46,7 @@ export class UIManager {
         // Aesthetic
         create_element('div', this.sidebar, {
             id: 'cac__LOGO',
-            innerHTML: `${CLIENTNAME} v${VERSION}`,
+            innerHTML: `${CLIENTNAME} v${VERSION}.${ITERATION}`,
         })
 
         // opacity animation
@@ -53,10 +58,7 @@ export class UIManager {
                 {
                     opacity: 1,
                 },
-            ],
-            {
-                duration: 800,
-            }
+            ], this._animation_options
         )
     }
 
@@ -71,13 +73,8 @@ export class UIManager {
                 {
                     top: `${section.nav_button.offsetTop}px`,
                 },
-            ],
-            {
-                duration: 1000,
-                fill: 'forwards',
-                easing: 'ease',
-            }
-        )
+            ], this._animation_options)
+
         section.section_content.animate(
             [
                 {
@@ -86,13 +83,7 @@ export class UIManager {
                 {
                     opacity: 1,
                 },
-            ],
-            {
-                duration: 500,
-                fill: 'forwards',
-                easing: 'ease',
-            }
-        )
+            ],this._animation_options)
 
         setTimeout(() => {
             section.section_content.style.display = 'block'
@@ -112,13 +103,7 @@ export class UIManager {
                 {
                     opacity: 0,
                 },
-            ],
-            {
-                duration: 500,
-                fill: 'forwards',
-                easing: 'ease',
-            }
-        )
+            ], this._animation_options)
         setTimeout(() => {
             section.section_content.style.display = 'none'
             section.section_content.style.pointerEvents = 'none;'

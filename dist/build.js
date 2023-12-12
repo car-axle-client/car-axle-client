@@ -1,11 +1,11 @@
 ;(() => {
     var __webpack_modules__ = {
-            9537: (e, t, n) => {
+            5350: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -14,12 +14,12 @@
                 ])
                 const r = s
             },
-            5889: (e, t, n) => {
+            6258: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -28,12 +28,12 @@
                 ])
                 const r = s
             },
-            7622: (e, t, n) => {
+            2268: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -42,12 +42,12 @@
                 ])
                 const r = s
             },
-            1451: (e, t, n) => {
+            8133: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -56,12 +56,12 @@
                 ])
                 const r = s
             },
-            5089: (e, t, n) => {
+            6955: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -70,12 +70,12 @@
                 ])
                 const r = s
             },
-            7356: (e, t, n) => {
+            6095: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -84,12 +84,12 @@
                 ])
                 const r = s
             },
-            9996: (e, t, n) => {
+            8864: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -98,12 +98,12 @@
                 ])
                 const r = s
             },
-            1589: (e, t, n) => {
+            481: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -112,12 +112,12 @@
                 ])
                 const r = s
             },
-            9383: (e, t, n) => {
+            1811: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -126,12 +126,12 @@
                 ])
                 const r = s
             },
-            3796: (e, t, n) => {
+            2814: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -140,12 +140,12 @@
                 ])
                 const r = s
             },
-            3675: (e, t, n) => {
+            1974: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -154,12 +154,12 @@
                 ])
                 const r = s
             },
-            3344: (e, t, n) => {
+            5159: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -168,12 +168,12 @@
                 ])
                 const r = s
             },
-            7624: (e, t, n) => {
+            4148: (e, t, n) => {
                 'use strict'
                 n.d(t, { Z: () => r })
-                var o = n(8081),
+                var o = n(2650),
                     i = n.n(o),
-                    a = n(3645),
+                    a = n(196),
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
@@ -182,7 +182,7 @@
                 ])
                 const r = s
             },
-            3645: (e) => {
+            196: (e) => {
                 'use strict'
                 e.exports = function (e) {
                     var t = []
@@ -224,273 +224,273 @@
                     )
                 }
             },
-            8081: (e) => {
+            2650: (e) => {
                 'use strict'
                 e.exports = function (e) {
                     return e[1]
                 }
             },
-            8716: (e, t, n) => {
+            2771: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(9537),
+                    h = n(5350),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            7832: (e, t, n) => {
+            9805: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(5889),
+                    h = n(6258),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            5789: (e, t, n) => {
+            1460: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(7622),
+                    h = n(2268),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            4430: (e, t, n) => {
+            4125: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(1451),
+                    h = n(8133),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            7947: (e, t, n) => {
+            7908: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(5089),
+                    h = n(6955),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            6919: (e, t, n) => {
+            3472: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(7356),
+                    h = n(6095),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            2177: (e, t, n) => {
+            7048: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(9996),
+                    h = n(8864),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            3282: (e, t, n) => {
+            1107: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(1589),
+                    h = n(481),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            4751: (e, t, n) => {
+            8289: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(9383),
+                    h = n(1811),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            6689: (e, t, n) => {
+            2890: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(3796),
+                    h = n(2814),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            9705: (e, t, n) => {
+            7688: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(3675),
+                    h = n(1974),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            9367: (e, t, n) => {
+            9637: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(3344),
+                    h = n(5159),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            7100: (e, t, n) => {
+            7744: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(3379),
+                var o = n(1062),
                     i = n.n(o),
-                    a = n(7795),
+                    a = n(552),
                     s = n.n(a),
-                    r = n(569),
+                    r = n(3566),
                     c = n.n(r),
-                    l = n(3565),
+                    l = n(4107),
                     d = n.n(l),
-                    m = n(9216),
+                    m = n(4911),
                     u = n.n(m),
-                    _ = n(4589),
+                    _ = n(3227),
                     p = n.n(_),
-                    h = n(7624),
+                    h = n(4148),
                     f = {}
                 ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
-            3379: (e) => {
+            1062: (e) => {
                 'use strict'
                 var t = []
                 function n(e) {
@@ -547,7 +547,7 @@
                     }
                 }
             },
-            569: (e) => {
+            3566: (e) => {
                 'use strict'
                 var t = {}
                 e.exports = function (e, n) {
@@ -568,21 +568,21 @@
                     o.appendChild(n)
                 }
             },
-            9216: (e) => {
+            4911: (e) => {
                 'use strict'
                 e.exports = function (e) {
                     var t = document.createElement('style')
                     return e.setAttributes(t, e.attributes), e.insert(t, e.options), t
                 }
             },
-            3565: (e, t, n) => {
+            4107: (e, t, n) => {
                 'use strict'
                 e.exports = function (e) {
                     var t = n.nc
                     t && e.setAttribute('nonce', t)
                 }
             },
-            7795: (e) => {
+            552: (e) => {
                 'use strict'
                 e.exports = function (e) {
                     if ('undefined' == typeof document) return { update: function () {}, remove: function () {} }
@@ -608,7 +608,7 @@
                     }
                 }
             },
-            4589: (e) => {
+            3227: (e) => {
                 'use strict'
                 e.exports = function (e, t) {
                     if (t.styleSheet) t.styleSheet.cssText = e
@@ -618,7 +618,7 @@
                     }
                 }
             },
-            3539: (e, t) => {
+            1829: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.create_element = void 0),
@@ -638,14 +638,14 @@
                         )
                     })
             },
-            6228: (e, t, n) => {
+            6527: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.UIManager = void 0)
-                const o = n(1162),
-                    i = n(3539),
-                    a = n(4203),
-                    s = n(6996)
-                n(7100),
+                const o = n(7424),
+                    i = n(1829),
+                    a = n(7838),
+                    s = n(6345)
+                n(7744),
                     (t.UIManager = class {
                         container
                         gui
@@ -665,7 +665,7 @@
                                 (this.main_content = (0, i.create_element)('div', this.gui, { id: 'cac__MAINCONTENT' })),
                                 (this._section_background = (0, i.create_element)('div', this.sidebar, { id: 'cac__section__BACKGROUND' })),
                                 (this.tabbar = (0, i.create_element)('div', this.main_content, { id: 'cac__TABBAR' })),
-                                (0, i.create_element)('div', this.sidebar, { id: 'cac__LOGO', innerHTML: `${s.CLIENTNAME} v${s.VERSION}` }),
+                                (0, i.create_element)('div', this.sidebar, { id: 'cac__LOGO', innerHTML: `${s.CLIENTNAME} v${s.VERSION}.${s.ITERATION}` }),
                                 this.container.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 800 })
                         }
                         enable_section(e) {
@@ -677,7 +677,8 @@
                                 e.section_content.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 500, fill: 'forwards', easing: 'ease' }),
                                 setTimeout(() => {
                                     ;(e.section_content.style.display = 'block'), (e.section_content.style.pointerEvents = 'auto')
-                                }, 500)
+                                }, 500),
+                                e.onShow.forEach((e) => e())
                         }
                         disable_section(e) {
                             ;(e.enabled = !1),
@@ -695,24 +696,27 @@
                             return (s.nav_button.onmousedown = () => this._handleSectionMouseDown(s)), a && this.enable_section(s), this.sections.push(s), s
                         }
                         toggleUI() {
-                            if (!this.container.parentElement)
-                                return (
-                                    document.body.appendChild(this.container),
-                                    void this.gui.animate([{ transform: 'translateX(-100%)' }, { transform: 'translateX(0%)' }], { duration: 500, fill: 'forwards', easing: 'ease-out' })
-                                )
-                            this.container.remove()
+                            this.container.parentElement ? this.container.remove() : document.body.appendChild(this.container)
                         }
                         addModule(e) {
                             if (e.custom_render) {
                                 try {
-                                    e.render(this)
+                                    if ((e.render(this), e.onShow)) {
+                                        const t = this.getSectionFromID(e.onShow[0])
+                                        t &&
+                                            t.add_onShow(() => {
+                                                e.onShow && e.onShow[1](this)
+                                            })
+                                    }
                                 } catch (e) {
                                     console.error(e)
                                 }
                                 return
                             }
                             const t = this.getSectionFromID(e.section)
-                            t && t.add_button(e.display_name, e.description || e.display_name, e.always || !1, e.reset || !1, e.onactive || a.none, e.ondisable || a.none, e.disabled || !1)
+                            t &&
+                                (t.add_button(e.display_name, e.description || e.display_name, e.always || !1, e.reset || !1, e.onactive || a.none, e.ondisable || a.none, e.disabled || !1),
+                                e.onShow && t.add_onShow(e.onShow))
                         }
                         addModulesFromList(e) {
                             for (const t of e) this.addModule(t)
@@ -729,13 +733,13 @@
                         }
                     })
             },
-            1407: (e, t, n) => {
+            8098: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3539),
-                    i = n(110)
+                const o = n(1829),
+                    i = n(412)
                 var a
-                n(8716),
+                n(2771),
                     (function (e) {
                         ;(e.checkbox = 'checkbox'), (e.text = 'text')
                     })(a || (a = {})),
@@ -790,10 +794,10 @@
                         }
                     })
             },
-            7067: (e, t, n) => {
+            2294: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }), n(7832)
-                const o = n(3539)
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(9805)
+                const o = n(1829)
                 t.default = class {
                     parent
                     notification
@@ -816,7 +820,7 @@
                     display(e = 500) {}
                 }
             },
-            1162: function (e, t, n) {
+            7424: function (e, t, n) {
                 'use strict'
                 var o =
                     (this && this.__importDefault) ||
@@ -824,9 +828,9 @@
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.Section = void 0)
-                const i = n(3539),
-                    a = o(n(1407))
-                n(5789),
+                const i = n(1829),
+                    a = o(n(8098))
+                n(1460),
                     (t.Section = class {
                         id
                         nav_button
@@ -834,6 +838,7 @@
                         section_title
                         section_content
                         buttons = []
+                        onShow = []
                         _displayName
                         _container
                         _description
@@ -865,9 +870,12 @@
                         set_all_button_values_from_array(e) {
                             for (const [t, n] of e.entries()) this.buttons[t].values = { enabled: n[0] }
                         }
+                        add_onShow(e) {
+                            this.onShow.push(e)
+                        }
                     })
             },
-            9471: function (e, t, n) {
+            9094: function (e, t, n) {
                 'use strict'
                 var o =
                     (this && this.__importDefault) ||
@@ -875,8 +883,8 @@
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.get_main_notification = t.get_update = t.checkStatus = t.get_plugins = void 0)
-                const i = o(n(7067)),
-                    a = n(6996)
+                const i = o(n(2294)),
+                    a = n(6345)
                 ;(t.get_plugins = async function () {
                     return fetch(`${a.COMMUNITY}meta.json`).then((e) => e.json())
                 }),
@@ -914,7 +922,7 @@
                             })
                     })
             },
-            3607: function (e, t, n) {
+            5213: function (e, t, n) {
                 'use strict'
                 var o =
                     (this && this.__importDefault) ||
@@ -922,11 +930,11 @@
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const i = n(6228),
-                    a = n(9471),
-                    s = n(6996),
-                    r = n(5780),
-                    c = n(110),
+                const i = n(6527),
+                    a = n(9094),
+                    s = n(6345),
+                    r = n(9666),
+                    c = n(412),
                     l = o(n(3740))
                 window.location.href.includes('car-axle-client.github.io/car-axle-client') &&
                     alert(
@@ -952,7 +960,7 @@
                             console.info(`car axle client - v${s.VERSION}.${s.ITERATION}`)
                     })()
             },
-            110: (e, t, n) => {
+            412: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.send_bug_report_to_discord = t.send_to_discord = void 0)
                 const o = n(1181)
@@ -965,12 +973,12 @@
                         fetch(o.bugs, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(i) })
                     })
             },
-            4203: (e, t, n) => {
+            7838: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.none = t.new_iframe = t.change_game = void 0)
-                const o = n(3539),
-                    i = n(6996)
-                n(9367),
+                const o = n(1829),
+                    i = n(6345)
+                n(9637),
                     (t.change_game = function (e) {
                         document.getElementById('cac__games__iframe').setAttribute('src', i.GAMESLINK + e)
                     }),
@@ -1040,28 +1048,32 @@
                     }),
                     (t.none = function () {})
             },
-            3990: (e, t, n) => {
+            4621: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }), n(9367)
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(9637)
                 const o = {
                     custom_render: !0,
-                    render: function (e) {
-                        let t = e.getSectionFromID('chat')?.section_content
-                        if (!t) return
-                        const n = document.createElement('widgetbot')
-                        n.setAttribute('server', '1143730031533768726'), n.setAttribute('channel', '1172763447256166420'), n.setAttribute('width', '800'), n.setAttribute('height', '600')
-                        const o = document.createElement('script')
-                        ;(o.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'), t.appendChild(n), t.appendChild(o)
-                    },
+                    render: function (e) {},
+                    onShow: [
+                        'chat',
+                        function (e) {
+                            const t = e.getSectionFromID('chat')?.section_content
+                            if (!t) return
+                            const n = document.createElement('widgetbot')
+                            n.setAttribute('server', '1143730031533768726'), n.setAttribute('channel', '1172763447256166420'), n.setAttribute('width', '800'), n.setAttribute('height', '600')
+                            const o = document.createElement('script')
+                            ;(o.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'), t && (t.appendChild(n), t.appendChild(o))
+                        },
+                    ],
                 }
                 t.default = o
             },
-            4462: (e, t, n) => {
+            1661: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(6996)
-                n(4430)
-                const i = n(3539),
+                const o = n(6345)
+                n(4125)
+                const i = n(1829),
                     a = {
                         custom_render: !0,
                         render: function (e) {
@@ -1069,18 +1081,18 @@
                             if (!t) throw 'Error Rendering: Section Does Not Exist'
                             ;(0, i.create_element)('button', t.section_content, {
                                 class_name: 'cac__version__display',
-                                innerHTML: `\n                <h2>${o.CLIENTNAME} v${o.VERSION}</h2>\n                <h3>by @${o.AUTHOR}</h3>\n                <a href="${o.SOCIAL.github}">Github</a>\n                <a href="${o.SOCIAL.discord}">Discord</a>\n\n`,
+                                innerHTML: `\n                <h2>${o.CLIENTNAME} v${o.VERSION}.${o.ITERATION}</h2>\n                <h3>by @${o.AUTHOR}</h3>\n                <a href="${o.SOCIAL.github}">Github</a>\n                <a href="${o.SOCIAL.discord}">Discord</a>\n\n`,
                             }).style.backgroundImage = `url(${o.LOGO})`
                         },
                     }
                 t.default = a
             },
-            3410: (e, t, n) => {
+            5936: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3539)
-                n(8716)
-                const i = n(5780),
+                const o = n(1829)
+                n(2771)
+                const i = n(9666),
                     a = n(254)
                 function s(e, t) {
                     e && ((document.title = e), (0, i.saveHashToLocalStorage)('tabcloak__title', e)),
@@ -1124,12 +1136,12 @@
                 }
                 t.default = c
             },
-            4997: (e, t, n) => {
+            8114: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3539),
-                    i = n(110)
-                n(8716)
+                const o = n(1829),
+                    i = n(412)
+                n(2771)
                 const a = {
                     custom_render: !0,
                     render: function (e) {
@@ -1156,7 +1168,7 @@
                 }
                 t.default = a
             },
-            2045: (e, t) => {
+            7928: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
@@ -1168,17 +1180,17 @@
                         custom_render: !1,
                     })
             },
-            2462: (e, t) => {
+            2705: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = { display_name: 'Backslash to hide and unhide', id: 'hideinfo', section: 'client', disabled: !0, custom_render: !1 })
             },
-            9402: (e, t) => {
+            4769: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = { display_name: '3kh0 for most of the assets', description: 'thank you', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
             },
-            1214: (e, t) => {
+            8995: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
@@ -1190,17 +1202,17 @@
                         custom_render: !1,
                     })
             },
-            9714: (e, t) => {
+            6208: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = { display_name: 'ading2210 for Edupuzzle Answers', description: 'thanks', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
             },
-            2425: (e, t) => {
+            8243: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = { display_name: 'selenite', description: 'for their cloaks list that I blatantly stole', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
             },
-            9738: (e, t) => {
+            5189: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = {
@@ -1212,7 +1224,7 @@
                         custom_render: !1,
                     })
             },
-            6976: (e, t) => {
+            1947: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = new KeyboardEvent('keydown', { key: '\\' }),
@@ -1231,7 +1243,7 @@
                     }
                 t.default = o
             },
-            9723: (e, t) => {
+            1101: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = {
@@ -1251,7 +1263,7 @@
                 }
                 t.default = n
             },
-            9331: (e, t) => {
+            7802: (e, t) => {
                 'use strict'
                 function n() {
                     document.body.querySelectorAll('*').forEach(function (e) {
@@ -1271,7 +1283,7 @@
                 }
                 t.default = o
             },
-            7852: (e, t) => {
+            2440: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = {
@@ -1289,7 +1301,7 @@
                 }
                 t.default = n
             },
-            5995: (e, t) => {
+            7737: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = {
@@ -1307,7 +1319,7 @@
                 }
                 t.default = n
             },
-            6095: (e, t) => {
+            1411: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = {
@@ -1329,7 +1341,7 @@
                 }
                 t.default = n
             },
-            8711: (e, t) => {
+            8419: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = {
@@ -1348,11 +1360,11 @@
                 }
                 t.default = n
             },
-            9421: (e, t, n) => {
+            8926: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3539)
-                n(7947)
+                const o = n(1829)
+                n(7908)
                 const i = {
                     custom_render: !1,
                     display_name: 'Mouse Trail',
@@ -1375,7 +1387,7 @@
                 }
                 t.default = i
             },
-            2505: (e, t) => {
+            7205: (e, t) => {
                 'use strict'
                 function n() {
                     !(function e(t) {
@@ -1387,11 +1399,11 @@
                 const o = { display_name: "don't click this...", description: 'your eyes yearn for peace...', id: 'eyes', section: 'fun', onactive: n, ondisable: n, always: !0, custom_render: !1 }
                 t.default = o
             },
-            8761: (e, t, n) => {
+            9735: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(4203)
-                n(7100)
+                const o = n(7838)
+                n(7744)
                 const i = {
                     custom_render: !0,
                     render: function (e) {
@@ -1401,7 +1413,7 @@
                 }
                 t.default = i
             },
-            6153: function (e, t, n) {
+            5564: function (e, t, n) {
                 'use strict'
                 var o =
                     (this && this.__importDefault) ||
@@ -1409,11 +1421,11 @@
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const i = n(4203),
+                const i = n(7838),
                     a = o(n(6321)),
-                    s = n(3539)
-                n(6919)
-                const r = n(110),
+                    s = n(1829)
+                n(3472)
+                const r = n(412),
                     c = []
                 a.default.forEach((e) => {
                     let t = {
@@ -1434,10 +1446,10 @@
                 const l = c
                 t.default = l
             },
-            5307: (e, t, n) => {
+            3644: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }), n(8716)
-                const o = n(3539),
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(2771)
+                const o = n(1829),
                     i = {
                         custom_render: !0,
                         render: function (e) {
@@ -1462,10 +1474,10 @@
                     }
                 t.default = i
             },
-            5823: (__unused_webpack_module, exports, __webpack_require__) => {
+            3211: (__unused_webpack_module, exports, __webpack_require__) => {
                 'use strict'
                 Object.defineProperty(exports, '__esModule', { value: !0 })
-                const UILib_1 = __webpack_require__(3539)
+                const UILib_1 = __webpack_require__(1829)
                 function render(UI) {
                     let section = UI.getSectionFromID('js'),
                         section_content = section?.section_content
@@ -1493,11 +1505,11 @@
                             }
                         })
                 }
-                __webpack_require__(2177)
+                __webpack_require__(7048)
                 const plugin = { custom_render: !0, render }
                 exports.default = plugin
             },
-            2050: function (e, t, n) {
+            1324: function (e, t, n) {
                 'use strict'
                 var o =
                     (this && this.__importDefault) ||
@@ -1505,10 +1517,10 @@
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const i = n(3539),
-                    a = n(4203),
-                    s = n(5780)
-                n(3282)
+                const i = n(1829),
+                    a = n(7838),
+                    s = n(9666)
+                n(1107)
                 const r = o(n(816)),
                     c = {
                         custom_render: !0,
@@ -1518,7 +1530,6 @@
                             const n = (0, i.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'https://google.com/webhp?igu=1' })
                             let o = (0, a.new_iframe)(e, t.section_content, 'https://bing.com', '', 3)
                             ;(o.src = (0, s.getHashFromLocalStorage)('pocketbrowser')),
-                                (n.value = o.src),
                                 (o.id = 'cac__pocketbrowser__iframe'),
                                 n.addEventListener('change', (e) => {
                                     let t = n.value
@@ -1544,7 +1555,7 @@
                     }
                 t.default = c
             },
-            8141: (e, t) => {
+            9488: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.default = [
@@ -1567,15 +1578,15 @@
                         },
                     ])
             },
-            3892: (e, t, n) => {
+            1670: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }), n(3539)
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(1829)
             },
-            4104: (e, t, n) => {
+            7341: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(9471),
-                    i = n(6996)
+                const o = n(9094),
+                    i = n(6345)
                 var a = { wild: ['No link'], normal: ['No link'] }
                 fetch(`${i.DATABASE}special.json`)
                     .then((e) => e.json())
@@ -1627,24 +1638,24 @@
                 ]
                 t.default = s
             },
-            7159: (e, t, n) => {
+            9941: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const o = {
                     custom_render: !1,
                     disabled: !0,
                     id: 'scriptstatus',
-                    display_name: (0, n(9471).checkStatus)() ? 'Script Status: Offline (Try another website)' : 'Script Status: Online',
+                    display_name: (0, n(9094).checkStatus)() ? 'Script Status: Offline (Try another website)' : 'Script Status: Online',
                     description: 'Checks if you can use Scripts on this website',
                     section: 'cheats',
                 }
                 t.default = o
             },
-            7831: (e, t, n) => {
+            3704: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }), n(4751)
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(8289)
             },
-            3814: (__unused_webpack_module, exports) => {
+            7289: (__unused_webpack_module, exports) => {
                 'use strict'
                 function edpuzzle() {
                     var thumbnail
@@ -1667,7 +1678,7 @@
                 }
                 exports.default = plugin
             },
-            6265: (__unused_webpack_module, exports) => {
+            3246: (__unused_webpack_module, exports) => {
                 'use strict'
                 function gimkit() {
                     console.log('LICENSE AGREEMENT: I have been given explicit permission to use this code by the author of this code.'),
@@ -1687,7 +1698,7 @@
                 }
                 exports.default = plugin
             },
-            5927: (e, t) => {
+            73: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = {
@@ -1704,7 +1715,7 @@
                 }
                 t.default = n
             },
-            400: (__unused_webpack_module, exports) => {
+            7036: (__unused_webpack_module, exports) => {
                 'use strict'
                 function math() {
                     fetch('https://raw.githubusercontent.com/Penguinify/math-bookmarklet/main/dist/bundle.js')
@@ -1723,11 +1734,11 @@
                 }
                 exports.default = plugin
             },
-            8287: (e, t, n) => {
+            7447: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3449),
-                    i = n(5780),
+                const o = n(5256),
+                    i = n(9666),
                     a = {
                         custom_render: !0,
                         render: function (e) {
@@ -1741,11 +1752,11 @@
                     }
                 t.default = a
             },
-            6021: (e, t, n) => {
+            2452: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3449),
-                    i = n(5780),
+                const o = n(5256),
+                    i = n(9666),
                     a = {
                         custom_render: !0,
                         render: function (e) {
@@ -1759,20 +1770,20 @@
                     }
                 t.default = a
             },
-            3449: (e, t, n) => {
+            5256: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.render_icon = void 0)
-                const o = n(3539)
-                n(6689),
+                const o = n(1829)
+                n(2890),
                     (t.render_icon = function (e, t, n, i) {
                         let a = (0, o.create_element)('button', e.tabbar, { class_name: 'cac__tabbar__button', innerHTML: i })
                         ;(a.onclick = n), (0, o.create_element)('p', a, { class_name: 'cac__tabbar__button__hovername', innerHTML: t })
                     })
             },
-            2153: (e, t, n) => {
+            8667: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3449)
+                const o = n(5256)
                 function i() {
                     document.dispatchEvent(new KeyboardEvent('keydown', { key: '\\' }))
                 }
@@ -1789,10 +1800,10 @@
                 }
                 t.default = a
             },
-            2612: (e, t, n) => {
+            1579: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3449)
+                const o = n(5256)
                 function i() {
                     document.querySelectorAll('.cac__ALL')?.forEach((e) => {
                         e.remove()
@@ -1811,12 +1822,12 @@
                 }
                 t.default = a
             },
-            5288: (e, t, n) => {
+            5069: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(3539),
-                    i = n(4203)
-                n(9705)
+                const o = n(1829),
+                    i = n(7838)
+                n(7688)
                 const a = {
                     custom_render: !0,
                     render: function (e) {
@@ -1831,13 +1842,13 @@
                 }
                 t.default = a
             },
-            6996: (e, t) => {
+            6345: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.SOCIAL = t.COMMUNITY = t.LOGO = t.DATABASE = t.AUTHOR = t.CLIENTNAME = t.ITERATION = t.VERSION = t.GAMESLINK = void 0),
                     (t.GAMESLINK = 'https://penguinify-web-dev.github.io/'),
                     (t.VERSION = '7'),
-                    (t.ITERATION = '0'),
+                    (t.ITERATION = '1'),
                     (t.CLIENTNAME = 'car axle client'),
                     (t.AUTHOR = 'penguinify (merry christmas)'),
                     (t.DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'),
@@ -1845,7 +1856,7 @@
                     (t.COMMUNITY = 'https://raw.githubusercontent.com/car-axle-client/community-plugins/main/'),
                     (t.SOCIAL = { github: 'https://github.com/car-axle-client/car-axle-client', discord: 'https://discord.gg/akDMdW7Zgd' })
             },
-            5780: (e, t) => {
+            9666: (e, t) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.remove_save = t.new_save = t.load_module_values = t.getHashFromLocalStorage = t.saveHashToLocalStorage = void 0),
@@ -1877,46 +1888,46 @@
             },
             3045: (e, t, n) => {
                 var o = {
-                    './chatroom/iframe.ts': 3990,
-                    './client/aversionnumber.ts': 4462,
-                    './client/tabcloak.ts': 3410,
-                    './client/ysuggestions.ts': 4997,
-                    './client/zdatacollection.ts': 2045,
-                    './client/zhideinfo.ts': 2462,
-                    './credits/3kho.ts': 9402,
-                    './credits/Thanks.ts': 1214,
-                    './credits/adder.ts': 9714,
-                    './credits/cloaks.ts': 2425,
-                    './credits/info.ts': 9738,
-                    './exploits/autohide.ts': 6976,
-                    './exploits/autoselfdestruct.ts': 9723,
-                    './exploits/betterforceselect.ts': 9331,
-                    './exploits/noforcereload.ts': 7852,
-                    './fun/editpagetext.ts': 5995,
-                    './fun/historyflooder.ts': 6095,
-                    './fun/metalpipe.ts': 8711,
-                    './fun/mousetrail.ts': 9421,
-                    './fun/myeyes.ts': 2505,
-                    './games/aiframe.ts': 8761,
-                    './games/gamesPackager.ts': 6153,
-                    './games/search.ts': 5307,
-                    './jsconsole/console.ts': 5823,
-                    './pocketbrowser/pocketbrowser.ts': 2050,
-                    './pocketbrowser/qinfo.ts': 8141,
-                    './pocketbrowser/sendmelinks.ts': 3892,
-                    './pocketbrowser/zcroxies.ts': 4104,
-                    './scripts/aastatus.ts': 7159,
-                    './scripts/abcommunity-plugins.ts': 7831,
-                    './scripts/edpuzzle.ts': 3814,
-                    './scripts/gimkit.ts': 6265,
-                    './scripts/kickass.ts': 5927,
-                    './scripts/math.ts': 400,
-                    './tabbar/addsave.ts': 8287,
-                    './tabbar/bremovesave.ts': 6021,
-                    './tabbar/iconlib.ts': 3449,
-                    './tabbar/minimize.ts': 2153,
-                    './tabbar/selfdestruct.ts': 2612,
-                    './youtube/youtube.ts': 5288,
+                    './chatroom/iframe.ts': 4621,
+                    './client/aversionnumber.ts': 1661,
+                    './client/tabcloak.ts': 5936,
+                    './client/ysuggestions.ts': 8114,
+                    './client/zdatacollection.ts': 7928,
+                    './client/zhideinfo.ts': 2705,
+                    './credits/3kho.ts': 4769,
+                    './credits/Thanks.ts': 8995,
+                    './credits/adder.ts': 6208,
+                    './credits/cloaks.ts': 8243,
+                    './credits/info.ts': 5189,
+                    './exploits/autohide.ts': 1947,
+                    './exploits/autoselfdestruct.ts': 1101,
+                    './exploits/betterforceselect.ts': 7802,
+                    './exploits/noforcereload.ts': 2440,
+                    './fun/editpagetext.ts': 7737,
+                    './fun/historyflooder.ts': 1411,
+                    './fun/metalpipe.ts': 8419,
+                    './fun/mousetrail.ts': 8926,
+                    './fun/myeyes.ts': 7205,
+                    './games/aiframe.ts': 9735,
+                    './games/gamesPackager.ts': 5564,
+                    './games/search.ts': 3644,
+                    './jsconsole/console.ts': 3211,
+                    './pocketbrowser/pocketbrowser.ts': 1324,
+                    './pocketbrowser/qinfo.ts': 9488,
+                    './pocketbrowser/sendmelinks.ts': 1670,
+                    './pocketbrowser/zcroxies.ts': 7341,
+                    './scripts/aastatus.ts': 9941,
+                    './scripts/abcommunity-plugins.ts': 3704,
+                    './scripts/edpuzzle.ts': 7289,
+                    './scripts/gimkit.ts': 3246,
+                    './scripts/kickass.ts': 73,
+                    './scripts/math.ts': 7036,
+                    './tabbar/addsave.ts': 7447,
+                    './tabbar/bremovesave.ts': 2452,
+                    './tabbar/iconlib.ts': 5256,
+                    './tabbar/minimize.ts': 8667,
+                    './tabbar/selfdestruct.ts': 1579,
+                    './youtube/youtube.ts': 5069,
                 }
                 function i(e) {
                     var t = a(e)
@@ -1986,5 +1997,5 @@
             'undefined' != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }), Object.defineProperty(e, '__esModule', { value: !0 })
         }),
         (__webpack_require__.nc = void 0)
-    var __webpack_exports__ = __webpack_require__(3607)
+    var __webpack_exports__ = __webpack_require__(5213)
 })()
