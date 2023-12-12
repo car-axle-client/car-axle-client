@@ -170,6 +170,14 @@ export class UIManager {
         if (_module.custom_render) {
             try {
                 _module.render(this)
+                if (_module.onShow) {
+                    const section = this.getSectionFromID(_module.onShow[0])
+                    if (section) {
+                        section.add_onShow(() => {
+                            if (_module.onShow) _module.onShow[1](this)
+                        })
+                    }
+                }
             } catch (error) {
                 console.error(error)
             }

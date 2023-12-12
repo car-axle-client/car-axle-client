@@ -20,7 +20,7 @@ export type moduleDefinition =
     | {
           custom_render: true
           render: (UI: UIManager) => void
-          onShow?: () => void
+          onShow?: [string, (UI: UIManager) => void]
       }
 
 // Function to change link of the iframe
