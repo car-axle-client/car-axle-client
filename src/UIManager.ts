@@ -144,23 +144,6 @@ export class UIManager {
     toggleUI(): void {
         if (!this.container.parentElement) {
             document.body.appendChild(this.container)
-            this.gui.animate(
-                [
-                    {
-                        transform: 'translateX(-100%)',
-                    },
-                    {
-                        transform: 'translateX(0%)',
-                    },
-                ],
-                {
-                    duration: 500,
-                    fill: 'forwards',
-                    easing: 'ease-out',
-                }
-            )
-
-            return
         } else {
             this.container.remove()
         }
