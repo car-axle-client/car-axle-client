@@ -7,13 +7,13 @@ function handleSearch(games: HTMLCollectionOf<Element>, input: HTMLInputElement)
     let search = input.value.toLowerCase()
 
     // hides the games if they don't match the search
-    if (search == '') { 
+    if (search == '') {
         for (let game of games) {
             game.classList.remove('cac__game__button--hidden')
         }
         return
     }
-    
+
     for (let game of games) {
         let game_name = game.getElementsByClassName('cac__game__title')[0].innerHTML.toLowerCase()
         if (game_name.includes(search)) {
@@ -38,7 +38,9 @@ function render(UI: UIManager) {
     // sets the input to put under the iframe controls.
     section_content.insertBefore(input, games[0])
 
-    input.addEventListener('keydown', () => { handleSearch(games, input) })
+    input.addEventListener('keyup', () => {
+        handleSearch(games, input)
+    })
 }
 
 const plugin: moduleDefinition = {

@@ -1,4 +1,4 @@
-// All files in src are licsensed under GPLv3 unless otherwise stated
+// All files in src are licenced under GPLv3 unless otherwise stated
 // (c) 2023 car axle client contributors and @penguinify
 // Please respect the license or you may recieve a DMCA takedown
 // Thank you for using car axle client!
@@ -9,11 +9,6 @@ import { ITERATION, VERSION } from './static/constant'
 import { load_module_values } from './storage_manager'
 import { send_to_discord } from './log'
 import sectionsJSON from './static/sections.json'
-
-if (document.getElementById('cac__CONTAINER')) {
-    alert('Car Axle Client is already running!')
-    throw new Error('Car Axle Client is already running!')
-}
 
 if (window.location.href.includes('car-axle-client.github.io/car-axle-client')) {
     alert(

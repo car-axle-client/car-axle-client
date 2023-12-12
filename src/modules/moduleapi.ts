@@ -13,13 +13,14 @@ export type moduleDefinition =
           reset?: boolean
           always?: boolean
           disabled?: boolean
-          // Options are wip
+          onShow?: () => void
           onactive?: () => void
           ondisable?: () => void
       }
     | {
           custom_render: true
           render: (UI: UIManager) => void
+          onShow?: () => void
       }
 
 // Function to change link of the iframe

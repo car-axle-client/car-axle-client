@@ -9,6 +9,7 @@ export class Section {
     public section_title!: HTMLElement
     public section_content!: HTMLElement
     public buttons: Array<Button> = []
+    public onShow: Array<() => void> = []
     private _displayName: string
     private _container: Element
     private _description: string
@@ -65,6 +66,10 @@ export class Section {
         for (const [index, value] of buttonValues.entries()) {
             this.buttons[index].values = { enabled: value[0] }
         }
+    }
+
+    add_onShow(func: () => void): void {
+        this.onShow.push(func)
     }
 
     // Mouse down is handled by UIManager cause it's a global event

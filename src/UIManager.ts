@@ -98,6 +98,8 @@ export class UIManager {
             section.section_content.style.display = 'block'
             section.section_content.style.pointerEvents = 'auto'
         }, 500)
+
+        section.onShow.forEach((func) => func())
     }
 
     disable_section(section: Section): void {
@@ -185,6 +187,10 @@ export class UIManager {
                 _module.ondisable || none,
                 _module.disabled || false
             )
+
+            if (_module.onShow) {
+                section.add_onShow(_module.onShow)
+            }
         }
     }
 

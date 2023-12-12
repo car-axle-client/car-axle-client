@@ -79,7 +79,7 @@
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
-                    '.cac__game__button {\n  width: 90% !important;\n  line-height: 2.6vh;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  display: inline-flex !important;\n  align-items: center !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 20px !important;\n  padding: 0;\n  transition: 1s !important;\n  height: 10vh !important;\n}\n.cac__game__button:active {\n  background: #b861ff !important;\n}\n.cac__game__title {\n  position: absolute;\n  left: 5%;\n  color: #fff;\n  margin-left: 2%;\n  font-size: 2.6vh;\n  line-height: 0px;\n}\n',
+                    '.cac__game__button {\n  width: 90% !important;\n  line-height: 2.6vh;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  display: inline-flex !important;\n  align-items: center !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 20px !important;\n  padding: 0;\n  transition: 1s !important;\n  height: 10vh !important;\n}\n.cac__game__button:active {\n  background: #b861ff !important;\n}\n.cac__game__button--hidden {\n  display: none !important;\n}\n.cac__game__title {\n  position: absolute;\n  left: 5%;\n  color: #fff;\n  margin-left: 2%;\n  font-size: 2.6vh;\n  line-height: 0px;\n}\n',
                     '',
                 ])
                 const r = s
@@ -93,7 +93,7 @@
                     s = n.n(a)()(i())
                 s.push([
                     e.id,
-                    ".cac__console__container {\n  display: inline-flex;\n  flex-direction: column;\n  width: 90%;\n  background-color: rgba(0, 0, 0, 0.6);\n  border-radius: 15px;\n  height: 70%;\n  align-items: end;\n  text-align: left;\n  margin-bottom: 5%;\n}\n.cac__console__output {\n  width: 100%;\n  height: 92%;\n  border: none;\n  outline: none;\n  color: #fff;\n  text-align: left;\n  font-size: 1.5vw;\n  padding-left: 1vw;\n  align-items: flex-start;\n  flex-direction: column;\n  justify-content: flex-end;\n  display: flex;\n  font-family: 'Roboto Mono', monospace !important;\n  margin-bottom: 1%;\n  overflow-y: auto;\n}\n.cac__console__log {\n  margin-left: 2%;\n  user-select: text;\n  font-family: 'Roboto Mono', monospace !important;\n  margin-right: 2%;\n  width: 95%;\n  padding: 0 0.5%;\n  margin-top: 1%;\n  overflow-wrap: anywhere;\n}\n.cac__console__error {\n  color: red !important;\n  background-color: rgba(255, 0, 0, 0.1);\n  border-radius: 8px;\n  margin-left: 2%;\n  margin-right: 2%;\n  width: 95%;\n  padding: 0 0.5%;\n  margin-top: 1%;\n  font-family: 'Roboto Mono', monospace !important;\n  user-select: text;\n  overflow-wrap: anywhere;\n}\n.cac__console__input {\n  width: 99%;\n  height: 7%;\n  background-color: #b861ff;\n  border-radius: 15px;\n  border: none;\n  outline: none;\n  color: #fff;\n  font-size: 1vw;\n  padding-left: 1%;\n  align-self: flex-end;\n  font-family: 'Roboto Mono', monospace !important;\n  resize: none;\n  overflow: auto;\n}\n.cac__console__input::placeholder {\n  color: #fff;\n  opacity: 0.5;\n}\n.cac__console__input ::before {\n  content: '>';\n  color: #fff;\n  font-size: 1.5vw;\n  margin-right: 1%;\n}\n",
+                    ".cac__console__container {\n  display: inline-flex;\n  flex-direction: column;\n  width: 90%;\n  background-color: rgba(0, 0, 0, 0.6);\n  border-radius: 15px;\n  height: 70%;\n  align-items: end;\n  text-align: left;\n  margin-bottom: 5%;\n}\n.cac__console__topbar {\n  width: 100%;\n  height: 8%;\n  background-color: #b861ff;\n  border-radius: 15px 15px 0 0;\n  justify-self: flex-start;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.cac__console__output {\n  width: 100%;\n  height: 92%;\n  border: none;\n  outline: none;\n  color: #fff;\n  text-align: left;\n  font-size: 1.5vw;\n  padding-left: 1vw;\n  align-items: flex-start;\n  flex-direction: column;\n  justify-content: flex-end;\n  display: flex;\n  font-family: 'Roboto Mono', monospace !important;\n  margin-bottom: 1%;\n  overflow-y: auto;\n}\n.cac__console__log {\n  margin-left: 2%;\n  user-select: text;\n  font-family: 'Roboto Mono', monospace !important;\n  margin-right: 2%;\n  width: 95%;\n  padding: 0 0.5%;\n  margin-top: 1%;\n  overflow-wrap: anywhere;\n}\n.cac__console__error {\n  color: red !important;\n  background-color: rgba(255, 0, 0, 0.1);\n  border-radius: 8px;\n  margin-left: 2%;\n  margin-right: 2%;\n  width: 95%;\n  padding: 0 0.5%;\n  margin-top: 1%;\n  font-family: 'Roboto Mono', monospace !important;\n  user-select: text;\n  overflow-wrap: anywhere;\n}\n.cac__console__input {\n  width: 99%;\n  height: 7%;\n  background-color: #b861ff;\n  border-radius: 15px;\n  border: none;\n  outline: none;\n  color: #fff;\n  font-size: 1vw;\n  padding-left: 1%;\n  align-self: flex-end;\n  font-family: 'Roboto Mono', monospace !important;\n  resize: none;\n  overflow: auto;\n}\n.cac__console__input::placeholder {\n  color: #fff;\n  opacity: 0.5;\n}\n.cac__console__input ::before {\n  content: '>';\n  color: #fff;\n  font-size: 1.5vw;\n  margin-right: 1%;\n}\n",
                     '',
                 ])
                 const r = s
@@ -241,13 +241,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(9537),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             7832: (e, t, n) => {
@@ -261,13 +261,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(5889),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             5789: (e, t, n) => {
@@ -281,13 +281,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(7622),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             4430: (e, t, n) => {
@@ -301,13 +301,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(1451),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             7947: (e, t, n) => {
@@ -321,13 +321,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(5089),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             6919: (e, t, n) => {
@@ -341,13 +341,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(7356),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             2177: (e, t, n) => {
@@ -361,13 +361,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(9996),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             3282: (e, t, n) => {
@@ -381,13 +381,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(1589),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             4751: (e, t, n) => {
@@ -401,13 +401,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(9383),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             6689: (e, t, n) => {
@@ -421,13 +421,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(3796),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             9705: (e, t, n) => {
@@ -441,13 +441,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(3675),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             9367: (e, t, n) => {
@@ -461,13 +461,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(3344),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             7100: (e, t, n) => {
@@ -481,13 +481,13 @@
                     c = n.n(r),
                     l = n(3565),
                     d = n.n(l),
-                    u = n(9216),
-                    m = n.n(u),
+                    m = n(9216),
+                    u = n.n(m),
                     _ = n(4589),
                     p = n.n(_),
                     h = n(7624),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = m()), i()(h.Z, f)
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
                 const g = h.Z && h.Z.locals ? h.Z.locals : void 0
             },
             3379: (e) => {
@@ -506,16 +506,16 @@
                         var c = e[r],
                             l = o.base ? c[0] + o.base : c[0],
                             d = a[l] || 0,
-                            u = ''.concat(l, ' ').concat(d)
+                            m = ''.concat(l, ' ').concat(d)
                         a[l] = d + 1
-                        var m = n(u),
+                        var u = n(m),
                             _ = { css: c[1], media: c[2], sourceMap: c[3], supports: c[4], layer: c[5] }
-                        if (-1 !== m) t[m].references++, t[m].updater(_)
+                        if (-1 !== u) t[u].references++, t[u].updater(_)
                         else {
                             var p = i(_, o)
-                            ;(o.byIndex = r), t.splice(r, 0, { identifier: u, updater: p, references: 1 })
+                            ;(o.byIndex = r), t.splice(r, 0, { identifier: m, updater: p, references: 1 })
                         }
-                        s.push(u)
+                        s.push(m)
                     }
                     return s
                 }
@@ -928,15 +928,14 @@
                     r = n(5780),
                     c = n(110),
                     l = o(n(3740))
-                if (document.getElementById('cac__CONTAINER')) throw (alert('Car Axle Client is already running!'), new Error('Car Axle Client is already running!'))
                 window.location.href.includes('car-axle-client.github.io/car-axle-client') &&
                     alert(
                         'This is the BETA VERSION of car axle client. Expect things not to work and features to be lacking depth or etc. Still you should report bugs to discord or through the client/tabclock section'
                     ),
                     (0, c.send_to_discord)(`car axle client - v${s.VERSION}.${s.ITERATION}\nCurrent URL: ` + window.location.href)
                 const d = {}
-                let u = n(3045)
-                u.keys().forEach((e) => (d[e] = u(e))),
+                let m = n(3045)
+                m.keys().forEach((e) => (d[e] = m(e))),
                     (function () {
                         console.log(
                             'Car Axle Client is licensed under the GPLv3 license. You can find the license here: https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/LICENSE'
@@ -994,12 +993,12 @@
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/></svg>\n                Fullscreen',
                             }),
-                            u = (0, o.create_element)('button', r, {
+                            m = (0, o.create_element)('button', r, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M384 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>\n            Maximize',
                             }),
-                            m = (0, o.create_element)('button', r, {
+                            u = (0, o.create_element)('button', r, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM96 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>\n                about:blank',
@@ -1018,7 +1017,7 @@
                             })
                         var f = !1
                         return (
-                            (u.onmousedown = (n) => {
+                            (m.onmousedown = (n) => {
                                 ;(f = !f)
                                     ? (s.classList.add('cac__iframe__maximized'), r.classList.add('cac__iframe__controls__maximized'), e.container.appendChild(s), e.container.appendChild(r))
                                     : (s.classList.remove('cac__iframe__maximized'),
@@ -1029,7 +1028,7 @@
                             (d.onmousedown = (e) => {
                                 s.requestFullscreen()
                             }),
-                            (m.onmousedown = (e) => {
+                            (u.onmousedown = (e) => {
                                 let t = window.open(),
                                     n = t.document.createElement('iframe')
                                 ;(n.style = 'position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;'),
@@ -1106,9 +1105,9 @@
                                 ((0, o.create_element)('h1', c, { innerHTML: 'Tab Cloak', class_name: 'cac__button__form__title' }),
                                 (0, o.create_element)('input', c, { value: 'Tab Cloak Title', class_name: 'cac__button__input' })),
                             d = (0, o.create_element)('input', c, { value: 'Image URL', class_name: 'cac__button__input' }),
-                            u = (0, o.create_element)('select', c, { class_name: 'cac__button__input', innerHTML: r() })
-                        u.addEventListener('change', () => {
-                            const e = a[u.value]
+                            m = (0, o.create_element)('select', c, { class_name: 'cac__button__input', innerHTML: r() })
+                        m.addEventListener('change', () => {
+                            const e = a[m.value]
                             ;(l.value = e[0]), (d.value = e[2]), s(l.value, d.value)
                         }),
                             l.addEventListener('keyup', () => {
@@ -1241,8 +1240,10 @@
                     id: 'selfdestructalttab',
                     section: 'exploit',
                     onactive: function () {
-                        window.addEventListener('blur', (e) => {
-                            document.getElementById('cac__CONTAINER')?.remove()
+                        window.addEventListener('visibilitychange', (e) => {
+                            ;(function (e) {
+                                return !((e.target instanceof HTMLElement && 'iframe' === e.target.tagName.toLowerCase()) || !document.hidden)
+                            })(e) && document.getElementById('cac__CONTAINER')?.remove()
                         })
                     },
                     always: !0,
@@ -1269,29 +1270,6 @@
                     custom_render: !1,
                 }
                 t.default = o
-            },
-            1631: (e, t) => {
-                'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 })
-                const n = {
-                    custom_render: !1,
-                    display_name: 'Kahoot Game Finder',
-                    description: 'Automatically find Kahoot games (Can take a 5 minutes max and MUST BE ON https://kahoot.it)',
-                    section: 'exploit',
-                    id: 'kahoot-game-finder',
-                    onactive: function () {
-                        if ('https://kahoot.it/' != location.href) return void alert('You must be on https://kahoot.it')
-                        let e = !1,
-                            t = setInterval(() => {
-                                ;(e = (function () {
-                                    let e = Math.floor(9e6 * Math.random()) + 1e6
-                                    return fetch(`https://kahoot.it/reserve/session/${e}/`).then((t) => 200 == t.status && (alert(`Game found! Pin: ${e}`), !0)), !1
-                                })()),
-                                    e && clearInterval(t)
-                            }, 100)
-                    },
-                }
-                t.default = n
             },
             7852: (e, t) => {
                 'use strict'
@@ -1456,6 +1434,34 @@
                 const l = c
                 t.default = l
             },
+            5307: (e, t, n) => {
+                'use strict'
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(8716)
+                const o = n(3539),
+                    i = {
+                        custom_render: !0,
+                        render: function (e) {
+                            let t = e.getSectionFromID('game')?.section_content
+                            if (!t) return
+                            let n = (0, o.create_element)('input', t, { value: 'Search for a game', class_name: 'cac__button__input' })
+                            n.style.marginTop = '2%'
+                            let i = t.getElementsByClassName('cac__game__button')
+                            t.insertBefore(n, i[0]),
+                                n.addEventListener('keyup', () => {
+                                    !(function (e, t) {
+                                        let n = t.value.toLowerCase()
+                                        if ('' != n)
+                                            for (let t of e)
+                                                t.getElementsByClassName('cac__game__title')[0].innerHTML.toLowerCase().includes(n)
+                                                    ? t.classList.remove('cac__game__button--hidden')
+                                                    : t.classList.add('cac__game__button--hidden')
+                                        else for (let t of e) t.classList.remove('cac__game__button--hidden')
+                                    })(i, n)
+                                })
+                        },
+                    }
+                t.default = i
+            },
             5823: (__unused_webpack_module, exports, __webpack_require__) => {
                 'use strict'
                 Object.defineProperty(exports, '__esModule', { value: !0 })
@@ -1504,24 +1510,16 @@
                     s = n(5780)
                 n(3282)
                 const r = o(n(816)),
-                    c = o(n(5891)),
-                    l = {
+                    c = {
                         custom_render: !0,
                         render: function (e) {
                             let t = e.getSectionFromID('pocket')
                             if (!t) return
-                            const n = (0, i.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'https://google.com/webhp?igu=1' }),
-                                o = (0, i.create_element)('div', t.section_content, { class_name: 'cac__pocketbrowser__bookmarks__container' })
-                            let l = (0, a.new_iframe)(e, t.section_content, 'https://bing.com', '', 3)
-                            !(function (e, t) {
-                                for (let n of c.default)
-                                    (0, i.create_element)('button', e, { class_name: 'cac__pocketbrowser__bookmark', innerHTML: n.shorthand }).addEventListener('click', () => {
-                                        t.setAttribute('src', n.link)
-                                    })
-                            })(o, l),
-                                (l.src = (0, s.getHashFromLocalStorage)('pocketbrowser')),
-                                (n.value = l.src),
-                                (l.id = 'cac__pocketbrowser__iframe'),
+                            const n = (0, i.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'https://google.com/webhp?igu=1' })
+                            let o = (0, a.new_iframe)(e, t.section_content, 'https://bing.com', '', 3)
+                            ;(o.src = (0, s.getHashFromLocalStorage)('pocketbrowser')),
+                                (n.value = o.src),
+                                (o.id = 'cac__pocketbrowser__iframe'),
                                 n.addEventListener('change', (e) => {
                                     let t = n.value
                                     ;(t = (function (e) {
@@ -1540,11 +1538,11 @@
                                         (n.value = t),
                                         'https://youtube.com' === t && alert('Paste a link to a video instead!'),
                                         (0, s.saveHashToLocalStorage)('pocketbrowser', t),
-                                        l.setAttribute('src', `${t}`)
+                                        o.setAttribute('src', `${t}`)
                                 })
                         },
                     }
-                t.default = l
+                t.default = c
             },
             8141: (e, t) => {
                 'use strict'
@@ -1642,46 +1640,9 @@
                 }
                 t.default = o
             },
-            7831: (__unused_webpack_module, exports, __webpack_require__) => {
+            7831: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(exports, '__esModule', { value: !0 })
-                const UILib_1 = __webpack_require__(3539),
-                    database_1 = __webpack_require__(9471),
-                    constant_1 = __webpack_require__(6996)
-                async function get_community_plugins() {
-                    return await (0, database_1.get_plugins)()
-                }
-                function handleCardClick(element, plugin_code) {
-                    element.classList.contains('cac__plugin__card--enabled') ||
-                        (element.classList.toggle('cac__plugin__card--enabled'),
-                        eval(plugin_code),
-                        setTimeout(() => {
-                            element.classList.toggle('cac__plugin__card--enabled')
-                        }, 400))
-                }
-                function create_plugin_card(e, t) {
-                    let n = (0, UILib_1.create_element)('div', t, { class_name: 'cac__plugin__card' }),
-                        o = ((0, UILib_1.create_element)('h3', n, { class_name: 'cac__plugin__card__title', innerHTML: e.name }), `(v${e.version}) ${e.description} by ${e.author}`),
-                        i = ((0, UILib_1.create_element)('p', n, { class_name: 'cac__plugin__card__description', innerHTML: o }), '')
-                    fetch(`${constant_1.COMMUNITY}plugins/${e.path}`)
-                        .then((e) => e.text())
-                        .then((e) => (i = e)),
-                        n.addEventListener('mousedown', () => {
-                            handleCardClick(n, i)
-                        })
-                }
-                function render(e) {
-                    let t = e.getSectionFromID('cheats')?.section_content
-                    if (!t) return
-                    let n = (0, UILib_1.create_element)('div', t, { class_name: 'cac__form__container' })
-                    ;(0, UILib_1.create_element)('h2', n, { innerHTML: 'Community Plugins', class_name: 'cac__button__form__title' }),
-                        get_community_plugins().then((e) => {
-                            for (let t of e) create_plugin_card(t, n)
-                        })
-                }
-                __webpack_require__(4751)
-                const plugin = { custom_render: !0, render }
-                exports.default = plugin
+                Object.defineProperty(t, '__esModule', { value: !0 }), n(4751)
             },
             3814: (__unused_webpack_module, exports) => {
                 'use strict'
@@ -1930,7 +1891,6 @@
                     './exploits/autohide.ts': 6976,
                     './exploits/autoselfdestruct.ts': 9723,
                     './exploits/betterforceselect.ts': 9331,
-                    './exploits/kahoot-game-finder.ts': 1631,
                     './exploits/noforcereload.ts': 7852,
                     './fun/editpagetext.ts': 5995,
                     './fun/historyflooder.ts': 6095,
@@ -1939,6 +1899,7 @@
                     './fun/myeyes.ts': 2505,
                     './games/aiframe.ts': 8761,
                     './games/gamesPackager.ts': 6153,
+                    './games/search.ts': 5307,
                     './jsconsole/console.ts': 5823,
                     './pocketbrowser/pocketbrowser.ts': 2050,
                     './pocketbrowser/qinfo.ts': 8141,
@@ -1992,10 +1953,6 @@
                 e.exports = JSON.parse(
                     '[{"name":"Moto X3M","url":"motox3m/index.html"},{"name":"Rom Loader","url":"temptations/index.html"},{"name":"yohoho","url":"yohoho/index.html"},{"name":"Burrito Bison","url":"bb/index.html"},{"name":"Bloons TD 4","url":"btd4.html"},{"name":"Minecraft","url":"Offline_Download_Version.html"},{"name":"Retrobowl","url":"retro-bowl/retro.html"},{"name":"Moto X3M Winter","url":"wintermotox3m/index.html"},{"name":"Basketball Stars","url":"basketball-stars/index.html"},{"name":"slope","url":"slope/index.html"},{"name":"Geometry Dash","url":"geo.html"},{"name":"Bloons TD 1","url":"bloons1.html"},{"name":"Bloons TD 2","url":"bloons.html"},{"name":"Quake","url":"quake/index.html"},{"name":"Binding of Isaac","url":"boi.html"},{"name":"Bitlife","url":"nolife/index.html"},{"name":"Basket Random","url":"basket-random/index.html"},{"name":"truck game thing","url":"goofyahhdrivesim/index.html"},{"name":"rocket game thing","url":"rocketgame/index.html"},{"name":"osu!","url":"osu/index.html"},{"name":"Slither.io","url":"slitherio/slitherio.html"},{"name":"Run 3","url":"run3/Run 3.html"},{"name":"Monkey Mart","url":"monkeymart/index.html"},{"name":"Stickman Hook","url":"stickman/index.html"},{"name":"Cookie Clicker","url":"cookieclicker/index.html"},{"name":"Age of Conflict","url":"aoc/index.html"},{"name":"Sand Boxels","url":"sand/index.html"},{"name":"Exo","url":"exo/index.html"},{"name":"Station 141","url":"station141/index.html"},{"name":"The Final Earth 2","url":"finalearth/index.html"},{"name":"Tactical Assasin 2","url":"ta2/index.html"},{"name":"Synesthesia","url":"synesthesia/index.html"},{"name":"HexGL","url":"HexGL/index.html"},{"name":"Veloce","url":"veloce/index.html"},{"name":"Vex6","url":"vex6/index.html"},{"name":"Tactical Weapon Pack 2","url":"twp2/index.html"},{"name":"Cubefield","url":"cubefield/index.html"},{"name":"Edge not Found ","url":"edgenotfound/index.html"},{"name":"OvO","url":"ovo/index.html"},{"name":"A Dark Room","url":"adarkroom/index.html"},{"name":"Krunker","url":"krunker/index.html"},{"name":"Learn to Fly 2","url":"learntofly2/index.html"},{"name":"Rooftop Snipers","url":"rooftopsnipers/index.html"},{"name":"Idle Breakout","url":"idle-breakout/index.html"},{"name":"A Dance of Fire and Ice","url":"adanceoffireandice/index.html"},{"name":"Pokemon Emerald","url":"temptations/cplayer.html?type=gba&game=pokemon-emerald"},{"name":"Pokemon Ruby","url":"temptations/cplayer.html?type=gba&game=pokemon-ruby"},{"name":"Pokemon Sapphire","url":"temptations/cplayer.html?type=gba&game=pokemon-sapphire"},{"name":"Pokemon Leaf Green","url":"temptations/cplayer.html?type=gba&game=pokemon-leaf-green"},{"name":"Pokemon Fire Red","url":"temptations/cplayer.html?type=gba&game=pokemon-fire-red"}]'
                 )
-            },
-            5891: (e) => {
-                'use strict'
-                e.exports = JSON.parse('[{"shorthand":"ChatGPT","link":"https://gptchatly.com/"},{"shorthand":"Car Axle Client Website","link":"https://car-axle-client.github.io/"}]')
             },
             816: (e) => {
                 'use strict'

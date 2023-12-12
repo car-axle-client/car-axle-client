@@ -9,7 +9,7 @@ The **MOST POPULAR** bookmarklet menu with a gui. Play games, watch youtube, or 
 
 -   Exploits and history flooder
 -   Small, fun things bookmarklets
--   Large 25+ game library
+-   Large 50+ game library
 -   JS Console
 -   Mini Browser
 -   Youtube Embeder
@@ -26,7 +26,7 @@ The **MOST POPULAR** bookmarklet menu with a gui. Play games, watch youtube, or 
 
 ## Screenshots
 
-v5 example
+v7 example
 ![App Screenshot](docs/dark.png)
 
 # Contributing
@@ -36,19 +36,19 @@ Development Setup
 1. Install Packages
 
 ```
-npm install
+pnpm install
 ```
 
 2. Start hot reload Development Server
 
 ```
-npm run dev
+pnpm dev
 ```
 
 3. Output a release file
 
 ```
-npm run build
+pnpm build
 ```
 
 Contributing is made to be as easy as possible.  
