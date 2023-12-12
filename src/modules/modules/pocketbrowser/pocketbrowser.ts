@@ -51,7 +51,6 @@ function render(UI: UIManager) {
     let iframe = new_iframe(UI, section.section_content, 'https://bing.com', '', 3)
 
     iframe.src = getHashFromLocalStorage('pocketbrowser')
-    iframe_input.value = iframe.src
     iframe.id = 'cac__pocketbrowser__iframe'
 
     iframe_input.addEventListener('change', (e) => {
