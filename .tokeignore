@@ -1,6 +1,7 @@
 package-lock.json
 tsconfig.json
 package.json
+pnpm-lock.yaml
 *.md
 *.js
 *.html
