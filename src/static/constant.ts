@@ -1,6 +1,6 @@
 export const GAMESLINK = 'https://penguinify-web-dev.github.io/'
 export const VERSION = '7'
-export const ITERATION = '1'
+export const ITERATION = '2'
 export const CLIENTNAME = 'car axle client'
 export const AUTHOR = 'penguinify (merry christmas)'
 export const DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'
