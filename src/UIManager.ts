@@ -58,7 +58,8 @@ export class UIManager {
                 {
                     opacity: 1,
                 },
-            ], this._animation_options
+            ],
+            this._animation_options
         )
     }
 
@@ -73,7 +74,9 @@ export class UIManager {
                 {
                     top: `${section.nav_button.offsetTop}px`,
                 },
-            ], this._animation_options)
+            ],
+            this._animation_options
+        )
 
         section.section_content.animate(
             [
@@ -83,7 +86,9 @@ export class UIManager {
                 {
                     opacity: 1,
                 },
-            ],this._animation_options)
+            ],
+            this._animation_options
+        )
 
         setTimeout(() => {
             section.section_content.style.display = 'block'
@@ -103,7 +108,9 @@ export class UIManager {
                 {
                     opacity: 0,
                 },
-            ], this._animation_options)
+            ],
+            this._animation_options
+        )
         setTimeout(() => {
             section.section_content.style.display = 'none'
             section.section_content.style.pointerEvents = 'none;'
