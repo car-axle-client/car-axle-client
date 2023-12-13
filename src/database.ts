@@ -8,13 +8,13 @@ export async function get_plugins(): Promise<any> {
 
 export function checkStatus(): boolean {
     // checks if you can use fetch on this website
-    fetch(`${DATABASE}version.json`).then((res) => {
-        if (res.status === 200) {
-            return true
-        }
-    })
-
-    return false
+    try {
+        fetch(`https://car-axle-client.github.io/`)
+        return true
+    } catch (e) {
+        // purposely discard error
+        return false
+    }
 }
 
 function show_update(parent: HTMLElement, new_ver: string) {

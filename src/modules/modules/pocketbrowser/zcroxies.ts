@@ -43,10 +43,18 @@ function set_to_random_normal() {
     iframe.src = atob(link)
 }
 
+// for some reason it only works with this fat version??? im not gunna question it
+let statwus = checkStatus()
+if (statwus) {
+    var status_text = "Proxy Status: Online"
+} else {
+    var status_text = "Proxy Status: Offline (Try another website)"
+}
+
 const status: moduleDefinition = {
     custom_render: false,
     disabled: true,
-    display_name: checkStatus() ? 'Proxies Status: Offline (Try another website)' : 'Proxy Status: Online',
+    display_name: status_text,
     id: 'proxystatus',
     description: 'Checks if you can use Proxies',
     section: 'pocket',

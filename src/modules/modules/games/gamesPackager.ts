@@ -10,39 +10,34 @@ type game = {
     url: string
 }
 
-function render(UI: UIManager, title: string, url: string) {
-    const games_section = UI.getSectionFromID('game')
-
-    if (!games_section) return
-
-    let games_container = create_element('button', games_section.section_content, {
+function create_game(games_section: HTMLElement, name: string, url: string) {
+    let container = create_element('button', games_section, {
         class_name: 'cac__game__button',
     })
 
-    games_container.addEventListener('mousedown', function (e) {
+    container.addEventListener('mousedown', function (e) {
         change_game(url)
-        games_section.section_content.scrollTop = 100
-        send_to_discord("Changed game to '" + title + "'")
+        send_to_discord("Changed game to '" + name + "'")
     })
 
-    let title_element = create_element('p', games_container, {
+    let title = create_element('p', container, {
         class_name: 'cac__game__title',
-        innerHTML: title,
+        innerHTML: name,
     })
 }
 
-// maps them
-const mapped_games: moduleDefinition[] = []
+function render(UI: UIManager) {
+    const games_section = UI.getSectionFromID('game')?.section_content
 
-gamesJSON.forEach((game: game) => {
-    let mapped_game: moduleDefinition = {
-        custom_render: true,
-        render: (UI: UIManager) => render(UI, game.name, game.url),
-    }
+    if (!games_section) return
 
-    mapped_games.push(mapped_game)
-})
-
-const plugin: moduleDefinition[] = mapped_games
+    gamesJSON.forEach((game: game) => {
+        create_game(games_section, game.name, game.url)
+    })
+}
+const plugin: moduleDefinition = {
+    custom_render: true,
+    render: render,
+}
 
 export default plugin
