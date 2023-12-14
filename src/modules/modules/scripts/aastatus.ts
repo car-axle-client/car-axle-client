@@ -3,11 +3,10 @@ import { checkStatus } from '../../../database'
 
 let statwus = checkStatus()
 if (statwus) {
-    var status_text = "Scripts Status: Online"
+    var status_text = 'Scripts Status: Online'
 } else {
-    var status_text = "Scripts Status: Offline (Try another website)"
+    var status_text = 'Scripts Status: Offline (Try another website)'
 }
-
 
 const plugin: moduleDefinition = {
     custom_render: false,

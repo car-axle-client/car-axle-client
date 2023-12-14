@@ -46,9 +46,9 @@ function set_to_random_normal() {
 // for some reason it only works with this fat version??? im not gunna question it
 let statwus = checkStatus()
 if (statwus) {
-    var status_text = "Proxy Status: Online"
+    var status_text = 'Proxy Status: Online'
 } else {
-    var status_text = "Proxy Status: Offline (Try another website)"
+    var status_text = 'Proxy Status: Offline (Try another website)'
 }
 
 const status: moduleDefinition = {
