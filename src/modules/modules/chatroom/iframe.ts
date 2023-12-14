@@ -6,6 +6,8 @@ import { create_element } from '../../../UILib'
 function render(UI: UIManager) {}
 
 function onShow(UI: UIManager) {
+    if (document.getElementById('widgetbot')) return
+
     const section_content = UI.getSectionFromID('chat')?.section_content
     if (!section_content) return
     const widgetbotElement = document.createElement('widgetbot')
@@ -13,6 +15,7 @@ function onShow(UI: UIManager) {
     widgetbotElement.setAttribute('channel', '1172763447256166420')
     widgetbotElement.setAttribute('width', '800')
     widgetbotElement.setAttribute('height', '600')
+    widgetbotElement.setAttribute('id', 'widgetbot')
 
     const scriptElement = document.createElement('script')
     scriptElement.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'
