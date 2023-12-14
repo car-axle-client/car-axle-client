@@ -28,6 +28,7 @@ function render(UI: UIManager) {
     let section_content = UI.getSectionFromID('game')?.section_content
     if (!section_content) return
 
+
     let input: HTMLInputElement = create_element('input', section_content, {
         value: 'Search for a game',
         class_name: 'cac__button__input',
