@@ -26,6 +26,7 @@ function create_game(games_section: HTMLElement, name: string, url: string) {
 
     container.addEventListener('mousedown', function (e) {
         change_game(url)
+        games_section.scrollTop = 100
         send_to_discord("Changed game to '" + name + "'")
     })
 

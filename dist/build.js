@@ -2,185 +2,185 @@
     var __webpack_modules__ = {
             5350: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
-                    '.cac__button {\n  width: 90% !important;\n  line-height: 2.5vh;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 2.5vh !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  align-items: center !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  transition: 1s !important;\n  height: auto !important;\n  padding-top: 1.5%;\n  padding-bottom: 1.5%;\n}\n.cac__button:hover {\n  transform: translateX(5px) !important;\n}\n.cac__button:last-child {\n  margin-bottom: 5% !important;\n}\n.cac__button p {\n  font-size: 2vh;\n  color: #fff;\n  line-height: 2vh;\n  margin: 1% 0;\n}\n.cac__button--enabled {\n  box-shadow: inset 70vw 0 0px 0 #b861ff !important;\n}\n.cac__form__container {\n  width: 90% !important;\n  display: inline-flex !important;\n  flex-direction: column !important;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  border-radius: 15px !important;\n  justify-content: center !important;\n  align-items: center !important;\n  margin: 2% 0 !important;\n}\n.cac__button__input {\n  width: 90% !important;\n  line-height: 6vh !important;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  align-items: center !important;\n  margin-bottom: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  transition: 1s !important;\n  height: auto !important;\n}\n.cac__button__form__title {\n  width: 90%;\n  margin-left: 0% !important;\n  font-size: 1.5vw !important;\n  color: #fff !important;\n  font-weight: bold !important;\n  text-align: left !important;\n}\n.cac__button__submit {\n  font-size: 1.5vw !important;\n  color: #fff !important;\n  font-weight: bold !important;\n  text-align: right !important;\n  margin-bottom: 2% !important;\n  display: inline-flex !important;\n  border-radius: 15px !important;\n  background: #b861ff !important;\n  padding-left: 2% !important;\n  width: 90%;\n  line-height: 6vh;\n}\n',
+                    '.cac__button {\n  width: 90% !important;\n  line-height: 2.5vh;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 2.5vh !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  align-items: center !important;\n  margin-bottom: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  transition: 1s !important;\n  height: auto !important;\n  padding-top: 1.5%;\n  padding-bottom: 1.5%;\n}\n.cac__button:hover {\n  transform: translateX(5px) !important;\n}\n.cac__button:last-child {\n  margin-bottom: 5% !important;\n}\n.cac__button p {\n  font-size: 2vh;\n  color: #fff;\n  line-height: 2vh;\n  margin: 1% 0;\n}\n.cac__button--enabled {\n  box-shadow: inset 70vw 0 0px 0 #b861ff !important;\n}\n.cac__form__container {\n  width: 90% !important;\n  display: inline-flex !important;\n  flex-direction: column !important;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  border-radius: 15px !important;\n  justify-content: center !important;\n  align-items: center !important;\n  margin: 2% 0 !important;\n}\n.cac__button__input {\n  width: 90% !important;\n  line-height: 6vh !important;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  align-items: center !important;\n  margin-bottom: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  transition: 1s !important;\n  height: auto !important;\n}\n.cac__button__form__title {\n  width: 90%;\n  margin-left: 0% !important;\n  font-size: 1.5vw !important;\n  color: #fff !important;\n  font-weight: bold !important;\n  text-align: left !important;\n}\n.cac__button__submit {\n  font-size: 1.5vw !important;\n  color: #fff !important;\n  font-weight: bold !important;\n  text-align: right !important;\n  margin-bottom: 2% !important;\n  display: inline-flex !important;\n  border-radius: 15px !important;\n  background: #b861ff !important;\n  padding-left: 2% !important;\n  width: 90%;\n  line-height: 6vh;\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             6258: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '.cac__notification {\n  width: 40%;\n  height: 40%;\n  border-radius: 20px;\n  box-shadow: 0px 0px 50px 10px black;\n  background-color: #b861ff;\n  position: fixed;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n.cac__notification__header {\n  font-size: 2.75vmin;\n  margin-left: 2vw;\n  margin-right: 2vw;\n}\n.cac__notification__body {\n  font-size: 2.25vmin;\n  margin-left: 2vw;\n  margin-right: 2vw;\n}\n.cac__notification__button {\n  border-radius: 10px;\n  width: 50%;\n  padding: 2%;\n  right: 0%;\n  bottom: 3vh;\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.6);\n  border: none;\n  margin-left: 2vw;\n  margin-right: 2vw;\n  font-size: 1.5vw;\n  cursor: pointer;\n}\n.cac__notification__dismiss {\n  left: 0%;\n  font-size: 1vw;\n  width: 30%;\n  background-color: rgba(0, 0, 0, 0.2);\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             2268: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '@keyframes introanim {\n  0% {\n    transform: translateX(-50%);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0px);\n    opacity: 1;\n  }\n}\n@keyframes slidein {\n  0% {\n    transform: translateX(-20%);\n  }\n  100% {\n    transform: translateX(0px);\n  }\n}\n.cac__section {\n  width: 86% !important;\n  height: 6% !important;\n  background-color: transparent !important;\n  text-align: left !important;\n  position: relative;\n  display: flex !important;\n  align-items: center !important;\n  font-size: 1.5vw !important;\n  margin-top: 5% !important;\n  transition: 0.5s !important;\n  cursor: pointer !important;\n  animation: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) introanim forwards;\n  animation: slidein 1s cubic-bezier(0.215, 0.61, 0.355, 1);\n}\n.cac__section:hover {\n  transform: translateX(5px) !important;\n}\n.cac__section svg {\n  margin-left: 1% !important;\n  margin-right: 5% !important;\n}\n.cac__section__content {\n  width: 100% !important;\n  height: 100% !important;\n  display: none;\n  position: absolute !important;\n  align-items: center !important;\n  text-align: center !important;\n  overflow-y: scroll !important;\n}\n.cac__section__content::-webkit-scrollbar {\n  width: 7px !important;\n}\n.cac__section__content::-webkit-scrollbar-track {\n  background-color: transparent !important;\n}\n.cac__section__content::-webkit-scrollbar-thumb {\n  background-color: #b861ff !important;\n  border-radius: 7px !important;\n}\n.cac__section__title {\n  font-weight: 600 !important;\n  font-size: 2.25vw !important;\n  line-height: 2.25vw !important;\n  margin-left: 5% !important;\n  margin-top: 3vh;\n  text-align: left !important;\n  width: 90% !important;\n}\n.cac__section__description {\n  font-weight: 400 !important;\n  font-size: 1.5vw !important;\n  line-height: 1.5vw !important;\n  text-align: left !important;\n  margin-left: 5% !important;\n  margin-bottom: 3% !important;\n  width: 90% !important;\n}\n@media (max-aspect-ratio: 1/1) {\n  .cac__section {\n    font-size: 0vw !important;\n    justify-content: center !important;\n    margin-top: 8% !important;\n  }\n  .cac__section svg {\n    height: 50% !important;\n  }\n  .cac__section__title {\n    font-size: 6vw !important;\n    line-height: 6vw !important;\n  }\n  .cac__section__description {\n    font-size: 4vw !important;\n    line-height: 4vw !important;\n  }\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             8133: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '.cac__version__display {\n  width: 90% !important;\n  line-height: auto !important;\n  color: black !important;\n  padding-bottom: 3%;\n  background-size: cover !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  height: auto !important;\n  flex-direction: column;\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             6955: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '#custom_cursor_large {\n  width: 30px;\n  height: 30px;\n  background-color: white;\n  border-radius: 50%;\n  position: fixed;\n  pointer-events: none;\n  z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000;\n}\n#custom_cursor_small {\n  width: 15px;\n  height: 15px;\n  background-color: white;\n  border-radius: 50%;\n  position: fixed;\n  pointer-events: none;\n  z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000;\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             6095: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '.cac__game__button {\n  width: 90% !important;\n  line-height: 2.6vh;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  display: inline-flex !important;\n  align-items: center !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 20px !important;\n  padding: 0;\n  transition: 1s !important;\n  height: 10vh !important;\n}\n.cac__game__button:active {\n  background: #b861ff !important;\n}\n.cac__game__button--hidden {\n  display: none !important;\n}\n.cac__game__title {\n  position: absolute;\n  left: 5%;\n  color: #fff;\n  margin-left: 2%;\n  font-size: 2.6vh;\n  line-height: 0px;\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             8864: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     ".cac__console__container {\n  display: inline-flex;\n  flex-direction: column;\n  width: 90%;\n  background-color: rgba(0, 0, 0, 0.6);\n  border-radius: 15px;\n  height: 70%;\n  align-items: end;\n  text-align: left;\n  margin-bottom: 5%;\n}\n.cac__console__topbar {\n  width: 100%;\n  height: 8%;\n  background-color: #b861ff;\n  border-radius: 15px 15px 0 0;\n  justify-self: flex-start;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.cac__console__output {\n  width: 100%;\n  height: 92%;\n  border: none;\n  outline: none;\n  color: #fff;\n  text-align: left;\n  font-size: 1.5vw;\n  padding-left: 1vw;\n  align-items: flex-start;\n  flex-direction: column;\n  justify-content: flex-end;\n  display: flex;\n  font-family: 'Roboto Mono', monospace !important;\n  margin-bottom: 1%;\n  overflow-y: auto;\n}\n.cac__console__log {\n  margin-left: 2%;\n  user-select: text;\n  font-family: 'Roboto Mono', monospace !important;\n  margin-right: 2%;\n  width: 95%;\n  padding: 0 0.5%;\n  margin-top: 1%;\n  overflow-wrap: anywhere;\n}\n.cac__console__error {\n  color: red !important;\n  background-color: rgba(255, 0, 0, 0.1);\n  border-radius: 8px;\n  margin-left: 2%;\n  margin-right: 2%;\n  width: 95%;\n  padding: 0 0.5%;\n  margin-top: 1%;\n  font-family: 'Roboto Mono', monospace !important;\n  user-select: text;\n  overflow-wrap: anywhere;\n}\n.cac__console__input {\n  width: 99%;\n  height: 7%;\n  background-color: #b861ff;\n  border-radius: 15px;\n  border: none;\n  outline: none;\n  color: #fff;\n  font-size: 1vw;\n  padding-left: 1%;\n  align-self: flex-end;\n  font-family: 'Roboto Mono', monospace !important;\n  resize: none;\n  overflow: auto;\n}\n.cac__console__input::placeholder {\n  color: #fff;\n  opacity: 0.5;\n}\n.cac__console__input ::before {\n  content: '>';\n  color: #fff;\n  font-size: 1.5vw;\n  margin-right: 1%;\n}\n",
                     '',
                 ])
-                const r = s
+                const s = r
             },
             481: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '.cac__pocketbrowser__input {\n  width: 90% !important;\n  line-height: 6vh !important;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  align-items: center !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  transition: 1s !important;\n  height: auto !important;\n}\n.cac__pocketbrowser__bookmarks__container {\n  width: 90% !important;\n  padding: 1% 0 !important;\n  display: inline-flex !important;\n  flex-direction: column !important;\n  justify-content: center !important;\n  align-items: center !important;\n  background-color: rgba(0, 0, 0, 0.6) !important;\n  border-radius: 15px !important;\n  margin-top: 2% !important;\n  flex-wrap: wrap !important;\n  justify-content: flex-start !important;\n  flex-direction: row !important;\n}\n.cac__pocketbrowser__bookmark {\n  width: 20% !important;\n  height: 20% !important;\n  background-color: rgba(0, 0, 0, 0.6) !important;\n  padding: 1% 0 !important;\n  color: #fff !important;\n  border-radius: 15px !important;\n  display: inline-flex !important;\n  margin-left: 2% !important;\n  justify-content: center !important;\n  align-items: center !important;\n  transition: 1s !important;\n  cursor: pointer !important;\n  font-size: 1vw !important;\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             1811: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '.cac__plugin__card {\n  width: 90%;\n  color: #fff;\n  background-color: rgba(0, 0, 0, 0.6);\n  height: 5vw;\n  text-align: left;\n  border-radius: 0.5vw;\n  margin: 0.5vw;\n  display: flex;\n  flex-direction: column;\n  padding-left: 3%;\n  margin-bottom: 1vw;\n  justify-content: center;\n  transition: all 0.5s ease-in-out;\n}\n.cac__plugin__card--enabled {\n  box-shadow: inset 70vw 0 0px 0 #b861ff !important;\n}\n.cac__plugin__card__title {\n  font-size: 1.5vw;\n  font-weight: bold;\n  margin-bottom: 0;\n  line-height: 1vw;\n  padding: 0;\n  color: #fff;\n}\n.cac__plugin__card__aascription {\n  font-size: 1vw;\n  margin-bottom: 0;\n  color: #fff;\n  line-height: 1vw;\n  padding: 0;\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             2814: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '.cac__tabbar__button {\n  width: 3vw;\n  margin: 0px;\n  height: 3vw;\n  background: transparent !important;\n  border: none;\n  border-radius: 50%;\n  transition: 0.2s;\n}\n.cac__tabbar__button:last-child {\n  margin-right: 10px;\n}\n.cac__tabbar__button:active svg {\n  transform: scale(0.8) rotate(10deg);\n}\n.cac__tabbar__button:hover p {\n  opacity: 1;\n  text-align: center;\n}\n.cac__tabbar__button svg {\n  width: 70%;\n  transition: 0.6s;\n  height: 70%;\n  margin: 0px;\n  padding: 0px;\n}\n.cac__tabbar__button p {\n  opacity: 0;\n  pointer-events: none;\n  position: absolute;\n  width: 28vw;\n  top: 0.4vw;\n  right: 7vw;\n  color: #fff;\n  transition: 0.3s;\n  font-size: 1vw;\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             1974: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '.cac__pocketbrowser__input {\n  width: 90% !important;\n  line-height: 6vh !important;\n  background: rgba(0, 0, 0, 0.6) !important;\n  color: #fff !important;\n  text-align: left !important;\n  font-size: 1.5vw !important;\n  padding-left: 2% !important;\n  display: inline-flex !important;\n  justify-content: space-between !important;\n  align-items: center !important;\n  margin-top: 2% !important;\n  border: none !important;\n  border-radius: 15px !important;\n  transition: 1s !important;\n  height: auto !important;\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             5159: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     '.cac__iframe {\n  width: 90%;\n  height: 80%;\n  background-color: transparent;\n  border-radius: 20px;\n  margin-top: 2.5%;\n  border: 4px solid #b861ff !important;\n}\n.cac__iframe__maximized {\n  position: fixed;\n  background-color: rgba(0, 0, 0, 0.6);\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 95%;\n  border-radius: 0px;\n  border: none !important;\n  margin-top: 0px;\n  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000;\n}\n.cac__iframe__svg {\n  background-color: transparent;\n  fill: #fff;\n  height: 85%;\n  margin-left: 2%;\n  border: none;\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5vw;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 0.7vw;\n  padding: 0 1vw;\n  font-size: 1vw;\n}\n.cac__iframe__svg svg {\n  height: 60%;\n}\n.cac__iframe__controls {\n  width: 90%;\n  height: 5%;\n  display: inline-flex;\n  background-color: #b861ff;\n  border-radius: 20px;\n  margin-top: 1%;\n  justify-content: flex-start;\n  align-items: center;\n}\n.cac__iframe__controls__maximized {\n  position: fixed;\n  width: 100%;\n  height: 5%;\n  top: 95%;\n  left: 0;\n  margin-left: 0;\n  border-radius: 0px;\n  margin-top: 0px;\n  z-index: 1000000000000000000000000000000000000000000000000000000000000000000;\n}\n@media (max-aspect-ratio: 1/1) {\n  .cac__iframe__svg {\n    background-color: transparent;\n    margin-left: 5% !important;\n    font-size: 0px !important;\n    margin-right: 5% !important;\n  }\n  .cac__iframe__controls {\n    margin-top: 5% !important;\n  }\n}\n',
                     '',
                 ])
-                const r = s
+                const s = r
             },
             4148: (e, t, n) => {
                 'use strict'
-                n.d(t, { Z: () => r })
-                var o = n(2650),
-                    i = n.n(o),
+                n.d(t, { Z: () => s })
+                var i = n(2650),
+                    o = n.n(i),
                     a = n(196),
-                    s = n.n(a)()(i())
-                s.push([
+                    r = n.n(a)()(o())
+                r.push([
                     e.id,
                     "@font-face {\n  font-family: 'Nunito';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM.ttf) format('truetype');\n}\n.cac__ALL {\n  font-family: 'Nunito', sans-serif !important;\n  color: #fff !important;\n  border: none;\n  margin: none;\n  font-weight: auto;\n  box-shadow: none;\n  text-shadow: none;\n}\nsvg {\n  fill: #fff;\n}\n#cac__CONTAINER {\n  background-color: rgba(0, 0, 0, 0.6);\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 999999;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  user-select: none;\n}\n#cac__GUI {\n  width: 85%;\n  height: 85%;\n  background-color: rgba(0, 0, 0, 0.6);\n  text-align: left;\n  display: flex;\n  flex-direction: row;\n  border-radius: 20px;\n  align-items: center;\n}\n#cac__SIDEBAR {\n  width: 20%;\n  height: calc(100% - 1vw);\n  background-color: rgba(0, 0, 0, 0.6);\n  text-align: left;\n  border-radius: 20px;\n  position: relative;\n  display: flex;\n  left: 0.5vw;\n  overflow: none;\n  flex-direction: column;\n  align-items: center;\n}\n#cac__MAINCONTENT {\n  width: 80%;\n  height: 100%;\n  background-color: transparent;\n  text-align: left;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n#cac__LOGO {\n  width: 95%;\n  height: 7%;\n  margin-top: 0.8vh;\n  background-color: #b861ff;\n  text-align: center;\n  position: relative;\n  font-size: 1.75vw;\n  font-weight: 800;\n  display: flex;\n  border-radius: 1vw;\n  justify-content: center;\n  align-items: center;\n}\n#cac__section__BACKGROUND {\n  width: 95%;\n  height: 6%;\n  background-color: #b861ff;\n  text-align: center;\n  border-radius: 0.75vw;\n  position: absolute;\n}\n#cac__TABBAR {\n  width: auto;\n  z-index: 100000000000000;\n  height: 3vw;\n  background-color: #b861ff;\n  border-radius: 1vw;\n  margin-right: 1%;\n  margin-top: 1%;\n  display: flex;\n  justify-content: center;\n  align-self: flex-end;\n  padding-left: 0.25vw;\n}\n#cac__TABBAR:hover .cac__tabbar__button {\n  opacity: 0.5;\n}\n#cac__TABBAR .cac__tabbar__button:hover {\n  opacity: 1;\n}\n/* Mobile */\n@media (max-aspect-ratio: 1/1) {\n  #cac__GUI {\n    width: 100%;\n    height: 100%;\n    border-radius: 0;\n  }\n  #cac__SIDEBAR {\n    width: 15%;\n    height: 100%;\n    left: 0;\n    border-radius: 0;\n  }\n  #cac__section__BACKGROUND {\n    width: 80%;\n    border-radius: 2vh;\n  }\n  #cac__LOGO {\n    display: none;\n  }\n  #cac__TABBAR {\n    display: none;\n  }\n}\n",
                     '',
                 ])
-                const r = s
+                const s = r
             },
             196: (e) => {
                 'use strict'
@@ -190,33 +190,33 @@
                         (t.toString = function () {
                             return this.map(function (t) {
                                 var n = '',
-                                    o = void 0 !== t[5]
+                                    i = void 0 !== t[5]
                                 return (
                                     t[4] && (n += '@supports ('.concat(t[4], ') {')),
                                     t[2] && (n += '@media '.concat(t[2], ' {')),
-                                    o && (n += '@layer'.concat(t[5].length > 0 ? ' '.concat(t[5]) : '', ' {')),
+                                    i && (n += '@layer'.concat(t[5].length > 0 ? ' '.concat(t[5]) : '', ' {')),
                                     (n += e(t)),
-                                    o && (n += '}'),
+                                    i && (n += '}'),
                                     t[2] && (n += '}'),
                                     t[4] && (n += '}'),
                                     n
                                 )
                             }).join('')
                         }),
-                        (t.i = function (e, n, o, i, a) {
+                        (t.i = function (e, n, i, o, a) {
                             'string' == typeof e && (e = [[null, e, void 0]])
-                            var s = {}
-                            if (o)
-                                for (var r = 0; r < this.length; r++) {
-                                    var c = this[r][0]
-                                    null != c && (s[c] = !0)
+                            var r = {}
+                            if (i)
+                                for (var s = 0; s < this.length; s++) {
+                                    var l = this[s][0]
+                                    null != l && (r[l] = !0)
                                 }
-                            for (var l = 0; l < e.length; l++) {
-                                var d = [].concat(e[l])
-                                ;(o && s[d[0]]) ||
+                            for (var c = 0; c < e.length; c++) {
+                                var d = [].concat(e[c])
+                                ;(i && r[d[0]]) ||
                                     (void 0 !== a && (void 0 === d[5] || (d[1] = '@layer'.concat(d[5].length > 0 ? ' '.concat(d[5]) : '', ' {').concat(d[1], '}')), (d[5] = a)),
                                     n && (d[2] ? ((d[1] = '@media '.concat(d[2], ' {').concat(d[1], '}')), (d[2] = n)) : (d[2] = n)),
-                                    i && (d[4] ? ((d[1] = '@supports ('.concat(d[4], ') {').concat(d[1], '}')), (d[4] = i)) : (d[4] = ''.concat(i))),
+                                    o && (d[4] ? ((d[1] = '@supports ('.concat(d[4], ') {').concat(d[1], '}')), (d[4] = o)) : (d[4] = ''.concat(o))),
                                     t.push(d))
                             }
                         }),
@@ -233,293 +233,293 @@
             2771: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(5350),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(5350),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             9805: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(6258),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(6258),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             1460: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(2268),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(2268),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             4125: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(8133),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(8133),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             7908: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(6955),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(6955),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             3472: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(6095),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(6095),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             7048: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(8864),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(8864),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             1107: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(481),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(481),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             8289: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(1811),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(1811),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             2890: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(2814),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(2814),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             7688: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(1974),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(1974),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             9637: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(5159),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(5159),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             7744: (e, t, n) => {
                 'use strict'
                 n.r(t), n.d(t, { default: () => g })
-                var o = n(1062),
-                    i = n.n(o),
+                var i = n(1062),
+                    o = n.n(i),
                     a = n(552),
-                    s = n.n(a),
-                    r = n(3566),
-                    c = n.n(r),
-                    l = n(4107),
-                    d = n.n(l),
+                    r = n.n(a),
+                    s = n(3566),
+                    l = n.n(s),
+                    c = n(4107),
+                    d = n.n(c),
                     m = n(4911),
                     u = n.n(m),
-                    _ = n(3227),
-                    p = n.n(_),
-                    h = n(4148),
+                    h = n(3227),
+                    p = n.n(h),
+                    _ = n(4148),
                     f = {}
-                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = c().bind(null, 'head')), (f.domAPI = s()), (f.insertStyleElement = u()), i()(h.Z, f)
-                const g = h.Z && h.Z.locals ? h.Z.locals : void 0
+                ;(f.styleTagTransform = p()), (f.setAttributes = d()), (f.insert = l().bind(null, 'head')), (f.domAPI = r()), (f.insertStyleElement = u()), o()(_.Z, f)
+                const g = _.Z && _.Z.locals ? _.Z.locals : void 0
             },
             1062: (e) => {
                 'use strict'
                 var t = []
                 function n(e) {
-                    for (var n = -1, o = 0; o < t.length; o++)
-                        if (t[o].identifier === e) {
-                            n = o
+                    for (var n = -1, i = 0; i < t.length; i++)
+                        if (t[i].identifier === e) {
+                            n = i
                             break
                         }
                     return n
                 }
-                function o(e, o) {
-                    for (var a = {}, s = [], r = 0; r < e.length; r++) {
-                        var c = e[r],
-                            l = o.base ? c[0] + o.base : c[0],
-                            d = a[l] || 0,
-                            m = ''.concat(l, ' ').concat(d)
-                        a[l] = d + 1
+                function i(e, i) {
+                    for (var a = {}, r = [], s = 0; s < e.length; s++) {
+                        var l = e[s],
+                            c = i.base ? l[0] + i.base : l[0],
+                            d = a[c] || 0,
+                            m = ''.concat(c, ' ').concat(d)
+                        a[c] = d + 1
                         var u = n(m),
-                            _ = { css: c[1], media: c[2], sourceMap: c[3], supports: c[4], layer: c[5] }
-                        if (-1 !== u) t[u].references++, t[u].updater(_)
+                            h = { css: l[1], media: l[2], sourceMap: l[3], supports: l[4], layer: l[5] }
+                        if (-1 !== u) t[u].references++, t[u].updater(h)
                         else {
-                            var p = i(_, o)
-                            ;(o.byIndex = r), t.splice(r, 0, { identifier: m, updater: p, references: 1 })
+                            var p = o(h, i)
+                            ;(i.byIndex = s), t.splice(s, 0, { identifier: m, updater: p, references: 1 })
                         }
-                        s.push(m)
+                        r.push(m)
                     }
-                    return s
+                    return r
                 }
-                function i(e, t) {
+                function o(e, t) {
                     var n = t.domAPI(t)
                     return (
                         n.update(e),
@@ -531,19 +531,19 @@
                         }
                     )
                 }
-                e.exports = function (e, i) {
-                    var a = o((e = e || []), (i = i || {}))
+                e.exports = function (e, o) {
+                    var a = i((e = e || []), (o = o || {}))
                     return function (e) {
                         e = e || []
-                        for (var s = 0; s < a.length; s++) {
-                            var r = n(a[s])
-                            t[r].references--
+                        for (var r = 0; r < a.length; r++) {
+                            var s = n(a[r])
+                            t[s].references--
                         }
-                        for (var c = o(e, i), l = 0; l < a.length; l++) {
-                            var d = n(a[l])
+                        for (var l = i(e, o), c = 0; c < a.length; c++) {
+                            var d = n(a[c])
                             0 === t[d].references && (t[d].updater(), t.splice(d, 1))
                         }
-                        a = c
+                        a = l
                     }
                 }
             },
@@ -551,7 +551,7 @@
                 'use strict'
                 var t = {}
                 e.exports = function (e, n) {
-                    var o = (function (e) {
+                    var i = (function (e) {
                         if (void 0 === t[e]) {
                             var n = document.querySelector(e)
                             if (window.HTMLIFrameElement && n instanceof window.HTMLIFrameElement)
@@ -564,8 +564,8 @@
                         }
                         return t[e]
                     })(e)
-                    if (!o) throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.")
-                    o.appendChild(n)
+                    if (!i) throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.")
+                    i.appendChild(n)
                 }
             },
             4911: (e) => {
@@ -590,13 +590,13 @@
                     return {
                         update: function (n) {
                             !(function (e, t, n) {
-                                var o = ''
-                                n.supports && (o += '@supports ('.concat(n.supports, ') {')), n.media && (o += '@media '.concat(n.media, ' {'))
-                                var i = void 0 !== n.layer
-                                i && (o += '@layer'.concat(n.layer.length > 0 ? ' '.concat(n.layer) : '', ' {')), (o += n.css), i && (o += '}'), n.media && (o += '}'), n.supports && (o += '}')
+                                var i = ''
+                                n.supports && (i += '@supports ('.concat(n.supports, ') {')), n.media && (i += '@media '.concat(n.media, ' {'))
+                                var o = void 0 !== n.layer
+                                o && (i += '@layer'.concat(n.layer.length > 0 ? ' '.concat(n.layer) : '', ' {')), (i += n.css), o && (i += '}'), n.media && (i += '}'), n.supports && (i += '}')
                                 var a = n.sourceMap
-                                a && 'undefined' != typeof btoa && (o += '\n/*# sourceMappingURL=data:application/json;base64,'.concat(btoa(unescape(encodeURIComponent(JSON.stringify(a)))), ' */')),
-                                    t.styleTagTransform(o, e, t.options)
+                                a && 'undefined' != typeof btoa && (i += '\n/*# sourceMappingURL=data:application/json;base64,'.concat(btoa(unescape(encodeURIComponent(JSON.stringify(a)))), ' */')),
+                                    t.styleTagTransform(i, e, t.options)
                             })(t, e, n)
                         },
                         remove: function () {
@@ -623,28 +623,28 @@
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.create_element = void 0),
                     (t.create_element = function (e, t, n) {
-                        const o = document.createElement(e)
+                        const i = document.createElement(e)
                         return (
-                            o.classList.add('cac__ALL'),
+                            i.classList.add('cac__ALL'),
                             n &&
-                                (n.id && (o.id = n.id),
-                                n.class_name && o.classList.add(n.class_name),
-                                n.innerHTML && (o.innerHTML = n.innerHTML),
-                                n.type && o.setAttribute('type', n.type),
-                                n.name && o.setAttribute('name', n.name),
-                                n.value && o.setAttribute('value', n.value)),
-                            t && t.appendChild(o),
-                            o
+                                (n.id && (i.id = n.id),
+                                n.class_name && i.classList.add(n.class_name),
+                                n.innerHTML && (i.innerHTML = n.innerHTML),
+                                n.type && i.setAttribute('type', n.type),
+                                n.name && i.setAttribute('name', n.name),
+                                n.value && i.setAttribute('value', n.value)),
+                            t && t.appendChild(i),
+                            i
                         )
                     })
             },
             6527: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.UIManager = void 0)
-                const o = n(7424),
-                    i = n(1829),
+                const i = n(7424),
+                    o = n(1829),
                     a = n(7838),
-                    s = n(6345)
+                    r = n(6345)
                 n(7744),
                     (t.UIManager = class {
                         container
@@ -660,13 +660,13 @@
                             this._createGUI()
                         }
                         _createGUI() {
-                            ;(this.container = (0, i.create_element)('div', document.body, { id: 'cac__CONTAINER' })),
-                                (this.gui = (0, i.create_element)('div', this.container, { id: 'cac__GUI' })),
-                                (this.sidebar = (0, i.create_element)('div', this.gui, { id: 'cac__SIDEBAR' })),
-                                (this.main_content = (0, i.create_element)('div', this.gui, { id: 'cac__MAINCONTENT' })),
-                                (this._section_background = (0, i.create_element)('div', this.sidebar, { id: 'cac__section__BACKGROUND' })),
-                                (this.tabbar = (0, i.create_element)('div', this.main_content, { id: 'cac__TABBAR' })),
-                                (0, i.create_element)('div', this.sidebar, { id: 'cac__LOGO', innerHTML: `${s.CLIENTNAME} v${s.VERSION}.${s.ITERATION}` }),
+                            ;(this.container = (0, o.create_element)('div', document.body, { id: 'cac__CONTAINER' })),
+                                (this.gui = (0, o.create_element)('div', this.container, { id: 'cac__GUI' })),
+                                (this.sidebar = (0, o.create_element)('div', this.gui, { id: 'cac__SIDEBAR' })),
+                                (this.main_content = (0, o.create_element)('div', this.gui, { id: 'cac__MAINCONTENT' })),
+                                (this._section_background = (0, o.create_element)('div', this.sidebar, { id: 'cac__section__BACKGROUND' })),
+                                (this.tabbar = (0, o.create_element)('div', this.main_content, { id: 'cac__TABBAR' })),
+                                (0, o.create_element)('div', this.sidebar, { id: 'cac__LOGO', innerHTML: `${r.CLIENTNAME} v${r.VERSION}.${r.ITERATION}` }),
                                 this.container.animate([{ opacity: 0 }, { opacity: 1 }], this._animation_options)
                         }
                         enable_section(e) {
@@ -691,10 +691,10 @@
                         _handleSectionMouseDown(e) {
                             e.enabled || (this.enabled_section && this.disable_section(this.enabled_section), this.enable_section(e))
                         }
-                        newSection(e, t, n, i) {
+                        newSection(e, t, n, o) {
                             const a = 0 === this.sections.length
-                            let s = new o.Section(e, t, n, i, this.sidebar, this.main_content, a)
-                            return (s.nav_button.onmousedown = () => this._handleSectionMouseDown(s)), a && this.enable_section(s), this.sections.push(s), s
+                            let r = new i.Section(e, t, n, o, this.sidebar, this.main_content, a)
+                            return (r.nav_button.onmousedown = () => this._handleSectionMouseDown(r)), a && this.enable_section(r), this.sections.push(r), r
                         }
                         toggleUI() {
                             this.container.parentElement ? this.container.remove() : document.body.appendChild(this.container)
@@ -737,8 +737,8 @@
             8098: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(1829),
-                    i = n(412)
+                const i = n(1829),
+                    o = n(412)
                 var a
                 n(2771),
                     (function (e) {
@@ -756,22 +756,22 @@
                         reset
                         disabled
                         description
-                        constructor(e, t, n, o, i, a, s, r) {
+                        constructor(e, t, n, i, o, a, r, s) {
                             ;(this.parent = e),
                                 (this.title = t),
                                 (this.description = n),
                                 (this.onEnable = a),
-                                (this.onDisable = s),
-                                (this.always = o),
-                                (this.reset = i),
-                                (this.disabled = r),
+                                (this.onDisable = r),
+                                (this.always = i),
+                                (this.reset = o),
+                                (this.disabled = s),
                                 this.render()
                         }
                         _toggle() {
                             ;(this.enabled = !this.enabled),
                                 this.enabled ? this.onEnable() : this.onDisable(),
                                 this.button.classList.toggle('cac__button--enabled', this.enabled),
-                                this.enabled && (0, i.send_to_discord)(`Enabled ${this.title}`)
+                                this.enabled && (0, o.send_to_discord)(`Enabled ${this.title}`)
                         }
                         _handleMouseDown(e) {
                             0 !== e.button ||
@@ -784,7 +784,7 @@
                                     }, 1e3))
                         }
                         render() {
-                            ;(this.button = (0, o.create_element)('button', this.parent, { class_name: 'cac__button', innerHTML: `<div>${this.title}<p>${this.description}</p></div>` })),
+                            ;(this.button = (0, i.create_element)('button', this.parent, { class_name: 'cac__button', innerHTML: `<div>${this.title}<p>${this.description}</p></div>` })),
                                 this.disabled || this.button.addEventListener('mousedown', this._handleMouseDown.bind(this))
                         }
                         get values() {
@@ -798,24 +798,24 @@
             2294: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), n(9805)
-                const o = n(1829)
+                const i = n(1829)
                 t.default = class {
                     parent
                     notification
                     title
                     body
-                    constructor(e, t, n, i) {
+                    constructor(e, t, n, o) {
                         ;(this.parent = e),
                             (this.title = t),
                             (this.body = n),
                             this.render(),
-                            i && ((0, o.create_element)('button', this.notification, { class_name: 'cac__notification__button', innerHTML: i.text }).onclick = (e) => i.fn())
+                            o && ((0, i.create_element)('button', this.notification, { class_name: 'cac__notification__button', innerHTML: o.text }).onclick = (e) => o.fn())
                     }
                     render() {
-                        ;(this.notification = (0, o.create_element)('div', this.parent, { class_name: 'cac__notification' })),
-                            (0, o.create_element)('h1', this.notification, { class_name: 'cac__notification__header', innerHTML: this.title }),
-                            (0, o.create_element)('p', this.notification, { class_name: 'cac__notification__body', innerHTML: this.body })
-                        let e = (0, o.create_element)('button', this.notification, { class_name: 'cac__notification__button', innerHTML: 'Dismiss' })
+                        ;(this.notification = (0, i.create_element)('div', this.parent, { class_name: 'cac__notification' })),
+                            (0, i.create_element)('h1', this.notification, { class_name: 'cac__notification__header', innerHTML: this.title }),
+                            (0, i.create_element)('p', this.notification, { class_name: 'cac__notification__body', innerHTML: this.body })
+                        let e = (0, i.create_element)('button', this.notification, { class_name: 'cac__notification__button', innerHTML: 'Dismiss' })
                         e.classList.add('cac__notification__dismiss'), (e.onclick = (e) => this.notification.remove())
                     }
                     display(e = 500) {}
@@ -823,14 +823,14 @@
             },
             7424: function (e, t, n) {
                 'use strict'
-                var o =
+                var i =
                     (this && this.__importDefault) ||
                     function (e) {
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.Section = void 0)
-                const i = n(1829),
-                    a = o(n(8098))
+                const o = n(1829),
+                    a = i(n(8098))
                 n(1460),
                     (t.Section = class {
                         id
@@ -844,26 +844,26 @@
                         _container
                         _description
                         _icon
-                        constructor(e, t, n, o, i, a, s = !1) {
+                        constructor(e, t, n, i, o, a, r = !1) {
                             ;(this.id = e),
                                 (this._displayName = t),
-                                (this._container = i),
+                                (this._container = o),
                                 (this._description = n),
-                                (this._icon = o),
-                                (this.enabled = s),
+                                (this._icon = i),
+                                (this.enabled = r),
                                 this._create_section_elements(a),
                                 'client' === this.id
                                     ? ((this.nav_button.style.position = 'absolute'), (this.nav_button.style.bottom = '8vh'))
                                     : 'credit' === this.id && ((this.nav_button.style.position = 'absolute'), (this.nav_button.style.bottom = '20px'))
                         }
                         _create_section_elements(e) {
-                            ;(this.nav_button = (0, i.create_element)('div', this._container, { class_name: 'cac__section', innerHTML: this._icon + this._displayName })),
-                                (this.section_content = (0, i.create_element)('div', e, { class_name: 'cac__section__content', id: `cac__content__${this.id}` })),
-                                (0, i.create_element)('h1', this.section_content, { innerHTML: this._displayName, class_name: 'cac__section__title' }),
-                                (0, i.create_element)('p', this.section_content, { innerHTML: this._description, class_name: 'cac__section__description' })
+                            ;(this.nav_button = (0, o.create_element)('div', this._container, { class_name: 'cac__section', innerHTML: this._icon + this._displayName })),
+                                (this.section_content = (0, o.create_element)('div', e, { class_name: 'cac__section__content', id: `cac__content__${this.id}` })),
+                                (0, o.create_element)('h1', this.section_content, { innerHTML: this._displayName, class_name: 'cac__section__title' }),
+                                (0, o.create_element)('p', this.section_content, { innerHTML: this._description, class_name: 'cac__section__description' })
                         }
-                        add_button(e, t, n, o, i, s, r) {
-                            this.buttons.push(new a.default(this.section_content, e, t, n, o, i, s, r))
+                        add_button(e, t, n, i, o, r, s) {
+                            this.buttons.push(new a.default(this.section_content, e, t, n, i, o, r, s))
                         }
                         get_all_button_values() {
                             return this.buttons.map((e) => [e.enabled])
@@ -878,13 +878,13 @@
             },
             9094: function (e, t, n) {
                 'use strict'
-                var o =
+                var i =
                     (this && this.__importDefault) ||
                     function (e) {
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.get_main_notification = t.get_update = t.checkStatus = t.get_plugins = void 0)
-                const i = o(n(2294)),
+                const o = i(n(2294)),
                     a = n(6345)
                 ;(t.get_plugins = async function () {
                     return fetch(`${a.COMMUNITY}meta.json`).then((e) => e.json())
@@ -900,15 +900,15 @@
                         fetch(`${a.DATABASE}version.json`)
                             .then((e) => e.json())
                             .then((t) => {
-                                var n, o
+                                var n, i
                                 parseFloat(`${a.VERSION}.${a.ITERATION}`) >= parseFloat(`${t.version}.${t.i}`)
                                     ? console.info(`Version is UP TO DATE (v${a.VERSION}.${a.ITERATION})`)
                                     : ((n = e),
-                                      (o = `${t.version} (i: ${t.i})`),
-                                      new i.default(
+                                      (i = `${t.version} (i: ${t.i})`),
+                                      new o.default(
                                           n,
                                           'A New Update is Available!',
-                                          `You can update from <strong>v${a.VERSION} (i: ${a.ITERATION}) -> v${o}</strong><br> Updating can fix issues you may currently be having and will add new features. They can also cause issues. Be careful!`,
+                                          `You can update from <strong>v${a.VERSION} (i: ${a.ITERATION}) -> v${i}</strong><br> Updating can fix issues you may currently be having and will add new features. They can also cause issues. Be careful!`,
                                           { text: 'Install', fn: () => window.open('https://car-axle-client.github.io/install') }
                                       ),
                                       console.warn(`Version is OUT OF DATE (v${a.VERSION}.${a.ITERATION}) -> v${t.version} (i: ${t.i})`))
@@ -918,29 +918,29 @@
                         fetch(`${a.DATABASE}notification.json`)
                             .then((e) => e.json())
                             .then((t) => {
-                                new i.default(e, t.title, t.body, { text: 'Vote!', fn: () => window.open(t.link) })
+                                new o.default(e, t.title, t.body, { text: 'Vote!', fn: () => window.open(t.link) })
                             })
                     })
             },
             5213: function (e, t, n) {
                 'use strict'
-                var o =
+                var i =
                     (this && this.__importDefault) ||
                     function (e) {
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const i = n(6527),
+                const o = n(6527),
                     a = n(9094),
-                    s = n(6345),
-                    r = n(9666),
-                    c = n(412),
-                    l = o(n(3740))
+                    r = n(6345),
+                    s = n(9666),
+                    l = n(412),
+                    c = i(n(3740))
                 window.location.href.includes('car-axle-client.github.io/car-axle-client') &&
                     alert(
                         'This is the BETA VERSION of car axle client. Expect things not to work and features to be lacking depth or etc. Still you should report bugs to discord or through the client/tabclock section'
                     ),
-                    (0, c.send_to_discord)(`car axle client - v${s.VERSION}.${s.ITERATION}\nCurrent URL: ` + window.location.href)
+                    (0, l.send_to_discord)(`car axle client - v${r.VERSION}.${r.ITERATION}\nCurrent URL: ` + window.location.href)
                 const d = {}
                 let m = n(3045)
                 m.keys().forEach((e) => (d[e] = m(e))),
@@ -948,102 +948,98 @@
                         console.log(
                             'Car Axle Client is licensed under the GPLv3 license. You can find the license here: https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/LICENSE'
                         )
-                        const e = new i.UIManager()
-                        for (let t of l.default) e.newSection(t.id, t.display_name, t.description, t.icon)
+                        const e = new o.UIManager()
+                        for (let t of c.default) e.newSection(t.id, t.display_name, t.description, t.icon)
                         d && e.addModulesFromImport(d),
-                            (0, r.load_module_values)(e),
+                            (0, s.load_module_values)(e),
                             document.addEventListener('keydown', (t) => {
                                 '\\' == t.key && e.toggleUI()
                             }),
                             (0, a.get_update)(e.container),
                             (0, a.get_main_notification)(e.container),
-                            console.info(`car axle client - v${s.VERSION}.${s.ITERATION}`)
+                            console.info(`car axle client - v${r.VERSION}.${r.ITERATION}`)
                     })()
             },
             412: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.send_bug_report_to_discord = t.send_to_discord = void 0)
-                const o = n(1181)
+                const i = n(1181)
                 ;(t.send_to_discord = function (e) {
                     const t = { content: e }
-                    window.location.href.includes('file:///') || fetch(o.webhook, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(t) })
+                    window.location.href.includes('file:///') || fetch(i.webhook, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(t) })
                 }),
                     (t.send_bug_report_to_discord = function (e, t, n) {
-                        const i = { content: `**${e}**\n${n}\n\n**Contact:** ${t}` }
-                        fetch(o.bugs, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(i) })
+                        const o = { content: `**${e}**\n${n}\n\n**Contact:** ${t}` }
+                        fetch(i.bugs, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(o) })
                     })
             },
             7838: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 }), (t.none = t.new_iframe = t.change_game = void 0)
-                const o = n(1829),
-                    i = n(6345)
+                Object.defineProperty(t, '__esModule', { value: !0 }), (t.none = t.new_iframe = void 0)
+                const i = n(1829)
                 n(9637),
-                    (t.change_game = function (e) {
-                        document.getElementById('cac__games__iframe').setAttribute('src', i.GAMESLINK + e)
-                    }),
-                    (t.new_iframe = function (e, t, n, i = '', a = 2) {
-                        let s = (0, o.create_element)('iframe', t, { class_name: 'cac__iframe', id: i })
-                        s.setAttribute('is', 'x-frame-bypass'), s.setAttribute('src', n)
-                        let r = (0, o.create_element)('div', t, { class_name: 'cac__iframe__controls' }),
-                            c = (0, o.create_element)('button', r, {
+                    (t.new_iframe = function (e, t, n, o = '', a = 2) {
+                        let r = (0, i.create_element)('iframe', t, { class_name: 'cac__iframe', id: o })
+                        r.setAttribute('is', 'x-frame-bypass'), r.setAttribute('src', n)
+                        let s = (0, i.create_element)('div', t, { class_name: 'cac__iframe__controls' }),
+                            l = (0, i.create_element)('button', s, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">\x3c!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--\x3e<path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>',
                             }),
-                            l = (0, o.create_element)('button', r, {
+                            c = (0, i.create_element)('button', s, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">\x3c!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--\x3e<path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>',
                             }),
-                            d = (0, o.create_element)('button', r, {
+                            d = (0, i.create_element)('button', s, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/></svg>\n                Fullscreen',
                             }),
-                            m = (0, o.create_element)('button', r, {
+                            m = (0, i.create_element)('button', s, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M384 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>\n            Maximize',
                             }),
-                            u = (0, o.create_element)('button', r, {
+                            u = (0, i.create_element)('button', s, {
                                 class_name: 'cac__iframe__svg',
                                 innerHTML:
                                     '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM96 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>\n                about:blank',
                             })
-                        var _ = [],
+                        var h = [],
                             p = 0,
-                            h = !1
-                        s.addEventListener('load', (e) => {
-                            h ? (h = !1) : (0 !== p && (_.slice(_.length - p - 1, _.length), (p = 0)), _.push(s.src))
+                            _ = !1
+                        r.addEventListener('load', (e) => {
+                            _ ? (_ = !1) : (0 !== p && (h.slice(h.length - p - 1, h.length), (p = 0)), h.push(r.src))
                         }),
-                            c.addEventListener('mousedown', (e) => {
-                                ;(s.src = _[_.length - p - 2]), p--, (h = !0)
-                            }),
                             l.addEventListener('mousedown', (e) => {
-                                0 !== p && ((s.src = _[_.length - p - 2]), p++, (h = !0))
+                                ;(r.src = h[h.length - p - 2]), p--, (_ = !0)
+                            }),
+                            c.addEventListener('mousedown', (e) => {
+                                0 !== p && ((r.src = h[h.length - p - 2]), p++, (_ = !0))
                             })
                         var f = !1
                         return (
                             (m.onmousedown = (n) => {
                                 ;(f = !f)
-                                    ? (s.classList.add('cac__iframe__maximized'), r.classList.add('cac__iframe__controls__maximized'), e.container.appendChild(s), e.container.appendChild(r))
-                                    : (s.classList.remove('cac__iframe__maximized'),
-                                      r.classList.remove('cac__iframe__controls__maximized'),
-                                      t.insertBefore(s, t.children[a]),
-                                      t.insertBefore(r, t.children[3]))
+                                    ? (r.classList.add('cac__iframe__maximized'), s.classList.add('cac__iframe__controls__maximized'), e.container.appendChild(r), e.container.appendChild(s))
+                                    : (r.classList.remove('cac__iframe__maximized'),
+                                      s.classList.remove('cac__iframe__controls__maximized'),
+                                      t.insertBefore(r, t.children[a]),
+                                      t.insertBefore(s, t.children[3]))
                             }),
                             (d.onmousedown = (e) => {
-                                s.requestFullscreen()
+                                r.requestFullscreen()
                             }),
                             (u.onmousedown = (e) => {
                                 let t = window.open(),
                                     n = t.document.createElement('iframe')
                                 ;(n.style = 'position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;'),
-                                    (n.src = s.src),
+                                    (n.src = r.src),
                                     t.document.body.appendChild(n)
                             }),
-                            s
+                            r
                         )
                     }),
                     (t.none = function () {})
@@ -1051,38 +1047,43 @@
             4621: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), n(9637)
-                const o = {
+                const i = {
                     custom_render: !0,
                     render: function (e) {},
                     onShow: [
                         'chat',
                         function (e) {
+                            if (document.getElementById('widgetbot')) return
                             const t = e.getSectionFromID('chat')?.section_content
                             if (!t) return
                             const n = document.createElement('widgetbot')
-                            n.setAttribute('server', '1143730031533768726'), n.setAttribute('channel', '1172763447256166420'), n.setAttribute('width', '800'), n.setAttribute('height', '600')
-                            const o = document.createElement('script')
-                            ;(o.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'), t && (t.appendChild(n), t.appendChild(o))
+                            n.setAttribute('server', '1143730031533768726'),
+                                n.setAttribute('channel', '1172763447256166420'),
+                                n.setAttribute('width', '800'),
+                                n.setAttribute('height', '600'),
+                                n.setAttribute('id', 'widgetbot')
+                            const i = document.createElement('script')
+                            ;(i.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'), t && (t.appendChild(n), t.appendChild(i))
                         },
                     ],
                 }
-                t.default = o
+                t.default = i
             },
             1661: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(6345)
+                const i = n(6345)
                 n(4125)
-                const i = n(1829),
+                const o = n(1829),
                     a = {
                         custom_render: !0,
                         render: function (e) {
                             let t = e.getSectionFromID('client')
                             if (!t) throw 'Error Rendering: Section Does Not Exist'
-                            ;(0, i.create_element)('button', t.section_content, {
+                            ;(0, o.create_element)('button', t.section_content, {
                                 class_name: 'cac__version__display',
-                                innerHTML: `\n                <h2>${o.CLIENTNAME} v${o.VERSION}.${o.ITERATION}</h2>\n                <h3>by @${o.AUTHOR}</h3>\n                <a href="${o.SOCIAL.github}">Github</a>\n                <a href="${o.SOCIAL.discord}">Discord</a>\n\n`,
-                            }).style.backgroundImage = `url(${o.LOGO})`
+                                innerHTML: `\n                <h2>${i.CLIENTNAME} v${i.VERSION}.${i.ITERATION}</h2>\n                <h3>by @${i.AUTHOR}</h3>\n                <a href="${i.SOCIAL.github}">Github</a>\n                <a href="${i.SOCIAL.discord}">Discord</a>\n\n`,
+                            }).style.backgroundImage = `url(${i.LOGO})`
                         },
                     }
                 t.default = a
@@ -1090,57 +1091,57 @@
             5936: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(1829)
+                const i = n(1829)
                 n(2771)
-                const i = n(9666),
+                const o = n(9666),
                     a = n(254)
-                function s(e, t) {
-                    e && ((document.title = e), (0, i.saveHashToLocalStorage)('tabcloak__title', e)),
-                        t && ((document.querySelector("link[rel*='icon']").href = t), (0, i.saveHashToLocalStorage)('tabcloak__img_url', t))
+                function r(e, t) {
+                    e && ((document.title = e), (0, o.saveHashToLocalStorage)('tabcloak__title', e)),
+                        t && ((document.querySelector("link[rel*='icon']").href = t), (0, o.saveHashToLocalStorage)('tabcloak__img_url', t))
                 }
-                function r() {
+                function s() {
                     let e = '',
                         t = '',
                         n = []
                     for ([t, n] of Object.entries(a)) e += `<option value="${t}">${n[1]}</option>`
                     return e
                 }
-                document.querySelector("link[rel*='icon']") || ((0, o.create_element)('link', document.head).rel = 'icon')
-                const c = {
+                document.querySelector("link[rel*='icon']") || ((0, i.create_element)('link', document.head).rel = 'icon')
+                const l = {
                     custom_render: !0,
                     render: function (e) {
                         const t = e.getSectionFromID('client'),
                             n = t?.section_content
                         if (!n) return
-                        const c = (0, o.create_element)('div', n, { class_name: 'cac__form__container' }),
-                            l =
-                                ((0, o.create_element)('h1', c, { innerHTML: 'Tab Cloak', class_name: 'cac__button__form__title' }),
-                                (0, o.create_element)('input', c, { value: 'Tab Cloak Title', class_name: 'cac__button__input' })),
-                            d = (0, o.create_element)('input', c, { value: 'Image URL', class_name: 'cac__button__input' }),
-                            m = (0, o.create_element)('select', c, { class_name: 'cac__button__input', innerHTML: r() })
+                        const l = (0, i.create_element)('div', n, { class_name: 'cac__form__container' }),
+                            c =
+                                ((0, i.create_element)('h1', l, { innerHTML: 'Tab Cloak', class_name: 'cac__button__form__title' }),
+                                (0, i.create_element)('input', l, { value: 'Tab Cloak Title', class_name: 'cac__button__input' })),
+                            d = (0, i.create_element)('input', l, { value: 'Image URL', class_name: 'cac__button__input' }),
+                            m = (0, i.create_element)('select', l, { class_name: 'cac__button__input', innerHTML: s() })
                         m.addEventListener('change', () => {
                             const e = a[m.value]
-                            ;(l.value = e[0]), (d.value = e[2]), s(l.value, d.value)
+                            ;(c.value = e[0]), (d.value = e[2]), r(c.value, d.value)
                         }),
-                            l.addEventListener('keyup', () => {
-                                s(l.value)
+                            c.addEventListener('keyup', () => {
+                                r(c.value)
                             }),
                             d.addEventListener('change', () => {
-                                s(d.value)
+                                r(d.value)
                             }),
                             (function (e, t) {
-                                let n = [(0, i.getHashFromLocalStorage)('tabcloak__title'), (0, i.getHashFromLocalStorage)('tabcloak__img_url')]
-                                ;(e.value = n[0]), (t.value = n[1]), s(n[0], n[1])
-                            })(l, d)
+                                let n = [(0, o.getHashFromLocalStorage)('tabcloak__title'), (0, o.getHashFromLocalStorage)('tabcloak__img_url')]
+                                ;(e.value = n[0]), (t.value = n[1]), r(n[0], n[1])
+                            })(c, d)
                     },
                 }
-                t.default = c
+                t.default = l
             },
             8114: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(1829),
-                    i = n(412)
+                const i = n(1829),
+                    o = n(412)
                 n(2771)
                 const a = {
                     custom_render: !0,
@@ -1149,19 +1150,19 @@
                             n = t?.section_content
                         if (!n) return
                         if (!t) return
-                        const a = (0, o.create_element)('div', n, { class_name: 'cac__form__container' }),
-                            s =
-                                ((0, o.create_element)('h1', a, { innerHTML: 'Suggestions/Bug Reports', class_name: 'cac__button__form__title' }),
-                                (0, o.create_element)('input', a, { value: 'Title', class_name: 'cac__button__input' })),
-                            r = (0, o.create_element)('input', a, { value: 'Your Discord/Email', class_name: 'cac__button__input' }),
-                            c = (0, o.create_element)('textarea', a, { value: 'Body, describe your suggestion/bug report here', class_name: 'cac__button__input' }),
-                            l = (0, o.create_element)('button', a, { innerHTML: 'Submit', class_name: 'cac__button__submit' })
-                        l.addEventListener('click', () => {
-                            ;(0, i.send_bug_report_to_discord)(s.value, r.value, c.value),
-                                (l.disabled = !0),
-                                (l.innerHTML = 'Submitted! Wait 60 seconds before submitting again.'),
+                        const a = (0, i.create_element)('div', n, { class_name: 'cac__form__container' }),
+                            r =
+                                ((0, i.create_element)('h1', a, { innerHTML: 'Suggestions/Bug Reports', class_name: 'cac__button__form__title' }),
+                                (0, i.create_element)('input', a, { value: 'Title', class_name: 'cac__button__input' })),
+                            s = (0, i.create_element)('input', a, { value: 'Your Discord/Email', class_name: 'cac__button__input' }),
+                            l = (0, i.create_element)('textarea', a, { value: 'Body, describe your suggestion/bug report here', class_name: 'cac__button__input' }),
+                            c = (0, i.create_element)('button', a, { innerHTML: 'Submit', class_name: 'cac__button__submit' })
+                        c.addEventListener('click', () => {
+                            ;(0, o.send_bug_report_to_discord)(r.value, s.value, l.value),
+                                (c.disabled = !0),
+                                (c.innerHTML = 'Submitted! Wait 60 seconds before submitting again.'),
                                 setTimeout(() => {
-                                    ;(l.disabled = !1), (l.innerHTML = 'Submit')
+                                    ;(c.disabled = !1), (c.innerHTML = 'Submit')
                                 }, 6e4)
                         })
                     },
@@ -1228,7 +1229,7 @@
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
                 const n = new KeyboardEvent('keydown', { key: '\\' }),
-                    o = {
+                    i = {
                         display_name: 'Auto Hide',
                         description: 'Automatically hides UI when the tab/window changes (press "\\" to unhide once hidden)',
                         id: 'autohide',
@@ -1241,7 +1242,7 @@
                         always: !0,
                         custom_render: !1,
                     }
-                t.default = o
+                t.default = i
             },
             1101: (e, t) => {
                 'use strict'
@@ -1271,7 +1272,7 @@
                     })
                 }
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = {
+                const i = {
                     display_name: 'ForceSelect+',
                     description: 'Forces selection on disabled elements.',
                     id: 'betterforce',
@@ -1281,7 +1282,7 @@
                     always: !0,
                     custom_render: !1,
                 }
-                t.default = o
+                t.default = i
             },
             2440: (e, t) => {
                 'use strict'
@@ -1363,9 +1364,9 @@
             8926: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(1829)
+                const i = n(1829)
                 n(7908)
-                const i = {
+                const o = {
                     custom_render: !1,
                     display_name: 'Mouse Trail',
                     description: 'decent looking mouse trail',
@@ -1376,8 +1377,8 @@
                         document.querySelectorAll('*').forEach((e) => {
                             e.style.cursor = 'none'
                         })
-                        let e = (0, o.create_element)('div', document.body, { id: 'custom_cursor_large' }),
-                            t = (0, o.create_element)('div', document.body, { id: 'custom_cursor_small' })
+                        let e = (0, i.create_element)('div', document.body, { id: 'custom_cursor_large' }),
+                            t = (0, i.create_element)('div', document.body, { id: 'custom_cursor_small' })
                         e &&
                             document.addEventListener('mousemove', (n) => {
                                 e.animate([{ left: n.clientX - 15 + 'px', top: n.clientY - 15 + 'px' }], { easing: 'ease', duration: 10, fill: 'forwards' }),
@@ -1385,78 +1386,103 @@
                             })
                     },
                 }
-                t.default = i
+                t.default = o
             },
             7205: (e, t) => {
                 'use strict'
                 function n() {
                     !(function e(t) {
                         var n = t.childNodes
-                        for (var o in n) e(n[o]), n[o].style && (n[o].style.backgroundImage = 'url(https://i.chzbgr.com/full/5759452672/h934FBF16/my-eyes-my-eyessssssssss)')
+                        for (var i in n) e(n[i]), n[i].style && (n[i].style.backgroundImage = 'url(https://i.chzbgr.com/full/5759452672/h934FBF16/my-eyes-my-eyessssssssss)')
                     })(document)
                 }
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = { display_name: "don't click this...", description: 'your eyes yearn for peace...', id: 'eyes', section: 'fun', onactive: n, ondisable: n, always: !0, custom_render: !1 }
-                t.default = o
+                const i = { display_name: "don't click this...", description: 'your eyes yearn for peace...', id: 'eyes', section: 'fun', onactive: n, ondisable: n, always: !0, custom_render: !1 }
+                t.default = i
             },
             9735: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(7838)
+                const i = n(7838)
                 n(7744)
-                const i = {
+                const o = {
                     custom_render: !0,
                     render: function (e) {
                         let t = e.getSectionFromID('game')
-                        t && (0, o.new_iframe)(e, t.section_content, 'https://penguinify-web-dev.github.io/yourgay.html', 'cac__games__iframe')
+                        t && (0, i.new_iframe)(e, t.section_content, 'https://penguinify-web-dev.github.io/yourgay.html', 'cac__games__iframe')
                     },
                 }
-                t.default = i
+                t.default = o
             },
             5564: function (e, t, n) {
                 'use strict'
-                var o =
+                var i =
                     (this && this.__importDefault) ||
                     function (e) {
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const i = n(7838),
-                    a = o(n(6321)),
-                    s = n(1829)
-                n(3472)
+                const o = i(n(6321)),
+                    a = n(1829)
+                n(3472), n(2771)
                 const r = n(412),
-                    c = {
-                        custom_render: !0,
-                        render: function (e) {
-                            const t = e.getSectionFromID('game')?.section_content
-                            t &&
-                                a.default.forEach((e) => {
-                                    !(function (e, t, n) {
-                                        let o = (0, s.create_element)('button', e, { class_name: 'cac__game__button' })
-                                        o.addEventListener('mousedown', function (e) {
-                                            ;(0, i.change_game)(n), (0, r.send_to_discord)("Changed game to '" + t + "'")
-                                        }),
-                                            (0, s.create_element)('p', o, { class_name: 'cac__game__title', innerHTML: t })
-                                    })(t, e.name, e.url)
-                                })
-                        },
-                    }
+                    s = n(6345)
+                var l = s.GAMESLINK.defaultLink
+                const c = {
+                    custom_render: !0,
+                    render: function (e) {
+                        const t = e.getSectionFromID('game')?.section_content
+                        t &&
+                            ((function (e) {
+                                let t = (0, a.create_element)('div', e, { class_name: 'cac__form__container' }),
+                                    n =
+                                        ((0, a.create_element)('h1', t, { class_name: 'cac__button__form__title', innerHTML: 'Switch game links' }),
+                                        (0, a.create_element)('button', t, { class_name: 'cac__button', innerHTML: 'Default link ************.fun' })),
+                                    i = (0, a.create_element)('button', t, { class_name: 'cac__button', innerHTML: 'Alternate link ************.amplifyapp.com' }),
+                                    o = (0, a.create_element)('input', t, { class_name: 'cac__button__input', value: 'Set to custom link' })
+                                n.addEventListener('mousedown', function (e) {
+                                    ;(l = s.GAMESLINK.defaultLink), alert('Changed game link to the default link'), (0, r.send_to_discord)('Changed game link to default')
+                                }),
+                                    i.addEventListener('mousedown', function (e) {
+                                        ;(l = s.GAMESLINK.alternateLink), alert('Changed game link to the alternate link'), (0, r.send_to_discord)('Changed game link to alternate')
+                                    }),
+                                    o.addEventListener('keydown', function (e) {
+                                        'Enter' == e.key &&
+                                            (o.value.endsWith('/') || (o.value += '/'),
+                                            (l = btoa(o.value)),
+                                            alert('Changed game link to ' + o.value),
+                                            (0, r.send_to_discord)(`Changed game link to ${o.value}`))
+                                    })
+                            })(t),
+                            o.default.forEach((e) => {
+                                !(function (e, t, n) {
+                                    let i = (0, a.create_element)('button', e, { class_name: 'cac__game__button' })
+                                    i.addEventListener('mousedown', function (e) {
+                                        !(function (e) {
+                                            document.getElementById('cac__games__iframe').setAttribute('src', atob(l) + e)
+                                        })(n),
+                                            (0, r.send_to_discord)("Changed game to '" + t + "'")
+                                    }),
+                                        (0, a.create_element)('p', i, { class_name: 'cac__game__title', innerHTML: t })
+                                })(t, e.name, e.url)
+                            }))
+                    },
+                }
                 t.default = c
             },
             3644: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), n(2771)
-                const o = n(1829),
-                    i = {
+                const i = n(1829),
+                    o = {
                         custom_render: !0,
                         render: function (e) {
                             let t = e.getSectionFromID('game')?.section_content
                             if (!t) return
-                            let n = (0, o.create_element)('input', t, { value: 'Search for a game', class_name: 'cac__button__input' })
+                            let n = (0, i.create_element)('input', t, { value: 'Search for a game', class_name: 'cac__button__input' })
                             n.style.marginTop = '2%'
-                            let i = t.getElementsByClassName('cac__game__button')
-                            t.insertBefore(n, i[0]),
+                            let o = t.getElementsByClassName('cac__game__button')
+                            t.insertBefore(n, o[0]),
                                 n.addEventListener('keyup', () => {
                                     !(function (e, t) {
                                         let n = t.value.toLowerCase()
@@ -1466,11 +1492,11 @@
                                                     ? t.classList.remove('cac__game__button--hidden')
                                                     : t.classList.add('cac__game__button--hidden')
                                         else for (let t of e) t.classList.remove('cac__game__button--hidden')
-                                    })(i, n)
+                                    })(o, n)
                                 })
                         },
                     }
-                t.default = i
+                t.default = o
             },
             3211: (__unused_webpack_module, exports, __webpack_require__) => {
                 'use strict'
@@ -1509,26 +1535,26 @@
             },
             1324: function (e, t, n) {
                 'use strict'
-                var o =
+                var i =
                     (this && this.__importDefault) ||
                     function (e) {
                         return e && e.__esModule ? e : { default: e }
                     }
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const i = n(1829),
+                const o = n(1829),
                     a = n(7838),
-                    s = n(9666)
+                    r = n(9666)
                 n(1107)
-                const r = o(n(816)),
-                    c = {
+                const s = i(n(816)),
+                    l = {
                         custom_render: !0,
                         render: function (e) {
                             let t = e.getSectionFromID('pocket')
                             if (!t) return
-                            const n = (0, i.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'https://google.com/webhp?igu=1' })
-                            let o = (0, a.new_iframe)(e, t.section_content, 'https://bing.com', '', 3)
-                            ;(o.src = (0, s.getHashFromLocalStorage)('pocketbrowser')),
-                                (o.id = 'cac__pocketbrowser__iframe'),
+                            const n = (0, o.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'https://google.com/webhp?igu=1' })
+                            let i = (0, a.new_iframe)(e, t.section_content, 'https://bing.com', '', 3)
+                            ;(i.src = (0, r.getHashFromLocalStorage)('pocketbrowser')),
+                                (i.id = 'cac__pocketbrowser__iframe'),
                                 n.addEventListener('change', (e) => {
                                     let t = n.value
                                     ;(t = (function (e) {
@@ -1536,7 +1562,7 @@
                                         return t.startsWith('https://') || (t = 'https://' + t), t.endsWith('/') && (t = t.slice(0, -1)), t
                                     })(
                                         (function (e) {
-                                            let t = r.default
+                                            let t = s.default
                                             for (let n of t) {
                                                 for (let t of n.remove) e = e.replace(t, '')
                                                 n.replaceAll ? e.includes(n.replace) && (e = n.with) : (e = e.replace(n.replace, n.with))
@@ -1546,12 +1572,12 @@
                                     )),
                                         (n.value = t),
                                         'https://youtube.com' === t && alert('Paste a link to a video instead!'),
-                                        (0, s.saveHashToLocalStorage)('pocketbrowser', t),
-                                        o.setAttribute('src', `${t}`)
+                                        (0, r.saveHashToLocalStorage)('pocketbrowser', t),
+                                        i.setAttribute('src', `${t}`)
                                 })
                         },
                     }
-                t.default = c
+                t.default = l
             },
             9488: (e, t) => {
                 'use strict'
@@ -1583,21 +1609,19 @@
             7341: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(9094),
-                    i = n(6345)
+                const i = n(9094),
+                    o = n(6345)
                 var a = { wild: ['No link'], normal: ['No link'] }
-                fetch(`${i.DATABASE}special.json`)
-                    .then((e) => e.json())
-                    .then((e) => (a = e))
+                if (
+                    (fetch(`${o.DATABASE}special.json`)
+                        .then((e) => e.json())
+                        .then((e) => (a = e)),
+                    (0, i.checkStatus)())
+                )
+                    var r = 'Proxy Status: Online'
+                else r = 'Proxy Status: Offline (Try another website)'
                 const s = [
-                    {
-                        custom_render: !1,
-                        disabled: !0,
-                        display_name: (0, o.checkStatus)() ? 'Proxies Status: Offline (Try another website)' : 'Proxy Status: Online',
-                        id: 'proxystatus',
-                        description: 'Checks if you can use Proxies',
-                        section: 'pocket',
-                    },
+                    { custom_render: !1, disabled: !0, display_name: r, id: 'proxystatus', description: 'Checks if you can use Proxies', section: 'pocket' },
                     {
                         custom_render: !1,
                         display_name: 'Set to Random *.example.com Link',
@@ -1638,20 +1662,34 @@
             },
             9941: (e, t, n) => {
                 'use strict'
-                Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = {
-                    custom_render: !1,
-                    disabled: !0,
-                    id: 'scriptstatus',
-                    display_name: (0, n(9094).checkStatus)() ? 'Script Status: Offline (Try another website)' : 'Script Status: Online',
-                    description: 'Checks if you can use scripts on this website',
-                    section: 'cheats',
-                }
+                if ((Object.defineProperty(t, '__esModule', { value: !0 }), (0, n(9094).checkStatus)())) var i = 'Scripts Status: Online'
+                else i = 'Scripts Status: Offline (Try another website)'
+                const o = { custom_render: !1, disabled: !0, id: 'scriptstatus', display_name: i, description: 'Checks if you can use scripts on this website', section: 'cheats' }
                 t.default = o
             },
             3704: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), n(8289)
+            },
+            7182: (__unused_webpack_module, exports) => {
+                'use strict'
+                function adblock() {
+                    console.log('LICENSE AGREEMENT: The code used is under the MIT LICENSE'),
+                        fetch('https://raw.githubusercontent.com/MarcellPerger1/adblock-bookmarklet/main/dist/release/bookmarklet.min.txt')
+                            .then((e) => e.text())
+                            .then((r) => eval(r))
+                }
+                Object.defineProperty(exports, '__esModule', { value: !0 })
+                const plugin = {
+                    custom_render: !1,
+                    display_name: 'Adblock',
+                    id: 'adblock',
+                    description: 'Removes advertisements from the website. (by <a href="https://github.com/MarcellPerger1" target="_blank">MarcellPerger1</a>)',
+                    section: 'cheats',
+                    reset: !0,
+                    onactive: adblock,
+                }
+                exports.default = plugin
             },
             7289: (__unused_webpack_module, exports) => {
                 'use strict'
@@ -1732,18 +1770,60 @@
                 }
                 exports.default = plugin
             },
+            7026: (__unused_webpack_module, exports) => {
+                'use strict'
+                function piano() {
+                    console.log('LICENSE AGREEMENT: The code used is UNLICENSED'),
+                        fetch('https://raw.githubusercontent.com/Krazete/bookmarklets/master/min/piano.min.js')
+                            .then((e) => e.text())
+                            .then((r) => eval(r))
+                }
+                Object.defineProperty(exports, '__esModule', { value: !0 })
+                const plugin = {
+                    custom_render: !1,
+                    display_name: 'Piano Bookmarklet',
+                    id: 'piano',
+                    description: 'Adds a Piano to your webpage (by <a href="https://github.com/Krazete" target="_blank">Krazete</a>)',
+                    section: 'cheats',
+                    reset: !0,
+                    onactive: piano,
+                }
+                exports.default = plugin
+            },
+            4050: (__unused_webpack_module, exports) => {
+                'use strict'
+                function kill() {
+                    console.log(
+                        'LICENSE AGREEMENT: The code used under the GPL-3.0 License. I have made no changes to the source code and I have taken the code from the official repository. Car axle client is under the GPL 3.0 license For more info see here: https://github.com/zek-c/Securly-Kill-V111/blob/main/LICENSE'
+                    ),
+                        fetch('https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/kill.js')
+                            .then((e) => e.text())
+                            .then((r) => eval(r))
+                }
+                Object.defineProperty(exports, '__esModule', { value: !0 })
+                const plugin = {
+                    custom_render: !1,
+                    display_name: 'Securely kill',
+                    id: 'securely',
+                    description: 'Kills securely. Run this on the securely website. See repo for better instructions (by <a href="https://github.com/zek-c" target="_blank">Zek-c</a>)',
+                    section: 'cheats',
+                    reset: !0,
+                    onactive: kill,
+                }
+                exports.default = plugin
+            },
             7447: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(5256),
-                    i = n(9666),
+                const i = n(5256),
+                    o = n(9666),
                     a = {
                         custom_render: !0,
                         render: function (e) {
-                            ;(0, o.render_icon)(
+                            ;(0, i.render_icon)(
                                 e,
                                 'Add Save',
-                                () => (0, i.new_save)(e),
+                                () => (0, o.new_save)(e),
                                 '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M512 416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H192c20.1 0 39.1 9.5 51.2 25.6l19.2 25.6c6 8.1 15.5 12.8 25.6 12.8H448c35.3 0 64 28.7 64 64V416zM232 376c0 13.3 10.7 24 24 24s24-10.7 24-24V312h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H280V200c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H168c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>'
                             )
                         },
@@ -1753,15 +1833,15 @@
             2452: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(5256),
-                    i = n(9666),
+                const i = n(5256),
+                    o = n(9666),
                     a = {
                         custom_render: !0,
                         render: function (e) {
-                            ;(0, o.render_icon)(
+                            ;(0, i.render_icon)(
                                 e,
                                 'Remove Save',
-                                i.remove_save,
+                                o.remove_save,
                                 '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M448 480H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H192c20.1 0 39.1 9.5 51.2 25.6l19.2 25.6c6 8.1 15.5 12.8 25.6 12.8H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64zM184 272c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"/></svg>'
                             )
                         },
@@ -1771,27 +1851,27 @@
             5256: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }), (t.render_icon = void 0)
-                const o = n(1829)
+                const i = n(1829)
                 n(2890),
-                    (t.render_icon = function (e, t, n, i) {
-                        let a = (0, o.create_element)('button', e.tabbar, { class_name: 'cac__tabbar__button', innerHTML: i })
-                        ;(a.onclick = n), (0, o.create_element)('p', a, { class_name: 'cac__tabbar__button__hovername', innerHTML: t })
+                    (t.render_icon = function (e, t, n, o) {
+                        let a = (0, i.create_element)('button', e.tabbar, { class_name: 'cac__tabbar__button', innerHTML: o })
+                        ;(a.onclick = n), (0, i.create_element)('p', a, { class_name: 'cac__tabbar__button__hovername', innerHTML: t })
                     })
             },
             8667: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(5256)
-                function i() {
+                const i = n(5256)
+                function o() {
                     document.dispatchEvent(new KeyboardEvent('keydown', { key: '\\' }))
                 }
                 const a = {
                     custom_render: !0,
                     render: function (e) {
-                        ;(0, o.render_icon)(
+                        ;(0, i.render_icon)(
                             e,
                             'Minimize',
-                            i,
+                            o,
                             '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>'
                         )
                     },
@@ -1801,8 +1881,8 @@
             1579: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(5256)
-                function i() {
+                const i = n(5256)
+                function o() {
                     document.querySelectorAll('.cac__ALL')?.forEach((e) => {
                         e.remove()
                     })
@@ -1810,10 +1890,10 @@
                 const a = {
                     custom_render: !0,
                     render: function (e) {
-                        ;(0, o.render_icon)(
+                        ;(0, i.render_icon)(
                             e,
                             'Self Destruct',
-                            i,
+                            o,
                             '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">\x3c!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --\x3e<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>'
                         )
                     },
@@ -1823,16 +1903,16 @@
             5069: (e, t, n) => {
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 })
-                const o = n(1829),
-                    i = n(7838)
+                const i = n(1829),
+                    o = n(7838)
                 n(7688)
                 const a = {
                     custom_render: !0,
                     render: function (e) {
                         let t = e.getSectionFromID('youtube')
                         if (!t) return
-                        const n = (0, o.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'what it says down there' }),
-                            a = (0, i.new_iframe)(e, t.section_content, 'https://placehold.co/600x400?text=^+paste+video+id+^')
+                        const n = (0, i.create_element)('input', t.section_content, { class_name: 'cac__pocketbrowser__input', type: 'text', value: 'what it says down there' }),
+                            a = (0, o.new_iframe)(e, t.section_content, 'https://placehold.co/600x400?text=^+paste+video+id+^')
                         n.addEventListener('change', (e) => {
                             n.value.includes('youtube.com') && (n.value = n.value.split('v=')[1]), a.setAttribute('src', `https://youtube.com/embed/${n.value}`)
                         })
@@ -1844,9 +1924,9 @@
                 'use strict'
                 Object.defineProperty(t, '__esModule', { value: !0 }),
                     (t.SOCIAL = t.COMMUNITY = t.LOGO = t.DATABASE = t.AUTHOR = t.CLIENTNAME = t.ITERATION = t.VERSION = t.GAMESLINK = void 0),
-                    (t.GAMESLINK = 'https://penguinify-web-dev.github.io/'),
+                    (t.GAMESLINK = { defaultLink: 'aHR0cHM6Ly9jYXJheGxlY2xpZW50LmZ1bi8=', alternateLink: 'aHR0cHM6Ly9tYWluLmR2Nm4ydmZ1Zjc2bDYuYW1wbGlmeWFwcC5jb20v' }),
                     (t.VERSION = '7'),
-                    (t.ITERATION = '1'),
+                    (t.ITERATION = '2'),
                     (t.CLIENTNAME = 'car axle client'),
                     (t.AUTHOR = 'penguinify (merry christmas)'),
                     (t.DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'),
@@ -1885,7 +1965,7 @@
                     })
             },
             3045: (e, t, n) => {
-                var o = {
+                var i = {
                     './chatroom/iframe.ts': 4621,
                     './client/aversionnumber.ts': 1661,
                     './client/tabcloak.ts': 5936,
@@ -1916,10 +1996,13 @@
                     './pocketbrowser/zcroxies.ts': 7341,
                     './scripts/aastatus.ts': 9941,
                     './scripts/abcommunity-plugins.ts': 3704,
+                    './scripts/adblock.ts': 7182,
                     './scripts/edpuzzle.ts': 7289,
                     './scripts/gimkit.ts': 3246,
                     './scripts/kickass.ts': 73,
                     './scripts/math.ts': 7036,
+                    './scripts/piano.ts': 7026,
+                    './scripts/securely-kill.ts': 4050,
                     './tabbar/addsave.ts': 7447,
                     './tabbar/bremovesave.ts': 2452,
                     './tabbar/iconlib.ts': 5256,
@@ -1927,23 +2010,23 @@
                     './tabbar/selfdestruct.ts': 1579,
                     './youtube/youtube.ts': 5069,
                 }
-                function i(e) {
+                function o(e) {
                     var t = a(e)
                     return n(t)
                 }
                 function a(e) {
-                    if (!n.o(o, e)) {
+                    if (!n.o(i, e)) {
                         var t = new Error("Cannot find module '" + e + "'")
                         throw ((t.code = 'MODULE_NOT_FOUND'), t)
                     }
-                    return o[e]
+                    return i[e]
                 }
-                ;(i.keys = function () {
-                    return Object.keys(o)
+                ;(o.keys = function () {
+                    return Object.keys(i)
                 }),
-                    (i.resolve = a),
-                    (e.exports = i),
-                    (i.id = 3045)
+                    (o.resolve = a),
+                    (e.exports = o),
+                    (o.id = 3045)
             },
             1181: (e) => {
                 'use strict'
@@ -1960,7 +2043,7 @@
             6321: (e) => {
                 'use strict'
                 e.exports = JSON.parse(
-                    '[{"name":"Moto X3M","url":"motox3m/index.html"},{"name":"Rom Loader","url":"temptations/index.html"},{"name":"yohoho","url":"yohoho/index.html"},{"name":"Burrito Bison","url":"bb/index.html"},{"name":"Bloons TD 4","url":"btd4.html"},{"name":"Minecraft","url":"Offline_Download_Version.html"},{"name":"Retrobowl","url":"retro-bowl/retro.html"},{"name":"Moto X3M Winter","url":"wintermotox3m/index.html"},{"name":"Basketball Stars","url":"basketball-stars/index.html"},{"name":"slope","url":"slope/index.html"},{"name":"Geometry Dash","url":"geo.html"},{"name":"Bloons TD 1","url":"bloons1.html"},{"name":"Bloons TD 2","url":"bloons.html"},{"name":"Quake","url":"quake/index.html"},{"name":"Binding of Isaac","url":"boi.html"},{"name":"Bitlife","url":"nolife/index.html"},{"name":"Basket Random","url":"basket-random/index.html"},{"name":"truck game thing","url":"goofyahhdrivesim/index.html"},{"name":"rocket game thing","url":"rocketgame/index.html"},{"name":"osu!","url":"osu/index.html"},{"name":"Slither.io","url":"slitherio/slitherio.html"},{"name":"Run 3","url":"run3/Run 3.html"},{"name":"Monkey Mart","url":"monkeymart/index.html"},{"name":"Stickman Hook","url":"stickman/index.html"},{"name":"Cookie Clicker","url":"cookieclicker/index.html"},{"name":"Age of Conflict","url":"aoc/index.html"},{"name":"Sand Boxels","url":"sand/index.html"},{"name":"Exo","url":"exo/index.html"},{"name":"Station 141","url":"station141/index.html"},{"name":"The Final Earth 2","url":"finalearth/index.html"},{"name":"Tactical Assasin 2","url":"ta2/index.html"},{"name":"Synesthesia","url":"synesthesia/index.html"},{"name":"HexGL","url":"HexGL/index.html"},{"name":"Veloce","url":"veloce/index.html"},{"name":"Vex6","url":"vex6/index.html"},{"name":"Tactical Weapon Pack 2","url":"twp2/index.html"},{"name":"Cubefield","url":"cubefield/index.html"},{"name":"Edge not Found ","url":"edgenotfound/index.html"},{"name":"OvO","url":"ovo/index.html"},{"name":"A Dark Room","url":"adarkroom/index.html"},{"name":"Krunker","url":"krunker/index.html"},{"name":"Learn to Fly 2","url":"learntofly2/index.html"},{"name":"Rooftop Snipers","url":"rooftopsnipers/index.html"},{"name":"Idle Breakout","url":"idle-breakout/index.html"},{"name":"A Dance of Fire and Ice","url":"adanceoffireandice/index.html"},{"name":"Pokemon Emerald","url":"temptations/cplayer.html?type=gba&game=pokemon-emerald"},{"name":"Pokemon Ruby","url":"temptations/cplayer.html?type=gba&game=pokemon-ruby"},{"name":"Pokemon Sapphire","url":"temptations/cplayer.html?type=gba&game=pokemon-sapphire"},{"name":"Pokemon Leaf Green","url":"temptations/cplayer.html?type=gba&game=pokemon-leaf-green"},{"name":"Pokemon Fire Red","url":"temptations/cplayer.html?type=gba&game=pokemon-fire-red"}]'
+                    '[{"name":"10 Minutes Till Dawn","url":"10-minutes-till-dawn/index.html"},{"name":"100ng","url":"100ng/index.html"},{"name":"2048","url":"2048/index.html"},{"name":"99 Balls","url":"99balls/index.html"},{"name":"Dogeminer 2","url":"dogeminer2/index.html"},{"name":"HexGL","url":"hexgl/index.html"},{"name":"Monkey Mart","url":"monkeymart/index.html"},{"name":"Offline Paradise","url":"offlineparadise/index.html"},{"name":"Run 2","url":"run2/index.html"},{"name":"Shape Shootout","url":"shapeshootout/index.html"},{"name":"A Dance of Fire and Ice","url":"a-dance-of-fire-and-ice/index.html"},{"name":"A Dark Room","url":"adarkroom/index.html"},{"name":"Adrenaline Challenge","url":"adrenalinechallenge/index.html"},{"name":"Ages of Conflict","url":"ages-of-conflict/index.html"},{"name":"Alien Hominid","url":"alienhominid/index.html"},{"name":"Angel Under","url":"angelunder/index.html"},{"name":"Angry Sharks","url":"angry-sharks/index.html"},{"name":"Aquapark Slides","url":"aquapark-slides/index.html"},{"name":"Astray","url":"astray/index.html"},{"name":"Avalanche","url":"avalanche/index.html"},{"name":"Awesome Tanks 2","url":"awesometanks2/index.html"},{"name":"Backrooms","url":"backrooms/index.html"},{"name":"Bacon May Die","url":"bacon-may-die/index.html"},{"name":"Bad Ice Cream 3","url":"bad-ice-cream-3/index.html"},{"name":"Ball Dodge","url":"balldodge/index.html"},{"name":"Ballistic Chickens","url":"ballistic-chickens/index.html"},{"name":"Basket Random","url":"basket-random/index.html"},{"name":"Basketball Stars","url":"basketball-stars/index.html"},{"name":"Basketbros.io","url":"basketbros-io/index.html"},{"name":"Battle for Gondor","url":"battleforgondor/index.html"},{"name":"Big Red Button","url":"bigredbutton/index.html"},{"name":"BitLife","url":"bitlife/index.html"},{"name":"Black Knight","url":"blackknight/index.html"},{"name":"Bloons TD","url":"bloonstd/index.html"},{"name":"Bloons TD 2","url":"bloonstd2/index.html"},{"name":"Bloxors","url":"bloxors/index.html"},{"name":"BNTTS","url":"bntts/index.html"},{"name":"Bob the Robber 2","url":"bobtherobber2/index.html"},{"name":"Bonk.io","url":"bonkio/index.html"},{"name":"Boxhead 2 Play","url":"boxhead2play/index.html"},{"name":"Boxing Random","url":"boxing-random/index.html"},{"name":"Breaking the Bank","url":"breakingthebank/index.html"},{"name":"Bloons TD 4","url":"btd4/index.html"},{"name":"BTTS","url":"btts/index.html"},{"name":"Burger and Frights","url":"burger-and-frights/index.html"},{"name":"Bus and Subway","url":"bus-and-subway/index.html"},{"name":"Cannon Basketball 4","url":"cannon-basketball-4/index.html"},{"name":"Canyon Defense","url":"canyondefense/index.html"},{"name":"Cars Simulator","url":"cars-simulator/index.html"},{"name":"Cell Machine","url":"cell-machine/index.html"},{"name":"Champion Island","url":"champion-island/index.html"},{"name":"Champion Archer","url":"championarcher/index.html"},{"name":"Checkers","url":"checkers/index.html"},{"name":"Chess","url":"chess/index.html"},{"name":"Chrome Dino","url":"chrome-dino/index.html"},{"name":"Circlo","url":"circlo/index.html"},{"name":"ClassiCube","url":"classicube/index.html"},{"name":"Cluster Rush","url":"cluster-rush/index.html"},{"name":"CN Ping Pong","url":"cnpingpong/index.html"},{"name":"Cookie Clicker","url":"cookie-clicker/index.html"},{"name":"Cookie Clicker v10411","url":"cookieclickerv10411/index.html"},{"name":"Core Ball","url":"core-ball/index.html"},{"name":"Craftmine","url":"craftmine/index.html"},{"name":"Creative Kill Chamber","url":"creativekillchamber/index.html"},{"name":"Crossy Road","url":"crossyroad/index.html"},{"name":"Cubefield","url":"cubefield/index.html"},{"name":"Cupcake 2048","url":"cupcake2048/index.html"},{"name":"Dante","url":"dante/index.html"},{"name":"Deal or No Deal","url":"deal-or-no-deal/index.html"},{"name":"Deepest Sword","url":"deepest-sword/index.html"},{"name":"Defend the Tank","url":"defend-the-tank/index.html"},{"name":"Doctor Acorn 2","url":"doctor-acorn2/index.html"},{"name":"Dodge","url":"dodge/index.html"},{"name":"Doodle Jump","url":"doodle-jump/index.html"},{"name":"Doom","url":"doom/index.html"},{"name":"Double Wires","url":"doublewires/index.html"},{"name":"Dragon vs Bricks","url":"dragon-vs-bricks/index.html"},{"name":"Draw the Hill","url":"draw-the-hill/index.html"},{"name":"Drift Boss","url":"drift-boss/index.html"},{"name":"Drift Hunters","url":"drift-hunters/index.html"},{"name":"Drive Mad","url":"drive-mad/index.html"},{"name":"Duck Life 1","url":"ducklife1/index.html"},{"name":"Duck Life 2","url":"ducklife2/index.html"},{"name":"Duck Life 3","url":"ducklife3/index.html"},{"name":"Duck Life 4","url":"ducklife4/index.html"},{"name":"Duke Nukem 2","url":"duke-nukem-2/index.html"},{"name":"Eagle RFaithful","url":"eaglerfaithful/index.html"},{"name":"Eagle RJP","url":"eaglerjp/index.html"},{"name":"Earn to Die","url":"earntodie/index.html"},{"name":"Edge Surf","url":"edge-surf/index.html"},{"name":"Edge Not Found","url":"edgenotfound/index.html"},{"name":"Eggy Car","url":"eggycar/index.html"},{"name":"Elastic Man","url":"elasticman/index.html"},{"name":"Endless War 3","url":"endlesswar3/index.html"},{"name":"Escaping the Prison","url":"escapingtheprison/index.html"},{"name":"Evil Glitch","url":"evil-glitch/index.html"},{"name":"Exo","url":"exo/index.html"},{"name":"Factory Balls","url":"factoryballs/index.html"},{"name":"Fair Squares","url":"fairsquares/index.html"},{"name":"Fake Virus","url":"fake-virus/index.html"},{"name":"Fancy Pants Adventures","url":"fancypantsadventures/index.html"},{"name":"Fantasy Dash","url":"fantasy-dash/index.html"},{"name":"Fireboy and Watergirl Forest Temple","url":"fireboywatergirlforesttemple/index.html"},{"name":"Flappy Bird","url":"flappy-bird/index.html"},{"name":"Flash Tetris","url":"flashtetris/index.html"},{"name":"Fleeing the Complex","url":"fleeingthecomplex/index.html"},{"name":"Flippy Fish","url":"flippy-fish/index.html"},{"name":"Five Nights at Freddy\'s","url":"fnaw/index.html"},{"name":"Friday Night Funkin","url":"fridaynightfunkin/index.html"},{"name":"Froggy\'s Battle","url":"froggys-battle/index.html"},{"name":"Fruit Ninja","url":"fruitninja/index.html"},{"name":"FSU Craft","url":"fsucraft/index.html"},{"name":"FU Client","url":"fuclient/index.html"},{"name":"Gacha Life","url":"gachalife/index.html"},{"name":"Game Inside","url":"game-inside/index.html"},{"name":"Gears of Babies","url":"gearsofbabies/index.html"},{"name":"Generic Fishing Game","url":"generic-fishing-game/index.html"},{"name":"Geo Challenge","url":"geochallenge/index.html"},{"name":"Geo Dash","url":"geodash/index.html"},{"name":"Geo Dash Lite","url":"geodashlite/index.html"},{"name":"Geo Geo","url":"geogeo/index.html"},{"name":"Geo Jump","url":"geojump/index.html"},{"name":"Geo Neon Dash","url":"geoneondash/index.html"},{"name":"Geo PS1","url":"geops1/index.html"},{"name":"Geo Rash","url":"georash/index.html"},{"name":"George and the Printer","url":"georgeandtheprinter/index.html"},{"name":"Geo Trash","url":"geotrash/index.html"},{"name":"Getaway Shootout","url":"getaway-shootout/index.html"},{"name":"Gimme the Airpod","url":"gimme-the-airpod/index.html"},{"name":"Glass City","url":"glass-city/index.html"},{"name":"G Monster","url":"gmonster/index.html"},{"name":"Go Ball","url":"go-ball/index.html"},{"name":"Goodnight Meowmie","url":"goodnight-meowmie/index.html"},{"name":"Goodnight","url":"goodnight/index.html"},{"name":"Google Snake","url":"google-snake/index.html"},{"name":"Gravity Soccer","url":"gravity-soccer/index.html"},{"name":"Greybox","url":"greybox/index.html"},{"name":"Grindcraft","url":"grindcraft/index.html"},{"name":"Handshakes","url":"handshakes/index.html"},{"name":"Happy Wheels","url":"happywheels/index.html"},{"name":"Hardware Tycoon","url":"hardware-tycoon/index.html"},{"name":"Hextris","url":"hextris/index.html"},{"name":"Highrise Hop","url":"highrisehop/index.html"},{"name":"Hill Climb Racing","url":"hill-climb-racing/index.html"},{"name":"Hungry Lamu","url":"hungry-lamu/index.html"},{"name":"Ice Age Baby","url":"iceagebaby/index.html"},{"name":"Ice Age Baby 2","url":"iceagebaby2/index.html"},{"name":"Idle Breakout","url":"idle-breakout/index.html"},{"name":"Idle Dice","url":"idledice/index.html"},{"name":"Idle Dices","url":"idledices/index.html"},{"name":"IMG","url":"img/index.html"},{"name":"Interactive Buddy","url":"interactivebuddy/index.html"},{"name":"Invite the Blackbird","url":"invite-the-blackbird/index.html"},{"name":"Jetpack Joyride","url":"jetpack-joyride/index.html"},{"name":"Just Fall","url":"just-fall/index.html"},{"name":"Just One Boss","url":"just-one-boss/index.html"},{"name":"Kirk.io","url":"kirkaio/index.html"},{"name":"Kitchen Gun Game","url":"kitchen-gun-game/index.html"},{"name":"Kitten Cannon","url":"kittencannon/index.html"},{"name":"Krunker","url":"krunker/index.html"},{"name":"Learn to Fly","url":"learntofly/index.html"},{"name":"Learn to Fly 2","url":"learntofly2/index.html"},{"name":"Legacy Flash Games","url":"legacyflashgames/index.html"},{"name":"Level 13","url":"level13/index.html"},{"name":"Line Rider","url":"linerider/index.html"},{"name":"LTF Idle","url":"ltf-idle/index.html"},{"name":"LTF 3","url":"ltf3/index.html"},{"name":"Madalin Stunt Cars 3","url":"madalin-stunt-cars-3/index.html"},{"name":"Mario","url":"mario/index.html"},{"name":"Mart","url":"mart/index.html"},{"name":"Marvin Spectrum","url":"marvinspectrum/index.html"},{"name":"Matrix Rampage","url":"matrixrampage/index.html"},{"name":"MC2D","url":"mc2d/index.html"},{"name":"MCJE","url":"mcje/index.html"},{"name":"Meme 2048","url":"meme2048/index.html"},{"name":"Merge Round Racers","url":"merge-round-racers/index.html"},{"name":"Mindustry","url":"mindustry/index.html"},{"name":"Mine Blocks","url":"mineblocks/index.html"},{"name":"Minecraft 1.8","url":"minecraft-18/index.html"},{"name":"Minecraft Classic","url":"minecraft-classic/index.html"},{"name":"Minecraft Beta","url":"minecraftbeta/index.html"},{"name":"Minecraft Tower Defence","url":"minecrafttowerdefence/index.html"},{"name":"Minesweeper","url":"minesweeper/index.html"},{"name":"Mini Putt","url":"miniputt/index.html"},{"name":"Missiles","url":"missiles/index.html"},{"name":"Monster Tracks","url":"monster-tracks/index.html"},{"name":"Moto X3M Pool","url":"motox3m-pool/index.html"},{"name":"Moto X3M Spooky","url":"motox3m-spooky/index.html"},{"name":"Moto X3M Winter","url":"motox3m-winter/index.html"},{"name":"Moto X3M","url":"motox3m/index.html"},{"name":"Moto X3M 2","url":"motox3m2/index.html"},{"name":"My Rusty Submarine","url":"my-rusty-submarine/index.html"},{"name":"N-Gon","url":"n-gon/index.html"},{"name":"Ninja","url":"ninja/index.html"},{"name":"Ninja vs Evil Corp","url":"ninjavsevilcorp/index.html"},{"name":"Noob Steve Parkour","url":"noob-steve-parkour/index.html"},{"name":"NS Shaft","url":"ns-shaft/index.html"},{"name":"NS Resurgence","url":"nsresurgence/index.html"},{"name":"OM Bounce","url":"om-bounce/index.html"},{"name":"Osu!","url":"osu/index.html"},{"name":"Overwatch","url":"overwatch/index.html"},{"name":"Ovo","url":"ovo/index.html"},{"name":"Pandemic 2","url":"pandemic2/index.html"},{"name":"Papas Burgeria","url":"papasburgeria/index.html"},{"name":"Papas Pizzaria","url":"papaspizzaria/index.html"},{"name":"Paper.io 2","url":"paperio2/index.html"},{"name":"Papery Planes","url":"papery-planes/index.html"},{"name":"Particle Clicker","url":"particle-clicker/index.html"},{"name":"Particle Clicker","url":"particleclicker/index.html"},{"name":"PI Client","url":"piclient/index.html"},{"name":"Pigeon Ascent","url":"pigeon-ascent/index.html"},{"name":"Pixel Gun Survival","url":"pixel-gun-survival/index.html"},{"name":"Planet Life","url":"planetlife/index.html"},{"name":"Plants vs Zombies 1","url":"plants-vs-zombies-1/index.html"},{"name":"Protektor","url":"protektor/index.html"},{"name":"Push the Square","url":"push-the-square/index.html"},{"name":"Push Your Luck","url":"push-your-luck/index.html"},{"name":"Rabbit Samurai 2","url":"rabbit-samurai2/index.html"},{"name":"Retro Bowl","url":"retro-bowl/index.html"},{"name":"Rhythm Doctor","url":"rhythm-doctor/index.html"},{"name":"Riddle School","url":"riddleschool/index.html"},{"name":"Riddle School 2","url":"riddleschool2/index.html"},{"name":"Riddle School 3","url":"riddleschool3/index.html"},{"name":"Riddle School 4","url":"riddleschool4/index.html"},{"name":"Riddle School 5","url":"riddleschool5/index.html"},{"name":"Riddle Transfer","url":"riddletransfer/index.html"},{"name":"Riddle Transfer 2","url":"riddletransfer2/index.html"},{"name":"Rolling Forests","url":"rolling-forests/index.html"},{"name":"Rolly Vortex","url":"rolly-vortex/index.html"},{"name":"Rooftop Snipers","url":"rooftop-snipers/index.html"},{"name":"Roommate","url":"roommate/index.html"},{"name":"Ruffle","url":"ruffle/index.html"},{"name":"Run 3","url":"run3/index.html"},{"name":"Run","url":"run/index.html"},{"name":"Runner","url":"runner/index.html"},{"name":"Sand Game","url":"sand-game/index.html"},{"name":"Sandboxels","url":"sandboxels/index.html"},{"name":"Santy is Home","url":"santy-is-home/index.html"},{"name":"Scrap Metal","url":"scrapmetal/index.html"},{"name":"Scratcharia","url":"scratcharia/index.html"},{"name":"Shell Shockers","url":"shellshockers/index.html"},{"name":"Shogun Showdown","url":"shogunshowdown/index.html"},{"name":"Sleeping Beauty","url":"sleepingbeauty/index.html"},{"name":"Slither.io","url":"slitherio/index.html"},{"name":"Slope 2","url":"slope-2/index.html"},{"name":"Slope Ball","url":"slope-ball/index.html"},{"name":"Slope","url":"slope/index.html"},{"name":"Smash Karts","url":"smashkarts/index.html"},{"name":"Smoking Barrels","url":"smokingbarrels/index.html"},{"name":"Snow Battle","url":"snowbattle/index.html"},{"name":"Soccer Random","url":"soccer-random/index.html"},{"name":"Soccer Skills","url":"soccer-skills/index.html"},{"name":"Soldier Legend","url":"soldier-legend/index.html"},{"name":"Solitaire","url":"solitaire/index.html"},{"name":"Sort the Court","url":"sort-the-court/index.html"},{"name":"Space Company","url":"space-company/index.html"},{"name":"Space Garden","url":"spacegarden/index.html"},{"name":"Spelunky","url":"spelunky/index.html"},{"name":"Spinning Rat","url":"spinningrat/index.html"},{"name":"Square Dash","url":"squaredash/index.html"},{"name":"Square Rush","url":"squarerush/index.html"},{"name":"Stack Bump 3D","url":"stack-bump-3d/index.html"},{"name":"Stack","url":"stack/index.html"},{"name":"Starve","url":"starve/index.html"},{"name":"Station 141","url":"station-141/index.html"},{"name":"Station Meltdown","url":"stationmeltdown/index.html"},{"name":"Stickman Hook","url":"stickman-hook/index.html"},{"name":"Stick War","url":"stickwar/index.html"},{"name":"Storm the House 2","url":"stormthehouse2/index.html"},{"name":"Subway Surfers NY","url":"subway-surfers-ny/index.html"},{"name":"Subway Surfers","url":"subway-surfers/index.html"},{"name":"Super Auto Pets","url":"superautopets/index.html"},{"name":"Super Fowlist","url":"superfowlist/index.html"},{"name":"Superhot","url":"superhot/index.html"},{"name":"Super Mario Construct","url":"supermarioconstruct/index.html"},{"name":"Surviv","url":"surviv/index.html"},{"name":"Sushi Unroll","url":"sushi-unroll/index.html"},{"name":"Swarm Simulator","url":"swarmsimulator/index.html"},{"name":"Swerve","url":"swerve/index.html"},{"name":"Synesthesia","url":"synesthesia/index.html"},{"name":"Tactical Weapon Pack 2","url":"tactical-weapon-pack-2/index.html"},{"name":"Tactical Assassin 2","url":"tacticalassasin2/index.html"},{"name":"Tank Trouble 2","url":"tank-trouble-2/index.html"},{"name":"Tanuki Sunset","url":"tanuki-sunset/index.html"},{"name":"Temple Run 2","url":"temple-run-2/index.html"},{"name":"The Final Earth 2","url":"the-final-earth-2/index.html"},{"name":"The Final Earth","url":"the-final-earth/index.html"},{"name":"The Hotel","url":"the-hotel/index.html"},{"name":"The Battle","url":"thebattle/index.html"},{"name":"The Heist","url":"theheist/index.html"},{"name":"There Is No Game","url":"there-is-no-game/index.html"},{"name":"This is the Only Level","url":"thisistheonlylevel/index.html"},{"name":"Toss the Turtle","url":"tosstheturtle/index.html"},{"name":"Townscaper","url":"townscaper/index.html"},{"name":"Tube Jumpers","url":"tube-jumpers/index.html"},{"name":"Tunnel Rush","url":"tunnel-rush/index.html"},{"name":"TV Static","url":"tv-static/index.html"},{"name":"Twitch Tetris","url":"twitch-tetris/index.html"},{"name":"Unfair Mario","url":"unfairmario/index.html"},{"name":"Veloce","url":"veloce/index.html"},{"name":"Vex 6","url":"vex6/index.html"},{"name":"Vex 7","url":"vex7/index.html"},{"name":"Volley Random","url":"volley-random/index.html"},{"name":"Wall Smash","url":"wallsmash/index.html"},{"name":"Waterworks","url":"waterworks/index.html"},{"name":"Weave Silk","url":"weavesilk/index.html"},{"name":"Web Cleaner","url":"webcleaner/index.html"},{"name":"WebGL Fluid Simulation","url":"webgl-fluid-simulation/index.html"},{"name":"Web Retro","url":"webretro/index.html"},{"name":"Webxash","url":"webxash/index.html"},{"name":"WiiCraft","url":"wiicraft/index.html"},{"name":"Win the White House","url":"win-the-whitehouse/index.html"},{"name":"Wordle","url":"wordle/index.html"},{"name":"World\'s Hardest Game 2","url":"worlds-hardest-game-2/index.html"},{"name":"World\'s Hardest Game","url":"worlds-hardest-game/index.html"},{"name":"Wounded Summer Baby Edition","url":"wounded-summer-baby-edition/index.html"},{"name":"X-Trial Racing","url":"x-trial-racing/index.html"},{"name":"Yohoho","url":"yohoho/index.html"},{"name":"Yoshi Fabrication","url":"yoshifabrication/index.html"},{"name":"You Are Bezos","url":"you-are-bezos/index.html"},{"name":"Zigzag","url":"zigzag/index.html"},{"name":"Zombs Royale","url":"zombs-royale/index.html"}]'
                 )
             },
             816: (e) => {
