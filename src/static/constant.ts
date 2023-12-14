@@ -1,4 +1,4 @@
-export const GAMESLINK = 'https://penguinify-web-dev.github.io/'
+export const GAMESLINK = { defaultLink: 'aHR0cHM6Ly9jYXJheGxlY2xpZW50LmZ1bi8=', alternateLink: 'aHR0cHM6Ly9tYWluLmR2Nm4ydmZ1Zjc2bDYuYW1wbGlmeWFwcC5jb20v' }
 export const VERSION = '7'
 export const ITERATION = '2'
 export const CLIENTNAME = 'car axle client'

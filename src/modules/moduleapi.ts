@@ -23,12 +23,6 @@ export type moduleDefinition =
           onShow?: [string, (UI: UIManager) => void]
       }
 
-// Function to change link of the iframe
-export function change_game(link: string): void {
-    let iframe = document.getElementById('cac__games__iframe') as HTMLIFrameElement
-    iframe.setAttribute('src', GAMESLINK + link)
-}
-
 export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id: string = '', top: number = 2): HTMLIFrameElement {
     let iframe = create_element('iframe', section, {
         class_name: 'cac__iframe',
