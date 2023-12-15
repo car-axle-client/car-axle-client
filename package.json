@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "prettier . --write && webpack serve",
         "build": "prettier . --write && webpack --config webpack-production.config.js",
+        "updatebeta": "webpack",
         "format": "prettier . --write"
     },
     "author": "Penguinify",
