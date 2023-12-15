@@ -14,7 +14,7 @@ if (window.location.href.includes('car-axle-client.github.io/car-axle-client')) 
     alert(
         'This is the BETA VERSION of car axle client. Expect things not to work and features to be lacking depth or etc. Still you should report bugs to discord or through the client/tabclock section'
     )
-} else if (window.location.href.includes("localhost")) {
+} else if (window.location.href.includes('localhost')) {
     const DEVELOPER_MODE = true
 }
 

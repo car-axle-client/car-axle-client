@@ -29,7 +29,8 @@ The **MOST POPULAR** bookmarklet menu with a gui. Play games, watch youtube, or 
 v7 example
 ![App Screenshot](docs/dark.png)
 
-##  Hosting the games yourself
+## Hosting the games yourself
+
 go here: https://github.com/car-axle-client/games-hosting
 
 # Contributing
