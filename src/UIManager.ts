@@ -2,6 +2,7 @@ import { Section } from './components/section'
 import { create_element } from './UILib'
 import { moduleDefinition, none } from './modules/moduleapi'
 import { VERSION, CLIENTNAME, ITERATION } from './static/constant'
+import NotificationBar from './components/notificationbar'
 import './static/style.less'
 
 export class UIManager {
@@ -11,7 +12,9 @@ export class UIManager {
     public sections: Array<Section> = []
     public enabled_section!: Section
     public main_content!: HTMLElement
+    public notification_bar!: NotificationBar
     public tabbar!: HTMLElement
+    public notificationbar!: NotificationBar
     private _section_background!: HTMLElement
     private _animation_options: KeyframeAnimationOptions = {
         duration: 1000,
@@ -43,10 +46,13 @@ export class UIManager {
             id: 'cac__TABBAR',
         })
 
+        // Notification (its a component)
+        this.notificationbar = new NotificationBar(this.container)
+
         // Aesthetic
         create_element('div', this.sidebar, {
             id: 'cac__LOGO',
-            innerHTML: `${CLIENTNAME} v${VERSION}.${ITERATION}`,
+            innerHTML: `${CLIENTNAME} v${VERSION}` + (ITERATION !== '0' ? `.${ITERATION}` : ''),
         })
 
         // opacity animation

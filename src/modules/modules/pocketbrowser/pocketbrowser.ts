@@ -60,7 +60,7 @@ function render(UI: UIManager) {
         iframe_input.value = link
 
         if (link === 'https://youtube.com') {
-            alert('Paste a link to a video instead!')
+            UI.notificationbar.new_notification('Pocket browser', 'Paste a video link instead of youtube.', 'error')
         }
 
         saveHashToLocalStorage('pocketbrowser', link)

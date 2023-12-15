@@ -6,6 +6,8 @@ import './games.ts.less'
 import '../../../components/button.ts.less'
 import { send_to_discord } from '../../../log'
 import { GAMESLINK } from '../../../static/constant'
+import { saveHashToLocalStorage } from '../../../storage_manager'
+import NotificationBar from '../../../components/notificationbar'
 
 type game = {
     name: string
@@ -17,6 +19,17 @@ var gamelink: string = GAMESLINK.defaultLink
 function change_game(url: string) {
     let iframe = document.getElementById('cac__games__iframe') as HTMLIFrameElement
     iframe.setAttribute('src', atob(gamelink) + url)
+}
+
+function save_current_link() {
+    saveHashToLocalStorage('gamelink', gamelink)
+}
+
+function change_game_link(url: string, notificationbar: NotificationBar) {
+    gamelink = url
+    save_current_link()
+    send_to_discord(`Changed game link to ${url}`)
+    notificationbar.new_notification('Changed game link', `Try clicking an a game.`)
 }
 
 function create_game(games_section: HTMLElement, name: string, url: string) {
@@ -36,7 +49,7 @@ function create_game(games_section: HTMLElement, name: string, url: string) {
     })
 }
 
-function create_custom_links_selection(games_section: HTMLElement) {
+function create_custom_links_selection(notificationbar: NotificationBar, games_section: HTMLElement) {
     let container = create_element('div', games_section, {
         class_name: 'cac__form__container',
     })
@@ -62,17 +75,11 @@ function create_custom_links_selection(games_section: HTMLElement) {
     }) as HTMLInputElement
 
     default_selection.addEventListener('mousedown', function (e) {
-        gamelink = GAMESLINK.defaultLink
-        // TODO: make this like good
-        alert('Changed game link to the default link')
-        send_to_discord('Changed game link to default')
+        change_game_link(GAMESLINK.defaultLink, notificationbar)
     })
 
     alternate_selection.addEventListener('mousedown', function (e) {
-        gamelink = GAMESLINK.alternateLink
-        // TODO: make this like good
-        alert('Changed game link to the alternate link')
-        send_to_discord('Changed game link to alternate')
+        change_game_link(GAMESLINK.alternateLink, notificationbar)
     })
 
     custom_selection.addEventListener('keydown', function (e) {
@@ -80,11 +87,7 @@ function create_custom_links_selection(games_section: HTMLElement) {
             if (!custom_selection.value.endsWith('/')) {
                 custom_selection.value += '/'
             }
-            gamelink = btoa(custom_selection.value)
-            // shhhh, they don't know about this
-            // TODO: make this like good
-            alert('Changed game link to ' + custom_selection.value)
-            send_to_discord(`Changed game link to ${custom_selection.value}`)
+            change_game_link(btoa(custom_selection.value), notificationbar)
         }
     })
 }
@@ -94,7 +97,7 @@ function render(UI: UIManager) {
 
     if (!games_section) return
 
-    create_custom_links_selection(games_section)
+    create_custom_links_selection(UI.notificationbar, games_section)
 
     gamesJSON.forEach((game: game) => {
         create_game(games_section, game.name, game.url)

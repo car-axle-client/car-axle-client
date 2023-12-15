@@ -1,6 +1,6 @@
 export const GAMESLINK = { defaultLink: 'aHR0cHM6Ly9jYXJheGxlY2xpZW50LmZ1bi8=', alternateLink: 'aHR0cHM6Ly9tYWluLmR2Nm4ydmZ1Zjc2bDYuYW1wbGlmeWFwcC5jb20v' }
-export const VERSION = '7'
-export const ITERATION = '2'
+export const VERSION = '8'
+export const ITERATION = '0'
 export const CLIENTNAME = 'car axle client'
 export const AUTHOR = 'penguinify (merry christmas)'
 export const DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'

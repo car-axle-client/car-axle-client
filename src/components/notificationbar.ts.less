@@ -1,0 +1,71 @@
+@import '../static/variables.less';
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+#cac__NOTIFICATIONBAR {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    align-items: center;
+    gap: 1vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.cac__mini__notification {
+    width: 100%;
+    height: 9vh;
+    background-color: @theme;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+    animation: slideIn 0.2s ease-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.cac__mini__notification__header {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    margin: 0;
+    font-weight: bold;
+    color: @text;
+}
+
+.cac__mini__notification__message {
+    font-size: 1vw;
+    margin: 0;
+    line-height: 1vw;
+    color: @text;
+}
+
+.cac__mini__notification--hidden {
+    animation: slideOut 0.2s ease-out;
+}
+
+.cac__mini__notification--error {
+    background-color: @error;
+}
