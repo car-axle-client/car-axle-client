@@ -6,8 +6,8 @@ import './console.ts.less'
 function render(UI: UIManager) {
     let section = UI.getSectionFromID('js')
     let section_content = section?.section_content
-    console.log(section_content)
     if (!section_content) return
+
     let console_container = create_element('div', section_content, {
         class_name: 'cac__console__container',
     })
@@ -33,8 +33,7 @@ function render(UI: UIManager) {
         })
     }
 
-    console_input.addEventListener('keypress', (e) => {
-        if (e.key != 'Enter') return
+    function handle_input_enter() {
         let input = console_input.value
         console_input.value = ''
         try {
@@ -46,6 +45,10 @@ function render(UI: UIManager) {
                 innerHTML: `(${new Date().toLocaleTimeString()}) ${err}`,
             })
         }
+    }
+
+    console_input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handle_input_enter()
     })
 }
 

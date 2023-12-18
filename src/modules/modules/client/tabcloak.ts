@@ -61,7 +61,7 @@ function render(UI: UIManager) {
     const container = create_element('div', section_content, {
         class_name: 'cac__form__container',
     })
-    
+
     const title = create_element('h1', container, {
         innerHTML: 'Tab Cloak',
         class_name: 'cac__button__form__title',
