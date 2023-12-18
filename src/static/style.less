@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import 'variables.less';
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .cac__ALL {
     font-family: 'Nunito', sans-serif !important;
     color: @text !important;
@@ -96,6 +105,7 @@ svg {
     border-radius: 15px;
     position: absolute;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    animation: fadein 2s;
 }
 
 #cac__TABBAR {
