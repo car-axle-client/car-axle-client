@@ -99,6 +99,7 @@ function render(UI: UIManager) {
 
     create_custom_links_selection(UI.notificationbar, games_section)
 
+
     gamesJSON.forEach((game: game) => {
         create_game(games_section, game.name, game.url)
     })

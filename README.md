@@ -23,11 +23,12 @@
 </p>
 <hr>
 
-![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![Dynamic Badge](https://tokei.rs/b1/github/car-axle-client/car-axle-client) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/main?style=plastic)   
+![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![Dynamic Badge](https://tokei.rs/b1/github/car-axle-client/car-axle-client) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/main?style=plastic)
 
 </div>
 
 ## Features
+
 -   Exploits and history flooder
 -   Small, fun things bookmarklets
 -   Large 300+ game library
