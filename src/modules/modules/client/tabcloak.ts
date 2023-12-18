@@ -61,11 +61,16 @@ function render(UI: UIManager) {
     const container = create_element('div', section_content, {
         class_name: 'cac__form__container',
     })
-
+    
     const title = create_element('h1', container, {
         innerHTML: 'Tab Cloak',
         class_name: 'cac__button__form__title',
     })
+
+    const presets = create_element('select', container, {
+        class_name: 'cac__button__input',
+        innerHTML: generate_options(),
+    }) as HTMLSelectElement
 
     const input_title = create_element('input', container, {
         value: 'Tab Cloak Title',
@@ -76,11 +81,6 @@ function render(UI: UIManager) {
         value: 'Image URL',
         class_name: 'cac__button__input',
     }) as HTMLInputElement
-
-    const presets = create_element('select', container, {
-        class_name: 'cac__button__input',
-        innerHTML: generate_options(),
-    }) as HTMLSelectElement
 
     presets.addEventListener('change', () => {
         const cloak: string[] = cloaksJSON[presets.value]
