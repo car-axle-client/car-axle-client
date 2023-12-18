@@ -4,12 +4,11 @@ import { CLIENTNAME, HOST, ITERATION, VERSION } from '../../../static/constant'
 import { moduleDefinition } from '../../moduleapi'
 import './console.ts.less'
 
-
 function render(UI: UIManager) {
     let section = UI.getSectionFromID('js')
     let section_content = section?.section_content
     if (!section_content) return
-    
+
     let console_container = create_element('div', section_content, {
         class_name: 'cac__console__container',
     })
@@ -18,10 +17,8 @@ function render(UI: UIManager) {
     })
     let console_menu_bar_title = create_element('div', console_menu_bar, {
         class_name: 'cac__console__menubar__item',
-        innerHTML: `${CLIENTNAME} ${VERSION}.${ITERATION} ${HOST}`
+        innerHTML: `${CLIENTNAME} ${VERSION}.${ITERATION} ${HOST}`,
     })
-
-
 
     let output = create_element('div', console_container, {
         class_name: 'cac__console__output',
@@ -29,7 +26,6 @@ function render(UI: UIManager) {
     let console_input = create_element('input', console_container, {
         class_name: 'cac__console__input',
     }) as HTMLInputElement
-
 
     console_input.placeholder = '> evaluate expression'
 

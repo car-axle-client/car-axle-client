@@ -11,13 +11,13 @@ export const SOCIAL = {
     discord: 'https://discord.gg/akDMdW7Zgd',
 }
 
-export var HOST = "PROD"
+export var HOST = 'PROD'
 
 switch (window.location.href) {
-    case "http://localhost:6969/":
-        HOST = "DEV"
+    case 'http://localhost:6969/':
+        HOST = 'DEV'
         break
-    case "https://car-axle-client.github.io/car-axle-client/" || "https://car-axle-client.github.io/car-axle-client/index.html":
-        HOST = "BETA"
+    case 'https://car-axle-client.github.io/car-axle-client/' || 'https://car-axle-client.github.io/car-axle-client/index.html':
+        HOST = 'BETA'
         break
 }

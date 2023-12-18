@@ -1,7 +1,7 @@
 import { Section } from './components/section'
 import { create_element } from './UILib'
 import { moduleDefinition, none } from './modules/moduleapi'
-import { VERSION, CLIENTNAME, ITERATION } from './static/constant'
+import { VERSION, CLIENTNAME, ITERATION, LOGO } from './static/constant'
 import NotificationBar from './components/notificationbar'
 import './static/style.less'
 
@@ -53,7 +53,7 @@ export class UIManager {
         create_element('div', this.sidebar, {
             id: 'cac__LOGO',
             innerHTML: `${CLIENTNAME} v${VERSION}` + (ITERATION !== '0' ? `.${ITERATION}` : ''),
-        })
+        }).style.backgroundImage = `url(${LOGO})`
 
         // opacity animation
         this.container.animate(
