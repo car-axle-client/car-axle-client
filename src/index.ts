@@ -16,6 +16,7 @@ if (window.location.href.includes('car-axle-client.github.io/car-axle-client')) 
     )
 } else if (window.location.href.includes('localhost')) {
     const DEVELOPER_MODE = true
+    // TODO: Add developer mode
 }
 
 send_to_discord(`car axle client - v${VERSION}.${ITERATION}` + '\n' + 'Current URL: ' + window.location.href)
