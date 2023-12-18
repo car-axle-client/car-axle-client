@@ -38,7 +38,8 @@ function render(UI: UIManager) {
         let input = console_input.value
         console_input.value = ''
         try {
-            console.log(eval(input))
+            let output = eval(input)
+            if (output) console.log(output)
         } catch (err) {
             create_element('div', output, {
                 class_name: 'cac__console__error',
