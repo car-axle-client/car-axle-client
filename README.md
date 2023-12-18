@@ -1,12 +1,33 @@
-pls star ⭐️  
-<img src="https://delivery.contenthub.allstate.com/api/public/content/f0e5db4104d04bf386f97f6dc098bfc5?v=353a1ed1" alt="drawing" width="200"/>
-
+<div align="center">
+ 
 # car axle client
+### The **MOST POPULAR** bookmarklet menu. Proxies, games, and exploits in a clean ui. (by @penguinify)
+ 
+ <img src="docs/caraxle.png" alt="drawing" width="500"/>
 
-![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![Dynamic Badge](https://tokei.rs/b1/github/car-axle-client/car-axle-client) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/main?style=plastic)
+<hr>
+<p align="center">
+  <a href="#features">Features</a>
+  -
+  <a href="#screenshots">Screenshots</a>
+  -
+  <a href="https://car-axle-client.github.io">Install</a>
+  -
+  <a href="https://github.com/car-axle-client/car-axle-client?tab=GPL-3.0-1-ov-file">License</a>
+  -
+  <a href="https://github.com/car-axle-client/car-axle-client/graphs/contributors">Contributions</a>
+  -
+   <a href="#contributing">Contributer Guide</a>
+  -
+  <a href="#support">Support</a>
+</p>
+<hr>
 
-The **MOST POPULAR** bookmarklet menu with a gui. Play games, watch youtube, or go onto a proxy from almost any website. Frequent updates every 2-3 weeks.
+![Static Badge](https://img.shields.io/badge/certified-trash-734422?style=plastic) ![Dynamic Badge](https://tokei.rs/b1/github/car-axle-client/car-axle-client) ![Dynamic Badge](https://img.shields.io/github/actions/workflow/status/car-axle-client/car-axle-client/webpack.yml?style=plastic) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/car-axle-client/car-axle-client/main?style=plastic)   
 
+</div>
+
+## Features
 -   Exploits and history flooder
 -   Small, fun things bookmarklets
 -   Large 300+ game library
