@@ -29,7 +29,7 @@ function render(UI: UIManager) {
 
         create_element('div', output, {
             class_name: 'cac__console__log',
-            innerHTML: `${new Date().toLocaleTimeString()} : ${Array.from(arguments).join(' ') || 'undefined'}`,
+            innerHTML: `(${new Date().toLocaleTimeString()}) ${Array.from(arguments).join(' ') || 'undefined'}`,
         })
     }
 
@@ -42,7 +42,7 @@ function render(UI: UIManager) {
         } catch (err) {
             create_element('div', output, {
                 class_name: 'cac__console__error',
-                innerHTML: `${new Date().toLocaleTimeString()} : ${err}`,
+                innerHTML: `(${new Date().toLocaleTimeString()}) ${err}`,
             })
         }
     })
