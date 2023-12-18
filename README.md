@@ -4,7 +4,7 @@
 ### The **MOST POPULAR** bookmarklet menu. Proxies, games, and exploits in a clean ui. (by @penguinify)
  
  <img src="docs/caraxle.png" alt="drawing" width="500"/>
-
+<a href="https://car-axle-client.github.io">Install the latest version</a>
 <hr>
 <p align="center">
   <a href="#features">Features</a>
