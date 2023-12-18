@@ -2,6 +2,8 @@ export const GAMESLINK = { defaultLink: 'aHR0cHM6Ly9jYXJheGxlY2xpZW50LmZ1bi8=', 
 export const VERSION = '8'
 export const ITERATION = '0'
 export const CLIENTNAME = 'car axle client'
+// same as client name if you dont have a short hand
+export const CLIENTNAMESHORT = 'car axle'
 export const AUTHOR = 'penguinify (school has started)'
 export const DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'
 export const LOGO = 'https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/logov8.png'
