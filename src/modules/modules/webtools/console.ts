@@ -3,6 +3,7 @@ import { UIManager } from '../../../UIManager'
 import { CLIENTNAME, HOST, ITERATION, VERSION } from '../../../static/constant'
 import { moduleDefinition } from '../../moduleapi'
 import './console.ts.less'
+import easterEggs from './eastereggs.json'
 
 function render(UI: UIManager) {
     let section = UI.getSectionFromID('js')
@@ -44,6 +45,17 @@ function render(UI: UIManager) {
 
     function handle_input_enter() {
         let input = console_input.value
+
+        // checks for easter eggs
+        for (let easterEgg of easterEggs) {
+            if (input.includes(easterEgg.keyword)) {
+                create_element('div', output, {
+                    class_name: 'cac__console__log',
+                    innerHTML: `${easterEgg.response}`,
+                })
+            }
+        }
+
         console_input.value = ''
         try {
             let output = eval(input)
