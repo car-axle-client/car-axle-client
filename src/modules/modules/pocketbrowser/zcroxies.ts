@@ -1,6 +1,9 @@
+import { create_element } from '../../../UILib'
+import { UIManager } from '../../../UIManager'
 import { checkStatus } from '../../../database'
 import { DATABASE } from '../../../static/constant'
 import { moduleDefinition } from '../../moduleapi'
+import "../../../components/button.ts.less"
 
 type Special = {
     wild: string[]
@@ -12,6 +15,8 @@ var special: Special = {
     wild: ['No link'],
     normal: ['No link'],
 }
+
+var id = 0
 
 fetch(`${DATABASE}special.json`)
     .then((res) => res.json())
@@ -39,8 +44,46 @@ function set_to_random_wildcard() {
 function set_to_random_normal() {
     let iframe = document.getElementById('cac__pocketbrowser__iframe') as HTMLIFrameElement
 
-    let link = special.normal[Math.floor(Math.random() * special.normal.length)]
+    id = Math.floor(Math.random() * special.normal.length)
+    let link = special.normal[id]
     iframe.src = atob(link)
+
+    set_id()
+}
+
+function set_id() {
+    let id_input = document.getElementById('proccyid') as HTMLInputElement
+    id_input.value = id.toString()
+}
+
+// makes an input that has an id. the id is a number. the number corresponds with the position of a proxy. this changes whenever a new normal proxy is set.
+function create_id(UI: UIManager) {
+    let section = UI.getSectionFromID('pocket')
+    let section_content = section?.section_content
+    if (!section_content) return
+
+    let id_container = create_element('div', section_content, {
+        class_name: 'cac__form__container',
+    })
+        
+
+    let id_title = create_element('h2', id_container, {
+        class_name: 'cac__button__form__title',
+        innerHTML: 'Proxy ID',
+    })
+
+    let id_input = create_element('input', id_container, {
+        class_name: 'cac__button__input',
+        id: 'proccyid',
+        type: 'text',
+        value: '0',
+    }) as HTMLInputElement
+
+    id_input.addEventListener('change', () => {
+        let iframe = document.getElementById('cac__pocketbrowser__iframe') as HTMLIFrameElement
+        let link = special.normal[parseInt(id_input.value)]
+        iframe.src = atob(link)
+    })
 }
 
 // for some reason it only works with this fat version??? im not gunna question it
@@ -80,6 +123,11 @@ const normal: moduleDefinition = {
     onactive: () => set_to_random_normal(),
 }
 
-const plugin: moduleDefinition[] = [status, wildcard, normal]
+const proxy_id: moduleDefinition = {
+    custom_render: true,
+    render: create_id,
+}
+
+const plugin: moduleDefinition[] = [status, wildcard, normal, proxy_id]
 
 export default plugin
