@@ -14,12 +14,9 @@ if (window.location.href.includes('car-axle-client.github.io/car-axle-client')) 
     alert(
         'This is the BETA VERSION of car axle client. Expect things not to work and features to be lacking depth or etc. Still you should report bugs to discord or through the client/tabclock section'
     )
-} else if (window.location.href.includes('localhost')) {
-    const DEVELOPER_MODE = true
-    // TODO: Add developer mode
 }
 
-send_to_discord(`car axle client - v${VERSION}.${ITERATION}` + '\n' + 'Current URL: ' + window.location.href)
+window.location.href.includes('localhost') && send_to_discord(`car axle client - v${VERSION}.${ITERATION}` + '\n' + 'Current URL: ' + window.location.href)
 
 const modules: any = {}
 let context = require.context('./modules/modules', true, /\.ts$/)
