@@ -33,7 +33,7 @@ Works on mkost school blocking plans which is good for you and me.
 
 -   Have the website not be apart of the block list
 
-1. Go to this website [injector](https://penguinify.github.io/javascript-injector)
+1. Go to this website <strike>[injector](https://penguinify.github.io/javascript-injector)</strike> USE @disnos9's isntead: [disnos9's injector](https://disnos9.github.io/jsinject/#docs-injector)
 2. Press inject car-axle-client
 3. You should see an about:blank page open and the gui should open as well
 
