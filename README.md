@@ -56,8 +56,8 @@ v7 example
 go here: https://github.com/car-axle-client/gme-hosting-v2
 
 # people with write access
-[@penguinify](https://github.com/Penguinify) main developer
-[@disnos9](https://github.com/disnos9) side developer
+- [@penguinify](https://github.com/Penguinify) main developer
+- [@disnos9](https://github.com/disnos9) side developer
 
 # Contributing
 
