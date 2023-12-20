@@ -11,6 +11,7 @@ export const COMMUNITY = 'https://raw.githubusercontent.com/car-axle-client/comm
 export const SOCIAL = {
     github: 'https://github.com/car-axle-client/car-axle-client',
     discord: 'https://discord.gg/akDMdW7Zgd',
+    donation: 'https://www.buymeacoffee.com/penguinify'
 }
 
 export var HOST = 'PROD'
