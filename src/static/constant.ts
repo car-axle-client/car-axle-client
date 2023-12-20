@@ -4,14 +4,14 @@ export const ITERATION = '0'
 export const CLIENTNAME = 'car axle client'
 // same as client name if you dont have a short hand
 export const CLIENTNAMESHORT = 'car axle'
-export const AUTHOR = 'penguinify (school has started)'
+export const AUTHOR = 'penguinify & disnos9'
 export const DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'
 export const LOGO = 'https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/logov8.png'
 export const COMMUNITY = 'https://raw.githubusercontent.com/car-axle-client/community-plugins/main/'
 export const SOCIAL = {
     github: 'https://github.com/car-axle-client/car-axle-client',
     discord: 'https://discord.gg/akDMdW7Zgd',
-    donation: 'https://www.buymeacoffee.com/penguinify'
+    donation: 'https://www.buymeacoffee.com/penguinify',
 }
 
 export var HOST = 'PROD'

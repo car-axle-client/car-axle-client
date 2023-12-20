@@ -1,5 +1,10 @@
 import { UIManager } from './UIManager'
 
+type sectionSave = {
+    sectionID: string
+    buttonValues: boolean[][]
+}
+
 export function saveHashToLocalStorage(index: string, hash: string): void {
     localStorage.setItem('cac__' + index, btoa(hash.toString()))
 }
@@ -7,9 +12,7 @@ export function saveHashToLocalStorage(index: string, hash: string): void {
 export function getHashFromLocalStorage(index: string): string {
     let storage_value = localStorage.getItem('cac__' + index)
 
-    if (!storage_value) {
-        return ''
-    }
+    if (!storage_value) return ''
 
     return atob(storage_value)
 }
@@ -19,17 +22,16 @@ export function load_module_values(UI: UIManager) {
     const cacStorage = JSON.parse(localStorage.getItem('car-axle-client') as string)
     if (!cacStorage) return
     // I assume format is correct as type check happens in saveicon -> action
-    cacStorage.forEach(function (sectionValues: any) {
+    cacStorage.forEach(function (sectionValues: sectionSave) {
         UI.getSectionFromID(sectionValues['sectionID'])?.set_all_button_values_from_array(sectionValues['buttonValues'])
     })
 }
 
 export function new_save(UI: UIManager) {
-    // too lazy to rigidly define values
-    let cacStorage: Array<any> = []
+    let cacStorage: Array<sectionSave> = []
 
     for (let section of UI.sections) {
-        let buttonValues = section.get_all_button_values()
+        let buttonValues: boolean[][] = section.get_all_button_values()
         cacStorage.push({ sectionID: section.id, buttonValues })
     }
 

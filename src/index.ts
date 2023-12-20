@@ -9,6 +9,7 @@ import { ITERATION, VERSION } from './static/constant'
 import { load_module_values } from './storage_manager'
 import { send_to_discord } from './log'
 import sectionsJSON from './static/sections.json'
+import { moduleDefinition } from './modules/moduleapi'
 
 if (window.location.href.includes('car-axle-client.github.io/car-axle-client')) {
     alert(
@@ -16,11 +17,17 @@ if (window.location.href.includes('car-axle-client.github.io/car-axle-client')) 
     )
 }
 
+// no spamming discord <3
 if (!window.location.href.includes('localhost')) send_to_discord(`car axle client - v${VERSION}.${ITERATION}` + '\n' + 'Current URL: ' + window.location.href)
 
-const modules: any = {}
+// Gets all the modules from the modules folder
+type Module = {
+    [key: string]: moduleDefinition | moduleDefinition[]
+}
+
+const modules: Module = {}
 let context = require.context('./modules/modules', true, /\.ts$/)
-context.keys().forEach((key: any) => (modules[key] = context(key)))
+context.keys().forEach((key: string) => (modules[key] = context(key)))
 
 function main(): void {
     // License information
@@ -33,8 +40,10 @@ function main(): void {
     }
 
     modules && UI.addModulesFromImport(modules)
+    // Loads all the modules from the local storage. (this is where the module ids come in clutch)
     load_module_values(UI)
 
+    // Toggle UI with \
     document.addEventListener('keydown', (e) => {
         if (e.key == '\\') {
             UI.toggleUI()

@@ -1,6 +1,5 @@
 import { create_element } from '../UILib'
 import { UIManager } from '../UIManager'
-import { GAMESLINK } from '../static/constant'
 import '@/iframe.less'
 
 export type moduleDefinition =

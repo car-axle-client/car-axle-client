@@ -2,19 +2,6 @@ import { Component, create_element } from '../UILib'
 import { send_to_discord } from '../log'
 import './button.ts.less'
 
-enum optionType {
-    checkbox = 'checkbox',
-    text = 'text',
-}
-
-type menuOption = {
-    title: string
-    type: optionType
-    default: boolean | string
-    option_params: string[]
-}
-
-// menuoptions are not finished yet
 export default class Button implements Component {
     public enabled: boolean = false
     public button!: HTMLElement

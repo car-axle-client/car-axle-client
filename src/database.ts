@@ -2,7 +2,7 @@
 import Notification from './components/notification'
 import { VERSION, ITERATION, COMMUNITY, DATABASE } from './static/constant'
 
-export async function get_plugins(): Promise<any> {
+export async function get_plugins(): Promise<JSON> {
     return fetch(`${COMMUNITY}meta.json`).then((result) => result.json())
 }
 

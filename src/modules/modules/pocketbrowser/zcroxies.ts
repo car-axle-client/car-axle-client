@@ -8,7 +8,6 @@ import '../../../components/button.ts.less'
 type Special = {
     wild: string[]
     normal: string[]
-    [key: string]: any
 }
 
 var special: Special = {

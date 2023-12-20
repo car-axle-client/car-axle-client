@@ -17,7 +17,7 @@ function render(UI: UIManager) {
                 <h3>by @${AUTHOR}</h3>
                 <a href="${SOCIAL['github']}">Github</a>
                 <a href="${SOCIAL['discord']}">Discord</a>
-                <a href="${SOCIAL['donation']}">Donate (to ${AUTHOR})</a>
+                <a href="${SOCIAL['donation']}">Donate</a>
 
 `,
     })

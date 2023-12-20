@@ -1,7 +1,10 @@
+// good luck to whoever is reading this
+// you will really fucking need it
+
 import { Section } from './components/section'
 import { create_element } from './UILib'
 import { moduleDefinition, none } from './modules/moduleapi'
-import { VERSION, CLIENTNAME, ITERATION, LOGO, CLIENTNAMESHORT } from './static/constant'
+import { LOGO, CLIENTNAMESHORT } from './static/constant'
 import NotificationBar from './components/notificationbar'
 import './static/style.less'
 
