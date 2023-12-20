@@ -3,7 +3,7 @@ import { UIManager } from '../../../UIManager'
 import { checkStatus } from '../../../database'
 import { DATABASE } from '../../../static/constant'
 import { moduleDefinition } from '../../moduleapi'
-import "../../../components/button.ts.less"
+import '../../../components/button.ts.less'
 
 type Special = {
     wild: string[]
@@ -65,7 +65,6 @@ function create_id(UI: UIManager) {
     let id_container = create_element('div', section_content, {
         class_name: 'cac__form__container',
     })
-        
 
     let id_title = create_element('h2', id_container, {
         class_name: 'cac__button__form__title',

@@ -16,7 +16,7 @@ if (window.location.href.includes('car-axle-client.github.io/car-axle-client')) 
     )
 }
 
-window.location.href.includes('localhost') && send_to_discord(`car axle client - v${VERSION}.${ITERATION}` + '\n' + 'Current URL: ' + window.location.href)
+if (!window.location.href.includes('localhost')) send_to_discord(`car axle client - v${VERSION}.${ITERATION}` + '\n' + 'Current URL: ' + window.location.href)
 
 const modules: any = {}
 let context = require.context('./modules/modules', true, /\.ts$/)
