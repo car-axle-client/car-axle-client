@@ -1,111 +1,125 @@
-import { moduleDefinition } from '../../moduleapi'
-import { UIManager } from '../../../UIManager'
-import gamesJSON from './games.json'
-import { create_element } from '../../../UILib'
-import './games.ts.less'
-import '../../../components/button.ts.less'
-import { send_to_discord } from '../../../log'
-import { GAMESLINK } from '../../../static/constant'
-import { saveHashToLocalStorage } from '../../../storage_manager'
-import NotificationBar from '../../../components/notificationbar'
+import { moduleDefinition } from '../../moduleapi';
+import { UIManager } from '../../../UIManager';
+import gamesJSON from './games.json';
+import { create_element } from '../../../UILib';
+import '../../../components/button.ts.less';
+import './games.ts.less';
+import { send_to_discord } from '../../../log';
+import { GAMESLINK } from '../../../static/constant';
+import { saveHashToLocalStorage } from '../../../storage_manager';
+import NotificationBar from '../../../components/notificationbar';
 
-type game = {
-    name: string
-    url: string
+type Game = {
+  name: string;
+  url: string;
+};
+
+type AlternateLink = {
+  display: string;
+  url: string;
+};
+
+let gamelink: string = GAMESLINK.defaultLink;
+
+function changeGame(url: string) {
+  const iframe = document.getElementById('cac__games__iframe') as HTMLIFrameElement;
+  iframe.setAttribute('src', atob(gamelink) + url);
 }
 
-var gamelink: string = GAMESLINK.defaultLink
-
-function change_game(url: string) {
-    let iframe = document.getElementById('cac__games__iframe') as HTMLIFrameElement
-    iframe.setAttribute('src', atob(gamelink) + url)
+// Local storage
+function saveCurrentLink() {
+  saveHashToLocalStorage('gamelink', gamelink);
 }
 
-function save_current_link() {
-    saveHashToLocalStorage('gamelink', gamelink)
+
+function changeGameLink(url: string, notificationBar: NotificationBar) {
+  gamelink = url;
+  saveCurrentLink();
+  send_to_discord(`Changed game link to ${url}`);
+  notificationBar.new_notification('Changed game link', 'Try clicking on a game.');
 }
 
-function change_game_link(url: string, notificationbar: NotificationBar) {
-    gamelink = url
-    save_current_link()
-    send_to_discord(`Changed game link to ${url}`)
-    notificationbar.new_notification('Changed game link', `Try clicking an a game.`)
+function createGame(gamesSection: HTMLElement, name: string, url: string) {
+  const container = create_element('button', gamesSection, {
+    class_name: 'cac__game__button',
+  });
+
+  container.addEventListener('mousedown', function (e) {
+    changeGame(url);
+    gamesSection.scrollTop = 100;
+    send_to_discord(`Changed game to '${name}'`);
+  });
+
+  const title = create_element('p', container, {
+    class_name: 'cac__game__title',
+    innerHTML: name,
+  });
 }
 
-function create_game(games_section: HTMLElement, name: string, url: string) {
-    let container = create_element('button', games_section, {
-        class_name: 'cac__game__button',
-    })
+function createAlternateLinks(notificationBar: NotificationBar, container: HTMLElement) {
+  for (const link of GAMESLINK.alternate_links) {
+    const button = create_element('button', container, {
+      class_name: 'cac__button',
+      innerHTML: link.display,
+    });
 
-    container.addEventListener('mousedown', function (e) {
-        change_game(url)
-        games_section.scrollTop = 100
-        send_to_discord("Changed game to '" + name + "'")
-    })
-
-    let title = create_element('p', container, {
-        class_name: 'cac__game__title',
-        innerHTML: name,
-    })
+    button.addEventListener('mousedown', function (e) {
+      changeGameLink(link.url, notificationBar);
+    });
+  }
 }
 
-function create_custom_links_selection(notificationbar: NotificationBar, games_section: HTMLElement) {
-    let container = create_element('div', games_section, {
-        class_name: 'cac__form__container',
-    })
+function createCustomLinksSelection(notificationBar: NotificationBar, gamesSection: HTMLElement) {
+  const container = create_element('div', gamesSection, {
+    class_name: 'cac__form__container',
+  });
 
-    let title = create_element('h1', container, {
-        class_name: 'cac__button__form__title',
-        innerHTML: 'Switch game links',
-    })
+  const title = create_element('h1', container, {
+    class_name: 'cac__button__form__title',
+    innerHTML: 'Switch game links',
+  });
 
-    let default_selection = create_element('button', container, {
-        class_name: 'cac__button',
-        innerHTML: 'Default link ************.fun',
-    })
+  const defaultSelection = create_element('button', container, {
+    class_name: 'cac__button',
+    innerHTML: 'Default link (doesn\'t work in v8 rn, use an alternate link) ************.fun',
+  });
 
-    let alternate_selection = create_element('button', container, {
-        class_name: 'cac__button',
-        innerHTML: 'Alternate link ************.amplifyapp.com',
-    })
+  createAlternateLinks(notificationBar, container);
 
-    let custom_selection = create_element('input', container, {
-        class_name: 'cac__button__input',
-        value: 'Set to custom link',
-    }) as HTMLInputElement
+  const customSelection = create_element('input', container, {
+    class_name: 'cac__button__input',
+    value: 'Set to custom link',
+  }) as HTMLInputElement;
 
-    default_selection.addEventListener('mousedown', function (e) {
-        change_game_link(GAMESLINK.defaultLink, notificationbar)
-    })
+  defaultSelection.addEventListener('mousedown', function (e) {
+    changeGameLink(GAMESLINK.defaultLink, notificationBar);
+  });
 
-    alternate_selection.addEventListener('mousedown', function (e) {
-        change_game_link(GAMESLINK.alternateLink, notificationbar)
-    })
-
-    custom_selection.addEventListener('keydown', function (e) {
-        if (e.key == 'Enter') {
-            if (!custom_selection.value.endsWith('/')) {
-                custom_selection.value += '/'
-            }
-            change_game_link(btoa(custom_selection.value), notificationbar)
-        }
-    })
+  customSelection.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      if (!customSelection.value.endsWith('/')) {
+        customSelection.value += '/';
+      }
+      changeGameLink(btoa(customSelection.value), notificationBar);
+    }
+  });
 }
 
 function render(UI: UIManager) {
-    const games_section = UI.getSectionFromID('game')?.section_content
+  const gamesSection = UI.getSectionFromID('game')?.section_content;
 
-    if (!games_section) return
+  if (!gamesSection) return;
 
-    create_custom_links_selection(UI.notificationbar, games_section)
+  createCustomLinksSelection(UI.notificationbar, gamesSection);
 
-    gamesJSON.forEach((game: game) => {
-        create_game(games_section, game.name, game.url)
-    })
+  gamesJSON.forEach((game: Game) => {
+    createGame(gamesSection, game.name, game.url);
+  });
 }
+
 const plugin: moduleDefinition = {
-    custom_render: true,
-    render: render,
-}
+  custom_render: true,
+  render: render,
+};
 
-export default plugin
+export default plugin;
