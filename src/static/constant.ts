@@ -1,4 +1,21 @@
-export const GAMESLINK = { defaultLink: 'aHR0cHM6Ly9jYXJheGxlY2xpZW50LmZ1bi8=', alternate_links: [{display: "Alternate Link ********.vercel.app", url: "aHR0cHM6Ly9nbWUtaG9zdGluZy12Mi1iN3gyNG8zNWktcGVuZ3VpbmlmeXMtcHJvamVjdHMudmVyY2VsLmFwcC8="}, {display: "Alternate Link 2 **********.github.io", url: "aHR0cHM6Ly90aWNrbGUtdGlwc29uLXRoZS10aGlyZC5naXRodWIuaW8vdGhlLWlycy1hcmUtb250by1tZS8="}] }
+export const GAMESLINK = {
+    defaultLink: 'aHR0cHM6Ly9jYXJheGxlY2xpZW50LmZ1bi8=',
+    alternate_links: 
+    [
+        {
+            display: "Alternate Link ********.vercel.app", 
+            url: "aHR0cHM6Ly9nbWUtaG9zdGluZy12Mi1iN3gyNG8zNWktcGVuZ3VpbmlmeXMtcHJvamVjdHMudmVyY2VsLmFwcC8="
+        }, 
+        {
+            display: "Alternate Link 2 **********.github.io",
+            url: "aHR0cHM6Ly90aWNrbGUtdGlwc29uLXRoZS10aGlyZC5naXRodWIuaW8vdGhlLWlycy1hcmUtb250by1tZS8="
+        },
+        {
+            display: "Alternate Link 3 **********.onrender.com",
+            url: "aHR0cHM6Ly9jYXItYXhrZS5vbnJlbmRlci5jb20v"
+        }
+    ]
+}
 export const VERSION = '8'
 export const ITERATION = '0'
 export const CLIENTNAME = 'car axle client'

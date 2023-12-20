@@ -23,7 +23,6 @@ interface ElementAttributes {
 
 export function create_element(tagName: string, parent: Element, options?: ElementAttributes): HTMLElement {
     const element: HTMLElement = document.createElement(tagName)
-    // TODO:: Make this better or use a switch or smth
     if (options) {
         if (options.id) {
             element.id = options.id
@@ -46,6 +45,7 @@ export function create_element(tagName: string, parent: Element, options?: Eleme
     }
 
     element.classList.add('cac__ALL')
+
     if (parent) {
         parent.appendChild(element)
     }
