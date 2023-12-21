@@ -1,5 +1,5 @@
 import { create_element } from '../../../UILib'
-import "../../module.less"
+import '../../module.less'
 import { UIManager } from '../../../UIManager'
 import { moduleDefinition, new_iframe } from '../../moduleapi'
 import { getHashFromLocalStorage, saveHashToLocalStorage } from '../../../storage_manager'
