@@ -3,7 +3,7 @@ import { UIManager } from '../../../UIManager'
 import { checkStatus } from '../../../database'
 import { DATABASE } from '../../../static/constant'
 import { moduleDefinition } from '../../moduleapi'
-import '../../../components/button.ts.less'
+import '../../module.less'
 
 type Special = {
     wild: string[]
@@ -62,16 +62,16 @@ function create_id(UI: UIManager) {
     if (!section_content) return
 
     let id_container = create_element('div', section_content, {
-        class_name: 'cac__form__container',
+        class_name: 'cac__module__form',
     })
 
     let id_title = create_element('h2', id_container, {
-        class_name: 'cac__button__form__title',
+        class_name: 'cac__module__form__title',
         innerHTML: 'Proxy ID',
     })
 
     let id_input = create_element('input', id_container, {
-        class_name: 'cac__button__input',
+        class_name: 'cac__module__input',
         id: 'proccyid',
         type: 'text',
         value: '0',
