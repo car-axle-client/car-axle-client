@@ -1,6 +1,6 @@
 import { UIManager } from '../../../UIManager'
 import { moduleDefinition } from '../../moduleapi'
-import '../../../components/button.ts.less'
+import '../../module.less'
 import { create_element } from '../../../UILib'
 
 function handleSearch(games: HTMLCollectionOf<Element>, input: HTMLInputElement) {
@@ -30,7 +30,7 @@ function render(UI: UIManager) {
 
     let input: HTMLInputElement = create_element('input', section_content, {
         value: 'Search for a game',
-        class_name: 'cac__button__input',
+        class_name: 'cac__module__input',
     }) as HTMLInputElement
     input.style.marginTop = '2%'
     let games = section_content.getElementsByClassName('cac__game__button')

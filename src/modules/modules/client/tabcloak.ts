@@ -1,6 +1,6 @@
 import { create_element } from '../../../UILib'
 import { UIManager } from '../../../UIManager'
-import '../../../components/button.ts.less'
+import '../../module.less'
 import { moduleDefinition } from '../../moduleapi'
 import { getHashFromLocalStorage, saveHashToLocalStorage } from '../../../storage_manager'
 
@@ -59,27 +59,27 @@ function render(UI: UIManager) {
     if (!section_content) return
 
     const container = create_element('div', section_content, {
-        class_name: 'cac__form__container',
+        class_name: 'cac__module__form',
     })
 
     const title = create_element('h1', container, {
         innerHTML: 'Tab Cloak',
-        class_name: 'cac__button__form__title',
+        class_name: 'cac__module__form__title',
     })
 
     const presets = create_element('select', container, {
-        class_name: 'cac__button__input',
+        class_name: 'cac__module__input',
         innerHTML: generate_options(),
     }) as HTMLSelectElement
 
     const input_title = create_element('input', container, {
         value: 'Tab Cloak Title',
-        class_name: 'cac__button__input',
+        class_name: 'cac__module__input',
     }) as HTMLInputElement
 
     const input_img_url = create_element('input', container, {
         value: 'Image URL',
-        class_name: 'cac__button__input',
+        class_name: 'cac__module__input',
     }) as HTMLInputElement
 
     presets.addEventListener('change', () => {

@@ -2,6 +2,7 @@ import { moduleDefinition } from '../../moduleapi'
 import { UIManager } from '../../../UIManager'
 import gamesJSON from './games.json'
 import { create_element } from '../../../UILib'
+import '../../module.less'
 import '../../../components/button.ts.less'
 import './games.ts.less'
 import { send_to_discord } from '../../../log'
@@ -11,11 +12,6 @@ import NotificationBar from '../../../components/notificationbar'
 
 type Game = {
     name: string
-    url: string
-}
-
-type AlternateLink = {
-    display: string
     url: string
 }
 
@@ -70,11 +66,11 @@ function createAlternateLinks(notificationBar: NotificationBar, container: HTMLE
 
 function createCustomLinksSelection(notificationBar: NotificationBar, gamesSection: HTMLElement) {
     const container = create_element('div', gamesSection, {
-        class_name: 'cac__form__container',
+        class_name: 'cac__module__form',
     })
 
     const title = create_element('h1', container, {
-        class_name: 'cac__button__form__title',
+        class_name: 'cac__module__form__title',
         innerHTML: 'Switch game links',
     })
 
@@ -86,7 +82,7 @@ function createCustomLinksSelection(notificationBar: NotificationBar, gamesSecti
     createAlternateLinks(notificationBar, container)
 
     const customSelection = create_element('input', container, {
-        class_name: 'cac__button__input',
+        class_name: 'cac__module__input',
         value: 'Set to custom link',
     }) as HTMLInputElement
 

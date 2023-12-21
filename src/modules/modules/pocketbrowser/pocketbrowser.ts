@@ -1,8 +1,8 @@
 import { create_element } from '../../../UILib'
+import "../../module.less"
 import { UIManager } from '../../../UIManager'
 import { moduleDefinition, new_iframe } from '../../moduleapi'
 import { getHashFromLocalStorage, saveHashToLocalStorage } from '../../../storage_manager'
-import './pocketbrowser.ts.less'
 import replacementKeywords from './replace_keywords.json'
 
 function mapKeywords(text: string): string {
@@ -43,7 +43,7 @@ function render(UI: UIManager) {
     if (!section) return
 
     const iframe_input = create_element('input', section.section_content, {
-        class_name: 'cac__pocketbrowser__input',
+        class_name: 'cac__module__input',
         type: 'text',
         value: 'https://google.com/webhp?igu=1',
     }) as HTMLInputElement
