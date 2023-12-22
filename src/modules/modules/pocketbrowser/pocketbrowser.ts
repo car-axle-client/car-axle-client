@@ -65,7 +65,8 @@ function render(UI: UIManager) {
         }
 
         saveHashToLocalStorage('pocketbrowser', link)
-        iframe.setAttribute('src', `${link}`)
+        let url = new URL(link)
+        iframe.setAttribute('src', url.toString())
     })
 }
 
