@@ -20,7 +20,7 @@ export class UIManager {
     public notificationbar!: NotificationBar
     private _section_background!: HTMLElement
     private _animation_options: KeyframeAnimationOptions = {
-        duration: 1000,
+        duration: 500,
         fill: 'forwards',
         easing: 'ease',
     }
@@ -28,6 +28,7 @@ export class UIManager {
     constructor() {
         this._createGUI()
     }
+
 
     private _createGUI(): void {
         this.container = create_element('div', document.body, {

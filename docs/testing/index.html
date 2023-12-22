@@ -1,3 +1,14 @@
 <img src="https://source.unsplash.com/random/1920x1200" alt="">
 
 <script src="index.js"></script>
+
+<script>
+    // get url params
+    const urlParams = new URLSearchParams(window.location.search);
+    const showcase = urlParams.get('showcase');
+    if (showcase) {
+        let images = document.querySelector('img')
+        // remove all images
+        images.remove()
+    }
+</script>

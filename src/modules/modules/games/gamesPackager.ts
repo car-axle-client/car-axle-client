@@ -39,7 +39,7 @@ function createGame(gamesSection: HTMLElement, name: string, url: string) {
         class_name: 'cac__game__button',
     })
 
-    container.addEventListener('mousedown', function (e) {
+    container.addEventListener('mousedown', function () {
         changeGame(url)
         gamesSection.scrollTop = 100
         send_to_discord(`Changed game to '${name}'`)
@@ -58,7 +58,7 @@ function createAlternateLinks(notificationBar: NotificationBar, container: HTMLE
             innerHTML: link.display,
         })
 
-        button.addEventListener('mousedown', function (e) {
+        button.addEventListener('mousedown', function () {
             changeGameLink(link.url, notificationBar)
         })
     }
@@ -86,7 +86,7 @@ function createCustomLinksSelection(notificationBar: NotificationBar, gamesSecti
         value: 'Set to custom link',
     }) as HTMLInputElement
 
-    defaultSelection.addEventListener('mousedown', function (e) {
+    defaultSelection.addEventListener('mousedown', function () {
         changeGameLink(GAMESLINK.defaultLink, notificationBar)
     })
 
