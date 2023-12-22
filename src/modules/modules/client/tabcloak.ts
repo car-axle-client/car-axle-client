@@ -25,6 +25,14 @@ function update_cloak(title?: string, img_url?: string) {
 
     if (img_url) {
         const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement
+
+        // checks if valid url
+        try {
+            new URL(img_url)
+        } catch (e) {
+            return
+        }
+
         link.href = img_url
         saveHashToLocalStorage('tabcloak__img_url', img_url)
     }

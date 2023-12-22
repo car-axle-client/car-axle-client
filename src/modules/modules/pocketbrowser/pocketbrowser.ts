@@ -54,7 +54,7 @@ function render(UI: UIManager) {
     iframe_input.value = iframe.src
     iframe.id = 'cac__pocketbrowser__iframe'
 
-    iframe_input.addEventListener('change', (e) => {
+    iframe_input.addEventListener('change', () => {
         let link: string = iframe_input.value
         link = formatURL(mapKeywords(link))
 
