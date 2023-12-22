@@ -211,3 +211,4 @@ export class UIManager {
         return this.sections.find((section) => section.id === id)
     }
 }
+
