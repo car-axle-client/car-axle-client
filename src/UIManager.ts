@@ -29,7 +29,6 @@ export class UIManager {
         this._createGUI()
     }
 
-
     private _createGUI(): void {
         this.container = create_element('div', document.body, {
             id: 'cac__CONTAINER',
@@ -211,4 +210,3 @@ export class UIManager {
         return this.sections.find((section) => section.id === id)
     }
 }
-
