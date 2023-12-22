@@ -124,7 +124,7 @@ export class UIManager {
         setTimeout(() => {
             section.section_content.style.display = 'none'
             section.section_content.style.pointerEvents = 'none;'
-        }, 950)
+        }, 450)
     }
 
     private _handleSectionMouseDown(section: Section): void {
