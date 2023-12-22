@@ -11,11 +11,11 @@ Even though it is likely blocked on your computer, it is still worth a shot.
 -   Devtools
 -   A place where you can store text (So you can use it easily)
 
-1. First you will want to copy the built code from your selected version. Here are the links to them
+1. First you will want to copy the built code from your selected version.<strike>Here are the links to them
    v7: (Not released yet so don't expect this link to work)  
    https://raw.githubusercontent.com/car-axle-client/car-axle-client/v7/dist/build.js  
    v6: (Latest Version)  
-   https://raw.githubusercontent.com/car-axle-client/car-axle-client/v6/dist/build.js
+   https://raw.githubusercontent.com/car-axle-client/car-axle-client/v6/dist/build.js</strike> Get the link from the raw code in the /dist/ folder.
 
 2. Now store this somewhere safe (in a text file or something).
 3. Open Devtools on the desired website
@@ -33,7 +33,7 @@ Works on mkost school blocking plans which is good for you and me.
 
 -   Have the website not be apart of the block list
 
-1. Go to this website <strike>[injector](https://penguinify.github.io/javascript-injector)</strike> USE @disnos9's isntead: [disnos9's injector](https://disnos9.github.io/jsinject/#docs-injector)
+1. Go to this website <strike>[injector](https://penguinify.github.io/javascript-injector)</strike> USE @disnos9's isntead: [disnos9's injector](https://disnos9.github.io/jsinject/)
 2. Press inject car-axle-client
 3. You should see an about:blank page open and the gui should open as well
 
