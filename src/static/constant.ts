@@ -13,7 +13,6 @@ export const GAMESLINK = {
             display: 'Alternate Link 3 **********.amplifyapp.com',
             url: 'aHR0cHM6Ly9tYWluLmQydHByN3dsMnhud2pyLmFtcGxpZnlhcHAuY29tLw==',
         },
-
     ],
 }
 export const VERSION = '8'

@@ -1,7 +1,7 @@
 import { moduleDefinition } from '../../moduleapi'
 
 const plugin: moduleDefinition = {
-    display_name: 'ading2210 for Edupuzzle Answers',
+    display_name: 'ading2210/vk6 for Edupuzzle Answers',
     description: 'thanks',
     id: 'cred',
     section: 'credit',

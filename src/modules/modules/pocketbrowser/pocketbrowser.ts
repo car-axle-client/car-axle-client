@@ -5,7 +5,6 @@ import { moduleDefinition, new_iframe } from '../../moduleapi'
 import { getHashFromLocalStorage, saveHashToLocalStorage } from '../../../storage_manager'
 import replacementKeywords from './replace_keywords.json'
 
-
 function mapKeywords(text: string): string {
     let keywords = replacementKeywords
 
