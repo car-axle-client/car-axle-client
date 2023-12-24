@@ -6,13 +6,14 @@ export const GAMESLINK = {
             url: 'aHR0cHM6Ly9nbWUtaG9zdGluZy12Mi1iN3gyNG8zNWktcGVuZ3VpbmlmeXMtcHJvamVjdHMudmVyY2VsLmFwcC8=',
         },
         {
-            display: 'Alternate Link 2 **********.github.io',
-            url: 'aHR0cHM6Ly90aWNrbGUtdGlwc29uLXRoZS10aGlyZC5naXRodWIuaW8vdGhlLWlycy1hcmUtb250by1tZS8=',
-        },
-        {
-            display: 'Alternate Link 3 **********.onrender.com',
+            display: 'Alternate Link 2 **********.onrender.com',
             url: 'aHR0cHM6Ly9jYXItYXhrZS5vbnJlbmRlci5jb20v',
         },
+        {
+            display: 'Alternate Link 3 **********.amplifyapp.com',
+            url: 'aHR0cHM6Ly9tYWluLmQydHByN3dsMnhud2pyLmFtcGxpZnlhcHAuY29tLw==',
+        },
+
     ],
 }
 export const VERSION = '8'
