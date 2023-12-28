@@ -5,6 +5,10 @@ import { moduleDefinition } from '../../moduleapi'
 import './console.ts.less'
 import easterEggs from './eastereggs.json'
 
+
+var history: string[] = []
+let history_index = 0
+
 function render(UI: UIManager) {
     let section = UI.getSectionFromID('js')
     let section_content = section?.section_content
@@ -44,6 +48,7 @@ function render(UI: UIManager) {
     }
 
     function handle_input_enter() {
+        if (!console_input.value) return
         let input = console_input.value
 
         // checks for easter eggs
@@ -56,7 +61,6 @@ function render(UI: UIManager) {
             }
         }
 
-        console_input.value = ''
         try {
             let output = eval(input)
             if (output) console.log(output)
@@ -66,10 +70,39 @@ function render(UI: UIManager) {
                 innerHTML: `(${new Date().toLocaleTimeString()}) ${err}`,
             })
         }
+
+        history.push(console_input.value)
+        history_index = history.length
+        console_input.value = ''
     }
 
-    console_input.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') handle_input_enter()
+    function handle_input_up() {
+        if (history_index === 0) return
+            console.log(history_index)
+        history_index--
+        console_input.value = history[history_index]
+    }
+
+    function handle_input_down() {
+        if (history_index === history.length) return
+            console.log(history_index)
+        history_index++
+        console_input.value = history[history_index] || ""
+    }
+
+
+    console_input.addEventListener('keydown', (e) => {
+        switch (e.key) {
+            case 'Enter':
+                handle_input_enter()
+                break
+            case 'ArrowUp':
+                handle_input_up()
+                break
+            case 'ArrowDown':
+                handle_input_down()
+                break
+        }
     })
 }
 

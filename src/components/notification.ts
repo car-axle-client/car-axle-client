@@ -40,10 +40,6 @@ export default class Notification implements Component {
             innerHTML: 'Dismiss',
         })
         dismiss_button.classList.add('cac__notification__dismiss')
-        dismiss_button.onclick = (e) => this.notification.remove()
-    }
-
-    display(ms: Number = 500) {
-        //todo
+        dismiss_button.onclick = () => this.notification.remove()
     }
 }
