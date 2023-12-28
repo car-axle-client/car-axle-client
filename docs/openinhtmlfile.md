@@ -16,10 +16,15 @@
 
 2. You should save it to a folder named whatever you want, just make it in a safe place.
 3. Now its time to download the games, you may skip this part if you are fine with the normal game hosters. Now download the games here:
+<<<<<<< HEAD
 
 -   https://github.com/car-axle-client/gay-hosting-v3
 
 4. Make sure you download the archive and extract it once done. (Click the green code button and click download zip)
+=======
+- https://github.com/car-axle-client/gay-hosting-v3
+4. Make sure you download the archive and extract it once done. (Click the green code button and click download zip)       
+>>>>>>> branch 'main' of https://github.com/car-axle-client/car-axle-client
 5. Move the extracted folder CONTENT (THE THINGS INSIDE OF THE FOLDER) to the same folder as the build.js file. (Makes the next steps easier)
 
 ### Step 2: Setting up the html wrapper.
