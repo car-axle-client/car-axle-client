@@ -17,9 +17,18 @@ export function getHashFromLocalStorage(index: string): string {
     return atob(storage_value)
 }
 
+function get_module_values(): sectionSave[] | undefined {
+    try {
+        return JSON.parse(localStorage.getItem('car-axle-client') as string)
+    } catch (e) {
+        console.error('Unable to catch car axle client storage, no bueno')
+        return
+    }
+}
+
 export function load_module_values(UI: UIManager) {
     // i let ts infer here and I force as string since we already have null check
-    const cacStorage = JSON.parse(localStorage.getItem('car-axle-client') as string)
+    let cacStorage = get_module_values()
     if (!cacStorage) return
     // I assume format is correct as type check happens in saveicon -> action
     cacStorage.forEach(function (sectionValues: sectionSave) {

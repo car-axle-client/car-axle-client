@@ -15,14 +15,14 @@ export const GAMESLINK = {
         },
     ],
 }
-export const VERSION = '8'
+export const VERSION = '9'
 export const ITERATION = '0'
 export const CLIENTNAME = 'car axle client'
 // same as client name if you dont have a short hand
 export const CLIENTNAMESHORT = 'car axle'
 export const AUTHOR = 'penguinify & disnos9'
 export const DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'
-export const LOGO = 'https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/logov8.png'
+export const LOGO = 'https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/logov9.png'
 export const COMMUNITY = 'https://raw.githubusercontent.com/car-axle-client/community-plugins/main/'
 export const SOCIAL = {
     github: 'https://github.com/car-axle-client/car-axle-client',
