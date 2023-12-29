@@ -20,8 +20,9 @@
 -   https://github.com/car-axle-client/gay-hosting-v3
 
 4. Make sure you download the archive and extract it once done. (Click the green code button and click download zip)
-- https://github.com/car-axle-client/gay-hosting-v3
-      
+
+-   https://github.com/car-axle-client/gay-hosting-v3
+
 5. Move the extracted folder CONTENT (THE THINGS INSIDE OF THE FOLDER) to the same folder as the build.js file. (Makes the next steps easier)
 
 ### Step 2: Setting up the html wrapper.

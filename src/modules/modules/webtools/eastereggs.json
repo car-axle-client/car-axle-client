@@ -22,5 +22,9 @@
     {
         "keyword": "games",
         "response": "not giving them to u [easteregg 4/6]"
+    },
+    {
+        "keyword": "neofetch",
+        "response": "this ain't linux lmao [easteregg archbtw/6]"
     }
 ]
