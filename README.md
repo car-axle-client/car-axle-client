@@ -56,7 +56,7 @@ v7 example
 
 ## Hosting the games yourself
 
-go here: https://github.com/car-axle-client/gme-hosting-v2
+go here: https://github.com/car-axle-client/gay-hosting-v3
 
 # people with write access
 
