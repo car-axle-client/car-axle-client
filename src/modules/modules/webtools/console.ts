@@ -77,14 +77,12 @@ function render(UI: UIManager) {
 
     function handle_input_up() {
         if (history_index === 0) return
-        console.log(history_index)
         history_index--
         console_input.value = history[history_index]
     }
 
     function handle_input_down() {
         if (history_index === history.length) return
-        console.log(history_index)
         history_index++
         console_input.value = history[history_index] || ''
     }
