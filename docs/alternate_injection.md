@@ -11,12 +11,8 @@ Even though it is likely blocked on your computer, it is still worth a shot.
 -   Devtools
 -   A place where you can store text (So you can use it easily)
 
-1. First you will want to copy the built code from your selected version.<strike>Here are the links to them
-   v7: (Not released yet so don't expect this link to work)  
-   https://raw.githubusercontent.com/car-axle-client/car-axle-client/v7/dist/build.js  
-   v6: (Latest Version)  
-   https://raw.githubusercontent.com/car-axle-client/car-axle-client/v6/dist/build.js</strike> Get the link from the raw code in the /dist/ folder.
-
+1. First you will want to copy/download the built code from your selected version.
+- get the latest development build here (press the download button next to the "raw" button) (could be unstable): https://github.com/car-axle-client/car-axle-client/blob/main/dist/build.js
 2. Now store this somewhere safe (in a text file or something).
 3. Open Devtools on the desired website
 4. Go to the console tab
@@ -27,7 +23,7 @@ Even though it is likely blocked on your computer, it is still worth a shot.
 
 ### about:blank Injector
 
-Works on mkost school blocking plans which is good for you and me.
+Works on most school blocking plans which is good for you and me.
 
 #### Requirements
 
@@ -54,10 +50,7 @@ Host it on a website so its not a bookmarklet, its a website (kinda).
 1. Create a github organization that is the name of your website
 2. In that organization make a repository called {ORGANIZATION-NAME}.github.io
 3. Download this file or any version you want. (You just need a js file with the source code)  
-   v7: (Not released yet so don't expect this link to work)  
-   https://raw.githubusercontent.com/car-axle-client/car-axle-client/v7/dist/build.js  
-   v6: (Latest Version)  
-   https://raw.githubusercontent.com/car-axle-client/car-axle-client/v6/dist/build.js
+- get the latest development build here (press the download button next to the "raw" button) (could be unstable): https://github.com/car-axle-client/car-axle-client/blob/main/dist/build.js
 4. Upload it to said repository
 5. Create an index.html file in the repository with this code:
 
@@ -82,4 +75,5 @@ A nice and elegent solution
 3. Change the userResources from unset to `https://pastebin.com/raw/PPZ1T7uh`
 4. Go back to the main extensions pages and click on My filters button.
 5. Open a new webpage and press ctrl alt tilde (ctrl+a+~)
-6. Paste in the car axle client src code, as desccribed above.
+6. Paste in the code for car axle client
+- get the latest development build here (press the download button next to the "raw" button) (could be unstable): https://github.com/car-axle-client/car-axle-client/blob/main/dist/build.js
