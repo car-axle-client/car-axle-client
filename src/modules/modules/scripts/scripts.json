@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Ad Block (its trash)",
+        "desc": "Removes Advertisements from the website",
+        "author": { "name": "MarcellPerger1", "link": "https://github.com/MarcellPerger1" },
+        "url": "https://raw.githubusercontent.com/MarcellPerger1/adblock-bookmarklet/main/dist/release/bookmarklet.min.txt"
+    },
+    {
+        "name": "Math Solver",
+        "desc": "Factor, Simplify, and Solve with a gui",
+        "author": { "name": "Penguinify", "link": "https://penguinify.github.io" },
+        "url": "https://raw.githubusercontent.com/Penguinify/math-bookmarklet/main/dist/bundle.js"
+    },
+    {
+        "name": "Securely Kill",
+        "desc": "Kills Securely by feeding it cookies, dont ask i think im high rn",
+        "author": { "name": "Zek-c", "link": "https://github.com/zek-c" },
+        "url": "https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/kill.js"
+    },
+    {
+        "name": "kick ass",
+        "desc": "kick ass on a website",
+        "author": { "name": "dead company anyways", "link": "idgaf"},
+        "url": "",
+        "patch": "var KICKASSVERSION=\"2.0\",s=document.createElement(\"script\");s.type=\"text/javascript\",document.body.appendChild(s),s.src=\"https://hi.kickassapp.com/kickass.js\";"
+    },
+    {
+        "name": "Gimkit Hacks",
+        "desc": "ONLY WORKS ON CLASSIC MODE, saves answers and shows you correct ones",
+        "author": { "name": "penguinify", "link": "https://penguinify.github.io"},
+        "url": "https://raw.githubusercontent.com/Penguinify/gimkit-hacks/main/dist/bundle.js"
+    },
+    {
+        "name": "Edpuzzle Answers",
+        "desc": "Gives you answers to edpuzzle assignments",
+        "author": { "name": "vk6/adder2210", "link": "https://github.com/adder2210"},
+        "url": "https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js",
+        "patch": "var thumbnail"
+    }
+]
