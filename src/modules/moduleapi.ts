@@ -54,6 +54,7 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
                 about:blank`,
     })
 
+
     var dont_push = false
 
     iframe.addEventListener('load', () => {
@@ -97,6 +98,7 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         //@ts-ignore
         window_blank.document.body.appendChild(iframe_blank)
     }
+
 
     return iframe
 }
