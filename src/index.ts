@@ -52,7 +52,8 @@ function main(): void {
 
     get_update(UI.container)
     get_main_notification(UI.container)
-    console.info(`car axle client - v${VERSION}.${ITERATION} ;)`)
+
+    console.info(`car axle client - v${VERSION}.${ITERATION} ;) if u see this and you want to develop hmu on discord (penguinify) idc how bad you are cause no one want to help develop atm`)
 }
 
 main()

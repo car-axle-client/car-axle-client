@@ -35,15 +35,6 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         class_name: 'cac__iframe__controls',
     })
 
-    let iframe_back = create_element('button', iframe_controls_container, {
-        class_name: 'cac__iframe__svg',
-        innerHTML: `<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>`,
-    })
-
-    let iframe_forward = create_element('button', iframe_controls_container, {
-        class_name: 'cac__iframe__svg',
-        innerHTML: `<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>`,
-    })
 
     let iframe_fullscreen = create_element('button', iframe_controls_container, {
         class_name: 'cac__iframe__svg',
@@ -63,40 +54,19 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
                 about:blank`,
     })
 
-    var iframe_history: string[] = []
-    var iframe_history_index: number = 0
     var dont_push = false
 
-    iframe.addEventListener('load', (e) => {
+    iframe.addEventListener('load', () => {
         if (dont_push) {
             dont_push = false
             return
         }
-
-        if (iframe_history_index !== 0) {
-            iframe_history.slice(iframe_history.length - iframe_history_index - 1, iframe_history.length)
-            iframe_history_index = 0
-        }
-        iframe_history.push(iframe.src)
     })
 
-    iframe_back.addEventListener('mousedown', (e) => {
-        iframe.src = iframe_history[iframe_history.length - iframe_history_index - 2]
-        iframe_history_index--
-        dont_push = true
-    })
-
-    iframe_forward.addEventListener('mousedown', (e) => {
-        if (iframe_history_index !== 0) {
-            iframe.src = iframe_history[iframe_history.length - iframe_history_index - 2]
-            iframe_history_index++
-            dont_push = true
-        }
-    })
 
     var maximized = false
 
-    iframe_expand.onmousedown = (e) => {
+    iframe_expand.onmousedown = () => {
         maximized = !maximized
 
         if (maximized) {
@@ -112,11 +82,11 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         }
     }
 
-    iframe_fullscreen.onmousedown = (e) => {
+    iframe_fullscreen.onmousedown = () => {
         iframe.requestFullscreen()
     }
 
-    iframe_aboutblank.onmousedown = (e) => {
+    iframe_aboutblank.onmousedown = () => {
         // not mine, found it somewhere
         let window_blank = window.open()
         //@ts-ignore
