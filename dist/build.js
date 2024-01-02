@@ -1235,7 +1235,7 @@
                         c.addEventListener('click', () => {
                             ;(0, i.send_bug_report_to_discord)(r.value, s.value, l.value),
                                 (c.disabled = !0),
-                                (c.innerHTML = 'Submitted! Wait 60 seconds before submitting again.'),
+                                (c.innerHTML = 'Thank you! Wait 60 seconds before submitting again.'),
                                 setTimeout(() => {
                                     ;(c.disabled = !1), (c.innerHTML = 'Submit')
                                 }, 6e4)
@@ -1248,8 +1248,8 @@
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 }),
                     (n.default = {
-                        display_name: 'I collect usage data such as which modules you have enabled',
-                        description: 'This data is collected for for the purpose of improving the client. The data cannot be traced back to you.',
+                        display_name: 'I collect anonymous usage data, such as which modules you have enabled',
+                        description: 'This data is collected for the purpose of improving the client. The data is not linked to you.',
                         id: 'datainfo',
                         section: 'client',
                         disabled: !0,
@@ -1259,7 +1259,7 @@
             2705: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 }),
-                    (n.default = { display_name: 'Backslash to hide and unhide', id: 'hideinfo', section: 'client', disabled: !0, custom_render: !1 })
+                    (n.default = { display_name: 'Backslash to toggle visibility', id: 'hideinfo', section: 'client', disabled: !0, custom_render: !1 })
             },
             4769: (e, n) => {
                 'use strict'
@@ -1270,8 +1270,8 @@
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 }),
                     (n.default = {
-                        display_name: 'Everyone who has suggested something or reported a bug',
-                        description: 'and everyone in the discord or who has starred the repo',
+                        display_name: 'Contributors and Supporters',
+                        description: 'Thank you to those who provided suggestions, reported bugs, and starred the repo',
                         id: 'cred',
                         section: 'credit',
                         disabled: !0,
@@ -1281,19 +1281,19 @@
             6208: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 }),
-                    (n.default = { display_name: 'ading2210 for Edupuzzle Answers', description: 'thanks', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
+                    (n.default = { display_name: 'ading2210', description: 'for Edpuzzle Answers', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
             },
             8243: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 }),
-                    (n.default = { display_name: 'selenite', description: 'for their cloaks list that I blatantly stole', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
+                    (n.default = { display_name: 'selenite', description: 'for their cloaks list that I used', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
             },
             5189: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 }),
                     (n.default = {
                         display_name: 'penguinify (main developer)',
-                        description: 'thank you for supporting car axle client for over 5 months!',
+                        description: 'thank you for supporting car axle client for over 5 months! :)',
                         id: 'cred2',
                         section: 'credit',
                         disabled: !0,
@@ -1305,7 +1305,7 @@
                 Object.defineProperty(n, '__esModule', { value: !0 })
                 const t = new KeyboardEvent('keydown', { key: '\\' }),
                     o = {
-                        display_name: 'Auto Hide',
+                        display_name: 'Auto-Hide Window',
                         description: 'Automatically hides UI when the tab/window changes (press "\\" to unhide once hidden)',
                         id: 'autohide',
                         section: 'exploit',
@@ -1343,8 +1343,8 @@
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
                 const t = {
-                    display_name: 'NoForceReload',
-                    description: 'Prevents the tab from being autoreloaded by showing a popup',
+                    display_name: 'AntiReload',
+                    description: 'Prevents the tab from being reloaded/closed by showing a popup',
                     id: 'noforcereload',
                     section: 'exploit',
                     onactive: function () {
@@ -1362,7 +1362,7 @@
                 Object.defineProperty(n, '__esModule', { value: !0 })
                 const t = {
                     display_name: 'Edit Page Text',
-                    description: 'Allows you to edit the page text',
+                    description: 'Allows you to edit the page text. Goes well with ForceSelect+',
                     id: 'editpage',
                     section: 'fun',
                     onactive: function () {
@@ -1401,8 +1401,8 @@
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
                 const t = {
-                    display_name: 'METAL PIPE',
-                    description: 'idk why i added this',
+                    display_name: 'Metal Pipe SFX',
+                    description: '💀',
                     id: 'metalpipe',
                     section: 'fun',
                     onactive: function () {
@@ -1424,7 +1424,7 @@
                 const i = {
                     custom_render: !1,
                     display_name: 'Mouse Trail',
-                    description: 'decent looking mouse trail',
+                    description: 'literally just a mouse trail',
                     id: 'mousetrail',
                     section: 'fun',
                     always: !0,
@@ -1448,11 +1448,11 @@
                 function t() {
                     !(function e(n) {
                         var t = n.childNodes
-                        for (var o in t) e(t[o]), t[o].style && (t[o].style.backgroundImage = 'url(https://i.chzbgr.com/full/5759452672/h934FBF16/my-eyes-my-eyessssssssss)')
+                        for (var o in t) e(t[o]), t[o].style && (t[o].style.backgroundImage = 'url(https://website103.netlify.app/strobe%20illusion.gif)')
                     })(document)
                 }
                 Object.defineProperty(n, '__esModule', { value: !0 })
-                const o = { display_name: "don't click this...", description: 'your eyes yearn for peace...', id: 'eyes', section: 'fun', onactive: t, ondisable: t, always: !0, custom_render: !1 }
+                const o = { display_name: "Optical Illusion (maybe broken, didn't test)", description: 'self explanatory', id: 'eyes', section: 'fun', onactive: t, ondisable: t, always: !0, custom_render: !1 }
                 n.default = o
             },
             9735: (e, n, t) => {
@@ -1612,14 +1612,14 @@
                             disabled: !0,
                             id: 'infoyt',
                             display_name: 'How to use youtube',
-                            description: 'Paste in any youtube link into pocket browser and it will work. (Unless your school blocks youtube)',
+                            description: 'Paste in any youtube link into pocket browser and it will work. (Unless your school DNS blocks youtube)',
                             section: 'pocket',
                         },
                         {
                             custom_render: !1,
                             disabled: !0,
                             id: 'infocookies',
-                            display_name: 'Fix some websites and games',
+                            display_name: 'How to fix some websites and games',
                             description:
                                 'Go to <a href="https://github.com/car-axle-client/car-axle-client/blob/main/docs/disablingcookies.md" target="_blank">this link</a> and follow the instructions',
                             section: 'pocket',
@@ -1727,9 +1727,9 @@
                 Object.defineProperty(exports, '__esModule', { value: !0 })
                 const plugin = {
                     custom_render: !1,
-                    display_name: 'Adblock',
+                    display_name: 'AdRemover',
                     id: 'adblock',
-                    description: 'Removes advertisements from the website. (by <a href="https://github.com/MarcellPerger1" target="_blank">MarcellPerger1</a>)',
+                    description: 'Removes ads from the current website. (by <a href="https://github.com/MarcellPerger1" target="_blank">MarcellPerger1</a>)',
                     section: 'cheats',
                     reset: !0,
                     onactive: adblock,
@@ -1752,7 +1752,7 @@
                     custom_render: !1,
                     display_name: 'Edpuzzle Answers',
                     id: 'edpuzzle',
-                    description: 'Gives you the answers to edpuzzle (By <a href="https://github.com/ading2210/edpuzzle-answers">ading2210</a>)',
+                    description: 'Gives you the answers to edpuzzle - BROKEN IF ANSWERS ARENT UNDERLINED (By <a href="https://github.com/ading2210/edpuzzle-answers">ading2210</a>)',
                     section: 'cheats',
                     reset: !0,
                     onactive: edpuzzle,
@@ -1789,7 +1789,7 @@
                 Object.defineProperty(exports, '__esModule', { value: !0 })
                 const plugin = {
                     custom_render: !1,
-                    display_name: 'Invert Webpage',
+                    display_name: 'Invert Webpage Colors',
                     id: 'invert',
                     description: 'Inverts the colors of the webpage (By <a href="https://github.com/Krazete">Krazete</a>)',
                     section: 'cheats',
@@ -1805,7 +1805,7 @@
                     custom_render: !1,
                     display_name: 'Kick ### Bookmarklet',
                     id: 'kick',
-                    description: 'Small game that destroys your website!',
+                    description: 'Spaceship game that destroys your website!',
                     section: 'cheats',
                     reset: !0,
                     onactive: function () {
@@ -1825,7 +1825,7 @@
                 Object.defineProperty(exports, '__esModule', { value: !0 })
                 const plugin = {
                     custom_render: !1,
-                    display_name: 'Math Solver',
+                    display_name: 'Advanced Calculator',
                     id: 'math',
                     description: 'Factor, simplify, and solve (By <a href="https://github.com/penguinify/math-bookmarklet">Penguinify</a>)',
                     section: 'cheats',
@@ -1845,7 +1845,7 @@
                 Object.defineProperty(exports, '__esModule', { value: !0 })
                 const plugin = {
                     custom_render: !1,
-                    display_name: 'Piano Bookmarklet',
+                    display_name: 'Piano',
                     id: 'piano',
                     description: 'Adds a Piano to your webpage (by <a href="https://github.com/Krazete" target="_blank">Krazete</a>)',
                     section: 'cheats',
@@ -1864,7 +1864,7 @@
                 Object.defineProperty(exports, '__esModule', { value: !0 })
                 const plugin = {
                     custom_render: !1,
-                    display_name: 'Picture in Picture',
+                    display_name: 'Force Picture in Picture',
                     id: 'pip',
                     description: 'Puts the first video element picture in picture (By <a href="https://github.com/Krazete">Krazete</a>)',
                     section: 'cheats',
@@ -1883,7 +1883,7 @@
                 Object.defineProperty(exports, '__esModule', { value: !0 })
                 const plugin = {
                     custom_render: !1,
-                    display_name: 'Simple Dark Mode',
+                    display_name: 'Dark Mode',
                     id: 'simpledarkmode',
                     description: 'Dark yes (By Unknown)',
                     section: 'cheats',
@@ -1905,7 +1905,7 @@
                 Object.defineProperty(exports, '__esModule', { value: !0 })
                 const plugin = {
                     custom_render: !1,
-                    display_name: 'Securely kill',
+                    display_name: 'Securely Killer',
                     id: 'securely',
                     description: 'Kills securely. Run this on the securely website. See repo for better instructions (by <a href="https://github.com/zek-c" target="_blank">Zek-c</a>)',
                     section: 'cheats',
@@ -2101,8 +2101,8 @@
                 const t = {
                     id: 'clear_storage',
                     custom_render: !1,
-                    display_name: 'Clear All Local Storage Entries',
-                    description: 'All data saved by car axle client will be removed as well!',
+                    display_name: 'Clear Local Storage Entries',
+                    description: 'All data saved by car axle client will be removed!',
                     onactive: function () {
                         localStorage.clear()
                     },
