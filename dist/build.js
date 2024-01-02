@@ -1270,8 +1270,8 @@
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 }),
                     (n.default = {
-                        display_name: 'Everyone who has suggested something or reported a bug',
-                        description: 'and everyone in the discord or who has starred the repo',
+                        display_name: 'Contributors and Supporters',
+                        description: 'Thank you to those who provided suggestions, reported bugs, and starred the repo',
                         id: 'cred',
                         section: 'credit',
                         disabled: !0,
@@ -1281,7 +1281,7 @@
             6208: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 }),
-                    (n.default = { display_name: 'ading2210', description: 'for Edupuzzle Answers', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
+                    (n.default = { display_name: 'ading2210', description: 'for Edpuzzle Answers', id: 'cred', section: 'credit', disabled: !0, custom_render: !1 })
             },
             8243: (e, n) => {
                 'use strict'
@@ -1293,7 +1293,7 @@
                 Object.defineProperty(n, '__esModule', { value: !0 }),
                     (n.default = {
                         display_name: 'penguinify (main developer)',
-                        description: 'thank you for supporting car axle client for over 5 months!',
+                        description: 'thank you for supporting car axle client for over 5 months! :)',
                         id: 'cred2',
                         section: 'credit',
                         disabled: !0,
@@ -1305,7 +1305,7 @@
                 Object.defineProperty(n, '__esModule', { value: !0 })
                 const t = new KeyboardEvent('keydown', { key: '\\' }),
                     o = {
-                        display_name: 'Auto Hide',
+                        display_name: 'Auto-Hide Window',
                         description: 'Automatically hides UI when the tab/window changes (press "\\" to unhide once hidden)',
                         id: 'autohide',
                         section: 'exploit',
@@ -1401,8 +1401,8 @@
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
                 const t = {
-                    display_name: 'METAL PIPE',
-                    description: 'idk why i added this',
+                    display_name: 'Metal Pipe SFX',
+                    description: '💀',
                     id: 'metalpipe',
                     section: 'fun',
                     onactive: function () {
@@ -1424,7 +1424,7 @@
                 const i = {
                     custom_render: !1,
                     display_name: 'Mouse Trail',
-                    description: 'decent looking mouse trail',
+                    description: 'literally just a mouse trail',
                     id: 'mousetrail',
                     section: 'fun',
                     always: !0,
@@ -1448,11 +1448,11 @@
                 function t() {
                     !(function e(n) {
                         var t = n.childNodes
-                        for (var o in t) e(t[o]), t[o].style && (t[o].style.backgroundImage = 'url(https://i.chzbgr.com/full/5759452672/h934FBF16/my-eyes-my-eyessssssssss)')
+                        for (var o in t) e(t[o]), t[o].style && (t[o].style.backgroundImage = 'url(https://website103.netlify.app/strobe%20illusion.gif)')
                     })(document)
                 }
                 Object.defineProperty(n, '__esModule', { value: !0 })
-                const o = { display_name: "don't click this...", description: 'your eyes yearn for peace...', id: 'eyes', section: 'fun', onactive: t, ondisable: t, always: !0, custom_render: !1 }
+                const o = { display_name: "Optical Illusion (maybe broken, didn't test)", description: 'self explanatory', id: 'eyes', section: 'fun', onactive: t, ondisable: t, always: !0, custom_render: !1 }
                 n.default = o
             },
             9735: (e, n, t) => {
@@ -1619,7 +1619,7 @@
                             custom_render: !1,
                             disabled: !0,
                             id: 'infocookies',
-                            display_name: 'Fix some websites and games',
+                            display_name: 'How to fix some websites and games',
                             description:
                                 'Go to <a href="https://github.com/car-axle-client/car-axle-client/blob/main/docs/disablingcookies.md" target="_blank">this link</a> and follow the instructions',
                             section: 'pocket',
@@ -1729,7 +1729,7 @@
                     custom_render: !1,
                     display_name: 'AdRemover',
                     id: 'adblock',
-                    description: 'Removes advertisements from the website. (by <a href="https://github.com/MarcellPerger1" target="_blank">MarcellPerger1</a>)',
+                    description: 'Removes ads from the current website. (by <a href="https://github.com/MarcellPerger1" target="_blank">MarcellPerger1</a>)',
                     section: 'cheats',
                     reset: !0,
                     onactive: adblock,
