@@ -35,7 +35,6 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         class_name: 'cac__iframe__controls',
     })
 
-
     let iframe_fullscreen = create_element('button', iframe_controls_container, {
         class_name: 'cac__iframe__svg',
         innerHTML: `<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/></svg>
@@ -54,7 +53,6 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
                 about:blank`,
     })
 
-
     var dont_push = false
 
     iframe.addEventListener('load', () => {
@@ -63,7 +61,6 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
             return
         }
     })
-
 
     var maximized = false
 
@@ -98,7 +95,6 @@ export function new_iframe(UI: UIManager, section: HTMLElement, link: string, id
         //@ts-ignore
         window_blank.document.body.appendChild(iframe_blank)
     }
-
 
     return iframe
 }
