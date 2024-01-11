@@ -1373,7 +1373,7 @@
                         window.open(url, '_blank')
                     },
                     ondisable: function () {
-                        alert('go to goguardian.com and clear all cookies+cache, disabling this does nothing')
+                        alert('Go to goguardian.com and clear all cookies+cache, disabling this does nothing')
                     },
                     custom_render: !1,
                 }
@@ -1423,15 +1423,17 @@
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
                 const t = {
-                    display_name: 'Metal Pipe SFX',
-                    description: '💀',
+                    // updated this because metal pipe kinda died
+                    display_name: '🎡',
+                    description: '🎡',
                     id: 'metalpipe',
                     section: 'fun',
                     onactive: function () {
                         let e = document.getElementsByTagName('img')
                         if (e)
                             for (let n of e)
-                                new Audio('https://www.myinstants.com/media/sounds/jixaw-metal-pipe-falling-sound.mp3').play(), (n.src = 'https://i.ytimg.com/vi/qDvMkxtLV74/maxresdefault.jpg')
+                                // this mp3 link will hopefully not expire
+                                new Audio('https://us-tuna-sounds-files.voicemod.net/2ff3560b-a76f-49dd-adbc-709b9f59c5c2-1704237226346.mp3').play(), (n.src = 'https://us-tuna-sounds-images.voicemod.net/2ff3560b-a76f-49dd-adbc-709b9f59c5c2-1704237226346.jpeg')
                     },
                     always: !0,
                     custom_render: !1,
