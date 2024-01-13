@@ -1468,6 +1468,7 @@
   footnote.textContent = 'Credit to skrilll on Discord';
   popup.document.body.appendChild(footnote);
 }
+                            }
                     },
                     ondisable: function () {
                         alert('dawg just close the window this does nothing')
