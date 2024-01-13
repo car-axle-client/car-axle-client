@@ -1467,7 +1467,7 @@
   footnote.className = 'footnote';
   footnote.textContent = 'Credit to skrilll on Discord';
   popup.document.body.appendChild(footnote);
-})();
+}
                     },
                     ondisable: function () {
                         alert('literally just close the popup, why are you disabling this 💀')
