@@ -1357,6 +1357,7 @@
                 }
                 n.default = t
             },
+        
             2441: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
@@ -1379,6 +1380,103 @@
                 }
                 n.default = t
             },
+            2442: (e, n) => {
+                'use strict'
+                Object.defineProperty(n, '__esModule', { value: !0 })
+                const t = {
+                    display_name: 'Proxy List',
+                    description: 'Opens a lengthy proxy list.',
+                    id: 'proxies',
+                    section: 'exploit',
+                    onactive: function () {
+                        // sorry, i kinda just pasted chatgpt code so its huge, dont blame me
+  var linkList = [
+    { name: 'Nebula 1', url: 'https://crystalnetwork.me/' },
+    { name: 'Nebula 2', url: 'https://typhoon.lol/' },
+    { name: 'Rammerhead 1', url: 'https://yorkhigh.audicolsas.co/' },
+    { name: 'Rammerhead 2', url: 'https://hotmomslol.ftp.sh/' },
+    { name: 'Rammerhead 3', url: 'https://cdn.lukefleed.xyz/' },
+    { name: 'Rammerhead 4', url: 'https://canvas.info.gf/' },
+    { name: 'Rammerhead 5', url: 'https://schoolhomeworkbuddy.jumpingcrab.com/' },
+    { name: 'Rammerhead 6', url: 'https://cfbrowser.chickenkiller.com/' },
+    { name: 'Rammerhead 7', url: 'https://kayd-is-goated.chickenkiller.com/' }
+    // Add more links as needed
+  ];
+
+  var popup = window.open('', 'Links', 'width=400,height=570,resizable=yes,scrollbars=yes');
+
+  var style = popup.document.createElement('style');
+  style.textContent = `
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(45deg, #66bb6a, #388e3c);
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #4caf50;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    a:hover {
+      background-color: #388e3c;
+    }
+    .footnote {
+      font-size: 10px;
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+      background-color: #333;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  `;
+
+  popup.document.head.appendChild(style);
+
+  var title = popup.document.createElement('h1');
+  title.textContent = 'Proxies';
+  popup.document.body.appendChild(title);
+
+  linkList.forEach(function(link) {
+    var anchor = popup.document.createElement('a');
+    anchor.textContent = link.name;
+    anchor.href = link.url;
+    anchor.target = '_blank'; // Open links in a new tab
+
+    popup.document.body.appendChild(anchor);
+  });
+
+  var footnote = popup.document.createElement('div');
+  footnote.className = 'footnote';
+  footnote.textContent = 'Credit to skrilll on Discord';
+  popup.document.body.appendChild(footnote);
+})();
+                    },
+                    ondisable: function () {
+                        alert('literally just close the popup, why are you disabling this 💀')
+                    },
+                    custom_render: !1,
+                }
+                n.default = t
+            },
+        
             7737: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
