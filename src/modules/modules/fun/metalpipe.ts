@@ -1,5 +1,5 @@
 import { moduleDefinition } from '../../moduleapi'
-// its metal pipe 'cause i dont got time to change allat (i have no clue what any of it means)
+// function is still metal pipe 'cause i dont got time to change allat (i have no clue what any of it means)
 function metalpipe() {
     let images = document.getElementsByTagName('img')
     if (!images) return
