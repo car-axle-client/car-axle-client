@@ -2341,7 +2341,10 @@
                     './exploits/betterforceselect.ts': 7802,
                     './exploits/noforcereload.ts': 2440,
                     // what the fuck do the numbers mean mason!?/11??!?!
+                    // https://www.youtube.com/watch?v=kcgJmfBJ0Uw
                     './exploits/goguardiankiller.ts': 2441,
+                    // killing myself RIGHT NOW
+                    './exploits/proxies.ts': 2442,
                     './fun/editpagetext.ts': 7737,
                     './fun/historyflooder.ts': 1411,
                     './fun/metalpipe.ts': 8419,
