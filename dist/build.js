@@ -1470,7 +1470,7 @@
 }
                     },
                     ondisable: function () {
-                        alert('literally just close the popup, why are you disabling this 💀')
+                        alert('dawg just close the window this does nothing')
                     },
                     custom_render: !1,
                 }
