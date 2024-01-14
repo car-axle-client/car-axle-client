@@ -6,15 +6,13 @@ export async function get_plugins(): Promise<JSON> {
     return fetch(`${COMMUNITY}meta.json`).then((result) => result.json())
 }
 
-export function checkStatus(): boolean {
+export async function checkStatus(): Promise<boolean> {
     // checks if you can use fetch on this website
-    try {
-        fetch(`https://car-axle-client.github.io/`)
+    let r = await fetch(`${DATABASE}version.json`)
+    if (r.status == 200) {
         return true
-    } catch (e) {
-        // purposely discard error
-        return false
     }
+    return false
 }
 
 function show_update(parent: HTMLElement, new_ver: string) {

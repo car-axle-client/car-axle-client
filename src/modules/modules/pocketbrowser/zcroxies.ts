@@ -85,17 +85,18 @@ function create_id(UI: UIManager) {
 }
 
 // for some reason it only works with this fat version??? im not gunna question it
-let statwus = checkStatus()
-if (statwus) {
-    var status_text = 'Proxy Status: Online'
-} else {
-    var status_text = 'Proxy Status: Offline (Try another website)'
-}
+// IT STILL DOESN'T WORK WTFFFFF
+var status_text = 'Proxy Status: Offline (Try another website)'
+checkStatus().then((res) => {
+    if (res) {
+        status_text = 'Proxy Status: Online'
+    }
+})
 
 const status: moduleDefinition = {
     custom_render: false,
     disabled: true,
-    display_name: status_text,
+    display_name: 'this display is broken cause im to lazy to fix it! if you dont see anything, the proxies doesnt work!',
     id: 'proxystatus',
     description: 'Checks if you can use Proxies',
     section: 'pocket',
