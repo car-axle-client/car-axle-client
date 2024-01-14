@@ -1,1 +1,0 @@
-export const identifier = 'CAR AXLE CLIENT IS LICENSED UNDER THE GPL-3.0 LICENSE '
