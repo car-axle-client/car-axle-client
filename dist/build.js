@@ -1357,7 +1357,7 @@
                 }
                 n.default = t
             },
-        
+
             2441: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
@@ -1391,22 +1391,22 @@
                     onactive: function () {
                         // if anything should work it is this
                         var linkList = [
-    { name: 'Nebula 1', url: 'https://crystalnetwork.me/' },
-    { name: 'Nebula 2', url: 'https://typhoon.lol/' },
-    { name: 'Rammerhead 1', url: 'https://yorkhigh.audicolsas.co/' },
-    { name: 'Rammerhead 2', url: 'https://hotmomslol.ftp.sh/' },
-    { name: 'Rammerhead 3', url: 'https://cdn.lukefleed.xyz/' },
-    { name: 'Rammerhead 4', url: 'https://canvas.info.gf/' },
-    { name: 'Rammerhead 5', url: 'https://schoolhomeworkbuddy.jumpingcrab.com/' },
-    { name: 'Rammerhead 6', url: 'https://cfbrowser.chickenkiller.com/' },
-    { name: 'Rammerhead 7', url: 'https://kayd-is-goated.chickenkiller.com/' }
-    // Add more links as needed
-  ];
+                            { name: 'Nebula 1', url: 'https://crystalnetwork.me/' },
+                            { name: 'Nebula 2', url: 'https://typhoon.lol/' },
+                            { name: 'Rammerhead 1', url: 'https://yorkhigh.audicolsas.co/' },
+                            { name: 'Rammerhead 2', url: 'https://hotmomslol.ftp.sh/' },
+                            { name: 'Rammerhead 3', url: 'https://cdn.lukefleed.xyz/' },
+                            { name: 'Rammerhead 4', url: 'https://canvas.info.gf/' },
+                            { name: 'Rammerhead 5', url: 'https://schoolhomeworkbuddy.jumpingcrab.com/' },
+                            { name: 'Rammerhead 6', url: 'https://cfbrowser.chickenkiller.com/' },
+                            { name: 'Rammerhead 7', url: 'https://kayd-is-goated.chickenkiller.com/' },
+                            // Add more links as needed
+                        ]
 
-  var popup = window.open('', 'Links', 'width=400,height=570,resizable=yes,scrollbars=yes');
+                        var popup = window.open('', 'Links', 'width=400,height=570,resizable=yes,scrollbars=yes')
 
-  var style = popup.document.createElement('style');
-  style.textContent = `
+                        var style = popup.document.createElement('style')
+                        style.textContent = `
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -1446,27 +1446,27 @@
       padding: 5px;
       border-radius: 5px;
     }
-  `;
+  `
 
-  popup.document.head.appendChild(style);
+                        popup.document.head.appendChild(style)
 
-  var title = popup.document.createElement('h1');
-  title.textContent = 'Proxies';
-  popup.document.body.appendChild(title);
+                        var title = popup.document.createElement('h1')
+                        title.textContent = 'Proxies'
+                        popup.document.body.appendChild(title)
 
-  linkList.forEach(function(link) {
-    var anchor = popup.document.createElement('a');
-    anchor.textContent = link.name;
-    anchor.href = link.url;
-    anchor.target = '_blank'; // Open links in a new tab
+                        linkList.forEach(function (link) {
+                            var anchor = popup.document.createElement('a')
+                            anchor.textContent = link.name
+                            anchor.href = link.url
+                            anchor.target = '_blank' // Open links in a new tab
 
-    popup.document.body.appendChild(anchor);
-  });
+                            popup.document.body.appendChild(anchor)
+                        })
 
-  var footnote = popup.document.createElement('div');
-  footnote.className = 'footnote';
-  footnote.textContent = 'Credit to skrilll on Discord';
-  popup.document.body.appendChild(footnote);
+                        var footnote = popup.document.createElement('div')
+                        footnote.className = 'footnote'
+                        footnote.textContent = 'Credit to skrilll on Discord'
+                        popup.document.body.appendChild(footnote)
                     },
                     ondisable: function () {
                         alert('h')
@@ -1475,7 +1475,7 @@
                 }
                 n.default = t
             },
-        
+
             7737: (e, n) => {
                 'use strict'
                 Object.defineProperty(n, '__esModule', { value: !0 })
@@ -1528,9 +1528,10 @@
                     onactive: function () {
                         let e = document.getElementsByTagName('img')
                         if (e)
+                            // this mp3 link will hopefully not expire
                             for (let n of e)
-                                // this mp3 link will hopefully not expire
-                                new Audio('https://us-tuna-sounds-files.voicemod.net/2ff3560b-a76f-49dd-adbc-709b9f59c5c2-1704237226346.mp3').play(), (n.src = 'https://us-tuna-sounds-images.voicemod.net/2ff3560b-a76f-49dd-adbc-709b9f59c5c2-1704237226346.jpeg')
+                                new Audio('https://us-tuna-sounds-files.voicemod.net/2ff3560b-a76f-49dd-adbc-709b9f59c5c2-1704237226346.mp3').play(),
+                                    (n.src = 'https://us-tuna-sounds-images.voicemod.net/2ff3560b-a76f-49dd-adbc-709b9f59c5c2-1704237226346.jpeg')
                     },
                     always: !0,
                     custom_render: !1,
