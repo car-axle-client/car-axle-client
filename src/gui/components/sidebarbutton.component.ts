@@ -15,9 +15,9 @@ export class SidebarButton extends Component {
 
         let top: string = ''
         if (this.title == 'client / tab cloak') {
-            top = 'position: absolute; bottom: 2%;'
-        } else if (this.title == 'credits') {
             top = 'position: absolute; bottom: 9%;'
+        } else if (this.title == 'credits') {
+            top = 'position: absolute; bottom: 2%;'
         }
 
         return Pen.fromHTML(`

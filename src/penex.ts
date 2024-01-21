@@ -31,10 +31,13 @@ function setup(app: string) {
                 mainApp.style.display = mainApp.style.display === 'none' ? 'flex' : 'none'
             case 'F1':
                 // @ts-ignore
-                fetch('https://raw.githubusercontent.com/mark-rolich/RulersGuides.js/master/bookmarklet.js').then((res) => res.text()).then((text) => eval(text))
+                fetch('https://raw.githubusercontent.com/mark-rolich/RulersGuides.js/master/bookmarklet.js')
+                    .then((res) => res.text())
+                    .then((text) => eval(text))
         }
     })
-
 }
 
 export { setup }
+
+console.info('%cpenex ui framework is loaded', 'color: cornflowerblue; font-size: 20px; font-family: monospace;')

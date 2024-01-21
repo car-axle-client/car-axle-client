@@ -3,6 +3,7 @@ import { NAME } from '../../constants'
 import json from '../../assets/sections.json'
 import { SidebarButton } from './sidebarbutton.component'
 import { SidebarBackground } from './sidebarbackground.component'
+import { MainContent } from './maincontent.component'
 
 function setSection(section: string, sidebar_background: SidebarBackground) {
     sidebar_background.section = section
@@ -10,12 +11,35 @@ function setSection(section: string, sidebar_background: SidebarBackground) {
 }
 
 export class Sidebar extends Component {
+    private buttons: Pen[] = []
+    private sidebar_background!: SidebarBackground
+
     constructor() {
         super()
     }
 
+    public bindContent(content: MainContent[]) {
+        for (let i = 0; i < this.buttons.length; i++) {
+            this.buttons[i].addListener({
+                name: 'click',
+                callback: () => {
+                    if (this.sidebar_background.section == this.buttons[i].element.id) {
+                        return
+                    }
+                    // @ts-ignore
+                    window.enabled.hide()
+                    // @ts-ignore
+                    window.enabled = content[i]
+                    content[i].show()
+
+                    setSection(this.buttons[i].element.id, this.sidebar_background)
+                },
+            })
+        }
+    }
+
     public penIt(): Pen[] {
-        let sidebar_background = new SidebarBackground()
+        this.sidebar_background = new SidebarBackground()
 
         let pens =
             Pen.fromHTML(`
@@ -25,7 +49,7 @@ export class Sidebar extends Component {
         `) || []
 
         let section_navbar = getPenFromElementId('section-navbar', pens)
-        let section_background = Pen.fromHTML(sidebar_background.stringIt())
+        let section_background = Pen.fromHTML(this.sidebar_background.stringIt())
 
         section_background[0].setParent(section_navbar.element)
 
@@ -34,12 +58,8 @@ export class Sidebar extends Component {
 
             let section_pen: Pen[] = section_button.penIt()
             section_pen[0].setParent(section_navbar.element)
-            section_pen[0].addListener({
-                name: 'click',
-                callback: () => {
-                    setSection(section.display_name, sidebar_background)
-                },
-            })
+
+            this.buttons.push(section_pen[0])
         })
 
         return pens
