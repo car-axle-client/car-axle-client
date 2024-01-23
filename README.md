@@ -106,7 +106,7 @@ You could also look at github issues
 
 ## Support
 
-For support, contact me on discord @penguinify or through github issues
+For support, contact me on discord @penguinify, through email (penguinifyminecraft@gmail.com) or through github issues
 
 [support-invite]: https://discord.gg/QnxQUdEAUM
 [support-image]: https://invidget.switchblade.xyz/QnxQUdEAUM
