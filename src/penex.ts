@@ -29,11 +29,11 @@ function setup(app: string) {
                     throw new Error('Could not find app element')
                 }
                 mainApp.style.display = mainApp.style.display === 'none' ? 'flex' : 'none'
-            case 'F1':
-                // @ts-ignore
-                fetch('https://raw.githubusercontent.com/mark-rolich/RulersGuides.js/master/bookmarklet.js')
-                    .then((res) => res.text())
-                    .then((text) => eval(text))
+                break
+
+            case 'F2':
+                alert('penex ui framework is loaded - Hello from penguinify')
+                break
         }
     })
 }

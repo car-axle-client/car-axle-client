@@ -18,6 +18,80 @@ function main() {
 
     document.addEventListener('DOMContentLoaded', () => {
         setup('app-fuk-u')
+
+        const header = document.getElementById('app-status')
+        const app = document.getElementById('app-fuk-u')
+
+        if (!app || !header) {
+            return
+        }
+
+        header.addEventListener('mousedown', (e) => {
+            e.preventDefault()
+
+            let shiftX = e.clientX - app.getBoundingClientRect().left
+            let shiftY = e.clientY - app.getBoundingClientRect().top
+
+            moveAt(e.pageX, e.pageY)
+
+            app.animate(
+                {
+                    transform: ['scale(1)', 'scale(0.98)'],
+                },
+                {
+                    duration: 200,
+                    easing: 'ease',
+                    fill: 'forwards',
+                }
+            )
+
+            function moveAt(pageX: number, pageY: number) {
+                if (!app || !header) {
+                    return
+                }
+
+                app.animate(
+                    {
+                        left: pageX - shiftX + 'px',
+                        top: pageY - shiftY + 'px',
+                    },
+                    {
+                        duration: 1000,
+                        easing: 'ease-out',
+                        fill: 'forwards',
+                    }
+                )
+            }
+
+            function removeListeners() {
+                if (!app || !header) {
+                    return
+                }
+
+                app.animate(
+                    {
+                        transform: ['scale(0.98)', 'scale(1)'],
+                    },
+                    {
+                        duration: 200,
+                        easing: 'ease',
+                        fill: 'forwards',
+                    }
+                )
+
+                document.removeEventListener('mousemove', onMouseMove)
+                app.removeEventListener('mouseup', () => {})
+                document.removeEventListener('mouseup', removeListeners)
+            }
+
+            function onMouseMove(e: MouseEvent) {
+                moveAt(e.pageX, e.pageY)
+            }
+
+            document.addEventListener('mousemove', onMouseMove)
+
+            document.addEventListener('mouseup', removeListeners)
+        })
     })
 }
 

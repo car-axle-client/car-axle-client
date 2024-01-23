@@ -1,12 +1,23 @@
 // all the important styles are in this file
-@import "animations.less";
+@import 'animations.less';
+@import 'variables.less';
 
 #app-fuk-u {
     display: flex;
     flex-direction: row;
-    padding: 0.75vw;
-    -webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    padding: 2vw 0.75vw 0.75vw 0.75vw;
+    -webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+    cursor: move;
+}
 
-
+#app-status {
+    position: absolute;
+    top: 0.5vw;
+    font-size: 0.75vw;
+    padding: 0 0.75vw;
+    text-align: right;
+    width: calc(100% - 3vw);
+    right: 0.75vw;
+    background: @layer2;
 }

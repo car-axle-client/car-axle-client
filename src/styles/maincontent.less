@@ -1,22 +1,23 @@
-@import "animations.less";
-@import "variables.less";
+@import 'animations.less';
+@import 'variables.less';
 
 .maincontent {
     width: calc(100% - 22.5vw);
     margin-left: 19vw;
-    height: calc(100% - 3.5vw);
+    height: calc(100% - 4.75vw);
     display: none;
+    cursor: default;
     padding: 1vw;
     position: absolute;
     text-align: center;
     flex-direction: column;
     line-height: 0.25;
-    -webkit-animation: slide-in-blurred-bottom 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: slide-in-blurred-bottom 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: slide-in-blurred-top 1s cubic-bezier(0.23, 1, 0.32, 1) both;
     overflow-y: scroll;
     scrollbar-color: @theme transparent;
 
-     &::-webkit-scrollbar {
+    &::-webkit-scrollbar {
         width: 7px !important;
     }
 
@@ -28,7 +29,6 @@
         background-color: @theme !important;
         border-radius: 7px !important;
     }
-
 }
 
 .maincontent-header {

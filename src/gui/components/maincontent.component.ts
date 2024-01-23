@@ -1,5 +1,7 @@
 import { Component, Pen } from '../../penexutils'
-import { Content } from '../../types'
+import { Content, HandlerDefinition, HandlerOutput } from '../../types'
+import { Block } from './content/block.component'
+import { Iframe } from './content/iframe.component'
 
 export class MainContent extends Component {
     private title: string
@@ -25,6 +27,20 @@ export class MainContent extends Component {
 
     public show(): void {
         this.maincontent.element.style.display = 'block'
+
+        this.maincontent.element.animate(
+            [
+                {
+                    opacity: 0,
+                },
+                {
+                    opacity: 1,
+                },
+            ],
+            {
+                duration: 500,
+            }
+        )
     }
 
     public hide(): void {
@@ -66,28 +82,26 @@ export class MainContent extends Component {
     }
 
     private addContent(): Pen[] {
-
         let pens: Pen[] = []
-        
-        this.content.forEach((content) => {
 
+        let handlers: { [key: string]: HandlerDefinition } = {}
+        let context = require.context('../../handlers/', true, /\.ts$/)
+        context.keys().forEach((key) => {
+            let handler = context(key).default
+            handlers[handler.name] = handler
+        })
+
+        this.content.forEach((content) => {
             switch (content.type) {
                 case 'iframe':
-                    let iframe = Pen.fromHTML(`
-                        <iframe class="cac-iframe rounded-md" src="${content.src}" frameborder="0" allowfullscreen></iframe>
-                    `)[0]
-
-                    iframe.setParent(this.maincontent.element)
-
-                    if (content.controls) {
-                        iframe.element.setAttribute('controls', 'true')
-                    }
-                    
-                    pens.push(iframe)
+                    pens.push(new Iframe(this.maincontent, content.src).penIt()[0])
+                    break
+                case 'block':
+                    pens.push(new Block(this.maincontent, handlers[content.handler]).penIt()[0])
+                    break
             }
         })
 
         return pens
     }
-
 }
