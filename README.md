@@ -31,7 +31,7 @@
 > An update to ChromeOS (v115/v116) released in August 2023 has blocked all javascript: and javascript:// bookmarklets. If you use a managed Chromebook and **Devtools are turned off** (that means inspect element, etc.) then the Car Axle Client Bookmarklet won't work. In this case, you should use an [about:blank Injector](https://disnos9.github.io/jsinject/), but some features won't work (history flooder, scripts, etc.).
 
 ## Features
-<!-- hopefully this is a list -->
+
 -   Exploits
 -   300+ game library
 -   JS Console
@@ -49,8 +49,7 @@
 [![website][install-img]][install-web]
 
 ## Screenshots
-<!-- i changed to v8 because the image should update, idk why its not yet -->
-v8 example
+ v8 example
 ![App Screenshot](docs/dark.png)
 
 
@@ -69,7 +68,8 @@ v8 example
 # Contributing
 > [!NOTE]
 > You do NOT need to know how to code to contribute. Just start by editing only plain text, maybe even use ChatGPT to write some code. Anything helps!
-Development Setup
+
+ Development Setup
 
 1. Install Packages
 
@@ -89,12 +89,12 @@ pnpm dev
 pnpm build
 ```
 
-Contributing is made to be as easy as possible.  
-Check out the wiki for a guide on how the code works!
+ Contributing is made to be as easy as possible.  
+ Check out the wiki for a guide on how the code works!
 
-Just fork and submit a pull request and I will likely add it with some minor changes.
+ Just fork and submit a pull request and I will likely add it with some minor changes.
 
-Things you can contribute:
+ Things you can contribute:
 
 -   Fixing UI bugs (you can ask me for help if needed)
 -   Adding small features
@@ -104,12 +104,12 @@ Things you can contribute:
 -   Remove Old/Broken proxies
   
 # Adding proxies
+
+ Adding proxies couldnt be made simpler, all you have to do is **FOLLOW THE PATTERN**
+ Removing old/broken proxies is greatly appreciated
 > [!TIP]
 > You can either make a pull request yourself and add new proxies in src/modules/modules/scripts/proxies.ts.
-
-Adding proxies couldnt be made simpler, all you have to do is **FOLLOW THE PATTERN!!!**
-Removing old/broken proxies is greatly appreciated
-
+ 
 > [!WARNING]
 > Unverified and Direct-IP proxies will NOT be accepted for user safety.
 
