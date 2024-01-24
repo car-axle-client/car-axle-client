@@ -105,10 +105,11 @@ pnpm build
   
 # Adding proxies
 
- Adding proxies couldnt be made simpler, all you have to do is **FOLLOW THE PATTERN**
+ Adding proxies couldnt be made simpler, all you have to do is [**FOLLOW THE PATTERN**](https://www.example.com)
+ <!-- test -->
  Removing old/broken proxies is greatly appreciated
 > [!TIP]
-> You can either make a pull request yourself and add new proxies in src/modules/modules/scripts/proxies.ts.
+> You can either make a pull request yourself and add new proxies in [this file](src/modules/modules/scripts/proxies.ts) or just message skrilll on Discord.
  
 > [!WARNING]
 > Unverified and Direct-IP proxies will NOT be accepted for user safety.
