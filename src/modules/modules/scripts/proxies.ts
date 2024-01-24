@@ -21,7 +21,7 @@ function proxies() {
         { name: 'Rammerhead 5', url: 'https://schoolhomeworkbuddy.jumpingcrab.com/' },
         { name: 'Rammerhead 6', url: 'https://cfbrowser.chickenkiller.com/' },
         { name: 'Rammerhead 7', url: 'https://kayd-is-goated.chickenkiller.com/' },
-        { name: 'Rammerhead 7', url: 'https://www.myproxy.com/' },
+        { name: 'WebToppings', url: 'https://www.webtoppings.bar/' },
         
     ]
 
