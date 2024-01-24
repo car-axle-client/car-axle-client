@@ -1,7 +1,7 @@
 <div align="center">
  
 # car axle client
-### The **MOST POPULAR** bookmarklet menu. Proxies, games, and exploits in a clean ui. (by @penguinify)
+### The **MOST POPULAR** bookmarklet menu. Working proxies, games, and exploits in a clean ui. (by @penguinify)
  
  <img src="docs/caraxle.png" alt="drawing" width="500"/><br>
 <a href="https://car-axle-client.github.io">Install the latest version</a>
@@ -27,18 +27,21 @@
 
 </div>
 
-> [!NOTE]
-> A recent update to ChromeOS (v115/v116) released in August 2023 has blocked all javascript: and javascript:// bookmarklets. If you use a managed Chromebook and **Devtools are turned off** (that means Inspect element, etc.) (they must be turned off or bookmarklets still work) then the Car Axle Client Bookmarklet won't work. You can still use an [about:blank Injector however](https://disnos9.github.io/jsinject/) but some features won't work. (Things like history flooder, scripts, etc.)
+> [!IMPORTANT]
+> An update to ChromeOS (v115/v116) released in August 2023 has blocked all javascript: and javascript:// bookmarklets. If you use a managed Chromebook and **Devtools are turned off** (that means inspect element, etc.) then the Car Axle Client Bookmarklet won't work. In this case, you should use an [about:blank Injector](https://disnos9.github.io/jsinject/), but some features won't work (history flooder, scripts, etc.).
 
 ## Features
-
--   Exploits and history flooder
--   Small, fun things bookmarklets
--   Large 300+ game library
+<!-- hopefully this is a list -->
+-   Exploits
+ - NoForceClose
+ - AutoHide-UI
+ - ForceSelect+
+ - GoGuardian Killer
+-   300+ game library
 -   JS Console
 -   Mini Browser
--   Youtube Embeder
--   Scripts that improve your quality of life
+-   Youtube Embedder
+-   Scripts to improve your quality of life
 
 ## Discord
 
@@ -50,27 +53,26 @@
 [![website][install-img]][install-web]
 
 ## Screenshots
-
-v7 example
+<!-- i changed to v8 because the image should update, idk why its not yet -->
+v8 example
 ![App Screenshot](docs/dark.png)
 
-## Hosting the games yourself
 
-go here: https://github.com/car-axle-client/gay-hosting-v3
+<!-- dead repo -->
+<!-- ## Hosting the games yourself DEAD
 
-## contributors (thanks)
+ go here: https://github.com/car-axle-client/gay-hosting-v3 -->
 
-<a href="https://github.com/car-axle-client/car-axle-client/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=car-axle-client/car-axle-client" />
-</a>
 
-# people with write access
+<!-- removed because it is basically useless, add back if wanted -->
+<!-- # people with write access
 
 -   [@penguinify](https://github.com/Penguinify) main developer
--   [@disnos9](https://github.com/disnos9) side developer
+-   [@disnos9](https://github.com/disnos9) side developer -->
 
 # Contributing
-
+> [!NOTE]
+> You do NOT need to know how to code to contribute. Just start by editing only plain text, maybe even use ChatGPT to write some code. Anything helps!
 Development Setup
 
 1. Install Packages
@@ -94,15 +96,32 @@ pnpm build
 Contributing is made to be as easy as possible.  
 Check out the wiki for a guide on how the code works!
 
-Just fork and submit a pr and I will likely add it with some minor changes.
+Just fork and submit a pull request and I will likely add it with some minor changes.
 
 Things you can contribute:
 
 -   Fixing UI bugs (you can ask me for help if needed)
--   adding small features
--   refractoring
+-   Adding small features
+-   Refractoring the code
+-   Adding new proxies
+-   Assist with Github issues
+-   Remove Old/Broken proxies
+  
+# Adding proxies
+> [!TIP]
+> You can either make a pull request yourself and add new proxies in src/modules/modules/scripts/proxies.ts.
 
-You could also look at github issues
+Adding proxies couldnt be made simpler, all you have to do is **FOLLOW THE PATTERN!!!**
+Removing old/broken proxies is greatly appreciated
+
+> [!WARNING]
+> Unverified and Direct-IP proxies will NOT be accepted for user safety.
+
+## Contributors (thanks)
+
+<a href="https://github.com/car-axle-client/car-axle-client/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=car-axle-client/car-axle-client" />
+</a>
 
 ## Support
 
