@@ -15,6 +15,9 @@ export class Module extends Component {
             throw new Error('Handler is not a module')
         }
         this.handler = handler
+        if (this.handler.autoReset === undefined) {
+            this.handler.autoReset = false
+        }
         this.parent = parent
         this.title = title
         this.description = description
@@ -51,6 +54,15 @@ export class Module extends Component {
             // @ts-ignore -> type is module so it has a function with no args
             this.handler.onEnable()
             this.pens[0].element.classList.add('cac-module-active')
+
+            // @ts-ignore -> type is module so it has autoreset definedddddd
+            if (this.handler.autoReset) {
+                this.active = false
+
+                setTimeout(() => {
+                    this.pens[0].element.classList.remove('cac-module-active')
+                }, 500)
+            }
         } else {
             // @ts-ignore -> type is module so it has a function with no args
             this.handler.onDisabled && this.handler.onDisable()

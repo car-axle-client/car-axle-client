@@ -32,14 +32,16 @@ export class SidebarBackground extends Component {
                 {
                     filter: 'blur(5px)',
                 },
-                { 
+                {
                     top: `${offset}px`,
                     filter: 'blur(0px)',
-                }
-            ], {
-            duration: 500,
-            fill: 'forwards',
-            easing: 'ease',
-        })
+                },
+            ],
+            {
+                duration: 500,
+                fill: 'forwards',
+                easing: 'ease',
+            }
+        )
     }
 }

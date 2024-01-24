@@ -29,6 +29,14 @@ let content: ContentList = {
             handler: 'quickscroll',
         },
     ],
+    pocketbrowser: [
+        {
+            type: 'iframe',
+            id: 'pocketbrowseriframe',
+            src: 'https://google.com/webhp?igu=1',
+            controls: true,
+        }
+    ],
     credits: [
         {
             type: 'block',

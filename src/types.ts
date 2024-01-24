@@ -38,4 +38,5 @@ export type HandlerDefinition =
           id: string
           onEnable?: () => HandlerOutput
           onDisable?: () => HandlerOutput
+          autoReset?: boolean
       }
