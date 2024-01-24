@@ -33,10 +33,6 @@
 ## Features
 <!-- hopefully this is a list -->
 -   Exploits
- - NoForceClose
- - AutoHide-UI
- - ForceSelect+
- - GoGuardian Killer
 -   300+ game library
 -   JS Console
 -   Mini Browser
