@@ -16,6 +16,7 @@ function main() {
     console.info(`${VERSION}.${ITERATION} ${NAME} by ${CREATOR} (${ENV}), thank you from penguinify`)
     if (ENV === 'development') console.warn('car axle client development mode is enabled, your cool to do whatever you want ;)')
 
+    // DW ABOUT IT, ITS NOT BAD CODE IF I DON'T SAY IT IS
     document.addEventListener('DOMContentLoaded', () => {
         setup('app-fuk-u')
 

@@ -20,7 +20,8 @@ function Block(content: Pen[]): Pen[] {
 }
 
 let definition: HandlerDefinition = {
-    name: 'credits',
+    type: 'block',
+    id: 'creditsblock',
     function: Block,
 }
 

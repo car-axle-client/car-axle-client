@@ -9,11 +9,24 @@ let content: ContentList = {
             controls: true,
         },
     ],
+    exploits: [
+        {
+            type: 'module',
+            name: 'anti force reload',
+            description: 'prevents the website from reloading by opening a cancelable alert',
+            handler: 'antiforcereload',
+        },
+        {
+            type: 'module',
+            name: 'better force select',
+            description: 'allows you to select unselectable text on the screen',
+            handler: 'betterforceselect',
+        },
+    ],
     credits: [
         {
             type: 'block',
-            id: 'creditsblock',
-            handler: 'credits',
+            handler: 'creditsblock',
         },
     ],
 }

@@ -1,11 +1,5 @@
 type HTMLMarkup = string
 
-type Listener = {
-    name: string
-    callback: (() => void) | ((e: Event) => void)
-    once?: boolean
-}
-
 interface Component {
     // tf are these names ;-;
     penIt?(): Pen[]
@@ -49,25 +43,11 @@ enum elementGlobals {
 class Pen {
     element: HTMLElement
     parent?: HTMLElement | elementGlobals
-    private listeners: Listener[]
 
-    constructor(tag: string, listeners: Listener[] = [], parent?: HTMLElement | elementGlobals) {
+    constructor(tag: string, parent?: HTMLElement | elementGlobals) {
         this.element = document.createElement(tag)
-        this.listeners = listeners
 
         if (parent) this.setParent(parent)
-
-        this.listeners.forEach((listener) => this.addListener(listener))
-    }
-
-    addListener(listener: Listener) {
-        this.element.addEventListener(listener.name, listener.callback, { once: listener.once || false })
-        this.listeners.push(listener)
-    }
-
-    removeListener(listener: Listener) {
-        this.element.removeEventListener(listener.name, listener.callback)
-        this.listeners = this.listeners.filter((l) => l !== listener)
     }
 
     setParent(parent: HTMLElement | elementGlobals) {
@@ -114,4 +94,4 @@ function getPenFromElementId(id: string, pens: Pen[]): Pen {
     else throw new Error(`No pen with id ${id} found.`)
 }
 
-export { getPenFromElementId, Listener, Component, Components, Pen, elementGlobals }
+export { getPenFromElementId, Component, Components, Pen, elementGlobals }

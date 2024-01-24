@@ -20,20 +20,17 @@ export class Sidebar extends Component {
 
     public bindContent(content: MainContent[]) {
         for (let i = 0; i < this.buttons.length; i++) {
-            this.buttons[i].addListener({
-                name: 'click',
-                callback: () => {
-                    if (this.sidebar_background.section == this.buttons[i].element.id) {
-                        return
-                    }
-                    // @ts-ignore
-                    window.enabled.hide()
-                    // @ts-ignore
-                    window.enabled = content[i]
-                    content[i].show()
+            this.buttons[i].element.addEventListener('click', () => {
+                if (this.sidebar_background.section == this.buttons[i].element.id) {
+                    return
+                }
+                // @ts-ignore
+                window.enabled.hide()
+                // @ts-ignore
+                window.enabled = content[i]
+                content[i].show()
 
-                    setSection(this.buttons[i].element.id, this.sidebar_background)
-                },
+                setSection(this.buttons[i].element.id, this.sidebar_background)
             })
         }
     }

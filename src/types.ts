@@ -13,20 +13,29 @@ export type Content =
       }
     | {
           type: 'module'
-          path: string
+          name: string
+          description: string
+          handler: string // what it says down there
       }
     | {
           type: 'seperator'
       }
     | {
           type: 'block'
-          id: string
           handler: string // reference to a file in the attatchments folder
       }
 
 export type HandlerOutput = void | Pen[]
 
-export type HandlerDefinition = {
-    name: string
-    function: (content: Pen[]) => HandlerOutput
-}
+export type HandlerDefinition =
+    | {
+          type: 'block'
+          id: string
+          function: (content: Pen[]) => HandlerOutput
+      }
+    | {
+          type: 'module'
+          id: string
+          onEnable?: () => HandlerOutput
+          onDisable?: () => HandlerOutput
+      }

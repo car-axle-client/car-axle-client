@@ -2,6 +2,7 @@ import { Component, Pen } from '../../penexutils'
 import { Content, HandlerDefinition, HandlerOutput } from '../../types'
 import { Block } from './content/block.component'
 import { Iframe } from './content/iframe.component'
+import { Module } from './content/module.component'
 
 export class MainContent extends Component {
     private title: string
@@ -88,7 +89,7 @@ export class MainContent extends Component {
         let context = require.context('../../handlers/', true, /\.ts$/)
         context.keys().forEach((key) => {
             let handler = context(key).default
-            handlers[handler.name] = handler
+            handlers[handler.id] = handler
         })
 
         this.content.forEach((content) => {
@@ -98,6 +99,9 @@ export class MainContent extends Component {
                     break
                 case 'block':
                     pens.push(new Block(this.maincontent, handlers[content.handler]).penIt()[0])
+                    break
+                case 'module':
+                    pens.push(new Module(this.maincontent, content.name, content.description, handlers[content.handler]).penIt()[0])
                     break
             }
         })
