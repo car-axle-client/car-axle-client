@@ -53,7 +53,7 @@ export class Module extends Component {
             this.pens[0].element.classList.add('cac-module-active')
         } else {
             // @ts-ignore -> type is module so it has a function with no args
-            this.handler.onDisable()
+            this.handler.onDisabled && this.handler.onDisable()
             this.pens[0].element.classList.remove('cac-module-active')
         }
     }

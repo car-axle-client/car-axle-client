@@ -22,6 +22,12 @@ let content: ContentList = {
             description: 'allows you to select unselectable text on the screen',
             handler: 'betterforceselect',
         },
+        {
+            type: 'module',
+            name: 'quick scroll',
+            description: 'quickly scroll to the bottom of the page',
+            handler: 'quickscroll',
+        },
     ],
     credits: [
         {
