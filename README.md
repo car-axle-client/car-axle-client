@@ -105,7 +105,7 @@ pnpm build
   
 # Adding proxies
 
- Adding proxies couldnt be made simpler, all you have to do is [**FOLLOW THE PATTERN**](https://www.example.com)
+ Adding proxies couldnt be made simpler, all you have to do is [**FOLLOW THE PATTERN (click me for tutorial)**](https://youtu.be/uIK9r1Tiqvs)[^1]
  <!-- test -->
  Removing old/broken proxies is greatly appreciated
 > [!TIP]
@@ -113,6 +113,8 @@ pnpm build
  
 > [!WARNING]
 > Unverified and Direct-IP proxies will NOT be accepted for user safety.
+
+[^1]: You NEED to have forked car axle client to edit the .ts file and make a pull request.
 
 ## Contributors (thanks)
 
