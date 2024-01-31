@@ -16,7 +16,7 @@ function proxies() {
         { name: 'Nebula 2', url: 'https://typhoon.lol/' },
         { name: 'Rammerhead 1', url: 'https://yorkhigh.audicolsas.co/' },
         { name: 'Rammerhead 2', url: 'https://hotmomslol.ftp.sh/' },
-        { name: 'Rammerhead 3', url: 'https://cdn.lukefleed.xyz/' },
+        { name: 'Rammerhead 3', url: 'https://toronto.airwise.cl//' },
         { name: 'Rammerhead 4', url: 'https://canvas.info.gf/' },
         { name: 'Rammerhead 5', url: 'https://schoolhomeworkbuddy.jumpingcrab.com/' },
         { name: 'Rammerhead 6', url: 'https://cfbrowser.chickenkiller.com/' },
