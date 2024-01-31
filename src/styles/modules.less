@@ -5,6 +5,44 @@
     aspect-ratio: 16/9;
     background-color: @layer3;
     border: none;
+    margin-bottom: 1rem;
+}
+
+.cac-iframe-controls {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5vw 0;
+    margin-bottom: 1rem;
+    background-color: @layer3;
+
+    .cac-iframe-controls-button {
+        padding: 0.5rem;
+        cursor: pointer;
+        transition: 0.5s;
+        font-size: 1vw;
+        display: flex;
+        margin: 0 1vw;
+        align-items: center;
+
+        svg {
+            width: 1vw;
+            fill: white;
+            margin-right: 0.5vw;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            color: @theme;
+            letter-spacing: 0.1vw;
+            margin: 0 2vw;
+            font-weight: bold;
+        }
+
+        &:hover svg {
+            fill: @theme;
+        }
+    }
 }
 
 .cac-block {
@@ -16,6 +54,14 @@
 
     .divider {
         margin-bottom: 2vw;
+    }
+
+    .cac-input {
+        background-color: @layer4;
+    }
+
+    .cac-dropdown {
+        background-color: @layer4;
     }
 }
 
@@ -53,4 +99,33 @@
 
 .cac-module-active {
     box-shadow: inset 0 -7vw 0 0 @theme;
+}
+
+.cac-input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: @layer3;
+    color: white;
+    font-size: 1vw;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+
+    &:focus {
+        padding: 1.5rem;
+        outline: none;
+    }
+}
+
+// select html stylinh
+.cac-dropdown {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: @layer3;
+    color: white;
+    font-size: 1vw;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+    cursor: pointer;
 }

@@ -24,6 +24,12 @@ export type Content =
           type: 'block'
           handler: string // reference to a file in the attatchments folder
       }
+    | {
+          type: 'input'
+          id: string
+          handler: string // what it says up there
+          placeholder?: string
+      }
 
 export type HandlerOutput = void | Pen[]
 
@@ -39,4 +45,14 @@ export type HandlerDefinition =
           onEnable?: () => HandlerOutput
           onDisable?: () => HandlerOutput
           autoReset?: boolean
+      }
+    | {
+          type: 'input'
+          id: string
+          handler: (input: string, input_element: Pen) => HandlerOutput
+      }
+    | {
+          type: 'dropdown'
+          id: string
+          handler: (input: string, input_element: Pen) => HandlerOutput
       }

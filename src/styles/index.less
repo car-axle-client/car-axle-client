@@ -5,19 +5,28 @@
 #app-fuk-u {
     display: flex;
     flex-direction: row;
-    padding: 3vw 0.75vw 0.75vw 0.75vw;
+    padding: 2.5vw 0.75vw 0.75vw 0.75vw;
     -webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
     animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
-    cursor: move;
 }
 
 #app-status {
+    cursor: move;
     position: absolute;
     top: 0.5vw;
     font-size: 1.25vw;
-    padding: 0 0.75vw;
+    padding: 0.25vw;
     text-align: right;
-    width: calc(100% - 3vw);
+    width: calc(100% - 2vw);
     right: 0.75vw;
     background: @layer2;
+
+    svg {
+        width: 1vw;
+        cursor: pointer;
+        height: 1vw;
+        margin-right: 0.5vw;
+        vertical-align: middle;
+        fill: white;
+    }
 }

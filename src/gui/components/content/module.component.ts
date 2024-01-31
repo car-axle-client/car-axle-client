@@ -36,10 +36,6 @@ export class Module extends Component {
                                     </div>
                                 </div>`)
 
-        // let content = this.handler.function(pens)
-
-        // Array.isArray(content) && pens.push(...content)
-
         pens[0].setParent(this.parent.element)
         pens[0].element.addEventListener('mousedown', this.mouseDownHandler.bind(this))
 
@@ -47,7 +43,7 @@ export class Module extends Component {
         return pens
     }
 
-    public mouseDownHandler(e: MouseEvent): void {
+    public mouseDownHandler(): void {
         this.active = !this.active
 
         if (this.active) {
@@ -65,7 +61,7 @@ export class Module extends Component {
             }
         } else {
             // @ts-ignore -> type is module so it has a function with no args
-            this.handler.onDisabled && this.handler.onDisable()
+            this.handler.onDisable()
             this.pens[0].element.classList.remove('cac-module-active')
         }
     }

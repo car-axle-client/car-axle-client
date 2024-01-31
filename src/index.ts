@@ -11,10 +11,17 @@ import './styles/index.less'
 import './styles/utils.less'
 import './styles/maincontent.less'
 import './styles/modules.less'
+import { checkForUpdate } from './database'
 
 function main() {
     console.info(`${VERSION}.${ITERATION} ${NAME} by ${CREATOR} (${ENV}), thank you from penguinify`)
     if (ENV === 'development') console.warn('car axle client development mode is enabled, your cool to do whatever you want ;)')
+
+    checkForUpdate().then((update: boolean) => {
+        if (update) {
+            console.warn('Client outdated, please install the latest version!')
+        }
+    })
 
     // DW ABOUT IT, ITS NOT BAD CODE IF I DON'T SAY IT IS
     document.addEventListener('DOMContentLoaded', () => {
@@ -38,6 +45,7 @@ function main() {
             app.animate(
                 {
                     transform: ['scale(1)', 'scale(0.98)'],
+                    opacity: [1, 0.9],
                 },
                 {
                     duration: 200,
@@ -72,6 +80,7 @@ function main() {
                 app.animate(
                     {
                         transform: ['scale(0.98)', 'scale(1)'],
+                        opacity: [0.9, 1],
                     },
                     {
                         duration: 200,
@@ -81,7 +90,6 @@ function main() {
                 )
 
                 document.removeEventListener('mousemove', onMouseMove)
-                app.removeEventListener('mouseup', () => {})
                 document.removeEventListener('mouseup', removeListeners)
             }
 

@@ -2,6 +2,7 @@ import { Component, Pen } from '../../penexutils'
 import { Content, HandlerDefinition, HandlerOutput } from '../../types'
 import { Block } from './content/block.component'
 import { Iframe } from './content/iframe.component'
+import { Input } from './content/input.component'
 import { Module } from './content/module.component'
 
 export class MainContent extends Component {
@@ -89,19 +90,28 @@ export class MainContent extends Component {
         let context = require.context('../../handlers/', true, /\.ts$/)
         context.keys().forEach((key) => {
             let handler = context(key).default
-            handlers[handler.id] = handler
+            try {
+                handlers[handler.id] = handler
+
+                if (handler === undefined) throw new Error(`Handler: ${handler.id} is undefined`)
+            } catch (e) {
+                console.error(`Failed to load handler ${key}: ${e}`)
+            }
         })
 
         this.content.forEach((content) => {
             switch (content.type) {
                 case 'iframe':
-                    pens.push(new Iframe(this.maincontent, content.src).penIt()[0])
+                    pens.push(new Iframe(this.maincontent, content.src, content.id, content.controls).penIt()[0])
                     break
                 case 'block':
                     pens.push(new Block(this.maincontent, handlers[content.handler]).penIt()[0])
                     break
                 case 'module':
                     pens.push(new Module(this.maincontent, content.name, content.description, handlers[content.handler]).penIt()[0])
+                    break
+                case 'input':
+                    pens.push(new Input(this.maincontent, handlers[content.handler], content.placeholder).penIt()[0])
                     break
             }
         })

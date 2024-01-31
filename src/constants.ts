@@ -10,3 +10,6 @@ if (document.location.hostname.includes('localhost')) {
 } else if (document.location.hostname.includes('github.io')) {
     ENV = 'beta ;-;'
 }
+
+// DO NOT CHANGE UNLESS YK WHAT U DOIN
+export const DATABASE = 'https://raw.githubusercontent.com/car-axle-client/car-axle-database/main/'

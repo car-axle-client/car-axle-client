@@ -28,14 +28,42 @@ let content: ContentList = {
             description: 'quickly scroll to the bottom of the page',
             handler: 'quickscroll',
         },
+        {
+            type: 'module',
+            name: 'goguardian killer',
+            description: 'if there is an error, it worked! reload the page after finished. (dunno if it still works)',
+            handler: 'goguardiankiller',
+        },
+        {
+            type: 'module',
+            name: 'auto hide',
+            description: 'automatically hides car axle client when you switch tabs, press backslash to open it again',
+            handler: 'autohide',
+        },
     ],
     pocketbrowser: [
+        {
+            type: 'input',
+            id: 'pocketbrowserinput',
+            handler: 'pocketbrowserinput',
+            placeholder: 'search google or enter a url',
+        },
         {
             type: 'iframe',
             id: 'pocketbrowseriframe',
             src: 'https://google.com/webhp?igu=1',
             controls: true,
-        }
+        },
+    ],
+    client: [
+        {
+            type: 'block',
+            handler: 'versionblock',
+        },
+        {
+            type: 'block',
+            handler: 'tabcloakblock',
+        },
     ],
     credits: [
         {

@@ -41,7 +41,7 @@ enum elementGlobals {
 }
 
 class Pen {
-    element: HTMLElement
+    element: HTMLElement | HTMLInputElement
     parent?: HTMLElement | elementGlobals
 
     constructor(tag: string, parent?: HTMLElement | elementGlobals) {
