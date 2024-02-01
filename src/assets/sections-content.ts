@@ -41,6 +41,12 @@ let content: ContentList = {
             handler: 'autohide',
         },
     ],
+    scripts: [
+        {
+            type: 'block',
+            handler: 'scriptblock',
+        },
+    ],
     pocketbrowser: [
         {
             type: 'input',
@@ -54,6 +60,12 @@ let content: ContentList = {
             src: 'https://google.com/webhp?igu=1',
             controls: true,
         },
+    ],
+    webtools: [
+        {
+            type: 'block',
+            handler: 'consoleblock',
+        }
     ],
     client: [
         {

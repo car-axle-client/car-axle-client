@@ -43,6 +43,10 @@ export class MainContent extends Component {
                 duration: 500,
             }
         )
+
+        setTimeout(() => {
+            this.maincontent.element.style.display = 'block'
+        }, 500)
     }
 
     public hide(): void {

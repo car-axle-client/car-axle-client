@@ -56,3 +56,12 @@ export type HandlerDefinition =
           id: string
           handler: (input: string, input_element: Pen) => HandlerOutput
       }
+
+// database types
+export type Script = {
+    name: string
+    desc: string
+    author: { name: string; link: string }
+    url: string
+    patch?: string // eval(patch) before the script is run
+}

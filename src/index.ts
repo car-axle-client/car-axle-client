@@ -1,8 +1,7 @@
 // welcome to nextgen
 // have fun ;)
 // ~ penguinify
-//
-// car axle client uses a in house ui framework.
+// jk ik u wont have fun
 
 import { VERSION, ITERATION, NAME, CREATOR, ENV } from './constants'
 import { setup } from './penex'
