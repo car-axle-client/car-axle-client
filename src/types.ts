@@ -49,7 +49,7 @@ export type HandlerDefinition =
     | {
           type: 'input'
           id: string
-          handler: (input: string, input_element: Pen) => HandlerOutput
+          handler: (input: string, input_element: HTMLInputElement) => HandlerOutput
       }
     | {
           type: 'dropdown'

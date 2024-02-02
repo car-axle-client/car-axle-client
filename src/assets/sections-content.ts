@@ -64,7 +64,11 @@ let content: ContentList = {
     webtools: [
         {
             type: 'block',
-            handler: 'consoleblock',
+            handler: 'consoleoutputblock',
+        },
+        {
+            type: 'block',
+            handler: 'consoleinputblock',
         },
     ],
     client: [

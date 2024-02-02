@@ -13,7 +13,7 @@ function formatInput(input: string): string {
     return input
 }
 
-function inputhandler(input: string, input_element: Pen): void {
+function inputhandler(input: string): void {
     input = formatInput(input)
     document.getElementById('pocketbrowseriframe')!.setAttribute('src', input)
 }

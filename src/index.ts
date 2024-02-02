@@ -9,7 +9,7 @@ import './styles/sidebar.less'
 import './styles/index.less'
 import './styles/utils.less'
 import './styles/maincontent.less'
-import './styles/modules.less'
+import './styles/content.less'
 import { checkForUpdate } from './database'
 
 function main() {

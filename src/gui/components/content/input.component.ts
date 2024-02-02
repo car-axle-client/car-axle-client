@@ -20,7 +20,6 @@ export class Input extends Component {
     public penIt(): Pen[] {
         let pens = Pen.fromHTML(`<input type="text" id="${this.handler.id}" placeholder="${this.placeholder}" class="cac-input rounded-md">`)
         pens[0].element = pens[0].element as HTMLInputElement
-
         pens[0].setParent(this.parent.element)
         pens[0].element.addEventListener('change', () => {
             try {
@@ -40,7 +39,7 @@ export class Input extends Component {
             throw new Error('Handler is not a module')
         }
         if (this.handler.handler) {
-            this.handler.handler(input, this.pens[0])
+            this.handler.handler(input, this.pens[0].element as HTMLInputElement)
         }
     }
 }
