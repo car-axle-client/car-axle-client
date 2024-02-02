@@ -65,7 +65,7 @@ let content: ContentList = {
         {
             type: 'block',
             handler: 'consoleblock',
-        }
+        },
     ],
     client: [
         {

@@ -5,7 +5,7 @@ import { HandlerDefinition, Script } from '../../types'
 
 // function createModuleFromJSON(json: any): Pen[] {}
 
-function runScript(scripturl: string, patch?:string): void {
+function runScript(scripturl: string, patch?: string): void {
     patch && eval(patch)
 
     fetch(scripturl)
@@ -19,7 +19,14 @@ function Block(content: Pen[]): Pen[] {
     try {
         getJSON<Script[]>('scripts.json').then((scripts: Script[]) => {
             for (let script of scripts) {
-                let module = new Module(content[0], script.name, script.desc + ` by <a href="${script.author.link}" target="_blank">${script.author.name}</a>`, { type: 'module', id: script.name, onEnable: () => {runScript(script.url, script.patch || "")}, autoReset: true }).penIt()
+                let module = new Module(content[0], script.name, script.desc + ` by <a href="${script.author.link}" target="_blank">${script.author.name}</a>`, {
+                    type: 'module',
+                    id: script.name,
+                    onEnable: () => {
+                        runScript(script.url, script.patch || '')
+                    },
+                    autoReset: true,
+                }).penIt()
                 pens.push(...module)
             }
         })
