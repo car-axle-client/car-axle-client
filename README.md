@@ -28,7 +28,7 @@
 </div>
 
 > [!IMPORTANT]
-> An update to ChromeOS (v115/v116) released in August 2023 has blocked all javascript: and javascript:// bookmarklets. If you use a managed Chromebook and **Devtools are turned off** (that means inspect element, etc.) then the Car Axle Client Bookmarklet won't work. In this case, you should use an [about:blank Injector](https://disnos9.github.io/jsinject/), but some features won't work (history flooder, scripts, etc.).
+> As of chrome v115/v116 if **devtools are disabled bookmarklets are as well**. Please refer to ( this )[https://github.com/car-axle-client/car-axle-client/blob/main/docs/alternate_injection.md] docs for alternate execution methods.
 
 ## Features
 
@@ -54,12 +54,12 @@
 
 
 <!-- dead repo -->
-<!-- ## Hosting the games yourself DEAD
+<!-- ## Hosting the games yourself DEAD # ill link gitlab at some point...
 
  go here: https://github.com/car-axle-client/gay-hosting-v3 -->
 
 
-<!-- removed because it is basically useless, add back if wanted -->
+<!-- removed because it is basically useless, add back if wanted --> # i agree that its useless
 <!-- # people with write access
 
 -   [@penguinify](https://github.com/Penguinify) main developer
@@ -67,7 +67,7 @@
 
 # Contributing
 > [!NOTE]
-> You do NOT need to know how to code to contribute. Just start by editing only plain text, maybe even use ChatGPT to write some code. Anything helps!
+> Contributing on v9 is not recommended until docs have been created and penex as well as the layer on top of it has been finalized. If you are building from source, you should not need to worry.
 
  Development Setup
 
@@ -83,7 +83,7 @@ pnpm install
 pnpm dev
 ```
 
-3. Output a release file
+3. Output a release file in the build folder.
 
 ```
 pnpm build
@@ -103,18 +103,9 @@ pnpm build
 -   Assist with Github issues
 -   Remove Old/Broken proxies
   
-# Adding proxies
+## Docs
 
- Adding proxies couldnt be made simpler, all you have to do is [**FOLLOW THE PATTERN (click me for tutorial)**](https://youtu.be/uIK9r1Tiqvs)[^1]
- <!-- test -->
- Removing old/broken proxies is greatly appreciated
-> [!TIP]
-> You can either make a pull request yourself and add new proxies in [this file](src/modules/modules/scripts/proxies.ts) or just message skrilll on Discord.
- 
-> [!WARNING]
-> Unverified and Direct-IP proxies will NOT be accepted for user safety.
-
-[^1]: You NEED to have forked car axle client to edit the .ts file and make a pull request.
+The docs are currently in progress. They will be a seperate repo and will be linked here when they are ready.
 
 ## Contributors (thanks)
 
@@ -122,9 +113,9 @@ pnpm build
   <img src="https://contrib.rocks/image?repo=car-axle-client/car-axle-client" />
 </a>
 
-## Support
+## Support or Questions
 
-For support, contact me on discord @penguinify, through email (penguinifyminecraft@gmail.com) or through github issues
+For support, contact me on discord @penguinify, through email (penguinifyminecraft@gmail.com). (please come with a request/question, not a hello.)
 
 [support-invite]: https://discord.gg/QnxQUdEAUM
 [support-image]: https://invidget.switchblade.xyz/QnxQUdEAUM
