@@ -83,7 +83,7 @@ function Block(content: Pen[]): Pen[] {
 let definition: HandlerDefinition = {
     type: 'block',
     id: 'tabcloakblock',
-    function: Block,
+    handler: Block,
 }
 
 export default definition

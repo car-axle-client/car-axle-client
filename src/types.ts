@@ -37,7 +37,7 @@ export type HandlerDefinition =
     | {
           type: 'block'
           id: string
-          function: (content: Pen[]) => HandlerOutput
+          handler: (content: Pen[]) => HandlerOutput
       }
     | {
           type: 'module'
@@ -45,6 +45,11 @@ export type HandlerDefinition =
           onEnable?: () => HandlerOutput
           onDisable?: () => HandlerOutput
           autoReset?: boolean
+      }
+    | {
+          type: 'button'
+          id: string
+          handler: () => HandlerOutput
       }
     | {
           type: 'input'
@@ -64,4 +69,9 @@ export type Script = {
     author: { name: string; link: string }
     url: string
     patch?: string // eval(patch) before the script is run
+}
+
+export type Game = {
+    name: string
+    url: string
 }

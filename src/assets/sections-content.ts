@@ -8,6 +8,14 @@ let content: ContentList = {
             src: '',
             controls: true,
         },
+        {
+            type: 'block',
+            handler: 'gameslinkblock',
+        },
+        {
+            type: 'block',
+            handler: 'gameslistblock',
+        },
     ],
     exploits: [
         {
@@ -62,10 +70,6 @@ let content: ContentList = {
         },
     ],
     webtools: [
-        {
-            type: 'block',
-            handler: 'consoleoutputblock',
-        },
         {
             type: 'block',
             handler: 'consoleinputblock',

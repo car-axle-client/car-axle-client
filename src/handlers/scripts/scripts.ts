@@ -46,7 +46,7 @@ function Block(content: Pen[]): Pen[] {
 let definition: HandlerDefinition = {
     type: 'block',
     id: 'scriptblock',
-    function: Block,
+    handler: Block,
 }
 
 export default definition

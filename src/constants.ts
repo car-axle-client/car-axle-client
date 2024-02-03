@@ -1,3 +1,22 @@
+export var GAMESLINK = {
+    currentLink: 'aHR0cHM6Ly9jYXJheGxlY2xpZW50LmZ1bi8=',
+    defaultLink: 'aHR0cHM6Ly9jYXJheGxlY2xpZW50LmZ1bi8=',
+    alternate_links: [
+        {
+            display: 'alt link 1 ********.vercel.app',
+            url: 'aHR0cHM6Ly9nbWUtaG9zdGluZy12Mi1iN3gyNG8zNWktcGVuZ3VpbmlmeXMtcHJvamVjdHMudmVyY2VsLmFwcC8=',
+        },
+        {
+            display: 'alt link 2 **********.onrender.com',
+            url: 'aHR0cHM6Ly9jYXItYXhrZS5vbnJlbmRlci5jb20v',
+        },
+        {
+            display: 'alt link 3 **********.amplifyapp.com',
+            url: 'aHR0cHM6Ly9tYWluLmQydHByN3dsMnhud2pyLmFtcGxpZnlhcHAuY29tLw==',
+        },
+    ],
+}
+
 export const VERSION = 9
 export const ITERATION = 0
 

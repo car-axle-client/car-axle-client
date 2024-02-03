@@ -32,7 +32,7 @@ function Block(content: Pen[]): Pen[] {
 let definition: HandlerDefinition = {
     type: 'block',
     id: 'consoleinputblock',
-    function: Block,
+    handler: Block,
 }
 
 export default definition

@@ -22,7 +22,7 @@ function Block(content: Pen[]): Pen[] {
 let definition: HandlerDefinition = {
     type: 'block',
     id: 'creditsblock',
-    function: Block,
+    handler: Block,
 }
 
 export default definition

@@ -26,7 +26,7 @@ export class Input extends Component {
                 //@ts-ignore fuck generics, im to lazy for this
                 this.handleInput(pens[0].element.value)
             } catch (e) {
-                throw new Error('Input handler failed: ' + e)
+                console.error('Input Handler Failed:' + e)
             }
         })
 

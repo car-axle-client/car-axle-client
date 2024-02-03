@@ -19,7 +19,7 @@ export class Block extends Component {
         let pens = Pen.fromHTML(`<div class="cac-block rounded-md"></div>`)
 
         // @ts-ignore -> type is block so it has args and exists
-        let content = this.handler.function(pens)
+        let content = this.handler.handler(pens)
 
         Array.isArray(content) && pens.push(...content)
 
