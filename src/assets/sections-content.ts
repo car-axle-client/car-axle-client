@@ -68,6 +68,10 @@ let content: ContentList = {
             src: 'https://google.com/webhp?igu=1',
             controls: true,
         },
+        {
+            type: 'block',
+            handler: 'proxiesblock',
+        },
     ],
     webtools: [
         {

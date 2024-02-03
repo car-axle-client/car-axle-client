@@ -24,23 +24,22 @@ function Block(content: Pen[]): Pen[] {
         <h1>game link selector</h1>
         </div>`)
 
-    pens.push(...new Dropdown(
-        pens[0],
-        {
-            type: 'dropdown',
-            id: 'gameslinkdropdown',
-            handler: changeGameLink
-        },
-        [
-            "default link", 
-            ...GAMESLINK.alternate_links.map(
-                (link) => {
+    pens.push(
+        ...new Dropdown(
+            pens[0],
+            {
+                type: 'dropdown',
+                id: 'gameslinkdropdown',
+                handler: changeGameLink,
+            },
+            [
+                'default link',
+                ...GAMESLINK.alternate_links.map((link) => {
                     return link.display
-                }
-            )
-        ]
-    ).penIt())
-
+                }),
+            ]
+        ).penIt()
+    )
 
     pens[0].setParent(content[0].element)
     return pens || []

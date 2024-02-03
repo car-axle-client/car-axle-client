@@ -75,3 +75,8 @@ export type Game = {
     name: string
     url: string
 }
+
+export type Proxies = {
+    wild: string[]
+    normal: string[]
+}

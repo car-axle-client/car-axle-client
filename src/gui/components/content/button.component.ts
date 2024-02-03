@@ -26,9 +26,12 @@ export class Button extends Component {
                                     </h2>
                                 </div>`)
 
-        pens[0].setParent(this.parent.element)
-        pens[0].element.addEventListener('mousedown', this.mouseDownHandler.bind(this))
-
+        try {
+            pens[0].setParent(this.parent.element)
+            pens[0].element.addEventListener('mousedown', this.mouseDownHandler.bind(this))
+        } catch (e) {
+            console.error(e)
+        }
         this.pens = pens
         return pens
     }

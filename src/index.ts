@@ -22,29 +22,62 @@ function main() {
         }
     })
 
-    // DW ABOUT IT, ITS NOT BAD CODE IF I DON'T SAY IT IS
-    document.addEventListener('DOMContentLoaded', () => {
-        setup('app-fuk-u')
+    setup('app-fuk-u')
 
-        const header = document.getElementById('app-status')
-        const app = document.getElementById('app-fuk-u')
+    const header = document.getElementById('app-status')
+    const app = document.getElementById('app-fuk-u')
 
-        if (!app || !header) {
-            return
-        }
+    if (!app || !header) {
+        return
+    }
 
-        header.addEventListener('mousedown', (e) => {
-            e.preventDefault()
+    header.addEventListener('mousedown', (e) => {
+        e.preventDefault()
 
-            let shiftX = e.clientX - app.getBoundingClientRect().left
-            let shiftY = e.clientY - app.getBoundingClientRect().top
+        let shiftX = e.clientX - app.getBoundingClientRect().left
+        let shiftY = e.clientY - app.getBoundingClientRect().top
 
-            moveAt(e.pageX, e.pageY)
+        moveAt(e.pageX, e.pageY)
+
+        app.animate(
+            {
+                transform: ['scale(1)', 'scale(0.98)'],
+                opacity: [1, 0.9],
+            },
+            {
+                duration: 200,
+                easing: 'ease',
+                fill: 'forwards',
+            }
+        )
+
+        function moveAt(pageX: number, pageY: number) {
+            if (!app || !header) {
+                return
+            }
 
             app.animate(
                 {
-                    transform: ['scale(1)', 'scale(0.98)'],
-                    opacity: [1, 0.9],
+                    left: pageX - shiftX + 'px',
+                    top: pageY - shiftY + 'px',
+                },
+                {
+                    duration: 1000,
+                    easing: 'ease-out',
+                    fill: 'forwards',
+                }
+            )
+        }
+
+        function removeListeners() {
+            if (!app || !header) {
+                return
+            }
+
+            app.animate(
+                {
+                    transform: ['scale(0.98)', 'scale(1)'],
+                    opacity: [0.9, 1],
                 },
                 {
                     duration: 200,
@@ -53,53 +86,17 @@ function main() {
                 }
             )
 
-            function moveAt(pageX: number, pageY: number) {
-                if (!app || !header) {
-                    return
-                }
+            document.removeEventListener('mousemove', onMouseMove)
+            document.removeEventListener('mouseup', removeListeners)
+        }
 
-                app.animate(
-                    {
-                        left: pageX - shiftX + 'px',
-                        top: pageY - shiftY + 'px',
-                    },
-                    {
-                        duration: 1000,
-                        easing: 'ease-out',
-                        fill: 'forwards',
-                    }
-                )
-            }
+        function onMouseMove(e: MouseEvent) {
+            moveAt(e.pageX, e.pageY)
+        }
 
-            function removeListeners() {
-                if (!app || !header) {
-                    return
-                }
+        document.addEventListener('mousemove', onMouseMove)
 
-                app.animate(
-                    {
-                        transform: ['scale(0.98)', 'scale(1)'],
-                        opacity: [0.9, 1],
-                    },
-                    {
-                        duration: 200,
-                        easing: 'ease',
-                        fill: 'forwards',
-                    }
-                )
-
-                document.removeEventListener('mousemove', onMouseMove)
-                document.removeEventListener('mouseup', removeListeners)
-            }
-
-            function onMouseMove(e: MouseEvent) {
-                moveAt(e.pageX, e.pageY)
-            }
-
-            document.addEventListener('mousemove', onMouseMove)
-
-            document.addEventListener('mouseup', removeListeners)
-        })
+        document.addEventListener('mouseup', removeListeners)
     })
 }
 

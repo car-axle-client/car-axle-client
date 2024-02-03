@@ -14,5 +14,9 @@ export async function checkForUpdate(): Promise<boolean> {
 
 export async function getJSON<T>(file: string): Promise<T> {
     let data = await fetch(DATABASE + file)
-    return await data.json()
+    if (data.status == 200) {
+        return await data.json()
+    } else {
+        throw new Error('Failed to fetch data')
+    }
 }
