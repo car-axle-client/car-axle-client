@@ -21,13 +21,12 @@ function Block(content: Pen[]): Pen[] {
                 id: 'switchproxy',
                 handler: () => {
                     switchProxy(proxies.normal[Math.floor(Math.random() * proxies.normal.length)])
-                }}).penIt()
-                if (!button) {
-                    throw new Error('Button is not defined')
-                }
-                pens.push(
-                    ...button
-                )
+                },
+            }).penIt()
+            if (!button) {
+                throw new Error('Button is not defined')
+            }
+            pens.push(...button)
         },
         () => {
             let fallback = Pen.fromHTML(`
@@ -38,7 +37,6 @@ function Block(content: Pen[]): Pen[] {
             pens.push(fallback[0])
         }
     )
-    
 
     pens[0].setParent(content[0].element)
     return pens || []

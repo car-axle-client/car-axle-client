@@ -27,7 +27,6 @@ function Block(content: Pen[]): Pen[] {
                 }).penIt()
                 pens.push(...module)
             }
-    
         },
         () => {
             pens = Pen.fromHTML(`<div>
@@ -37,7 +36,6 @@ function Block(content: Pen[]): Pen[] {
             pens[0].setParent(content[0].element)
         }
     )
-
 
     return pens || []
 }
