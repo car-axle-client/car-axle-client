@@ -31,9 +31,8 @@ function main() {
         return
     }
 
-    // its not bad code if i dont say it is 
+    // its not bad code if i dont say it is
     header.addEventListener('mousedown', (e) => {
-
         // makes sures it not clicking something on the header
         if (e.target !== header) {
             return
@@ -65,7 +64,6 @@ function main() {
 
             app.style.left = pageX - shiftX + 'px'
             app.style.top = pageY - shiftY + 'px'
-
         }
 
         function removeListeners() {

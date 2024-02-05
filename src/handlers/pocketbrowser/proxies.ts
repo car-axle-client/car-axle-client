@@ -17,26 +17,35 @@ function Block(content: Pen[]): Pen[] {
 
     getJSON<Proxies>('special.json').then(
         (proxies: Proxies) => {
-            pens.push(...new Button(pens[0], 'Switch To Random Proxy', {
-                type: 'button',
-                id: 'switchproxy',
-                handler: () => {
-                    switchProxy(proxies.normal[Math.floor(Math.random() * proxies.normal.length)])
-                },
-            }).penIt())
+            pens.push(
+                ...new Button(pens[0], 'Switch To Random Proxy', {
+                    type: 'button',
+                    id: 'switchproxy',
+                    handler: () => {
+                        switchProxy(proxies.normal[Math.floor(Math.random() * proxies.normal.length)])
+                    },
+                }).penIt()
+            )
 
-            pens.push(...Pen.fromHTML(`
+            pens.push(
+                ...Pen.fromHTML(`
                                       <h2> Switch to a specific proxy </h2>
-                                      `))
+                                      `)
+            )
 
-            pens.push(...new Dropdown(pens[0], {
-                type: 'dropdown',
-                id: 'proxydropdown',
-                handler: (value) => {
-                    switchProxy(value)
-                },
-            }, Array(proxies.normal.length)).penIt())
-
+            pens.push(
+                ...new Dropdown(
+                    pens[0],
+                    {
+                        type: 'dropdown',
+                        id: 'proxydropdown',
+                        handler: (value) => {
+                            switchProxy(value)
+                        },
+                    },
+                    Array(proxies.normal.length)
+                ).penIt()
+            )
         },
         () => {
             let fallback = Pen.fromHTML(`
