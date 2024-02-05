@@ -1,5 +1,6 @@
 import { getJSON } from '../../database'
 import { Button } from '../../gui/components/content/button.component'
+import { Dropdown } from '../../gui/components/content/dropdown.component'
 import { Pen } from '../../penexutils'
 import { HandlerDefinition, Proxies } from '../../types'
 
@@ -16,17 +17,26 @@ function Block(content: Pen[]): Pen[] {
 
     getJSON<Proxies>('special.json').then(
         (proxies: Proxies) => {
-            let button = new Button(pens[0], 'Switch To Random Proxy', {
+            pens.push(...new Button(pens[0], 'Switch To Random Proxy', {
                 type: 'button',
                 id: 'switchproxy',
                 handler: () => {
                     switchProxy(proxies.normal[Math.floor(Math.random() * proxies.normal.length)])
                 },
-            }).penIt()
-            if (!button) {
-                throw new Error('Button is not defined')
-            }
-            pens.push(...button)
+            }).penIt())
+
+            pens.push(...Pen.fromHTML(`
+                                      <h2> Switch to a specific proxy </h2>
+                                      `))
+
+            pens.push(...new Dropdown(pens[0], {
+                type: 'dropdown',
+                id: 'proxydropdown',
+                handler: (value) => {
+                    switchProxy(value)
+                },
+            }, Array(proxies.normal.length)).penIt())
+
         },
         () => {
             let fallback = Pen.fromHTML(`
