@@ -54,15 +54,6 @@
 v7 example
 ![App Screenshot](docs/dark.png)
 
-## Hosting the games yourself
-
-go here: https://github.com/car-axle-client/gay-hosting-v3
-
-# people with write access
-
--   [@penguinify](https://github.com/Penguinify) main developer
--   [@disnos9](https://github.com/disnos9) side developer
-
 # Contributing
 
 Development Setup
@@ -85,22 +76,15 @@ pnpm dev
 pnpm build
 ```
 
-Contributing is made to be as easy as possible.  
-Check out the wiki for a guide on how the code works!
-
-Just fork and submit a pr and I will likely add it with some minor changes.
-
 Things you can contribute:
 
 -   Fixing UI bugs (you can ask me for help if needed)
 -   adding small features
 -   refractoring
 
-You could also look at github issues
-
 ## Support
 
-For support, contact me on discord @penguinify or through github issues
+For support contact me. The fastest way to reach me is on discord @penguinify. You can also use my email, penguinifyminecraft@gmail.com
 
 [support-invite]: https://discord.gg/QnxQUdEAUM
 [support-image]: https://invidget.switchblade.xyz/QnxQUdEAUM
