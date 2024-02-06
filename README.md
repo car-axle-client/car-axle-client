@@ -1,11 +1,12 @@
 <div align="center">
 
-
 ### The **MOST POPULAR** bookmarklet menu. Proxies, games, and exploits in a clean ui. (by @penguinify)
+
 #### give a star, this project took a while <3 ⭐️✨
- 
- <img src="docs/caraxle.png" alt="drawing" width="300"/><br>
+
+<img src="docs/caraxle.png" alt="drawing" width="300"/><br>
 <a href="https://car-axle-client.github.io">Install the latest version</a>
+
 <hr>
 <p align="center">
   <a href="#features">Features</a>
