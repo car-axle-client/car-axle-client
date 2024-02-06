@@ -1,9 +1,10 @@
 <div align="center">
- 
-# car axle client
+
+
 ### The **MOST POPULAR** bookmarklet menu. Proxies, games, and exploits in a clean ui. (by @penguinify)
+#### give a star, this project took a while <3 ⭐️✨
  
- <img src="docs/caraxle.png" alt="drawing" width="500"/><br>
+ <img src="docs/caraxle.png" alt="drawing" width="300"/><br>
 <a href="https://car-axle-client.github.io">Install the latest version</a>
 <hr>
 <p align="center">
@@ -28,7 +29,7 @@
 </div>
 
 > [!NOTE]
-> A recent update to ChromeOS (v115/v116) released in August 2023 has blocked all javascript: and javascript:// bookmarklets. If you use a managed Chromebook and **Devtools are turned off** (that means Inspect element, etc.) (they must be turned off or bookmarklets still work) then the Car Axle Client Bookmarklet won't work. You can still use an [about:blank Injector however](https://disnos9.github.io/jsinject/) but some features won't work. (Things like history flooder, scripts, etc.)
+> A recent update to ChromeOS (v115/v116) released in August 2023 has blocked all javascript bookmarklets. If you use a managed Chromebook and **Devtools are turned off** (that means Inspect element, etc.) then car axle client won't work. Look at alternate methods here: https://github.com/car-axle-client/car-axle-client/blob/main/docs/alternate_injection.md
 
 ## Features
 
