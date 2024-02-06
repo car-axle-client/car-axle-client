@@ -17,12 +17,28 @@ function Block(content: Pen[]): Pen[] {
 
     getJSON<Proxies>('special.json').then(
         (proxies: Proxies) => {
+
+            let proxyIdDropdown = new Dropdown(
+                    pens[0],
+                    {
+                        type: 'dropdown',
+                        id: 'proxydropdown',
+                        handler: (value) => {
+                            switchProxy(proxies.normal[parseInt(value)])
+                        },
+                    },
+                    [...Array(proxies.normal.length).keys()]
+                ).penIt()
+
             pens.push(
                 ...new Button(pens[0], 'Switch To Random Proxy', {
                     type: 'button',
                     id: 'switchproxy',
                     handler: () => {
+                        let value = Math.floor(Math.random() * proxies.normal.length).toString()
+                        ;(proxyIdDropdown[0].element as HTMLSelectElement).value = value
                         switchProxy(proxies.normal[Math.floor(Math.random() * proxies.normal.length)])
+
                     },
                 }).penIt()
             )
@@ -34,17 +50,7 @@ function Block(content: Pen[]): Pen[] {
             )
 
             pens.push(
-                ...new Dropdown(
-                    pens[0],
-                    {
-                        type: 'dropdown',
-                        id: 'proxydropdown',
-                        handler: (value) => {
-                            switchProxy(value)
-                        },
-                    },
-                    Array(proxies.normal.length)
-                ).penIt()
+                ...proxyIdDropdown
             )
         },
         () => {

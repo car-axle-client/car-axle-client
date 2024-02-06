@@ -4,9 +4,9 @@ import { HandlerDefinition } from '../../../types'
 export class Dropdown extends Component {
     private parent: Pen
     private handler: HandlerDefinition
-    private options: string[]
+    private options: string[] | number[]
 
-    constructor(parent: Pen, handler: HandlerDefinition, options: string[]) {
+    constructor(parent: Pen, handler: HandlerDefinition, options: string[] | number[]) {
         super()
 
         if (handler.type !== 'dropdown') {
