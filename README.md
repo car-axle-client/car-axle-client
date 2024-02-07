@@ -47,7 +47,7 @@
  [![support][support-image]][support-invite]
 
 ## Installation
-
+If this website is blocked, join the discord for alternate links.
 [![website][install-img]][install-web]
 
 ## Screenshots
