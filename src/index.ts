@@ -84,7 +84,6 @@ function main() {
             document.removeEventListener('mousemove', onMouseMove)
             document.removeEventListener('mouseup', removeListeners)
 
-
             if (app.getBoundingClientRect().top < 0) {
                 app.style.top = '0px'
             }
