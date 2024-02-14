@@ -49,7 +49,7 @@
 
 ## Installation
 
-If this website is blocked, join the discord for alternate links, or copy the js code from build/build.js.
+If this website is blocked, join the discord for alternate links, or copy the js code from dist/build.js.
 <img src="docs/installbutton.png" width=400>
 
 ## Screenshots
