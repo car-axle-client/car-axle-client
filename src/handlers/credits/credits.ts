@@ -9,11 +9,10 @@ function Block(content: Pen[]): Pen[] {
                            <h2>skrilll</h2>
                            <h2 class="divider" >disnos9</h2>
 
-                           <h1>assets</h1>
-                           <h2>icons</h2>
+                           <h1>icons</h2>
                            <h3  class="divider" >font awesome</h3>
-                           <h2>games</h2>
-                           <h3  class="divider" >selenite <a href="https://github.com/selenite-cc/selenite">(github)</a></h3>
+                           <h1>games</h2>
+                           <h3  class="divider" >selenite <a href="https://discord.gg/7jyufnwJNf" target="_blank">(discord)</a></h3>
                            </div>`)
     pen[0].setParent(content[0].element)
     return pen || []

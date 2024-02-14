@@ -16,11 +16,11 @@ export class StatusBar extends Component {
         `) || []
 
         pens[2].element.addEventListener('mousedown', () => {
-            let element = document.getElementById('app-fuk-u')
+            let element = document.getElementById('plskillme')
             element && (element.style.display = 'none')
         })
         pens[4].element.addEventListener('mousedown', () => {
-            let element = document.getElementById('app-fuk-u')
+            let element = document.getElementById('plskillme')
             element && element.remove()
         })
 

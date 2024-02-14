@@ -21,9 +21,11 @@ export class MainContent extends Component {
         if (enabled) {
             //@ts-ignore
             window.enabled = this
-            document.addEventListener('DOMContentLoaded', () => {
+
+            // wait for the page to load
+            setTimeout(() => {
                 this.show()
-            })
+            }, 1)
         }
     }
 

@@ -2,9 +2,7 @@ import { Pen } from '../../penexutils'
 import { HandlerDefinition } from '../../types'
 
 async function checkIfIframeIsEmbedable(url: string): Promise<boolean> {
-return true
-
-
+    return true
 }
 
 function formatInput(input: string): string {

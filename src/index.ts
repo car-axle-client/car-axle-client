@@ -47,7 +47,6 @@ function main() {
 
         app.animate(
             {
-                transform: ['scale(1)', 'scale(0.98)'],
                 opacity: [1, 0.9],
             },
             {
@@ -73,7 +72,6 @@ function main() {
 
             app.animate(
                 {
-                    transform: ['scale(0.98)', 'scale(1)'],
                     opacity: [0.9, 1],
                 },
                 {
@@ -85,6 +83,11 @@ function main() {
 
             document.removeEventListener('mousemove', onMouseMove)
             document.removeEventListener('mouseup', removeListeners)
+
+
+            if (app.getBoundingClientRect().top < 0) {
+                app.style.top = '0px'
+            }
         }
 
         function onMouseMove(e: MouseEvent) {
