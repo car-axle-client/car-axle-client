@@ -19,7 +19,7 @@ function searchGame(input: string, gamesJSON: Game[]) {
 function Block(content: Pen[]): Pen[] {
     let pens: Pen[] = Pen.fromHTML(`
         <div style="
-        height: 80%;
+        height: 50vh;
         overflow-y: scroll;
         " id="cac-gameslistblock"">
         <h1>game selector</h1>
