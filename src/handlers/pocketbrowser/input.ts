@@ -15,6 +15,11 @@ function formatInput(input: string): string {
         input = 'https://google.com/webhp?igu=1'
     }
 
+    // changes yt links into embed links
+    if (input.includes('youtube.com/watch?v=')) {
+        input = input.replace('youtube.com/watch?v=', 'youtube.com/embed/')
+    }
+
     return input
 }
 

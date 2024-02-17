@@ -9,6 +9,10 @@ function runScript(scripturl: string, patch?: string): void {
     fetch(scripturl)
         .then((response) => response.text())
         .then((text) => eval(text))
+        .catch((error) => {
+            console.error('Unable to load Script:', error)
+            alert('Unable to load Script (This is likely due to website restrictions, please try a different website)')
+        })
 }
 
 function Block(content: Pen[]): Pen[] {

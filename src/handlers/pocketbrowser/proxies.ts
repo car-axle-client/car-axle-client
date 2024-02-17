@@ -5,7 +5,15 @@ import { Pen } from '../../penexutils'
 import { HandlerDefinition, Proxies } from '../../types'
 
 function switchProxy(url: string) {
-    ;(document.getElementById('pocketbrowseriframe') as HTMLIFrameElement)!.src = atob(url)
+    url = atob(url)
+    console.log(url)
+    // checks if the url is valid
+    if (!url.startsWith('http')) {
+        alert('Invalid proxy URL, try using a different website')
+        return
+    }
+
+    ;(document.getElementById('pocketbrowseriframe') as HTMLIFrameElement)!.src = url
 }
 
 function Block(content: Pen[]): Pen[] {
