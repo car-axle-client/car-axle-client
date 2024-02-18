@@ -18,7 +18,7 @@ export class SidebarBackground extends Component {
 
     public stringIt(): string {
         return `
-            <div class="sidebar-background" id="sidebar-background"></div>
+            <div class="cac-sidebar-background" id="sidebar-background"></div>
         `
     }
 

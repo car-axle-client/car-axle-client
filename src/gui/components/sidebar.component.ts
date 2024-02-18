@@ -40,8 +40,8 @@ export class Sidebar extends Component {
 
         let pens =
             Pen.fromHTML(`
-            <div class="sidebar layer2 rounded-md" id="section-navbar">
-                <div class="header rounded-md">${NAME}</div>
+            <div class="cac-sidebar layer2 rounded-md" id="section-navbar">
+                <div class="cac-header rounded-md">${NAME}</div>
             </div>
         `) || []
 

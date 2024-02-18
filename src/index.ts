@@ -19,6 +19,7 @@ function main() {
     checkForUpdate().then((update: boolean) => {
         if (update) {
             console.warn('Client outdated, please install the latest version!')
+            alert(`Client outdated, please install the latest version! (Currently on v${VERSION}.${ITERATION})`)
         }
     })
 
