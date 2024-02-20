@@ -15,11 +15,7 @@
   -
   <a href="https://car-axle-client.github.io">Install</a>
   -
-  <a href="https://github.com/car-axle-client/car-axle-client?tab=GPL-3.0-1-ov-file">License</a>
-  -
   <a href="https://github.com/car-axle-client/car-axle-client/graphs/contributors">Contributions</a>
-  -
-   <a href="#contributing">Contributer Guide</a>
   -
   <a href="#support">Support</a>
 </p>
@@ -30,7 +26,7 @@
 </div>
 
 > [!NOTE]
-> A recent update to ChromeOS (v115/v116) released in August 2023 has blocked all javascript bookmarklets. If you use a managed Chromebook and **Devtools are turned off** (that means Inspect element, etc.) then car axle client won't work. Look at alternate methods here: https://github.com/car-axle-client/car-axle-client/blob/main/docs/alternate_injection.md
+> I have quit development of car axle client. Don't expect updates.
 
 ## Features
 
@@ -54,7 +50,7 @@ If this website is blocked, join the discord for alternate links, or copy the js
 
 ## Screenshots
 
-v7 example
+v9 example
 ![App Screenshot](docs/dark.png)
 
 # Contributing
@@ -78,12 +74,6 @@ pnpm dev
 ```
 pnpm build
 ```
-
-Things you can contribute:
-
--   Fixing UI bugs (you can ask me for help if needed)
--   adding small features
--   refractoring
 
 ## Support
 
