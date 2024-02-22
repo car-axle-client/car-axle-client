@@ -1,7 +1,7 @@
 import { Pen } from '../../penexutils'
 import { HandlerDefinition } from '../../types'
 
-function Block(content: Pen[]): Pen[] {
+function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     let pen = Pen.fromHTML(`<div>
                            <h1>developers</h1>
                            <h2  class="divider" >Penguinify (maindev)</h2>

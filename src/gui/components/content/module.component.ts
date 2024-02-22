@@ -2,13 +2,13 @@ import { Component, Pen } from '../../../penexutils'
 import { HandlerDefinition } from '../../../types'
 
 export class Module extends Component {
-    private parent: Pen
+    private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
     private active: boolean = false
     private title: string
     private description: string
 
-    constructor(parent: Pen, title: string, description: string, handler: HandlerDefinition) {
+    constructor(parent: Pen<HTMLElement>, title: string, description: string, handler: HandlerDefinition) {
         super()
 
         if (handler.type !== 'module') {
@@ -23,7 +23,7 @@ export class Module extends Component {
         this.description = description
     }
 
-    public penIt(): Pen[] {
+    public penIt(): Pen<HTMLElement>[] {
         let pens = Pen.fromHTML(`
                                 <div class="cac-module rounded-md">
                                     <div>

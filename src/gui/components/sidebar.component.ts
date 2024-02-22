@@ -11,7 +11,7 @@ function setSection(section: string, sidebar_background: SidebarBackground) {
 }
 
 export class Sidebar extends Component {
-    private buttons: Pen[] = []
+    private buttons: Pen<HTMLElement>[] = []
     private sidebar_background!: SidebarBackground
 
     constructor() {
@@ -35,7 +35,7 @@ export class Sidebar extends Component {
         }
     }
 
-    public penIt(): Pen[] {
+    public penIt(): Pen<HTMLElement>[] {
         this.sidebar_background = new SidebarBackground()
 
         let pens =
@@ -53,7 +53,7 @@ export class Sidebar extends Component {
         json.forEach((section: any) => {
             let section_button = new SidebarButton(section.display_name, section.icon)
 
-            let section_pen: Pen[] = section_button.penIt()
+            let section_pen: Pen<HTMLElement>[] = section_button.penIt()
             section_pen[0].setParent(section_navbar.element)
 
             this.buttons.push(section_pen[0])

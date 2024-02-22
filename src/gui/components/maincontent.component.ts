@@ -1,4 +1,4 @@
-import { Component, Pen } from '../../penexutils'
+import { Component, Elements, Pen } from '../../penexutils'
 import { Content, HandlerDefinition, HandlerOutput } from '../../types'
 import { Block } from './content/block.component'
 import { Iframe } from './content/iframe.component'
@@ -8,7 +8,7 @@ import { Module } from './content/module.component'
 export class MainContent extends Component {
     private title: string
     private description: string
-    public maincontent!: Pen
+    public maincontent!: Pen<HTMLElement>
     public content: Content[] = []
 
     constructor(title: string, description: string, content: Content[], enabled: boolean = false) {
@@ -71,7 +71,7 @@ export class MainContent extends Component {
         }, 500)
     }
 
-    public penIt(): Pen[] {
+    public penIt(): Pen<HTMLElement>[] {
         let pens =
             Pen.fromHTML(`
             <div class="maincontent layer2 rounded-md">
@@ -89,8 +89,8 @@ export class MainContent extends Component {
         return pens
     }
 
-    private addContent(): Pen[] {
-        let pens: Pen[] = []
+    private addContent(): Pen<Elements>[] {
+        let pens: Pen<Elements>[] = []
 
         let handlers: { [key: string]: HandlerDefinition } = {}
         let context = require.context('../../handlers/', true, /\.ts$/)

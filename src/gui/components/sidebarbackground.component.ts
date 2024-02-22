@@ -27,14 +27,7 @@ export class SidebarBackground extends Component {
         document.getElementById('sidebar-background')?.animate(
             [
                 {
-                    filter: 'blur(0px)',
-                },
-                {
-                    filter: 'blur(3px)',
-                },
-                {
                     top: `${offset}px`,
-                    filter: 'blur(0px)',
                 },
             ],
             {

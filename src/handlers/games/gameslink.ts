@@ -1,6 +1,6 @@
 import { GAMESLINK } from '../../constants'
 import { Dropdown } from '../../gui/components/content/dropdown.component'
-import { Pen } from '../../penexutils'
+import { Elements, Pen } from '../../penexutils'
 import { HandlerDefinition } from '../../types'
 
 function changeGameLink(input: string) {
@@ -18,8 +18,8 @@ function changeGameLink(input: string) {
     }
 }
 
-function Block(content: Pen[]): Pen[] {
-    let pens: Pen[] = Pen.fromHTML(`
+function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
+    let pens: Pen<HTMLElement>[] = Pen.fromHTML(`
         <div>
         <h1>game link selector</h1>
         </div>`)

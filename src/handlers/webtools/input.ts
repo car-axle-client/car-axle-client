@@ -1,5 +1,5 @@
 import { Input } from '../../gui/components/content/input.component'
-import { Pen } from '../../penexutils'
+import { Elements, Pen } from '../../penexutils'
 import { HandlerDefinition } from '../../types'
 
 function handleConsoleInput(input: string, input_element: HTMLInputElement) {
@@ -8,7 +8,7 @@ function handleConsoleInput(input: string, input_element: HTMLInputElement) {
     input_element.value = ''
 }
 
-function Block(content: Pen[]): Pen[] {
+function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
     let pens = Pen.fromHTML(`<div>
                            
                            </div>`)

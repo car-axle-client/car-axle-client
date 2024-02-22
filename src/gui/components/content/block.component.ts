@@ -2,20 +2,21 @@ import { Component, Pen } from '../../../penexutils'
 import { HandlerDefinition } from '../../../types'
 
 export class Block extends Component {
-    private parent: Pen
+    private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
 
-    constructor(parent: Pen, handler: HandlerDefinition) {
+    constructor(parent: Pen<HTMLElement>, handler: HandlerDefinition) {
         super()
 
         if (handler.type !== 'block') {
             throw new Error('Handler is not a block')
         }
+
         this.handler = handler
         this.parent = parent
     }
 
-    public penIt(): Pen[] {
+    public penIt(): Pen<HTMLElement | HTMLInputElement>[] {
         let pens = Pen.fromHTML(`<div class="cac-block rounded-md"></div>`)
 
         // @ts-ignore -> type is block so it has args and exists

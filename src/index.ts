@@ -11,6 +11,8 @@ import './styles/utils.less'
 import './styles/maincontent.less'
 import './styles/content.less'
 import { checkForUpdate } from './database'
+import { layout } from './gui/layout'
+import { components } from './gui/app'
 
 function main() {
     console.info(`${VERSION}.${ITERATION} ${NAME} by ${CREATOR} (${ENV}), thank you from penguinify`)
@@ -23,7 +25,7 @@ function main() {
         }
     })
 
-    setup('app-fuk-u')
+    setup('app-fuk-u', layout, components)
 
     const header = document.getElementById('app-status')
     const app = document.getElementById('app-fuk-u')

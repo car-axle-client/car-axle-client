@@ -10,7 +10,7 @@ export class SidebarButton extends Component {
         this.title = title
         this.icon = icon
     }
-    public penIt(): Pen[] {
+    public penIt(): Pen<HTMLElement>[] {
         // you can deal with it later.
 
         let top: string = ''

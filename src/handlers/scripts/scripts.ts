@@ -15,8 +15,8 @@ function runScript(scripturl: string, patch?: string): void {
         })
 }
 
-function Block(content: Pen[]): Pen[] {
-    let pens: Pen[] = []
+function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
+    let pens: Pen<HTMLElement>[] = []
 
     getJSON<Script[]>('scripts.json').then(
         (scripts: Script[]) => {

@@ -35,7 +35,7 @@ function handlePresetChange(input: string): void {
     }
 }
 
-function createPresets(parent: Pen): Pen[] {
+function createPresets(parent: Pen<HTMLElement>): Pen<HTMLElement>[] {
     let pens = Pen.fromHTML(`<h2>Presets</h2>`)
     pens[0].setParent(parent.element)
 
@@ -47,7 +47,7 @@ function createPresets(parent: Pen): Pen[] {
     return pens
 }
 
-function Block(content: Pen[]): Pen[] {
+function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     let pens = Pen.fromHTML(`<div>
                            <h1 class="divider">Tabcloak</h1>
                            <h2>Page Title and Page Icon</h2>

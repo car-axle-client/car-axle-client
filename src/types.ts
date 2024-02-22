@@ -1,4 +1,4 @@
-import { Pen } from './penexutils'
+import { Elements, Pen } from './penexutils'
 
 export type ContentList = {
     [key: string]: Content[]
@@ -31,13 +31,13 @@ export type Content =
           placeholder?: string
       }
 
-export type HandlerOutput = void | Pen[]
+export type HandlerOutput = void | Pen<Elements>[]
 
 export type HandlerDefinition =
     | {
           type: 'block'
           id: string
-          handler: (content: Pen[]) => HandlerOutput
+          handler: (content: Pen<Elements>[]) => HandlerOutput
       }
     | {
           type: 'module'
@@ -59,7 +59,7 @@ export type HandlerDefinition =
     | {
           type: 'dropdown'
           id: string
-          handler: (input: string, input_element: Pen) => HandlerOutput
+          handler: (input: string, input_element: Pen<Elements>) => HandlerOutput
       }
 
 // database types

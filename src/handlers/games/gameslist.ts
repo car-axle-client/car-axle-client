@@ -1,7 +1,7 @@
 import { GAMESLINK } from '../../constants'
 import { Button } from '../../gui/components/content/button.component'
 import { Input } from '../../gui/components/content/input.component'
-import { Pen } from '../../penexutils'
+import { Elements, Pen } from '../../penexutils'
 import { Game, HandlerDefinition } from '../../types'
 
 function changeGame(url: string) {
@@ -16,8 +16,8 @@ function searchGame(input: string, gamesJSON: Game[]) {
     }
 }
 
-function Block(content: Pen[]): Pen[] {
-    let pens: Pen[] = Pen.fromHTML(`
+function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
+    let pens: Pen<HTMLElement>[] = Pen.fromHTML(`
         <div style="
         height: 50vh;
         overflow-y: scroll;

@@ -2,11 +2,11 @@ import { Component, Pen } from '../../../penexutils'
 import { HandlerDefinition } from '../../../types'
 
 export class Input extends Component {
-    private parent: Pen
+    private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
     private placeholder: string
 
-    constructor(parent: Pen, handler: HandlerDefinition, placeholder: string = '') {
+    constructor(parent: Pen<HTMLElement>, handler: HandlerDefinition, placeholder: string = '') {
         super()
 
         if (handler.type !== 'input') {
@@ -17,14 +17,12 @@ export class Input extends Component {
         this.placeholder = placeholder
     }
 
-    public penIt(): Pen[] {
+    public penIt(): Pen<HTMLInputElement>[] {
         let pens = Pen.fromHTML(`<input type="text" id="${this.handler.id}" placeholder="${this.placeholder}" class="cac-input rounded-md">`)
-        pens[0].element = pens[0].element as HTMLInputElement
         pens[0].setParent(this.parent.element)
         pens[0].element.addEventListener('change', () => {
             try {
-                //@ts-ignore fuck generics, im to lazy for this
-                this.handleInput(pens[0].element.value)
+                this.handleInput((pens[0].element as HTMLInputElement).value)
             } catch (e) {
                 console.error('Input Handler Failed:' + e)
             }
@@ -38,8 +36,6 @@ export class Input extends Component {
         if (this.handler.type !== 'input') {
             throw new Error('Handler is not a module')
         }
-        if (this.handler.handler) {
-            this.handler.handler(input, this.pens[0].element as HTMLInputElement)
-        }
+        this.handler.handler && this.handler.handler(input, this.pens[0].element as HTMLInputElement)
     }
 }

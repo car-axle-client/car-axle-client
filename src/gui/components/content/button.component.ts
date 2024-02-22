@@ -2,11 +2,11 @@ import { Component, Pen } from '../../../penexutils'
 import { HandlerDefinition } from '../../../types'
 
 export class Button extends Component {
-    private parent: Pen
+    private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
     private title: string
 
-    constructor(parent: Pen, title: string, handler: HandlerDefinition) {
+    constructor(parent: Pen<HTMLElement>, title: string, handler: HandlerDefinition) {
         super()
 
         if (handler.type !== 'button') {
@@ -18,7 +18,7 @@ export class Button extends Component {
         this.title = title
     }
 
-    public penIt(): Pen[] {
+    public penIt(): Pen<HTMLElement>[] {
         let pens = Pen.fromHTML(`
                                 <div class="cac-button rounded-md">
                                     <h2>

@@ -6,7 +6,7 @@ export class StatusBar extends Component {
         super()
     }
 
-    public penIt(): Pen[] {
+    public penIt(): Pen<HTMLElement>[] {
         let pens =
             Pen.fromHTML(`
             <div id="app-status" class="rounded-md">

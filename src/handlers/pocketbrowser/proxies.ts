@@ -16,8 +16,8 @@ function switchProxy(url: string) {
     ;(document.getElementById('pocketbrowseriframe') as HTMLIFrameElement)!.src = url
 }
 
-function Block(content: Pen[]): Pen[] {
-    let pens: Pen[] = Pen.fromHTML(`
+function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
+    let pens: Pen<HTMLElement>[] = Pen.fromHTML(`
                                    <div>
                                         <h1>Proxies</h1>
                                     </div>

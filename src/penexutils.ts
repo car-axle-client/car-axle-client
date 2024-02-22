@@ -2,22 +2,33 @@ type HTMLMarkup = string
 
 interface Component {
     // tf are these names ;-;
-    penIt?(): Pen[]
+    penIt?(): Pen<Elements>[]
     stringIt?(): string
 }
 
 abstract class Component {
-    pens: Pen[] = []
+    pens: Pen<Elements>[] = []
 }
 
 class Components {
-    pens: Pen[] = []
+    pens: Pen<Elements>[] = []
     scripts: (() => void)[] = []
 
     constructor() {}
 
-    addComponent(component: Component) {
-        let pen: Pen | Pen[] = []
+    addComponents(component: Component[]): void {
+        for (let i = 0; i < component.length; i++) {
+            this.addComponent(component[i])
+        }
+    }
+
+    addScript(script: () => void): void {
+        this.scripts.push(script)
+    }
+
+    addComponent(component: Component): void {
+        let pen: Pen<Elements>[] = []
+
         if (component.stringIt) {
             pen = Pen.fromHTML(component.stringIt())
         } else if (component.penIt) {
@@ -30,21 +41,19 @@ class Components {
             this.pens.push(pen)
         }
     }
-
-    addScript(script: () => void): void {
-        this.scripts.push(script)
-    }
 }
 
 enum elementGlobals {
     mainApp = 'main-app',
 }
 
-class Pen {
+type Elements = HTMLElement | HTMLInputElement | HTMLTextAreaElement | HTMLIFrameElement
+
+class Pen<T extends Elements> {
     element: HTMLElement | HTMLInputElement
     parent?: HTMLElement | elementGlobals
 
-    constructor(tag: string, parent?: HTMLElement | elementGlobals) {
+    constructor(tag: string, parent?: T | elementGlobals) {
         this.element = document.createElement(tag)
 
         if (parent) this.setParent(parent)
@@ -57,7 +66,11 @@ class Pen {
         } else if (parent === elementGlobals.mainApp) this.parent = elementGlobals.mainApp
     }
 
-    static fromElement(element: HTMLElement, parent?: HTMLElement | elementGlobals): Pen {
+    setType<E extends Elements>() {
+        this.element = this.element as E
+    }
+
+    static fromElement<E extends Elements>(element: HTMLElement, parent?: E | elementGlobals): Pen<E> {
         let pen = new Pen(element.tagName)
         pen.element = element
         if (parent) pen.setParent(parent)
@@ -66,32 +79,30 @@ class Pen {
         return pen
     }
 
-    static fromHTML(html: HTMLMarkup): Pen[] {
-        let element = document.createElement('div')
+    static fromHTML(html: HTMLMarkup): Pen<Elements>[] {
+        const element = document.createElement('div')
         element.innerHTML = html
 
-        let baseChildren = element.children
-        let allChildren = element.querySelectorAll('*')
-        let pens: Pen[] = []
+        const pens: Pen<HTMLElement>[] = []
 
-        for (let i = 0; i < baseChildren.length; i++) {
-            let pen = Pen.fromElement(baseChildren[i] as HTMLElement, elementGlobals.mainApp)
+        Array.from(element.children).forEach((child) => {
+            const pen = Pen.fromElement(child as HTMLElement, elementGlobals.mainApp)
             pens.push(pen)
-        }
+        })
 
-        for (let i = 0; i < allChildren.length; i++) {
-            let pen = Pen.fromElement(allChildren[i] as HTMLElement)
+        element.querySelectorAll('*').forEach((child) => {
+            const pen = Pen.fromElement(child as HTMLElement)
             pens.push(pen)
-        }
+        })
 
         return pens
     }
 }
 
-function getPenFromElementId(id: string, pens: Pen[]): Pen {
+function getPenFromElementId(id: string, pens: Pen<Elements>[]): Pen<Elements> {
     let pen = pens.filter((p) => p.element.id === id)[0]
     if (pen) return pen
     else throw new Error(`No pen with id ${id} found.`)
 }
 
-export { getPenFromElementId, Component, Components, Pen, elementGlobals }
+export { getPenFromElementId, Component, Components, Pen, elementGlobals, Elements }
