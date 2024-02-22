@@ -1,10 +1,11 @@
-import { Component, Pen } from '../../../penexutils'
+import { Component, Elements, Pen } from '../../../penexutils'
 
 export class Iframe extends Component {
     private src: string
     private parent: Pen<HTMLElement>
     private controls: boolean
     private id: string
+    private iframe!: Pen<Elements>
 
     constructor(parent: Pen<HTMLElement>, src: string = '', id: string, controls: boolean) {
         super()
@@ -45,13 +46,13 @@ export class Iframe extends Component {
         return pens
     }
 
-    public penIt(): Pen<HTMLIFrameElement>[] {
+    public penIt(): Pen<Elements>[] {
         let pens = Pen.fromHTML(`<iframe id="${this.id}" src="${this.src}" class="cac-iframe rounded-md"></iframe>`)
-
         pens[0].setParent(this.parent.element)
 
-        this.controls && pens.push(...this.createControls(pens[0]))
+        this.controls && pens.push(...this.createControls(pens[0] as Pen<HTMLIFrameElement>))
 
+        this.iframe = pens[0]
         return pens
     }
 }

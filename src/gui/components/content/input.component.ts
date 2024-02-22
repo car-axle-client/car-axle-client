@@ -1,4 +1,4 @@
-import { Component, Pen } from '../../../penexutils'
+import { Component, Elements, Pen } from '../../../penexutils'
 import { HandlerDefinition } from '../../../types'
 
 export class Input extends Component {
@@ -17,7 +17,7 @@ export class Input extends Component {
         this.placeholder = placeholder
     }
 
-    public penIt(): Pen<HTMLInputElement>[] {
+    public penIt(): Pen<Elements>[] {
         let pens = Pen.fromHTML(`<input type="text" id="${this.handler.id}" placeholder="${this.placeholder}" class="cac-input rounded-md">`)
         pens[0].setParent(this.parent.element)
         pens[0].element.addEventListener('change', () => {
