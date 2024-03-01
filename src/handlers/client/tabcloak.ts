@@ -3,9 +3,12 @@ import { HandlerDefinition } from '../../types'
 import { Input } from '../../gui/components/content/input.component'
 import { Dropdown } from '../../gui/components/content/dropdown.component'
 import tabCloaks from '../../assets/tabcloaks.json'
+import { getStringFromLocalStorage, saveStringToLocalStorage } from '../../storagemanager'
 
 async function changePageTitle(title: string): Promise<void> {
     document.title = title
+    
+    saveStringToLocalStorage('cac-tabcloak-title', title)
 }
 
 async function changePageFavicon(url: string): Promise<void> {
@@ -17,6 +20,8 @@ async function changePageFavicon(url: string): Promise<void> {
     favicon.setAttribute('rel', 'icon')
     favicon.setAttribute('href', url)
     document.head.appendChild(favicon)
+
+    saveStringToLocalStorage('cac-tabcloak-favicon', url)
 }
 
 function handlePageTitleInput(input: string): void {
@@ -45,6 +50,14 @@ function createPresets(parent: Pen<HTMLElement>): Pen<HTMLElement>[] {
 
     pens.push(...new Dropdown(parent, { type: 'dropdown', id: 'tabcloakpresets', handler: handlePresetChange }, presets).penIt())
     return pens
+}
+
+function loadSave(): void {
+    let title = getStringFromLocalStorage('cac-tabcloak-title')
+    let favicon = getStringFromLocalStorage('cac-tabcloak-favicon')
+
+    title && changePageTitle(title)
+    favicon && changePageFavicon(favicon)
 }
 
 function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
@@ -77,6 +90,9 @@ function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     pens.push(...pageTitleInput.penIt())
     pens.push(...pageFaviconInput.penIt())
     pens.push(...createPresets(pens[0]))
+
+
+    loadSave()
     return pens || []
 }
 
