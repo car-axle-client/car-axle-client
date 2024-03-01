@@ -5,7 +5,7 @@ export class Iframe extends Component {
     private parent: Pen<HTMLElement>
     private controls: boolean
     private id: string
-    private iframe!: Pen<Elements>
+    private iframe!: Pen<HTMLIFrameElement>
 
     constructor(parent: Pen<HTMLElement>, src: string = '', id: string, controls: boolean) {
         super()
@@ -38,7 +38,7 @@ export class Iframe extends Component {
 
         pens[6].element.addEventListener('click', () => {
             let popout = window.open('', '_blank')
-            popout?.document.write(`<iframe src="${this.src}" style="position:fixed;width:100%;border:none;height:100%;"></iframe>`)
+            popout?.document.write(`<iframe src="${this.iframe.element.src}" style="position:fixed;width:100%;border:none;height:100%;"></iframe>`)
             // @ts-ignore - stfu
             popout?.document.getElementsByTagName('body')[0].style.margin = '0'
         })
@@ -52,7 +52,7 @@ export class Iframe extends Component {
 
         this.controls && pens.push(...this.createControls(pens[0] as Pen<HTMLIFrameElement>))
 
-        this.iframe = pens[0]
+        this.iframe = pens[0] as Pen<HTMLIFrameElement>
         return pens
     }
 }
