@@ -72,6 +72,10 @@ let content: ContentList = {
             type: 'block',
             handler: 'proxiesblock',
         },
+        {
+            type: 'block',
+            handler: 'localproxyblock',
+        },
     ],
     webtools: [
         {

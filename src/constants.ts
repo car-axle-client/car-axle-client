@@ -11,19 +11,27 @@ export var GAMESLINK = {
             url: 'aHR0cHM6Ly9jYXItYXhrZS5vbnJlbmRlci5jb20v',
         },
     ],
-    'alternate links': [
+    alternate_links: [
         {
             display: '(3) **********.amplifyapp.com',
             url: 'aHR0cHM6Ly9tYWluLmQydHByN3dsMnhud2pyLmFtcGxpZnlhcHAuY29tLw==',
         },
         {
             display: '(4) **********.onrender.com',
-            url: 'aHR0cHM6Ly9keGl0YzI4dHkyOXZiYzFvendmeWRjMWxidzlxYXEub25yZW5kZXIuY29tCg==',
+            url: 'aHR0cHM6Ly9keGl0YzI4dHkyOXZiYzFvendmeWRjMWxidzlxYXEub25yZW5kZXIuY29tLwo=',
         },
         {
             display: '(5) **********.onrender.com',
-            url: 'aHR0cHM6Ly9iaWdpZGVhc21hdGh3ZWJzaXRlLm9ucmVuZGVyLmNvbQ==',
+            url: 'aHR0cHM6Ly9iaWdpZGVhc21hdGh3ZWJzaXRlLm9ucmVuZGVyLmNvbS8K',
         },
+        {
+            display: '(6) **********.netlify.app',
+            url: 'aHR0cHM6Ly82NWU0YTRlYjc3MmJiN2FhMDVlOTVkZDQtLWhlbHBmdWwtamFsZWJpLTRjZWVkYS5uZXRsaWZ5LmFwcC8='
+        },
+        {
+            display: '(7) **********.vercel.app',
+            url: 'aHR0cHM6Ly9nYXktaG9zdGluZy12My52ZXJjZWwuYXBwLw=='
+        }
     ]
 }
 

@@ -36,7 +36,7 @@ function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
                     },
                 },
                 {
-                    'Proxies': proxies.normal.map((proxy, index) => index.toString())
+                    'Proxies': proxies.normal.map((_proxy, index) => index.toString())
                 }
             ).penIt()
 

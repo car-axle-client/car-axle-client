@@ -10,10 +10,15 @@ function changeGameLink(input: string) {
             GAMESLINK.currentLink = GAMESLINK.defaultLink
             break
         default:
-            let link = GAMESLINK.deprecated_links.find((link) => link.display === input)
-            if (link) {
-                GAMESLINK.currentLink = link.url
+            // checks in deprecated links AND other links/alternate links
+            for (let link of GAMESLINK.deprecated_links.concat(GAMESLINK.alternate_links)) {
+                if (link.display === input) {
+                    GAMESLINK.currentLink = link.url
+                    console.log(atob(GAMESLINK.currentLink))
+                    break
+                }
             }
+            
             break
     }
 }
@@ -36,6 +41,7 @@ function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
             {
                 'Normal Links': ['default link'],
                 'Deprecated Links': GAMESLINK.deprecated_links.map((link) => link.display),
+                'Other Links': GAMESLINK.alternate_links.map((link) => link.display),
             }
 
         ).penIt()
