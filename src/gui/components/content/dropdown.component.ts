@@ -1,12 +1,12 @@
 import { Component, Elements, Pen } from '../../../penexutils'
-import { HandlerDefinition } from '../../../types'
+import { DropdownOptions, HandlerDefinition } from '../../../types'
 
 export class Dropdown extends Component {
     private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
-    private options: string[] | number[]
+    private options: DropdownOptions
 
-    constructor(parent: Pen<HTMLElement>, handler: HandlerDefinition, options: string[] | number[]) {
+    constructor(parent: Pen<HTMLElement>, handler: HandlerDefinition, options: DropdownOptions) {
         super()
 
         if (handler.type !== 'dropdown') {
@@ -18,9 +18,18 @@ export class Dropdown extends Component {
     }
 
     public penIt(): Pen<Elements>[] {
-        let options = this.options.map((option) => {
-            return `<option value="${option}">${option}</option>`
-        })
+
+        let options = ''
+
+        // the keys are the optgroups and the values are the options
+        for (let key in this.options) {
+            options += `<optgroup label="${key}">`
+            for (let value of this.options[key]) {
+                options += `<option value="${value}">${value}</option>`
+            }
+            options += `</optgroup>`
+        }
+
         let pens = Pen.fromHTML(`
                                 <select id="${this.handler.id}" class="cac-dropdown rounded-md">
                                     ${options}

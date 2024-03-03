@@ -22,7 +22,8 @@ function setup(app: string, layout: string = defaultLayout, components?: Compone
     document.addEventListener('keydown', (e) => {
         switch (e.key) {
             case '\\':
-                document.getElementById(app)?.style.display === 'none' ? 'flex' : 'none'
+                if (mainApp === null) console.error('mainApp is null')
+                mainApp?.style.display === 'none' ? 'flex' : 'none'
                 break
             case 'F2':
                 alert('penex ui framework is loaded')

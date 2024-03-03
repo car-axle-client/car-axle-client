@@ -80,3 +80,7 @@ export type Proxies = {
     wild: string[]
     normal: string[]
 }
+
+export type DropdownOptions = {
+    [key: string]: string[]
+}

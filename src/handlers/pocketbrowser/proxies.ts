@@ -19,7 +19,8 @@ function switchProxy(url: string) {
 function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     let pens: Pen<HTMLElement>[] = Pen.fromHTML(`
                                    <div>
-                                        <h1>Proxies</h1>
+                                        <h1>External Proxies</h1>
+                                        <p>stored on a database and might not work on some websites</p>
                                     </div>
                                     `)
 
@@ -34,7 +35,9 @@ function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
                         switchProxy(proxies.normal[parseInt(value)])
                     },
                 },
-                [...Array(proxies.normal.length).keys()]
+                {
+                    'Proxies': proxies.normal.map((proxy, index) => index.toString())
+                }
             ).penIt()
 
             pens.push(

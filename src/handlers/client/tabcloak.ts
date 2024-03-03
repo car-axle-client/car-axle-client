@@ -7,7 +7,7 @@ import { getStringFromLocalStorage, saveStringToLocalStorage } from '../../stora
 
 async function changePageTitle(title: string): Promise<void> {
     document.title = title
-    
+
     saveStringToLocalStorage('cac-tabcloak-title', title)
 }
 
@@ -48,7 +48,7 @@ function createPresets(parent: Pen<HTMLElement>): Pen<HTMLElement>[] {
         return key
     })
 
-    pens.push(...new Dropdown(parent, { type: 'dropdown', id: 'tabcloakpresets', handler: handlePresetChange }, presets).penIt())
+    pens.push(...new Dropdown(parent, { type: 'dropdown', id: 'tabcloakpresets', handler: handlePresetChange }, {'Presets': presets}).penIt())
     return pens
 }
 
@@ -90,7 +90,6 @@ function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     pens.push(...pageTitleInput.penIt())
     pens.push(...pageFaviconInput.penIt())
     pens.push(...createPresets(pens[0]))
-
 
     loadSave()
     return pens || []

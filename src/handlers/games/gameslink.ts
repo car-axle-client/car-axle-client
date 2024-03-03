@@ -10,7 +10,7 @@ function changeGameLink(input: string) {
             GAMESLINK.currentLink = GAMESLINK.defaultLink
             break
         default:
-            let link = GAMESLINK.alternate_links.find((link) => link.display === input)
+            let link = GAMESLINK.deprecated_links.find((link) => link.display === input)
             if (link) {
                 GAMESLINK.currentLink = link.url
             }
@@ -22,6 +22,7 @@ function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
     let pens: Pen<HTMLElement>[] = Pen.fromHTML(`
         <div>
         <h1>game link selector</h1>
+        <h2 class="divider">if the games aren't loading, try changing the link</h2>
         </div>`)
 
     pens.push(
@@ -32,12 +33,11 @@ function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
                 id: 'gameslinkdropdown',
                 handler: changeGameLink,
             },
-            [
-                'default link',
-                ...GAMESLINK.alternate_links.map((link) => {
-                    return link.display
-                }),
-            ]
+            {
+                'Normal Links': ['default link'],
+                'Deprecated Links': GAMESLINK.deprecated_links.map((link) => link.display),
+            }
+
         ).penIt()
     )
 

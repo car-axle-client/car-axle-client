@@ -69,6 +69,7 @@
         color: white;
         text-align: left;
         border: none;
+        line-height: 0;
     }
 
     h2 {
@@ -92,6 +93,21 @@
     :last-child {
         // its not 0 to prevent a weird css scaling thing or whatever
         margin-bottom: 1px;
+    }
+
+    div::-webkit-scrollbar {
+        width: 7px !important;
+    }
+
+    div::-webkit-scrollbar-track {
+        background-color: transparent !important;
+        margin: 30px 0px 30px 0px !important;
+    }
+
+    div::-webkit-scrollbar-thumb {
+        background-color: @theme !important;
+        border-radius: 7px 0px 0px 7px !important;
+        min-height: 50px;
     }
 }
 

@@ -1,5 +1,5 @@
 import { Component, Elements, Pen } from '../../penexutils'
-import { Content, HandlerDefinition, HandlerOutput } from '../../types'
+import { Content, HandlerDefinition } from '../../types'
 import { Block } from './content/block.component'
 import { Iframe } from './content/iframe.component'
 import { Input } from './content/input.component'
