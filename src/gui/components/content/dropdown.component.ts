@@ -18,7 +18,6 @@ export class Dropdown extends Component {
     }
 
     public penIt(): Pen<Elements>[] {
-
         let options = ''
 
         // the keys are the optgroups and the values are the options

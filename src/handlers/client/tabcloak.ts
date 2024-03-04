@@ -48,7 +48,7 @@ function createPresets(parent: Pen<HTMLElement>): Pen<HTMLElement>[] {
         return key
     })
 
-    pens.push(...new Dropdown(parent, { type: 'dropdown', id: 'tabcloakpresets', handler: handlePresetChange }, {'Presets': presets}).penIt())
+    pens.push(...new Dropdown(parent, { type: 'dropdown', id: 'tabcloakpresets', handler: handlePresetChange }, { Presets: presets }).penIt())
     return pens
 }
 

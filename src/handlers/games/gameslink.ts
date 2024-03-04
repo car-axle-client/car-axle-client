@@ -18,7 +18,7 @@ function changeGameLink(input: string) {
                     break
                 }
             }
-            
+
             break
     }
 }
@@ -40,10 +40,9 @@ function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
             },
             {
                 'Normal Links': ['default link'],
-                'Deprecated Links': GAMESLINK.deprecated_links.map((link) => link.display),
                 'Other Links': GAMESLINK.alternate_links.map((link) => link.display),
+                'Deprecated Links': GAMESLINK.deprecated_links.map((link) => link.display),
             }
-
         ).penIt()
     )
 

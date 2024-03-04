@@ -26,13 +26,17 @@ export var GAMESLINK = {
         },
         {
             display: '(6) **********.netlify.app',
-            url: 'aHR0cHM6Ly82NWU0YTRlYjc3MmJiN2FhMDVlOTVkZDQtLWhlbHBmdWwtamFsZWJpLTRjZWVkYS5uZXRsaWZ5LmFwcC8='
+            url: 'aHR0cHM6Ly82NWU0YTRlYjc3MmJiN2FhMDVlOTVkZDQtLWhlbHBmdWwtamFsZWJpLTRjZWVkYS5uZXRsaWZ5LmFwcC8=',
         },
         {
             display: '(7) **********.vercel.app',
-            url: 'aHR0cHM6Ly9nYXktaG9zdGluZy12My52ZXJjZWwuYXBwLw=='
-        }
-    ]
+            url: 'aHR0cHM6Ly9nYXktaG9zdGluZy12My52ZXJjZWwuYXBwLw==',
+        },
+        {
+            display: '(8) **********.twilightparadox.com',
+            url: 'aHR0cHM6Ly9tYXRob3JhbWFsZWFybi50d2lsaWdodHBhcmFkb3guY29tLw==',
+        },
+    ],
 }
 
 export const VERSION = 9
