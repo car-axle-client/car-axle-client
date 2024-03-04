@@ -1,14 +1,31 @@
 import { Pen } from '../../penexutils'
 import { HandlerDefinition } from '../../types'
+import special from '../../assets/special.json'
+import { Dropdown } from '../../gui/components/content/dropdown.component'
+import { switchProxy } from './proxies'
 
-// @skrilll on discord
+// if your looking for links here, you must be desperate
 
 function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     let pens = Pen.fromHTML(`
         <div class="rounded-md bg-gray-800 p-4 m-4">
             <h1>Builtin Proxies</h1>
-            <p>stored in the codebase (use this if you see an error above)</p>
+            <p>stored in the codebase, works on more websites</p>
         `)
+
+    pens.push(
+        ...new Dropdown(
+            pens[0],
+            {
+                type: 'dropdown',
+                id: 'specialproxies',
+                    handler: (value) => {
+                        switchProxy(special.normal[parseInt(value)])
+                    },
+            },
+            { normal: special.normal.map((link, index) => index.toString()) }
+        ).penIt()
+    )
 
     pens[0].setParent(content[0].element)
     return pens || []

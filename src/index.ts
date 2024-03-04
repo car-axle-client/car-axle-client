@@ -10,11 +10,12 @@ import './styles/index.less'
 import './styles/utils.less'
 import './styles/maincontent.less'
 import './styles/content.less'
-import { checkForUpdate } from './database'
+import { checkForUpdate, track } from './database'
 import { layout } from './gui/layout'
 import { components } from './gui/app'
 
 function main() {
+    track()
     console.info(`${VERSION}.${ITERATION} ${NAME} by ${CREATOR} (${ENV}), thank you from penguinify`)
     if (ENV === 'development') console.warn('car axle client development mode is enabled, your cool to do whatever you want ;)')
 

@@ -4,7 +4,7 @@ import { Dropdown } from '../../gui/components/content/dropdown.component'
 import { Pen } from '../../penexutils'
 import { HandlerDefinition, Proxies } from '../../types'
 
-function switchProxy(url: string) {
+export function switchProxy(url: string) {
     url = atob(url)
     console.log(url)
     // checks if the url is valid

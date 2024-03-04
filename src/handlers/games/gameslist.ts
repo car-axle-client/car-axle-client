@@ -14,6 +14,10 @@ function searchGame(input: string, gamesJSON: Game[]) {
     for (let [index, game] of gamesJSON.entries()) {
         gamesElements[index].style.display = game.name.toLowerCase().includes(input) ? 'block' : 'none'
     }
+
+    if (input.includes('v8.1 is better')) {
+        alert('nuh uh')
+    }
 }
 
 function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
