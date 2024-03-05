@@ -26,7 +26,7 @@
 </div>
 
 > [!NOTE]
-> I have quit development of car axle client. Don't expect updates.
+> I have scaled back development of car axle client. Don't expect updates.
 
 ## Features
 
@@ -74,6 +74,9 @@ pnpm dev
 ```
 pnpm build
 ```
+
+## Can I use this on my bookmarklet list or etc
+With credit sure.
 
 ## Support
 
