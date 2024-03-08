@@ -1,5 +1,5 @@
 import { Component, Pen, getPenFromElementId } from '../../penexutils'
-import { NAME } from '../../constants'
+import { ITERATION, NAME, VERSION } from '../../constants'
 import json from '../../assets/sections.json'
 import { SidebarButton } from './sidebarbutton.component'
 import { SidebarBackground } from './sidebarbackground.component'
@@ -41,7 +41,7 @@ export class Sidebar extends Component {
         let pens =
             Pen.fromHTML(`
             <div class="cac-sidebar layer2 rounded-md" id="section-navbar">
-                <div class="cac-header rounded-md">${NAME}</div>
+                <div class="cac-header rounded-md">${NAME} &nbsp;&nbsp;v<b>${VERSION}</b></div>
             </div>
         `) || []
 

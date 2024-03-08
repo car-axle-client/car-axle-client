@@ -3,7 +3,7 @@ import { Component } from '../../penexutils'
 export class SidebarBackground extends Component {
     public section: string
 
-    constructor(section: string = 'games') {
+    constructor(section: string = 'cac-games') {
         super()
         this.section = section
 

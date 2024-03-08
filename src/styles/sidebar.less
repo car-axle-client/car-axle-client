@@ -16,7 +16,7 @@
 }
 
 .cac-header {
-    background: url('https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/logov9.png');
+    background: url('https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/logov10.svg');
     background-size: cover;
     width: 16.5vw;
     height: 12%;
@@ -32,8 +32,7 @@
 .cac-sidebar-button {
     width: 16.5vw;
     box-sizing: content-box;
-    height: 1.2em;
-    margin-bottom: 0.52em;
+    height: 1.8em;
     padding: 0.25vw 1vw;
     display: flex;
     color: white;
@@ -49,12 +48,13 @@
     fill: white;
 
     &:hover {
-        height: 2em;
+        letter-spacing: 0.05vw;
     }
 
     svg {
-        margin-right: 0.5rem;
+        margin-right: 0.5em;
         margin-bottom: 0;
+        margin-left: 0;
     }
 
     p {
@@ -72,4 +72,5 @@
     z-index: 1000000000000000000000000000000000000000000000000000000000000;
     position: absolute;
     border-radius: 0.75vw;
+    animation: slide-in-blurred-bottom 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }

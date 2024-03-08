@@ -19,9 +19,9 @@ function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
             {
                 type: 'dropdown',
                 id: 'specialproxies',
-                    handler: (value) => {
-                        switchProxy(special.normal[parseInt(value)])
-                    },
+                handler: (value) => {
+                    switchProxy(special.normal[parseInt(value)])
+                },
             },
             { normal: special.normal.map((link, index) => index.toString()) }
         ).penIt()

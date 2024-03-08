@@ -26,7 +26,7 @@ function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
         height: 50vh;
         overflow-y: scroll;
         " id="cac-gameslistblock"">
-        <h1>game selector</h1>
+        <h1 class="divider">game selector</h1>
         </div>`)
 
     let gamesJSON: Game[] = require('../../assets/games.json')

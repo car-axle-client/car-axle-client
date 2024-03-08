@@ -64,10 +64,15 @@
         flex-direction: column;
     }
 
+    p {
+        text-align: left;
+    }
+
     h1 {
         font-size: 1.5vw;
         color: white;
         text-align: left;
+        margin: 1vw 0;
         border: none;
         line-height: 0;
     }
@@ -76,6 +81,7 @@
         font-size: 1.1vw;
         color: white;
         text-align: left;
+        margin: 0.5vw 0;
         border: none;
     }
 
@@ -83,7 +89,7 @@
         margin-bottom: 2vw;
     }
 
-    .cac-input,
+    .cac-input[type='text'],
     .cac-dropdown,
     .cac-button,
     .cac-module {
@@ -127,6 +133,7 @@
         color: white;
         font-size: 1.5vw;
         margin: 1vw 0;
+        text-align: left;
     }
 
     div {
@@ -135,6 +142,7 @@
 
     p {
         opacity: 0;
+        text-align: left;
         margin-top: 0;
         font-size: 1vw;
         position: absolute;
@@ -156,13 +164,16 @@
     box-shadow: inset 0 -7vw 0 0 @theme;
 }
 
-.cac-input {
+.cac-input[type='text'] {
     width: 100%;
     padding: 1rem;
     border: none;
     background-color: @layer3;
     color: white;
     font-size: 1vw;
+    border: none;
+    text-align: left;
+
     margin-bottom: 1rem;
     transition: 0.5s;
     box-sizing: border-box;
@@ -175,17 +186,22 @@
 
 // select html stylinh
 .cac-dropdown {
+    appearance: none;
     width: 100%;
     padding: 1rem;
-    border: none;
+    font-family: "Comfortaa", sans-serif;
     background-color: @layer3;
     color: white;
     font-size: 1vw;
+    border: none;
     margin-bottom: 1rem;
     transition: 0.5s;
     cursor: pointer;
-    color: white;
     box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .cac-button {

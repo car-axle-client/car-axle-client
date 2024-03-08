@@ -21,7 +21,7 @@ export class SidebarButton extends Component {
         }
 
         return Pen.fromHTML(`
-            <div class="cac-sidebar-button" style="${top}" id="${this.title}">${this.icon}<p>${this.title}</p></div>
+            <div class="cac-sidebar-button" style="${top}" id="cac-${this.title}">${this.icon}<p>${this.title}</p></div>
         `)
     }
 }
