@@ -40,7 +40,7 @@
 
 ## Discord
 
-[Join the discord!](https://discord.gg/nac46r6Qn7)  
+[Join the discord!](https://discord.gg/QnxQUdEAUM)  
  [![support][support-image]][support-invite]
 
 ## Installation
