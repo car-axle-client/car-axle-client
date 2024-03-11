@@ -12,21 +12,22 @@ import './styles/maincontent.less'
 import './styles/content.less'
 import { checkForUpdate, track } from './database'
 import { layout } from './gui/layout'
-import { components } from './gui/app'
+import { components, notificationbar } from './gui/app'
 
 function main() {
     track()
     console.info(`${VERSION}.${ITERATION} ${NAME} by ${CREATOR} (${ENV}), thank you from penguinify`)
     if (ENV === 'development') console.warn('car axle client development mode is enabled, your cool to do whatever you want ;)')
 
+    setup('app-fuk-u', layout, components)
+
     checkForUpdate().then((update: boolean) => {
         if (update) {
             console.warn('Client outdated, please install the latest version!')
-            alert(`Client outdated, please install the latest version! (Currently on v${VERSION}.${ITERATION})`)
+            notificationbar.showNotification("You're on an outdated version!", `Update to the latest version. (Currently on v${VERSION}.${ITERATION})`)
         }
     })
 
-    setup('app-fuk-u', layout, components)
 
     const header = document.getElementById('app-status')
     const app = document.getElementById('app-fuk-u')
@@ -34,6 +35,8 @@ function main() {
     if (!app || !header) {
         return
     }
+
+    notificationbar.showNotification(`car axle ${VERSION}.${ITERATION} is loaded`, `enjoy ;)`)
 
     // its not bad code if i dont say it is
     header.addEventListener('mousedown', (e) => {

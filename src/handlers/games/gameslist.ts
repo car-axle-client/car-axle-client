@@ -1,4 +1,5 @@
 import { GAMESLINK } from '../../constants'
+import { notificationbar } from '../../gui/app'
 import { Button } from '../../gui/components/content/button.component'
 import { Input } from '../../gui/components/content/input.component'
 import { Elements, Pen } from '../../penexutils'
@@ -16,7 +17,11 @@ function searchGame(input: string, gamesJSON: Game[]) {
     }
 
     if (input.includes('v8.1 is better')) {
-        alert('nuh uh')
+        notificationbar.showNotification('no', 'v8.1 is not better no one likes u and ur opinion is invalid')
+        notificationbar.showNotification('no', 'v8.1 is not better no one likes u and ur opinion is invalid')
+        notificationbar.showNotification('no', 'v8.1 is not better no one likes u and ur opinion is invalid')
+        notificationbar.showNotification('no', 'v8.1 is not better no one likes u and ur opinion is invalid')
+        notificationbar.showNotification('no', 'v8.1 is not better no one likes u and ur opinion is invalid')
     }
 }
 
@@ -26,7 +31,8 @@ function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
         height: 50vh;
         overflow-y: scroll;
         " id="cac-gameslistblock"">
-        <h1 class="divider">game selector</h1>
+
+            <h1 class="divider">game selector</h1>
         </div>`)
 
     let gamesJSON: Game[] = require('../../assets/games.json')

@@ -1,4 +1,5 @@
 import { getJSON } from '../../database'
+import { notificationbar } from '../../gui/app'
 import { Module } from '../../gui/components/content/module.component'
 import { Pen } from '../../penexutils'
 import { HandlerDefinition, Script } from '../../types'
@@ -11,7 +12,7 @@ function runScript(scripturl: string, patch?: string): void {
         .then((text) => eval(text))
         .catch((error) => {
             console.error('Unable to load Script:', error)
-            alert('Unable to load Script (This is likely due to website restrictions, please try a different website)')
+            notificationbar.showNotification('Unable to load Script', 'This is likely due to website restrictions, please try a different website')
         })
 }
 

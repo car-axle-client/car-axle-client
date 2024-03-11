@@ -1,0 +1,34 @@
+@import "animations.less";
+@import "variables.less";
+
+#cac-notification-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1vw;
+}
+
+.cac-notification {
+    background-color: @layer1;
+    position: relative;
+    width: 20vw;
+    color: white;
+    margin-bottom: 0.6vw;
+    padding: 0.8vw;
+    cursor: pointer;
+    animation: slide-in 0.5s ease;
+    transition: 0.5s;
+}
+
+.cac-notification-title {
+    font-size: 1.2vw;
+    margin-bottom: 0.5vw;
+    font-weight: bold;
+    color: @theme;
+}
+
+.cac-notification-message {
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+    color: white;
+}

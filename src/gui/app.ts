@@ -4,10 +4,12 @@ import { Sidebar } from './components/sidebar.component'
 import sections from '../assets/sections.json'
 import content from '../assets/sections-content'
 import { StatusBar } from './components/statusbar.component'
+import { NotificationBar } from './components/notificationbar.component'
 
 const components: Components = new Components()
 let sidebar: Sidebar = new Sidebar()
 let statusbar: StatusBar = new StatusBar()
+let notificationbar: NotificationBar = new NotificationBar()
 components.addComponent(sidebar)
 components.addComponent(statusbar)
 
@@ -19,4 +21,5 @@ for (let section of sections) {
 
 sidebar.bindContent(allContent)
 
-export { components }
+components.addComponent(notificationbar)
+export { components, notificationbar }

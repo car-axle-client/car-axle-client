@@ -1,4 +1,5 @@
 import { getJSON } from '../../database'
+import { notificationbar } from '../../gui/app'
 import { Button } from '../../gui/components/content/button.component'
 import { Dropdown } from '../../gui/components/content/dropdown.component'
 import { Pen } from '../../penexutils'
@@ -9,7 +10,7 @@ export function switchProxy(url: string) {
     console.log(url)
     // checks if the url is valid
     if (!url.startsWith('http')) {
-        alert('Invalid proxy URL, try using a different website')
+        notificationbar.showNotification('Invalid Proxy', 'The proxy url is invalid')
         return
     }
 
