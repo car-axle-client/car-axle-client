@@ -1,5 +1,5 @@
 import { Component, Pen } from '../../penexutils'
-import "../../styles/notification.less"
+import '../../styles/notification.less'
 
 export class NotificationBar extends Component {
     notificationbar!: Pen<HTMLElement>
@@ -16,12 +16,6 @@ export class NotificationBar extends Component {
 
         this.notificationbar = pens[0]
 
-        // debug
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'n') {
-                this.showNotification('Title', 'Message')
-            }
-        })
 
         return pens
     }
@@ -35,16 +29,18 @@ export class NotificationBar extends Component {
         `)
 
         notification[0].setParent(this.notificationbar.element)
-        
+
         notification[0].element.addEventListener('click', () => {
-            notification[0].element.animate({
-                transform: 'translateX(100%)',
-            },
-            {
-                duration: 500,
-                easing: 'ease-in-out',
-                fill: 'forwards'
-            })
+            notification[0].element.animate(
+                {
+                    transform: 'translateX(100%)',
+                },
+                {
+                    duration: 500,
+                    easing: 'ease-in-out',
+                    fill: 'forwards',
+                }
+            )
 
             setTimeout(() => {
                 notification[0].element.remove()
@@ -52,14 +48,16 @@ export class NotificationBar extends Component {
         })
 
         setTimeout(() => {
-            notification[0].element.animate({
-                transform: 'translateX(100%)',
-            },
-            {
-                duration: 500,
-                easing: 'ease-in-out',
-                fill: 'forwards'
-            })
+            notification[0].element.animate(
+                {
+                    transform: 'translateX(100%)',
+                },
+                {
+                    duration: 500,
+                    easing: 'ease-in-out',
+                    fill: 'forwards',
+                }
+            )
 
             setTimeout(() => {
                 notification[0].element.remove()

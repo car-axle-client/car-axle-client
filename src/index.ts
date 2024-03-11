@@ -17,7 +17,10 @@ import { components, notificationbar } from './gui/app'
 function main() {
     track()
     console.info(`${VERSION}.${ITERATION} ${NAME} by ${CREATOR} (${ENV}), thank you from penguinify`)
-    if (ENV === 'development') console.warn('car axle client development mode is enabled, your cool to do whatever you want ;)')
+    if (ENV === 'development') {
+        console.warn('car axle client development mode is enabled, your cool to do whatever you want ;)')
+        notificationbar.showNotification('Development Mode', 'car axle client development mode is enabled, your cool to do whatever you want ;)')
+    }
 
     setup('app-fuk-u', layout, components)
 
@@ -27,7 +30,6 @@ function main() {
             notificationbar.showNotification("You're on an outdated version!", `Update to the latest version. (Currently on v${VERSION}.${ITERATION})`)
         }
     })
-
 
     const header = document.getElementById('app-status')
     const app = document.getElementById('app-fuk-u')

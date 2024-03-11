@@ -99,6 +99,14 @@ let content: ContentList = {
             handler: 'creditsblock',
         },
     ],
+    dev: [
+        {
+            type: 'module',
+            name: 'show notification',
+            description: 'shows notification',
+            handler: 'shownotification',
+        }
+    ],
 }
 
 export default content
