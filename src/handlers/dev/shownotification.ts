@@ -1,4 +1,3 @@
-
 import { notificationbar } from '../../gui/app'
 import { HandlerDefinition } from '../../types'
 

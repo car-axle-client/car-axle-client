@@ -35,40 +35,28 @@ export class MainContent extends Component {
         this.maincontent.element.animate(
             [
                 {
+                    transform: 'translateY(-10vh)',
                     opacity: 0,
                 },
                 {
+                    transform: 'translateY(0px)',
                     opacity: 1,
                 },
             ],
             {
-                duration: 500,
+                duration: 300,
+                easing: 'cubic-bezier(0,.41,.42,.98)',
+                fill: 'forwards',
             }
         )
 
         setTimeout(() => {
             this.maincontent.element.style.display = 'block'
-        }, 500)
+        }, 300)
     }
 
     public hide(): void {
-        this.maincontent.element.animate(
-            [
-                {
-                    opacity: 1,
-                },
-                {
-                    opacity: 0,
-                },
-            ],
-            {
-                duration: 500,
-            }
-        )
-
-        setTimeout(() => {
-            this.maincontent.element.style.display = 'none'
-        }, 500)
+        this.maincontent.element.style.display = 'none'
     }
 
     public penIt(): Pen<HTMLElement>[] {

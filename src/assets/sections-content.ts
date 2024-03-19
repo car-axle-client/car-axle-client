@@ -82,6 +82,10 @@ let content: ContentList = {
             type: 'block',
             handler: 'consoleinputblock',
         },
+        {
+            type: 'block',
+            handler: 'storageblock',
+        },
     ],
     client: [
         {
@@ -105,7 +109,7 @@ let content: ContentList = {
             name: 'show notification',
             description: 'shows notification',
             handler: 'shownotification',
-        }
+        },
     ],
 }
 

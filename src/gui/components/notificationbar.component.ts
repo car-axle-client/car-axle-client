@@ -16,7 +16,6 @@ export class NotificationBar extends Component {
 
         this.notificationbar = pens[0]
 
-
         return pens
     }
 
@@ -34,6 +33,7 @@ export class NotificationBar extends Component {
             notification[0].element.animate(
                 {
                     transform: 'translateX(100%)',
+                    opacity: 0,
                 },
                 {
                     duration: 500,
@@ -51,6 +51,7 @@ export class NotificationBar extends Component {
             notification[0].element.animate(
                 {
                     transform: 'translateX(100%)',
+                    opacity: 0,
                 },
                 {
                     duration: 500,

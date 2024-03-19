@@ -51,10 +51,7 @@ export class Sidebar extends Component {
         section_background[0].setParent(section_navbar.element)
 
         if (ENV === 'development') {
-            let dev_button = new SidebarButton(
-                'develop',
-                ''
-            )
+            let dev_button = new SidebarButton('develop', '')
             let dev_pen: Pen<HTMLElement>[] = dev_button.penIt()
             dev_pen[0].setParent(section_navbar.element)
             this.buttons.push(dev_pen[0])

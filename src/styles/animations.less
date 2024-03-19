@@ -1,42 +1,28 @@
-@-webkit-keyframes slide-in-blurred-bottom {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 @keyframes slide-in-blurred-bottom {
     0% {
-        opacity: 0;
+        transform: translateY(25vh);
     }
     100% {
-        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@-webkit-keyframes slide-in-blurred-top {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 @keyframes slide-in-blurred-top {
     0% {
-        opacity: 0;
+        transform: translateY(-25vh);
     }
     100% {
-        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 @keyframes slide-in {
     0% {
         transform: translateX(100%);
+        opacity: 0;
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }

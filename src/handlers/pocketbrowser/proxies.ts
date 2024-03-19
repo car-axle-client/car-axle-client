@@ -5,10 +5,19 @@ import { Dropdown } from '../../gui/components/content/dropdown.component'
 import { Pen } from '../../penexutils'
 import { HandlerDefinition, Proxies } from '../../types'
 
+function moveLetter(letter: string, shift: number) {
+    let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
+    if (letter.match(/[A-Za-z]/)) {
+        const start = letter === letter.toUpperCase() ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0)
+        return String.fromCharCode(start + ((letter.charCodeAt(0) - start + shift) % 26))
+    }
+    return letter
+}
+
 export function switchProxy(url: string) {
-    url = atob(url)
-    console.log(url)
-    // checks if the url is valid
+    let test = url.split('').map((letter) => moveLetter(letter, -3))
+    notificationbar.showNotification('Proxy Switched', `Switched to ${test.join('')}`)
+
     if (!url.startsWith('http')) {
         notificationbar.showNotification('Invalid Proxy', 'The proxy url is invalid')
         return

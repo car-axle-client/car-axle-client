@@ -10,12 +10,12 @@ function handleConsoleInput(input: string, input_element: HTMLInputElement) {
 
 function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
     let pens = Pen.fromHTML(`<div>
-                           
+                                    <h1 class="divider">js runner</h1>
                            </div>`)
 
     pens.push(
         ...new Input(
-            pens[0],
+            pens[1],
             {
                 type: 'input',
                 id: 'consoleInput',

@@ -5,11 +5,13 @@
     position: fixed;
     top: 0;
     right: 0;
+    pointer-events: none;
     padding: 1vw;
 }
 
 .cac-notification {
     background-color: @layer1;
+    box-shadow: inset 0 0 0 0.1vw @theme;
     position: relative;
     width: 20vw;
     color: white;
@@ -18,6 +20,11 @@
     cursor: pointer;
     animation: slide-in 0.5s ease;
     transition: 0.5s;
+    pointer-events: auto;
+
+    &:hover {
+        box-shadow: inset 0 0 0 0.3vw @theme;
+    }
 }
 
 .cac-notification-title {

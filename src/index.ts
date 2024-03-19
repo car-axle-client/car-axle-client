@@ -38,74 +38,8 @@ function main() {
         return
     }
 
-    notificationbar.showNotification(`car axle ${VERSION}.${ITERATION} is loaded`, `enjoy ;)`)
+    notificationbar.showNotification(`car axle client`, `welcome to ${NAME} v${VERSION}.${ITERATION} by penguinify. enjoy your stay ;)`)
 
-    // its not bad code if i dont say it is
-    header.addEventListener('mousedown', (e) => {
-        // makes sures it not clicking something on the header
-        if (e.target !== header) {
-            return
-        }
-
-        e.preventDefault()
-
-        let shiftX = e.clientX - app.getBoundingClientRect().left
-        let shiftY = e.clientY - app.getBoundingClientRect().top
-
-        moveAt(e.pageX, e.pageY)
-
-        app.animate(
-            {
-                opacity: [1, 0.9],
-            },
-            {
-                duration: 200,
-                easing: 'ease',
-                fill: 'forwards',
-            }
-        )
-
-        function moveAt(pageX: number, pageY: number) {
-            if (!app || !header) {
-                return
-            }
-
-            app.style.left = pageX - shiftX + 'px'
-            app.style.top = pageY - shiftY + 'px'
-        }
-
-        function removeListeners() {
-            if (!app || !header) {
-                return
-            }
-
-            app.animate(
-                {
-                    opacity: [0.9, 1],
-                },
-                {
-                    duration: 200,
-                    easing: 'ease',
-                    fill: 'forwards',
-                }
-            )
-
-            document.removeEventListener('mousemove', onMouseMove)
-            document.removeEventListener('mouseup', removeListeners)
-
-            if (app.getBoundingClientRect().top < 0) {
-                app.style.top = '0px'
-            }
-        }
-
-        function onMouseMove(e: MouseEvent) {
-            moveAt(e.pageX, e.pageY)
-        }
-
-        document.addEventListener('mousemove', onMouseMove)
-
-        document.addEventListener('mouseup', removeListeners)
-    })
 }
 
 // i hope this works...

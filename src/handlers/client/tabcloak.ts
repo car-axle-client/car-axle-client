@@ -12,7 +12,6 @@ async function changePageTitle(title: string): Promise<void> {
 }
 
 async function changePageFavicon(url: string): Promise<void> {
-    // remove old favicon
     let oldFavicon = document.querySelector('link[rel="icon"]')
     oldFavicon && document.head.removeChild(oldFavicon)
 
@@ -52,9 +51,12 @@ function createPresets(parent: Pen<HTMLElement>): Pen<HTMLElement>[] {
     return pens
 }
 
-function loadSave(): void {
+function loadSave(titleinput: Pen<HTMLInputElement>, faviconinput: Pen<HTMLInputElement>): void {
     let title = getStringFromLocalStorage('cac-tabcloak-title')
     let favicon = getStringFromLocalStorage('cac-tabcloak-favicon')
+
+    titleinput.element.value = title
+    faviconinput.element.value = favicon
 
     title && changePageTitle(title)
     favicon && changePageFavicon(favicon)
@@ -63,7 +65,7 @@ function loadSave(): void {
 function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     let pens = Pen.fromHTML(`<div>
                            <h1 class="divider">Tabcloak</h1>
-                           <h2>Page Title and Page Icon</h2>
+                           <h2 class="divider">Page Title and Page Icon</h2>
                            </div>`)
     pens[0].setParent(content[0].element)
 
@@ -91,7 +93,7 @@ function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     pens.push(...pageFaviconInput.penIt())
     pens.push(...createPresets(pens[0]))
 
-    loadSave()
+    loadSave(pageTitleInput.pens[1] as Pen<HTMLInputElement>, pageFaviconInput.pens[1] as Pen<HTMLInputElement>)
     return pens || []
 }
 
