@@ -25,7 +25,7 @@ export class Module extends Component {
 
     public penIt(): Pen<HTMLElement>[] {
         let pens = Pen.fromHTML(`
-                                <div class="cac-module rounded-md">
+                                <div class="cac-module">
                                     <div>
                                         <h2>
                                             ${this.title}

@@ -41,7 +41,11 @@ function setup(app: string, layout: string = defaultLayout, components?: Compone
     }
 
     components.scripts.forEach((script) => {
-        script()
+        try {
+            script()
+        } catch (e) {
+            throw 'Error: ' + e + ' at script ' + script
+        }
     })
 }
 

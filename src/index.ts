@@ -18,12 +18,13 @@ function main() {
     track()
     console.info(`${VERSION}.${ITERATION} ${NAME} by ${CREATOR} (${ENV}), thank you from penguinify`)
     if (ENV === 'development') {
-        console.warn('car axle client development mode is enabled, your cool to do whatever you want ;)')
-        notificationbar.showNotification('Development Mode', 'car axle client development mode is enabled, your cool to do whatever you want ;)')
+        console.warn('car axle client development mode is enabled, your cool to do whatever you want')
+        notificationbar.showNotification('Development Mode', 'car axle client development mode is enabled, your cool to do whatever you want')
     }
 
     setup('app-fuk-u', layout, components)
 
+    // obviously the update checker
     checkForUpdate().then((update: boolean) => {
         if (update) {
             console.warn('Client outdated, please install the latest version!')
@@ -31,15 +32,9 @@ function main() {
         }
     })
 
-    const header = document.getElementById('app-status')
-    const app = document.getElementById('app-fuk-u')
+    let quotes = require('./assets/quotes.json')
 
-    if (!app || !header) {
-        return
-    }
-
-    notificationbar.showNotification(`car axle client`, `welcome to ${NAME} v${VERSION}.${ITERATION} by penguinify. enjoy your stay ;)`)
-
+    notificationbar.showNotification(`${quotes[Math.floor(Math.random() * quotes.length)]}`, `v${VERSION}.${ITERATION} by penguinify. enjoy your stay ;)`)
 }
 
 // i hope this works...

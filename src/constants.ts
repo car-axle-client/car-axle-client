@@ -50,7 +50,7 @@ export var ENV = 'production'
 if (document.location.hostname.includes('localhost')) {
     ENV = 'development'
 } else if (document.location.hostname.includes('github.io/car-axle-client')) {
-    ENV = 'i hoped this wouldn\'t need to exist -- BETA'
+    ENV = "i hoped this wouldn't need to exist -- BETA"
 }
 
 // DO NOT CHANGE UNLESS YK WHAT U DOIN

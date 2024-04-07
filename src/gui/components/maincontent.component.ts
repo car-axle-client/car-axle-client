@@ -81,6 +81,8 @@ export class MainContent extends Component {
         let pens: Pen<Elements>[] = []
 
         let handlers: { [key: string]: HandlerDefinition } = {}
+
+        // Gets all the handlers from the handlers folder
         let context = require.context('../../handlers/', true, /\.ts$/)
         context.keys().forEach((key) => {
             let handler = context(key).default
@@ -94,19 +96,23 @@ export class MainContent extends Component {
         })
 
         this.content.forEach((content) => {
-            switch (content.type) {
-                case 'iframe':
-                    pens.push(new Iframe(this.maincontent, content.src, content.id, content.controls).penIt()[0])
-                    break
-                case 'block':
-                    pens.push(new Block(this.maincontent, handlers[content.handler]).penIt()[0])
-                    break
-                case 'module':
-                    pens.push(new Module(this.maincontent, content.name, content.description, handlers[content.handler]).penIt()[0])
-                    break
-                case 'input':
-                    pens.push(new Input(this.maincontent, handlers[content.handler], content.placeholder).penIt()[0])
-                    break
+            try {
+                switch (content.type) {
+                    case 'iframe':
+                        pens.push(new Iframe(this.maincontent, content.src, content.id, content.controls).penIt()[0])
+                        break
+                    case 'block':
+                        pens.push(new Block(this.maincontent, handlers[content.handler]).penIt()[0])
+                        break
+                    case 'module':
+                        pens.push(new Module(this.maincontent, content.name, content.description, handlers[content.handler]).penIt()[0])
+                        break
+                    case 'input':
+                        pens.push(new Input(this.maincontent, handlers[content.handler], content.placeholder).penIt()[0])
+                        break
+                }
+            } catch (e) {
+                console.error(`Failed to load content ${content}: ${e}`)
             }
         })
 

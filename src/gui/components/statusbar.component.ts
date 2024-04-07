@@ -19,9 +19,7 @@ export class StatusBar extends Component {
 
         let header = pens[0].element
 
-
         header.addEventListener('mousedown', (e) => {
-
             let app = document.getElementById('app-fuk-u')
             if (!app || !header) {
                 return
@@ -92,7 +90,6 @@ export class StatusBar extends Component {
 
             document.addEventListener('mouseup', removeListeners)
         })
-
 
         pens[2].element.addEventListener('mousedown', () => {
             let element = document.getElementById('app-fuk-u')
