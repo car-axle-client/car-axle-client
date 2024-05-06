@@ -14,6 +14,10 @@ let content: ContentList = {
         },
         {
             type: 'block',
+            handler: 'customgameslinkblock',
+        },
+        {
+            type: 'block',
             handler: 'gameslistblock',
         },
     ],
@@ -110,6 +114,10 @@ let content: ContentList = {
             name: 'show notification',
             description: 'shows notification',
             handler: 'shownotification',
+        },
+        {
+            type: 'block',
+            handler: 'typeblock',
         },
     ],
 }

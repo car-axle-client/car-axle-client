@@ -16,10 +16,10 @@
 }
 
 .cac-header {
-    background: url('https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/allinone.svg');
+    background: url('https://raw.githubusercontent.com/car-axle-client/car-axle-client/main/docs/v11logo%20sadly.svg');
     background-size: cover;
     width: 16.5vw;
-    height: 12%;
+    aspect-ratio: 5/2;
     display: flex;
     color: white;
     align-items: center;
@@ -32,7 +32,7 @@
 .cac-sidebar-button {
     width: 16.5vw;
     box-sizing: content-box;
-    height: 1.8em;
+    height: 2.5vw;
     padding: 0.25vw 1vw;
     display: flex;
     color: white;
@@ -67,10 +67,42 @@
     background: @theme;
     box-sizing: content-box;
     width: 16.5vw;
+    height: 1.5vw;
     padding: 0.75vw 0.4vw;
-    height: 1.2em;
     z-index: 1000000000000000000000000000000000000000000000000000000000000;
     position: absolute;
     border-radius: 0.75vw;
     animation: slide-in-blurred-left 3s cubic-bezier(0.33, 1, 0.32, 1) both;
+}
+
+@media (aspect-ratio < 1/1) {
+    .cac-header {
+        display: none;
+    }
+
+    .cac-sidebar {
+        width: 8vw;
+        margin-left: 0.5vw;
+    }
+
+    .cac-sidebar-button {
+        font-size: 0px;
+        width: 8vw;
+        height: 8vw;
+
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 4vw;
+            height: 4vw;
+        }
+    }
+
+    .cac-sidebar-background {
+        width: 6vw;
+        height: 6vw;
+        padding: 0.75vw 0.4vw;
+        border-radius: 0.75vw;
+    }
 }

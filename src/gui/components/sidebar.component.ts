@@ -10,13 +10,11 @@ function setSection(section: string, sidebar_background: SidebarBackground) {
     sidebar_background.update()
 }
 
-export class Sidebar extends Component {
+export class Sidebar implements Component {
     private buttons: Pen<HTMLElement>[] = []
     private sidebar_background!: SidebarBackground
 
-    constructor() {
-        super()
-    }
+    constructor() {}
 
     public bindContent(content: MainContent[]) {
         for (let i = 0; i < this.buttons.length; i++) {

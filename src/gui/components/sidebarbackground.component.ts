@@ -1,10 +1,9 @@
 import { Component } from '../../penexutils'
 
-export class SidebarBackground extends Component {
+export class SidebarBackground implements Component {
     public section: string
 
     constructor(section: string = 'cac-games') {
-        super()
         this.section = section
 
         setTimeout(() => {

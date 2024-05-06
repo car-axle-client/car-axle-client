@@ -52,3 +52,19 @@
     font-size: 1.5vw;
     color: white;
 }
+
+@media (aspect-ratio < 1/1) {
+    .maincontent {
+        width: 80vw;
+        margin-left: 12vw;
+        height: calc(100% - 8vw);
+    }
+
+    .maincontent-header-text {
+        font-size: 3vw;
+    }
+
+    .maincontent-description {
+        font-size: 2vw;
+    }
+}

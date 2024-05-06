@@ -1,12 +1,10 @@
 import { Component, Pen } from '../../penexutils'
 import '../../styles/notification.less'
 
-export class NotificationBar extends Component {
+export class NotificationBar implements Component {
     notificationbar!: Pen<HTMLElement>
 
-    constructor() {
-        super()
-    }
+    constructor() {}
 
     public penIt(): Pen<HTMLElement>[] {
         let pens = Pen.fromHTML(`
@@ -21,7 +19,7 @@ export class NotificationBar extends Component {
 
     public showNotification(title: string, message: string) {
         let notification = Pen.fromHTML(`
-        <div class="cac-notification rounded-md">
+        <div class="cac-notification rounded-sm">
             <div class="cac-notification-title">${title}</div>
             <div class="cac-notification-message">${message}</div>
         </div>

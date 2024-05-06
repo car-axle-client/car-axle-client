@@ -1,12 +1,10 @@
 import { Pen, Component } from '../../penexutils'
 
-export class SidebarButton extends Component {
+export class SidebarButton implements Component {
     private title: string
     private icon: string
 
     constructor(title: string, icon: string) {
-        super()
-
         this.title = title
         this.icon = icon
     }

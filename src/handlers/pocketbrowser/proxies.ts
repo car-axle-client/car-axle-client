@@ -26,7 +26,7 @@ function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     let pens: Pen<HTMLElement>[] = Pen.fromHTML(`
                                    <div>
                                         <h1>External Proxies</h1>
-                                        <p>stored on a database and might not work on some websites</p>
+                                        <p class="divider">stored on a database and might not work on some websites</p>
                                     </div>
                                     `)
 

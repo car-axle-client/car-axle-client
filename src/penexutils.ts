@@ -1,13 +1,18 @@
+var DeviceType = {
+    phone: window.innerWidth / window.innerHeight < 1,
+    // Broken
+    tablet: /iPhone|iPad|iPod|Android/i.test(navigator.userAgent),
+}
+
+console.log(navigator.userAgent)
+
 type HTMLMarkup = string
 
 interface Component {
+    pens?: Pen<Elements>[]
     // tf are these names ;-;
     penIt?(): Pen<Elements>[]
     stringIt?(): string
-}
-
-abstract class Component {
-    pens: Pen<Elements>[] = []
 }
 
 class Components {
@@ -101,4 +106,4 @@ function getPenFromElementId(id: string, pens: Pen<Elements>[]): Pen<Elements> {
     else throw new Error(`No pen with id ${id} found.`)
 }
 
-export { getPenFromElementId, Component, Components, Pen, elementGlobals, Elements }
+export { getPenFromElementId, Component, Components, Pen, elementGlobals, Elements, DeviceType }

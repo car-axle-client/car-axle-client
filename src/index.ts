@@ -13,6 +13,20 @@ import './styles/content.less'
 import { checkForUpdate, track } from './database'
 import { layout } from './gui/layout'
 import { components, notificationbar } from './gui/app'
+import { DeviceType } from './penexutils'
+
+console.log(DeviceType)
+
+// checks if car axle already exists
+
+// @ts-ignore
+if (window.caraxle) {
+    console.error('car axle is already running, exiting...')
+    throw new Error('car axle is already running')
+}
+
+//@ts-ignore
+window.caraxle = true
 
 function main() {
     track()

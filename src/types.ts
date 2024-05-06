@@ -72,8 +72,8 @@ export type Script = {
 }
 
 export type Game = {
-    name: string
-    url: string
+    n: string
+    u: string
 }
 
 export type Proxies = {

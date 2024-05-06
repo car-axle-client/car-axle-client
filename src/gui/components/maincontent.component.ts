@@ -5,15 +5,13 @@ import { Iframe } from './content/iframe.component'
 import { Input } from './content/input.component'
 import { Module } from './content/module.component'
 
-export class MainContent extends Component {
+export class MainContent implements Component {
     private title: string
     private description: string
     public maincontent!: Pen<HTMLElement>
     public content: Content[] = []
 
     constructor(title: string, description: string, content: Content[], enabled: boolean = false) {
-        super()
-
         this.title = title
         this.description = description
         this.content = content

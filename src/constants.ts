@@ -10,15 +10,19 @@ export var GAMESLINK = {
             display: '(2) **********.onrender.com',
             url: 'aHR0cHM6Ly9jYXItYXhrZS5vbnJlbmRlci5jb20v',
         },
+        {
+            display: '(7) **********.vercel.app',
+            url: 'aHR0cHM6Ly9nYXktaG9zdGluZy12My52ZXJjZWwuYXBwLw==',
+        },
+        {
+            display: '(4) **********.onrender.com',
+            url: 'aHR0cHM6Ly9keGl0YzI4dHkyOXZiYzFvendmeWRjMWxidzlxYXEub25yZW5kZXIuY29tLwo=',
+        },
     ],
     alternate_links: [
         {
             display: '(3) **********.amplifyapp.com',
             url: 'aHR0cHM6Ly9tYWluLmQydHByN3dsMnhud2pyLmFtcGxpZnlhcHAuY29tLw==',
-        },
-        {
-            display: '(4) **********.onrender.com',
-            url: 'aHR0cHM6Ly9keGl0YzI4dHkyOXZiYzFvendmeWRjMWxidzlxYXEub25yZW5kZXIuY29tLwo=',
         },
         {
             display: '(5) **********.onrender.com',
@@ -29,17 +33,13 @@ export var GAMESLINK = {
             url: 'aHR0cHM6Ly82NWU0YTRlYjc3MmJiN2FhMDVlOTVkZDQtLWhlbHBmdWwtamFsZWJpLTRjZWVkYS5uZXRsaWZ5LmFwcC8=',
         },
         {
-            display: '(7) **********.vercel.app',
-            url: 'aHR0cHM6Ly9nYXktaG9zdGluZy12My52ZXJjZWwuYXBwLw==',
-        },
-        {
             display: '(8) **********.twilightparadox.com',
             url: 'aHR0cHM6Ly9tYXRob3JhbWFsZWFybi50d2lsaWdodHBhcmFkb3guY29tLw==',
         },
     ],
 }
 
-export const VERSION = 10
+export const VERSION = 11
 export const ITERATION = 0
 
 export const NAME = 'car axle'

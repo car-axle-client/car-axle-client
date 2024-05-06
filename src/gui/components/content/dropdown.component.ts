@@ -1,14 +1,13 @@
 import { Component, Elements, Pen } from '../../../penexutils'
 import { DropdownOptions, HandlerDefinition } from '../../../types'
 
-export class Dropdown extends Component {
+export class Dropdown implements Component {
+    pens: Pen<HTMLElement>[] = []
     private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
     private options: DropdownOptions
 
     constructor(parent: Pen<HTMLElement>, handler: HandlerDefinition, options: DropdownOptions) {
-        super()
-
         if (handler.type !== 'dropdown') {
             throw new Error('Handler is not a dropdown')
         }

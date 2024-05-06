@@ -1,14 +1,13 @@
 import { Component, Elements, Pen } from '../../../penexutils'
 import { HandlerDefinition } from '../../../types'
 
-export class Input extends Component {
+export class Input implements Component {
+    pens: Pen<HTMLElement>[] = []
     private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
     private placeholder: string
 
     constructor(parent: Pen<HTMLElement>, handler: HandlerDefinition, placeholder: string = '') {
-        super()
-
         if (handler.type !== 'input') {
             throw new Error('Handler is not a Input')
         }

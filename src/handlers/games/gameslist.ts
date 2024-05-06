@@ -6,6 +6,10 @@ import { Elements, Pen } from '../../penexutils'
 import { Game, HandlerDefinition } from '../../types'
 
 function changeGame(url: string) {
+    if (GAMESLINK.currentLink === GAMESLINK.defaultLink) {
+        notificationbar.showNotification('Change the game link!', 'You are using the default game link, please change it to a working one')
+    }
+
     ;(document.getElementById('gamesiframe') as HTMLIFrameElement).src = atob(GAMESLINK.currentLink) + url
 }
 
@@ -13,7 +17,7 @@ function searchGame(input: string, gamesJSON: Game[]) {
     let gamesElements: NodeListOf<HTMLElement> = document.querySelectorAll('#cac-gameslistblock div')
     input = input.toLowerCase()
     for (let [index, game] of gamesJSON.entries()) {
-        gamesElements[index].style.display = game.name.toLowerCase().includes(input) ? 'block' : 'none'
+        gamesElements[index].style.display = game.n.toLowerCase().includes(input) ? 'block' : 'none'
     }
 
     if (input.includes('v8.1 is better')) {
@@ -52,10 +56,10 @@ function Block(content: Pen<HTMLElement>[]): Pen<Elements>[] {
 
     for (let game of gamesJSON) {
         pens.push(
-            ...new Button(pens[0], game.name, {
+            ...new Button(pens[0], game.n, {
                 type: 'button',
-                id: game.name,
-                handler: () => changeGame(game.url),
+                id: game.n,
+                handler: () => changeGame(game.u),
             }).penIt()
         )
     }

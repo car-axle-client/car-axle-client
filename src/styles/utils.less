@@ -51,8 +51,12 @@
 
 .rounded-md {
     // fixes some stuff
-    border-radius: 1.4rem !important;
+    border-radius: clamp(10px, 2vw, 40px) !important;
     box-sizing: content-box;
+}
+
+.rounded-sm {
+    border-radius: clamp(5px, 1vw, 20px) !important;
 }
 
 .center-content {

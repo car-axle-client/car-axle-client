@@ -7,6 +7,9 @@
     flex-direction: row;
     padding: 1.8vw 0.75vw 0.75vw 0.75vw;
     animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+    width: 80%;
+    height: 80%;
+    border-radius: 1.75vw !important;
 }
 
 #app-status {
@@ -30,5 +33,36 @@
         margin-right: 0.5vw;
         vertical-align: middle;
         fill: white;
+    }
+}
+
+.app-status-tablet {
+    display: none !important;
+    svg {
+        width: 1.5vw !important;
+        height: 1.5vw !important;
+    }
+}
+
+@media (aspect-ratio < 1/1) {
+    #app-fuk-u {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 1.8vw 0.75vw 0.75vw 0.75vw;
+        left: 0 !important;
+        top: 0 !important;
+    }
+
+    #app-status {
+        width: 100%;
+        right: 0;
+        top: 0;
+        position: relative;
+        justify-content: center;
+    }
+
+    .mainwindow {
+        border-radius: 0;
     }
 }

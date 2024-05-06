@@ -1,13 +1,11 @@
 import { Component, Pen } from '../../../penexutils'
 import { HandlerDefinition } from '../../../types'
 
-export class Block extends Component {
+export class Block implements Component {
     private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
 
     constructor(parent: Pen<HTMLElement>, handler: HandlerDefinition) {
-        super()
-
         if (handler.type !== 'block') {
             throw new Error('Handler is not a block')
         }

@@ -10,7 +10,7 @@ function Block(content: Pen<HTMLElement>[]): Pen<HTMLElement>[] {
     let pens = Pen.fromHTML(`
         <div class="rounded-md bg-gray-800 p-4 m-4">
             <h1>Builtin Proxies</h1>
-            <p>stored in the codebase, works on more websites</p>
+            <p class="divider">stored in the codebase, works on more websites</p>
         `)
 
     pens.push(

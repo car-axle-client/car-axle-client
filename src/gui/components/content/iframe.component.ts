@@ -1,6 +1,6 @@
 import { Component, Elements, Pen } from '../../../penexutils'
 
-export class Iframe extends Component {
+export class Iframe implements Component {
     private src: string
     private parent: Pen<HTMLElement>
     private controls: boolean
@@ -8,8 +8,6 @@ export class Iframe extends Component {
     private iframe!: Pen<HTMLIFrameElement>
 
     constructor(parent: Pen<HTMLElement>, src: string = '', id: string, controls: boolean) {
-        super()
-
         this.src = src
         this.parent = parent
         this.controls = controls

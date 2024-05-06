@@ -1,14 +1,13 @@
 import { Component, Pen } from '../../../penexutils'
 import { HandlerDefinition } from '../../../types'
 
-export class Button extends Component {
+export class Button implements Component {
     private parent: Pen<HTMLElement>
     private handler: HandlerDefinition
     private title: string
+    pens: Pen<HTMLElement>[] = []
 
     constructor(parent: Pen<HTMLElement>, title: string, handler: HandlerDefinition) {
-        super()
-
         if (handler.type !== 'button') {
             throw new Error('Handler is not a module')
         }
