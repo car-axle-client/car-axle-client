@@ -4,6 +4,6 @@
   1. This project is massive and hard to work through
   2. New and unfamiliar frameworks
   3. No documentation cause I got lazy and didn't want to write it for such a complicated framework.
-- I'm moving on with my life and software development has little future. I want to work on the electrical and hardware side of computers and work with languages like C.
+- I'm moving on with my life and software development has little future. I want to work on electrical and mechanical engineering and work with languages like C.
 ## If you want to continue it:
 - If you have a lot of typescript and javascript knowledge then you could continue it... Though why would you? Contact me on discord if you have questions: @penguinify
